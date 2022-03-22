@@ -80,6 +80,8 @@ class MCTS:
         while True:
             cur_best = -float('inf')
             best_act = -1
+            if node.policy is None:
+                print('Policy is none!')
             for a in range(21):
                 for b in range(18):
                     if node.valids[a, b]:
@@ -104,6 +106,7 @@ class MCTS:
                 child_node.value = game.get_game_ended()
                 if game.game.ended or game.game.turn > 180:
                     # terminal node
+                    print('Terminal node')
                     child_node.back_propagate(-child_node.value)
                 else:
                     child_node.policy, child_node.value = self.nnet.predict(child_node.state)
