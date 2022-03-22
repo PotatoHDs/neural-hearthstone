@@ -10,7 +10,7 @@ from fireplace.utils import random_draft
 from hearthstone.enums import CardClass, CardType, State
 
 
-class GameImp():
+class GameImp:
     def __init__(self):
         self.game = None
 
@@ -49,9 +49,8 @@ class GameImp():
         else:
             return next_state, -player
 
-
     def getValidMoves(self):
-        actions = np.zeros((21,18))
+        actions = np.zeros((21, 18))
         player = self.game.current_player
         if player.choice:
             for index, card in enumerate(player.choice.cards):
@@ -68,7 +67,7 @@ class GameImp():
             for position, minion in enumerate(player.field):
                 if minion.can_attack():
                     for target, card in enumerate(minion.attack_targets):
-                        actions[position+10, target] = 1
+                        actions[position + 10, target] = 1
             if player.hero.power.is_usable():
                 if player.hero.power.requires_target():
                     for target, card in enumerate(player.hero.power.targets):
@@ -78,9 +77,8 @@ class GameImp():
             if player.hero.can_attack():
                 for target, card in enumerate(player.hero.attack_targets):
                     actions[18, target] = 1
-            actions[19,0] = 1
+            actions[19, 0] = 1
         return actions
-
 
     def getAction(self, a):
         player = self.game.current_player
@@ -119,7 +117,6 @@ class GameImp():
             except GameOver:
                 pass
 
-
     # calculating reward
     def getGameEnded(self):
         p1 = self.game.player_to_start
@@ -134,7 +131,6 @@ class GameImp():
             self.game.ended = True
             return 1e-4
         return 0
-
 
     # getting state for network in array
     def getState(self):

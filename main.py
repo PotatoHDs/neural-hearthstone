@@ -8,18 +8,18 @@ import torch.utils.data
 
 class args():
     def __init__(self):
-        self.n_in = 34*16
-        self.n_out = 21*18
+        self.n_in = 34 * 16
+        self.n_out = 21 * 18
 
         self.epochs = 50
         self.batch_size = 128
         self.lr = 1e-4
 
         self.arenaCompare = 40
-        self.numIters = 10  #25
+        self.numIters = 10  # 25
         self.numEps = 25
         self.maxlenOfQueue = 100000
-        self.numMCTS = 100  #1000
+        self.numMCTS = 100  # 1000
         self.numItersForTrainExamplesHistory = 20
 
         self.tempThreshold = 15

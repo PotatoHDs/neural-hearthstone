@@ -69,24 +69,25 @@ class WritelnMixin(object):
             print(HIDE_CURSOR, end='', file=self.file)
 
     def clearln(self):
-        #if self.file.isatty():
-            print('\r\x1b[K', end='', file=self.file)
+        # if self.file.isatty():
+        print('\r\x1b[K', end='', file=self.file)
 
     def writeln(self, line):
-        #if self.file.isatty():
-            self.clearln()
-            print(line, end='', file=self.file)
-            self.file.flush()
+        # if self.file.isatty():
+        self.clearln()
+        print(line, end='', file=self.file)
+        self.file.flush()
 
     def finish(self):
-        #if self.file.isatty(): - snair, to print to stderr logfile
-            print(file=self.file)
-            if self.hide_cursor:
-                print(SHOW_CURSOR, end='', file=self.file)
+        # if self.file.isatty(): - snair, to print to stderr logfile
+        print(file=self.file)
+        if self.hide_cursor:
+            print(SHOW_CURSOR, end='', file=self.file)
+
 
 class Infinite(object):
     file = stdout
-    sma_window = 10         # Simple Moving Average window
+    sma_window = 10  # Simple Moving Average window
 
     def __init__(self, *args, **kwargs):
         self.index = 0
@@ -234,9 +235,9 @@ class IncrementalBar(Bar):
     def update(self):
         nphases = len(self.phases)
         filled_len = self.width * self.progress
-        nfull = int(filled_len)                      # Number of full chars
+        nfull = int(filled_len)  # Number of full chars
         phase = int((filled_len - nfull) * nphases)  # Phase of last char
-        nempty = self.width - nfull                  # Number of empty chars
+        nempty = self.width - nfull  # Number of empty chars
 
         message = self.message % self
         bar = self.phases[-1] * nfull
@@ -263,6 +264,7 @@ class AverageMeter(object):
     """Computes and stores the average and current value
        Imported from https://github.com/pytorch/examples/blob/master/imagenet/main.py#L247-L262
     """
+
     def __init__(self):
         self.reset()
 

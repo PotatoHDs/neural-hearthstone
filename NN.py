@@ -53,7 +53,7 @@ class NNetWrapper():
         optimizer = optim.Adam(self.nnet.parameters())
 
         for epoch in range(self.args.epochs):
-            print('EPOCH ::: ' + str(epoch+1))
+            print('EPOCH ::: ' + str(epoch + 1))
             self.nnet.train()
             data_time = AverageMeter()
             batch_time = AverageMeter()
@@ -61,10 +61,10 @@ class NNetWrapper():
             v_losses = AverageMeter()
             end = time.time()
 
-            bar = Bar('Training Net', max=int(len(examples)/self.args.batch_size))
+            bar = Bar('Training Net', max=int(len(examples) / self.args.batch_size))
             batch_idx = 0
 
-            while batch_idx < int(len(examples)/self.args.batch_size):
+            while batch_idx < int(len(examples) / self.args.batch_size):
                 sample_ids = np.random.randint(len(examples), size=self.args.batch_size)
                 states, pis, vs = list(zip(*[examples[i] for i in sample_ids]))
                 states = torch.FloatTensor(np.array(states).astype(np.float64)).unsqueeze(1)
@@ -98,19 +98,18 @@ class NNetWrapper():
                 batch_idx += 1
 
                 # plot progress
-                bar.suffix  = '({batch}/{size}) Data: {data:.3f}s | Batch: {bt:.3f}s | Total: {total:} | ETA: {eta:} | Loss_pi: {lpi:.4f} | Loss_v: {lv:.3f}'.format(
-                            batch=batch_idx,
-                            size=int(len(examples)/self.args.batch_size),
-                            data=data_time.avg,
-                            bt=batch_time.avg,
-                            total=bar.elapsed_td,
-                            eta=bar.eta_td,
-                            lpi=pi_losses.avg,
-                            lv=v_losses.avg,
-                            )
+                bar.suffix = '({batch}/{size}) Data: {data:.3f}s | Batch: {bt:.3f}s | Total: {total:} | ETA: {eta:} | Loss_pi: {lpi:.4f} | Loss_v: {lv:.3f}'.format(
+                    batch=batch_idx,
+                    size=int(len(examples) / self.args.batch_size),
+                    data=data_time.avg,
+                    bt=batch_time.avg,
+                    total=bar.elapsed_td,
+                    eta=bar.eta_td,
+                    lpi=pi_losses.avg,
+                    lv=v_losses.avg,
+                )
                 bar.next()
             bar.finish()
-
 
     def predict(self, state):
         """
@@ -129,10 +128,10 @@ class NNetWrapper():
 
     def loss_pi(self, targets, outputs):
         targets = targets.view(-1, 21, 18)
-        return -torch.sum(targets*outputs)/targets.size()[0]
+        return -torch.sum(targets * outputs) / targets.size()[0]
 
     def loss_v(self, targets, outputs):
-        return torch.sum((targets-outputs.view(-1))**2)/targets.size()[0]
+        return torch.sum((targets - outputs.view(-1)) ** 2) / targets.size()[0]
 
     def save_checkpoint(self, folder='checkpoint', filename='checkpoint.pth.tar'):
         filepath = os.path.join(folder, filename)
@@ -142,13 +141,13 @@ class NNetWrapper():
         else:
             print("Checkpoint Directory exists! ")
         torch.save({
-            'state_dict' : self.nnet.state_dict(),
+            'state_dict': self.nnet.state_dict(),
         }, filepath)
 
     def load_checkpoint(self, folder='checkpoint', filename='checkpoint.pth.tar'):
         # https://github.com/pytorch/examples/blob/master/imagenet/main.py#L98
         filepath = os.path.join(folder, filename)
         if not os.path.exists(filepath):
-            raise("No model in path {}".format(filepath))
+            raise ("No model in path {}".format(filepath))
         checkpoint = torch.load(filepath)
         self.nnet.load_state_dict(checkpoint['state_dict'])

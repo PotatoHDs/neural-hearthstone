@@ -34,7 +34,7 @@ class MCTSNode():
 
     def backPropagate(self, result):
         self.Ns += 1.
-        self.Q = (self.Ns*self.Q + result) / self.Ns
+        self.Q = (self.Ns * self.Q + result) / self.Ns
         if self.parent:
             self.parent.backPropagate(result)
 
@@ -61,7 +61,8 @@ class MCTS:
             self.search(self.root, copy.deepcopy(self.game))
 
         # s = self.game.stringRepresentation(state)
-        counts = [self.root.selectChild((a,b)).Ns if self.root.selectChild((a,b)) else 0 for a in range(21) for b in range(18)]
+        counts = [self.root.selectChild((a, b)).Ns if self.root.selectChild((a, b)) else 0 for a in range(21) for b in
+                  range(18)]
 
         if temp == 0:
             bestAs = np.array(np.argwhere(counts == np.max(counts))).flatten()

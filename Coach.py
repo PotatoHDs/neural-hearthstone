@@ -49,7 +49,7 @@ class Coach:
             trainExamples.append([s, self.curPlayer, pi, None])
             action = np.random.choice(len(pi), p=pi)
             a, b = np.unravel_index(action, pi_reshape.shape)
-            print(a,b)
+            print(a, b)
             current_game, self.curPlayer = self.game.getNextState(self.curPlayer, (a, b))
 
             r = self.game.getGameEnded()
@@ -122,7 +122,6 @@ class Coach:
         filename = os.path.join(folder, self.getCheckpointFile(iteration) + ".examples")
         with open(filename, "wb+") as f:
             Pickler(f).dump(self.trainExamplesHistory)
-        f.closed()
 
     def loadTrainExamples(self):
         modelFile = os.path.join(self.args.load_folder_file[0], self.args.load_folder_file[1])
@@ -136,6 +135,5 @@ class Coach:
             print("File with trainExamples found. Read it.")
             with open(examplesFile, "rb") as f:
                 self.trainExamplesHistory = Unpickler(f).load()
-            f.closed()
             # examples based on the model were already collected (loaded)
             self.skipFirstSelfPlay = True

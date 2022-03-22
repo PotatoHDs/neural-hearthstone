@@ -4,7 +4,7 @@ from types import *
 import time
 
 
-class Arena():
+class Arena:
     """
     An Arena class where any 2 agents can be pit against each other.
     """
