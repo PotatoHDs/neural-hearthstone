@@ -6,7 +6,7 @@ import torch
 import torch.utils.data
 
 
-class args():
+class Args:
     def __init__(self):
         self.n_in = 34 * 16
         self.n_out = 21 * 18
@@ -35,7 +35,7 @@ class args():
 
 if __name__ == "__main__":
 
-    args = args()
+    args = Args()
     g = Game()
     nnet = nn(args)
 
@@ -45,5 +45,5 @@ if __name__ == "__main__":
     c = Coach(g, nnet, args)
     if args.load_model:
         print("Load trainExamples from file")
-        c.loadTrainExamples()
+        c.load_train_examples()
     c.learn()

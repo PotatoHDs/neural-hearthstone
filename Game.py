@@ -14,7 +14,7 @@ class GameImp:
     def __init__(self):
         self.game = None
 
-    def InitGame(self):
+    def init_game(self):
         cards.db.initialize()
 
         c1 = CardClass(random.randint(2, 10))
@@ -30,26 +30,26 @@ class GameImp:
 
         return self.game
 
-    def MulliganChoice(self):
+    def mulligan_choice(self):
         for player in self.game.players:
             cards_to_mulligan = random.sample(player.choice.cards, random.randint(0, 3))
             player.choice.choose(*cards_to_mulligan)
 
-    def getNextState(self, player, action):
+    def get_next_state(self, player, action):
         # game_copy = copy.deepcopy(game)
         try:
-            self.getAction(action)
+            self.get_action(action)
         except GameOver:
             raise GameOver
 
-        next_state = self.getState()
+        next_state = self.get_state()
 
         if action[0] != 19:
             return next_state, player
         else:
             return next_state, -player
 
-    def getValidMoves(self):
+    def get_valid_moves(self):
         actions = np.zeros((21, 18))
         player = self.game.current_player
         if player.choice:
@@ -80,7 +80,7 @@ class GameImp:
             actions[19, 0] = 1
         return actions
 
-    def getAction(self, a):
+    def get_action(self, a):
         player = self.game.current_player
         if not self.game.ended:
             try:
@@ -118,7 +118,7 @@ class GameImp:
                 pass
 
     # calculating reward
-    def getGameEnded(self):
+    def get_game_ended(self):
         p1 = self.game.player_to_start
 
         if p1.playstate == 4:
@@ -133,7 +133,7 @@ class GameImp:
         return 0
 
     # getting state for network in array
-    def getState(self):
+    def get_state(self):
         s = np.zeros((34, 16), dtype='float')
 
         p1 = self.game.current_player
@@ -182,7 +182,7 @@ class GameImp:
                 s[i + j, 1] = p1.hand[j].cost
                 s[i + j, 2] = p1.hand[j].card_class
                 s[i + j, 3] = p1.hand[j].type
-                if (p1.hand[j].type == 4):
+                if p1.hand[j].type == 4:
                     s[i + j, 4] = p1.hand[j].race
                     s[i + j, 5] = p1.hand[j].atk
                     s[i + j, 6] = p1.hand[j].max_health

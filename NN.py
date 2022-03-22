@@ -40,7 +40,7 @@ class SimpleNN(nn.Module):
         return F.log_softmax(pi, dim=1), torch.tanh(v)
 
 
-class NNetWrapper():
+class NNetWrapper:
     def __init__(self, args):
         self.nnet = SimpleNN(args)
         self.nnet.to(args.device)

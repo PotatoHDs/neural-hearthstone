@@ -15,30 +15,30 @@ class Arena:
         self.game = game
         self.display = display
 
-    def playGame(self):
+    def play_game(self):
         players = [self.player2, None, self.player1]
-        curPlayer = 1
+        cur_player = 1
         current_game = self.game.getInitGame()
         it = 0
         while not current_game.ended or current_game.turn > 180:
             it += 1
-            if type(players[curPlayer + 1]) is MethodType:
-                action = players[curPlayer + 1]()
-                next_state, curPlayer = self.game.getNextState(curPlayer, (action))
+            if type(players[cur_player + 1]) is MethodType:
+                action = players[cur_player + 1]()
+                next_state, cur_player = self.game.get_next_state(cur_player, (action))
             else:
-                pi = players[curPlayer + 1]()
+                pi = players[cur_player + 1]()
                 pi_reshape = np.reshape(pi, (21, 18))
                 action = np.where(pi_reshape == np.max(pi_reshape))
-                next_state, curPlayer = self.game.getNextState(curPlayer, (action[0][0], action[1][0]))
-        return self.game.getGameEnded()
+                next_state, cur_player = self.game.get_next_state(cur_player, (action[0][0], action[1][0]))
+        return self.game.get_game_ended()
 
-    def playGames(self, num):
+    def play_games(self, num):
         """
         Plays num games in which player1 starts num/2 games and player2 starts
         num/2 games.
         Returns:
-            oneWon: games won by player1
-            twoWon: games won by player2
+            one_won: games won by player1
+            two_won: games won by player2
             draws:  games won by nobody
         """
         eps_time = AverageMeter()
@@ -48,15 +48,15 @@ class Arena:
         maxeps = int(num)
 
         num = int(num / 2)
-        oneWon = 0
-        twoWon = 0
+        one_won = 0
+        two_won = 0
         draws = 0
         for _ in range(num):
-            gameResult = self.playGame()
-            if gameResult == 1:
-                oneWon += 1
-            elif gameResult == -1:
-                twoWon += 1
+            game_result = self.play_game()
+            if game_result == 1:
+                one_won += 1
+            elif game_result == -1:
+                two_won += 1
             else:
                 draws += 1
             eps += 1
@@ -72,11 +72,11 @@ class Arena:
         self.player1, self.player2 = self.player2, self.player1
 
         for _ in range(num):
-            gameResult = self.playGame()
-            if gameResult == -1:
-                oneWon += 1
-            elif gameResult == 1:
-                twoWon += 1
+            game_result = self.play_game()
+            if game_result == -1:
+                one_won += 1
+            elif game_result == 1:
+                two_won += 1
             else:
                 draws += 1
             eps += 1
@@ -91,4 +91,4 @@ class Arena:
 
         bar.finish()
 
-        return oneWon, twoWon, draws
+        return one_won, two_won, draws
