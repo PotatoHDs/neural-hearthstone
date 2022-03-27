@@ -60,7 +60,7 @@ class Coach:
 
     def learn(self):
         for i in range(1, self.args.numIters + 1):
-            print('------ITER ' + str(i) + '------')
+            print('------noITER ' + str(i) + '------')
             if not self.skipFirstSelfPlay or i > 1:
                 iteration_train_examples = deque([], maxlen=self.args.maxlenOfQueue)
 
@@ -71,11 +71,11 @@ class Coach:
                 for eps in range(self.args.numEps):
                     self.mcts = MCTS(self.game, self.nnet, self.args)  # reset search tree
                     iteration_train_examples += self.execute_episode()
-                    print("Executed 1 eps")
+                    print("Executed {} eps".format(eps))
                     # print(iteration_train_examples)
                     eps_time.update(time.time() - end)
                     end = time.time()
-                    bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}'.format(
+                    bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}\n'.format(
                         eps=eps + 1, maxeps=self.args.numEps, et=eps_time.avg,
                         total=bar.elapsed_td, eta=bar.eta_td)
                     bar.next()

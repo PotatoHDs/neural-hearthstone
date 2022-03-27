@@ -107,7 +107,7 @@ class MCTS:
                 game.get_next_state(1, act)
                 if game.game.ended or game.game.turn > 180:
                     # terminal node
-                    print('Terminal node')
+#                     print('Terminal node')
                     node.back_propagate(-node.value)
                     break
                 # print('not a Terminal node')
@@ -117,7 +117,7 @@ class MCTS:
                 child_node.value = game.get_game_ended()
                 if game.game.ended or game.game.turn > 180:
                     # terminal node
-                    print('Terminal child node')
+#                     print('Terminal child node')
                     child_node.back_propagate(-child_node.value)
                 else:
                     child_node.policy, child_node.value = self.nnet.predict(child_node.state)
