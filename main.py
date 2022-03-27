@@ -19,7 +19,7 @@ class Args:
         self.numIters = 10  # 25
         self.numEps = 25
         self.maxlenOfQueue = 100000
-        self.numMCTS = 100  # 1000
+        self.numMCTS = 200  # 1000
         self.numItersForTrainExamplesHistory = 20
 
         self.tempThreshold = 15
@@ -31,6 +31,7 @@ class Args:
         self.checkpoint = './temp/'
         self.load_model = False
         self.load_folder_file = ('. / temp / ', 'temp.pth.tar')
+        self.fireplace_log_enabled = True
 
 
 if __name__ == "__main__":

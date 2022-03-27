@@ -58,6 +58,9 @@ class MCTS:
         self.root.policy.shape = (21, 18)
 
         for i in range(self.args.numMCTS):
+            # print(self.root)
+            # print(self.root.value)
+            # print(self.root.policy[0][0])
             self.search(self.root, copy.deepcopy(self.game))
 
         # s = self.game.stringRepresentation(state)
@@ -101,12 +104,20 @@ class MCTS:
             newnode = node.select_child(act)
             if newnode:
                 node = newnode
+                game.get_next_state(1, act)
+                if game.game.ended or game.game.turn > 180:
+                    # terminal node
+                    print('Terminal node')
+                    node.back_propagate(-node.value)
+                    break
+                # print('not a Terminal node')
+                # print(node.policy[0][0])
             else:
                 child_node = node.expand(game, act)
                 child_node.value = game.get_game_ended()
                 if game.game.ended or game.game.turn > 180:
                     # terminal node
-                    print('Terminal node')
+                    print('Terminal child node')
                     child_node.back_propagate(-child_node.value)
                 else:
                     child_node.policy, child_node.value = self.nnet.predict(child_node.state)

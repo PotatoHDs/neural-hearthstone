@@ -44,6 +44,7 @@ class Coach:
             temp = int(episode_step < self.args.tempThreshold)
 
             pi = self.mcts.get_action_prob(temp=temp)
+            print("Simulated {} step".format(episode_step))
             pi_reshape = np.reshape(pi, (21, 18))
             s = self.game.get_state()
             train_examples.append([s, self.cur_player, pi, None])
@@ -70,6 +71,7 @@ class Coach:
                 for eps in range(self.args.numEps):
                     self.mcts = MCTS(self.game, self.nnet, self.args)  # reset search tree
                     iteration_train_examples += self.execute_episode()
+                    print("Executed 1 eps")
                     # print(iteration_train_examples)
                     eps_time.update(time.time() - end)
                     end = time.time()
