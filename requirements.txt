@@ -1,0 +1,6 @@
+jupyter
+fireplace2
+numpy
+matplotlib
+torch
+torchvision
