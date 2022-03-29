@@ -60,7 +60,7 @@ class Coach:
 
     def learn(self):
         for i in range(1, self.args.numIters + 1):
-            print('------noITER ' + str(i) + '------')
+            print('------ITER ' + str(i) + '------')
             if not self.skipFirstSelfPlay or i > 1:
                 iteration_train_examples = deque([], maxlen=self.args.maxlenOfQueue)
 

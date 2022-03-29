@@ -107,9 +107,10 @@ class GameImp:
                 else:
                     print("Not an appropriate action")
             except InvalidAction:
-#                 print("InvalidAction")
+                print("InvalidAction")
                 player.game.end_turn()
             except IndexError:
+                print("IndexError")
                 try:
                     player.game.end_turn()
                 except GameOver:

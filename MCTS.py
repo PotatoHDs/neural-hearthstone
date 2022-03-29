@@ -2,7 +2,7 @@ import math
 import copy
 import numpy as np
 from Game import GameImp
-
+import functools
 
 class MCTSNode:
     def __init__(self, state, game, parent=None, action=None):
@@ -83,11 +83,31 @@ class MCTS:
         while True:
             cur_best = -float('inf')
             best_act = -1
+            # current_valids = game.get_valid_moves()
+
+            if not functools.reduce(lambda x, y: (x & y).all(), map(lambda p, q: p == q, node.state, game.get_state()),
+                                    True):
+                # print("States are not the same")
+                node.state = game.get_state()
+                node.valids = game.get_valid_moves()
+                node.policy, node.value = self.nnet.predict(node.state)
+                node.policy.shape = (21, 18)
+                node.policy = node.policy * node.valids
+                sum_ps_s = np.sum(node.policy)
+                if sum_ps_s > 0:
+                    node.policy /= sum_ps_s  # renormalize
+                else:
+                    print("All valid moves were masked, do workaround.")
+                    node.policy = node.policy + node.valids
+                    node.policy /= np.sum(node.policy)
+
             if node.policy is None:
                 print('Policy is none!')
+
             for a in range(21):
                 for b in range(18):
                     if node.valids[a, b]:
+                    # if current_valids[a, b]:
                         child = node.select_child((a, b))
                         if child:
                             u = child.Q + node.policy[a, b] * math.sqrt(node.Ns) / (
@@ -100,6 +120,21 @@ class MCTS:
                             best_act = (a, b)
 
             act = best_act
+
+            # if not functools.reduce(lambda x, y: (x & y).all(),
+            #                         map(lambda p, q: p == q, node.valids, game.get_valid_moves()), True):
+            #     print("The lists l1 and l2 are not the same")
+                # print("Node state:\n", node.state)
+                # print("-"*20)
+                # print("Game state:\n", game.get_state())
+                # print("-" * 20)
+                # print("Node valids:\n", node.valids)
+                # print("-" * 20)
+                # print("Game valids:\n", game.get_valid_moves())
+                # print(act)
+
+            # if not node.valids[act[0], act[1]]:
+                # print("Not valid")
 
             newnode = node.select_child(act)
             if newnode:
