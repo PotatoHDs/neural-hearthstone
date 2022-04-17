@@ -1,6 +1,10 @@
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
+from ui.ui import MainWindow
+from PySide6.QtWidgets import *
+import sys
+import re
 
 import torch
 import torch.utils.data
@@ -19,7 +23,7 @@ class Args:
         self.numIters = 10  # 25
         self.numEps = 25
         self.maxlenOfQueue = 100000
-        self.numMCTS = 200  # 1000
+        self.numMCTS = 50  # 1000
         self.numItersForTrainExamplesHistory = 20
 
         self.tempThreshold = 15
@@ -34,17 +38,61 @@ class Args:
         self.fireplace_log_enabled = True
 
 
+def card_downloader():
+    from urllib.request import Request, urlopen
+    from fireplace import cards
+    from hearthstone.enums import CardType
+    cards.db.initialize()
+
+    collection = []
+
+    for card in cards.db.keys():
+        cls = cards.db[card]
+        if not cls.collectible:
+            continue
+        if cls.type == CardType.HERO:
+            # Heroes are collectible...
+            continue
+        collection.append(cls)
+
+    print(len(collection))
+
+    for i in range(len(collection)):
+        # print(collection[i].id)
+        req = Request('https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(collection[i].id),
+                      headers={'User-Agent': 'Mozilla/5.0'})
+        webpage = urlopen(req).read()
+        with open("cards/{}.png".format(collection[i].id), "wb") as file:
+            file.write(webpage)
+
+
 if __name__ == "__main__":
 
     args = Args()
     g = Game()
-    nnet = nn(args)
+    g.init_game()
+    print(g.game.players[0].hand[0].data)
+    print(g.game.players[0].hand[0].id)
 
-    if args.load_model:
-        nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
+    app = QApplication(sys.argv)
 
-    c = Coach(g, nnet, args)
-    if args.load_model:
-        print("Load trainExamples from file")
-        c.load_train_examples()
-    c.learn()
+    # with open("style.qss", "r") as f:
+    #     _style = f.read()
+    #     app.setStyleSheet(_style)
+
+    window = MainWindow(g.game)
+    window.resize(1100, 800)
+    window.show()
+
+    sys.exit(app.exec())
+
+    # nnet = nn(args)
+
+    # if args.load_model:
+    #     nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
+
+    # c = Coach(g, nnet, args)
+    # if args.load_model:
+    #     print("Load trainExamples from file")
+    #     c.load_train_examples()
+    # c.learn()
