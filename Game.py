@@ -16,6 +16,7 @@ class GameImp:
 
     def init_game(self):
         cards.db.initialize()
+        print('i\'m doing things')
 
         c1 = CardClass(random.randint(2, 10))
         c2 = CardClass(random.randint(2, 10))

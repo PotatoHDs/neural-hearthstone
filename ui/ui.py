@@ -9,6 +9,7 @@ import os
 
 cards_path = os.path.join(os.path.abspath(os.getcwd()), "ui", "cards")
 
+
 # class CardWidget(QWidget):
 #     def __init__(self, name):
 #         super().__init__()
@@ -46,12 +47,30 @@ class MainWindow(QMainWindow):
 
         self.button = QPushButton("Do Action", self)
         self.button.setGeometry(700, 300, 200, 50)
-        self.button.clicked.connect(lambda: self.move_card(self.hand_list[0]))
+        # self.button.clicked.connect(lambda: self.move_card(self.hand_list[0]))
 
-    def move_card(self, card):
+    def change_zone(self, cardID, zoneID_from, zoneID_to, position=None):  # cardID: CardID, zoneID: ZoneID
+        card = self.entity[cardID]
         x = card.x()
         y = card.y()
+
+        # default
+        cords_x, cords_y, count = self.entity[zoneID_to]
+        cords_x = cords_x + (count * (self.card_width + self.void_size))
         self.anim = QtCore.QPropertyAnimation(card, b"pos")
-        self.anim.setEndValue(QtCore.QPoint(x, y+200))
+        self.anim.setEndValue(QtCore.QPoint(x + cords_x, y + cords_y))
         self.anim.setDuration(800)
         self.anim.start()
+
+        self.entity[zoneID_from].count -= 1
+        self.entity[zoneID_to].count += 1
+
+    # zoneID: {x:x,y:y, count: count}
+
+    def summon(self, id):
+        # cardID = #какая то логика с id
+        card = QWidget(self)
+        card.resize(128, 194)
+        card.setStyleSheet("border-image: url({}) 0 0 0 0 stretch stretch;".format(os.path.join(cards_path, id)))
+        card.show()
+        self.entity.append({CardID: card})
