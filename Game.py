@@ -18,10 +18,27 @@ class GameImp:
         cards.db.initialize()
         print('i\'m doing things')
 
-        c1 = CardClass(random.randint(2, 10))
-        c2 = CardClass(random.randint(2, 10))
-        deck1 = random_draft(c1)
-        deck2 = random_draft(c2)
+        # c1 = CardClass(random.randint(2, 10))
+        # c2 = CardClass(random.randint(2, 10))
+        # deck1 = random_draft(c1)
+        # deck2 = random_draft(c2)
+
+        deck1 = ["CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
+                  "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
+                  "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239",
+                  "CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
+                  "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
+                  "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239"
+                  ]
+        deck2 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
+                 "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
+                 ]
+        c1 = CardClass(6)
+        c2 = CardClass(3)
 
         players = []
         players.append(Player("Player1", deck1, c1.default_hero))

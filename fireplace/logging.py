@@ -15,9 +15,9 @@ def get_logger(name, level=logging.DEBUG):
         )
         ch.setFormatter(formatter)
 
-    # logger.addHandler(ch)
+        logger.addHandler(ch)
 
     return logger
 
 
-log = get_logger("fireplace",logging.WARNING)
+log = get_logger("fireplace")

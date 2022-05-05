@@ -5,6 +5,9 @@ from ui.ui import MainWindow
 from PySide6.QtWidgets import *
 import sys
 import re
+import os
+import time
+import math
 
 import torch
 import torch.utils.data
@@ -58,21 +61,24 @@ def card_downloader():
     print(len(collection))
 
     for i in range(len(collection)):
-        # print(collection[i].id)
+        print(collection[i])
         req = Request('https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(collection[i].id),
                       headers={'User-Agent': 'Mozilla/5.0'})
         webpage = urlopen(req).read()
-        with open("cards/{}.png".format(collection[i].id), "wb") as file:
+        with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
             file.write(webpage)
 
 
 if __name__ == "__main__":
+    # card_downloader()
 
     args = Args()
     g = Game()
     g.init_game()
-    print(g.game.players[0].hand[0].data)
-    print(g.game.players[0].hand[0].id)
+    # for i in range(len(g.game.players[0].hand)):
+    #     print(g.game.players[0].hand[i])
+    # for i in range(len(g.game.players[1].hand)):
+    #     print(g.game.players[1].hand[i])
 
     app = QApplication(sys.argv)
 
@@ -81,11 +87,16 @@ if __name__ == "__main__":
     #     app.setStyleSheet(_style)
 
     window = MainWindow(g.game)
-    window.resize(1100, 800)
-    window.show()
+
+    # test actions
+    window.summon("VAN_CS2_120", 1)
+    window.change_zone(1, "Hand2", "Field2")
+    window.change_zone(1, "Hand2", "Field2", 0)
+    window.change_zone(0, "Field2", "Hand2")
 
     sys.exit(app.exec())
 
+    # nnet training
     # nnet = nn(args)
 
     # if args.load_model:
