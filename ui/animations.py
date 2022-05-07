@@ -1,7 +1,17 @@
 import math
 
+from PyQt6 import sip
 
-class MoveCardAnim:
+
+class Anim:
+    def init_step(self):
+        pass
+    def step(self):
+        pass
+    def last_step(self):
+        pass
+
+class MoveCardAnim(Anim):
     def __init__(self, card, x, y):
         self.x = x
         self.y = y
@@ -31,3 +41,20 @@ class MoveCardAnim:
 
     def last_step(self):
         self.card.move(self.card.x() + self.x_last, self.card.y() + self.y_last)
+
+class DeathCardAnim(Anim):
+    def __init__(self, card):
+        self.steps = 0
+        self.card = card
+        self.started = False
+
+    def init_step(self):
+        self.steps = 20
+        self.started = True
+
+    def step(self):
+        pass
+
+    def last_step(self):
+        sip.delete(self.card)
+        pass

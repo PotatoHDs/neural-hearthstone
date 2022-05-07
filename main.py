@@ -1,3 +1,4 @@
+from PyQt6.QtGui import QFontDatabase
 from hearthstone.enums import BlockType, Zone
 
 from Coach import Coach
@@ -7,7 +8,7 @@ from fireplace.actions import Attack
 from fireplace.card import HeroPower, Hero
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
-from PySide6.QtWidgets import *
+from PyQt6.QtWidgets import *
 import sys
 import re
 import os
@@ -136,6 +137,13 @@ if __name__ == "__main__":
     #     print(g.game.players[1].hand[i])
 
     app = QApplication(sys.argv)
+
+    fontId = QFontDatabase.addApplicationFont("ui/fonts/belwebdbtaltstylerusbym_bold.otf")
+    if fontId < 0:
+        print('font not loaded')
+    families = QFontDatabase.applicationFontFamilies(fontId)
+    # print(f'"{families[0]}"')
+    # font = QFont(families[0])
 
     # with open("style.qss", "r") as f:
     #     _style = f.read()
