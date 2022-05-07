@@ -56,14 +56,6 @@ class MainWindow(QMainWindow):
             self.entity['Hand1'].cards.append(QWidget(self, objectName=cardID))
             self.entity['Hand1'].cards[i].resize(self.card_width, self.card_length)
             self.entity['Hand1'].cards[i].move(self.entity['Hand1'].x + (self.card_width+self.void_size) * i, self.entity['Hand1'].y)
-            if not os.path.join(cards_path, game.players[0].hand[i].id):
-                req = Request(
-                    'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(game.players[0].hand[i].id),
-                    headers={'User-Agent': 'Mozilla/5.0'})
-                webpage = urlopen(req).read()
-                with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
-                    file.write(webpage)
-
             self.entity['Hand1'].cards[i].setStyleSheet(
                 "border-image: url({}) 0 0 0 0 stretch stretch;".format(os.path.join(cards_path,
                                                                                      game.players[0].hand[i].id)))
@@ -77,13 +69,6 @@ class MainWindow(QMainWindow):
             self.entity['Hand2'].cards.append(QWidget(self, objectName = cardID))
             self.entity['Hand2'].cards[i].resize(self.card_width, self.card_length)
             self.entity['Hand2'].cards[i].move(self.entity['Hand2'].x + 140 * i, self.entity['Hand2'].y)
-            if not os.path.join(cards_path, game.players[1].hand[i].id):
-                req = Request(
-                    'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(game.players[1].hand[i].id),
-                    headers={'User-Agent': 'Mozilla/5.0'})
-                webpage = urlopen(req).read()
-                with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
-                    file.write(webpage)
             self.entity['Hand2'].cards[i].setStyleSheet(
                 "border-image: url({}) 0 0 0 0 stretch stretch;".format(os.path.join(cards_path,
                                                                                      game.players[1].hand[i].id)))
@@ -125,15 +110,6 @@ class MainWindow(QMainWindow):
             cardID += "_1"
         card = QWidget(self, objectName=cardID)
         card.resize(128, 194)
-
-        if not os.path.join(cards_path, id):
-            req = Request(
-                'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(id),
-                headers={'User-Agent': 'Mozilla/5.0'})
-            webpage = urlopen(req).read()
-            with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
-                file.write(webpage)
-
         card.setStyleSheet("border-image: url({}) 0 0 0 0 stretch stretch;".format(os.path.join(cards_path, id)))
         card.move(self.entity[zone_from].x, self.entity[zone_from].y)
         card.show()
@@ -148,6 +124,14 @@ class MainWindow(QMainWindow):
             if card.x != self.entity[zoneID].x + (i * (self.card_width + self.void_size)):
                 self.anims.setdefault(card.objectName(), []).append(MoveCardAnim(card, self.entity[zoneID].x +
                                                     (i * (self.card_width + self.void_size)), self.entity[zoneID].y))
+
+    def attack(self, zoneID_from, zoneID_to, cardPos1, cardPos2):
+        card1 = self.entity[zoneID_from].cards[cardPos1]
+        card1.raise_()
+        cord_x_to = self.entity[zoneID_to].x + (cardPos2 * (self.card_width + self.void_size))
+        cord_x_from = self.entity[zoneID_from].x + (cardPos1 * (self.card_width + self.void_size))
+        self.anims.setdefault(card1.objectName(), []).append(MoveCardAnim(card1, cord_x_to, self.entity[zoneID_to].y))
+        self.anims.setdefault(card1.objectName(), []).append(MoveCardAnim(card1, cord_x_from, self.entity[zoneID_from].y))
 
     def start_timer(self):
         timer = QtCore.QTimer(self)

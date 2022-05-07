@@ -89,10 +89,13 @@ if __name__ == "__main__":
     window = MainWindow(g.game)
 
     # test actions
-    window.summon("VAN_CS2_120", 1)
+    # window.summon("VAN_CS2_120", 1)
     window.change_zone(1, "Hand2", "Field2")
-    window.change_zone(1, "Hand2", "Field2", 0)
-    window.change_zone(0, "Field2", "Hand2")
+    window.change_zone(2, "Hand1", "Field1")
+    window.attack("Field1", "Field2", 0, 0)
+    # window.change_zone(1, "Hand2", "Field2", 0)
+    # window.change_zone(0, "Field2", "Hand2")
+
 
     sys.exit(app.exec())
 
