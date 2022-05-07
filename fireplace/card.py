@@ -259,6 +259,7 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 	def _set_zone(self, zone):
 		old_zone = self.zone
 		super()._set_zone(zone)
+		self.game.manager.change_zone(self, zone, old_zone)
 		if old_zone == Zone.PLAY and zone not in (Zone.GRAVEYARD, Zone.SETASIDE):
 			self.clear_buffs()
 

@@ -1,8 +1,9 @@
-from hearthstone.enums import BlockType
+from hearthstone.enums import BlockType, Zone
 
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
+from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
 from PySide6.QtWidgets import *
 import sys
@@ -72,25 +73,43 @@ def card_downloader():
 
 
 # noinspection PyMethodMayBeStatic
-class BaseObserver:
+class NewObserver(BaseObserver):
+    def __init__(self, window):
+        self.window = window
     def action_start(self, type, source, index, target):
         # if type == BlockType.
-        print(f"Action started,\n {type=}\n {source=}\n {index=}\n {target=}")
+        # print(f"Action started,\n {type=}\n {source=}\n {index=}\n {target=}")
+        pass
 
     def action_end(self, type, source):
-        print(f"Action ended,\n {type=}\n{source=}")
+        # print(f"Action ended,\n {type=}\n{source=}")
+        pass
 
     def game_step(self, step, next_step):
-        print(f"Game step,\n {step=}\n {next_step=}")
+        # print(f"Game step,\n {step=}\n {next_step=}")
+        pass
 
     def new_entity(self, entity):
-        print(f"New entity,\n {entity=}")
+        # print(f"New entity,\n {entity=}")
+        pass
 
     def start_game(self):
-        print(f"Game started!")
+        # print(f"Game started!")
+        pass
 
     def turn(self, player):
-        print(f"Turn, {player=}")
+        # print(f"Turn, {player=}")
+        pass
+
+    def change_zone(self, card, zone, prev_zone):
+        if zone == Zone.HAND and card.zone_position != 0 and card.controller.name == "Player1":
+            self.window.add_entity_to_hand(card)
+            print(f"Changed zone to hand,")
+            print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
+        elif prev_zone == Zone.HAND and card.controller.name == "Player1":
+            self.window.remove_entity_from_hand(card)
+            print(f"Changed zone from hand,")
+            print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
 
 
 if __name__ == "__main__":
@@ -98,11 +117,7 @@ if __name__ == "__main__":
 
     args = Args()
     g = Game()
-    g.init_game()
-    g.game.manager.observers.append(BaseObserver())
-    g.start_game()
 
-    g.mulligan_choice()
 
     # for i in range(len(g.game.players[0].hand)):
     #     print(g.game.players[0].hand[i])
@@ -115,7 +130,15 @@ if __name__ == "__main__":
     #     _style = f.read()
     #     app.setStyleSheet(_style)
 
-    window = MainWindow(g.game)
+    window = MainWindow()
+
+    g.init_game()
+    g.game.manager.observers.append(NewObserver(window))
+    g.start_game()
+    g.mulligan_choice()
+    # print(g.game.player1.hand)
+    print(g.game.players[0].hand)
+    # app.processEvents()
 
     # test actions
     # window.summon("VAN_CS2_120", 1)

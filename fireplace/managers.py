@@ -56,6 +56,10 @@ class GameManager(Manager):
 		self.counter = 1
 		obj.entity_id = self.counter
 
+	def change_zone(self, card, zone, prev_zone):
+		for observer in self.observers:
+			observer.change_zone(card, zone, prev_zone)
+
 	def action_start(self, type, source, index, target):
 		for observer in self.observers:
 			observer.action_start(type, source, index, target)
@@ -103,6 +107,9 @@ class BaseObserver:
 		pass
 
 	def turn(self, player):
+		pass
+
+	def change_zone(self, card, zone, prev_zone):
 		pass
 
 

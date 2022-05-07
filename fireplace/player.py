@@ -1,4 +1,5 @@
 import random
+from copy import copy
 from itertools import chain
 
 from hearthstone.enums import CardType, PlayState, Race, Zone
@@ -248,7 +249,10 @@ class Player(Entity, TargetableByAuras):
 		questline_card = self.contains_questline(self.deck)
 		# questline card must be included in the initial hand.
 		if questline_card != None:
-			starting_hand = [questline_card]+random.sample(self.deck, hand_size-1)
+			# TODO: fix double quest
+			temp_deck = copy(self.deck)
+			temp_deck.remove(questline_card)
+			starting_hand = [questline_card]+random.sample(temp_deck, hand_size-1)
 		else:
 			starting_hand = random.sample(self.deck, hand_size)
 
