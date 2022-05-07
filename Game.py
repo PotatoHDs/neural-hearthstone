@@ -7,16 +7,65 @@ from fireplace.exceptions import GameOver, InvalidAction
 from fireplace.game import Game
 from fireplace.player import Player
 from fireplace.utils import random_draft
-from hearthstone.enums import CardClass, CardType, State
+from fireplace.managers import BaseObserver
+from hearthstone.enums import CardClass, CardType, State, BlockType, Zone
+
+
+# noinspection PyMethodMayBeStatic
+class NewObserver(BaseObserver):
+    def __init__(self, window):
+        self.window = window
+    def action_start(self, action_type, source, index, target):
+        # if type == BlockType.
+        if action_type == BlockType.ATTACK:
+            print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
+        pass
+
+    def action_end(self, type, source):
+        # print(f"Action ended,\n {type=}\n{source=}")
+        pass
+
+    def game_step(self, step, next_step):
+        # print(f"Game step,\n {step=}\n {next_step=}")
+        pass
+
+    def new_entity(self, entity):
+        # print(f"New entity,\n {entity=}")
+        pass
+
+    def start_game(self):
+        # print(f"Game started!")
+        pass
+
+    def turn(self, player):
+        # print(f"Turn, {player=}")
+        pass
+
+    def change_zone(self, card, zone, prev_zone):
+        # TODO: Fix entity_id of this classes
+        # print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
+        # if type(card) == HeroPower or type(card) == Hero:
+        #     return
+        if zone == Zone.HAND and card.zone_position != 0:
+            self.window.add_entity_to_hand(card)
+            print(f"Changed zone to hand,")
+            print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
+        elif prev_zone == Zone.HAND and zone == Zone.DECK or prev_zone == Zone.PLAY and zone == Zone.GRAVEYARD:
+            self.window.remove_entity(card, prev_zone)
+            print(f"Changed zone from hand or card died,")
+            print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
+        elif prev_zone != Zone.INVALID:
+            self.window.change_zone(card, prev_zone, zone)
+            print(f"Changed zone,")
+            print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
 
 
 class GameImp:
     def __init__(self):
         self.game = None
 
-    def init_game(self):
+    def init_game(self, window=None):
         cards.db.initialize()
-        print('i\'m doing things')
 
         # c1 = CardClass(random.randint(2, 10))
         # c2 = CardClass(random.randint(2, 10))
@@ -45,6 +94,9 @@ class GameImp:
         players.append(Player("Player2", deck2, c2.default_hero))
         self.game = Game(players=players)
         self.game.start()
+        if window:
+            self.game.manager.observers.append(NewObserver(window))
+            window.init_decks(self.game)
 
         return self.game
 

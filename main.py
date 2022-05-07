@@ -74,28 +74,15 @@ if __name__ == "__main__":
 
     args = Args()
     g = Game()
-    g.init_game()
-    # for i in range(len(g.game.players[0].hand)):
-    #     print(g.game.players[0].hand[i])
-    # for i in range(len(g.game.players[1].hand)):
-    #     print(g.game.players[1].hand[i])
-
     app = QApplication(sys.argv)
 
     # with open("style.qss", "r") as f:
     #     _style = f.read()
     #     app.setStyleSheet(_style)
 
-    window = MainWindow(g.game)
-
-    # test actions
-    # window.summon("VAN_CS2_120", 1)
-    window.change_zone(1, "Hand2", "Field2")
-    window.change_zone(2, "Hand1", "Field1")
-    window.attack("Field1", "Field2", 0, 0)
-    # window.change_zone(1, "Hand2", "Field2", 0)
-    # window.change_zone(0, "Field2", "Hand2")
-
+    window = MainWindow()
+    g.init_game(window)
+    g.mulligan_choice()
 
     sys.exit(app.exec())
 
