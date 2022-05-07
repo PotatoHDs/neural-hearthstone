@@ -23,20 +23,22 @@ class GameImp:
         # deck1 = random_draft(c1)
         # deck2 = random_draft(c2)
 
-        deck1 = ["CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
-                  "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
-                  "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239",
-                  "CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
-                  "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
-                  "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239"
-                  ]
-        deck2 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
-                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
-                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
-                 "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
-                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
-                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
-                 ]
+        # deck1 = ["CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
+        #           "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
+        #           "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239",
+        #           "CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
+        #           "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
+        #           "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239"
+        #           ]
+        # deck2 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+        #          "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+        #          "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
+        #          "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+        #          "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+        #          "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
+        #          ]
+        deck1 = ["SCH_145"]*30
+        deck2 = ["CORE_LOEA10_3"]*30
         c1 = CardClass(6)
         c2 = CardClass(3)
 
@@ -58,7 +60,7 @@ class GameImp:
     def get_next_state(self, player, action):
         # game_copy = copy.deepcopy(game)
         try:
-            self.get_action(action)
+            self.do_action(action)
         except GameOver:
             raise GameOver
 
@@ -100,7 +102,7 @@ class GameImp:
             actions[19, 0] = 1
         return actions
 
-    def get_action(self, a):
+    def do_action(self, a):
         player = self.game.current_player
         if not self.game.ended:
             try:

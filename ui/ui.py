@@ -11,6 +11,8 @@ from PIL import Image
 import os
 from ui.animations import MoveCardAnim
 
+from hearthstone.enums import Zone as HS_Zone
+
 # cards_path = os.path.join(os.path.abspath(os.getcwd()), "ui", "cards")
 cards_path = os.path.join("ui", "cards")
 print(f"PATH TO CARDS = {cards_path}")
@@ -143,21 +145,26 @@ class MainWindow(QMainWindow):
             # cardID += "_1"
         self.entities[hand].cards.insert(entity_zone_pos, QLabel(self))
         # self.entity[hand].cards.append(QLabel(self))
+        self.entities[hand].cards[entity_zone_pos].setObjectName(str(entity.uuid))
         self.entities[hand].cards[entity_zone_pos].setScaledContents(True)
         self.entities[hand].cards[entity_zone_pos].setPixmap(QPixmap(os.path.join(cards_path,
                                                                                   cardID + ".png")))
         self.entities[hand].cards[entity_zone_pos].resize(self.card_width, self.card_length)
-        self.render_hand(hand)
-        self.entities[entity.entity_id] = self.entities[hand].cards[entity_zone_pos]
+        self.reorganise(hand)
+        self.entities[entity.uuid] = self.entities[hand].cards[entity_zone_pos]
         self.entities[hand].cards[entity_zone_pos].show()
 
-    def change_zone(self, cardPos, zoneID_from, zoneID_to, position=None):  # cardID: CardID, zoneID: ZoneID,
-        card = self.entities[zoneID_from].cards[cardPos]  # cardPos: original position
-        self.entities[zoneID_from].cards.pop(cardPos)
+    def change_zone(self, entity, zoneID_from, zoneID_to):  # cardID: CardID, zoneID: ZoneID,
+        player_name = entity.controller.name
+        zoneID_from = self.get_zone(zoneID_from, player_name)
+        zoneID_to = self.get_zone(zoneID_to, player_name)
+
+        card = self.entities[entity.uuid]  # cardPos: original position
+        self.entities[zoneID_from].cards.remove(card)
         self.entities[zoneID_from].count -= 1
         self.reorganise(zoneID_from)
-
-        if position is None:
+        position = entity.zone_position - 1
+        if position == -1:
             # default
             cord_x = self.entities[zoneID_to].x + (self.entities[zoneID_to].count * (self.card_width + self.void_size))
             self.anims.setdefault(card.objectName(), []).append(MoveCardAnim(card, cord_x, self.entities[zoneID_to].y))
@@ -173,22 +180,27 @@ class MainWindow(QMainWindow):
 
         # print("card started moving")
 
-    def remove_entity_from_hand(self, entity):
+    @staticmethod
+    def get_zone(zone, player_name):
+        _zone = ""
+        if zone == HS_Zone.HAND:
+            _zone = "Hand" + player_name[-1]
+        elif zone == HS_Zone.PLAY:
+            _zone = "Field" + player_name[-1]
+        return _zone
+
+    def remove_entity(self, entity, prev_zone):
         player_name = entity.controller.name
-        hand = "Hand" + player_name[-1]
-        self.entities[hand].count -= 1
+        zone = self.get_zone(prev_zone, player_name)
+        self.entities[zone].count -= 1
         # self.entity[hand].cards
-        label = self.entities[entity.entity_id]
+        label = self.entities[entity.uuid]
         label.clear()
-        self.entities[hand].cards.remove(label)
-        del self.entities[entity.entity_id]
-        self.render_hand(hand)
+        self.entities[zone].cards.remove(label)
+        del self.entities[entity.uuid]
+        self.reorganise(zone)
         # self.entities[hand].cards[entity.zone_position - 1].clear()
         # del self.entities[hand].cards[entity.zone_position - 1]
-
-    def render_hand(self, hand):
-        for card_position, card in enumerate(self.entities[hand].cards):
-            card.move(self.entities[hand].x + 140 * (card_position-1), self.entities[hand].y)
 
 
     def summon(self, id, player):
@@ -219,16 +231,19 @@ class MainWindow(QMainWindow):
     def reorganise(self, zoneID):
         for i in range(self.entities[zoneID].count):
             card = self.entities[zoneID].cards[i]
-            if card.x != self.entities[zoneID].x + (i * (self.card_width + self.void_size)):
+            if card.x != self.entities[zoneID].x + ((i-1) * (self.card_width + self.void_size)):
                 self.anims.setdefault(card.objectName(), []).append(MoveCardAnim(card, self.entities[zoneID].x +
-                                                                                 (i * (
-                                                                                         self.card_width + self.void_size)),
+                                                                                 ((i-1) * (self.card_width + self.void_size)),
                                                                                  self.entities[zoneID].y))
+
+    def render_hand(self, hand):
+        for card_position, card in enumerate(self.entities[hand].cards):
+            card.move(self.entities[hand].x + 140 * (card_position-1), self.entities[hand].y)
 
     def start_timer(self):
         timer = QtCore.QTimer(self)
         timer.timeout.connect(self.animation)
-        timer.start(20)  # 50 for debugging
+        timer.start(10)  # 50 for debugging
 
     def animation(self):
         for id in list(self.anims.keys()):
@@ -242,3 +257,16 @@ class MainWindow(QMainWindow):
                 continue
             self.anims[id][0].step()
         self.update()
+
+    def attack(self, zoneID_from, zoneID_to, source, target):
+        zoneID_from = self.get_zone(zoneID_from, source.controller.name)
+        zoneID_to = self.get_zone(zoneID_to, target.controller.name)
+        
+        card1 = self.entities[source.uuid]
+        card1.raise_()
+        # cord_x_to = self.entities[zoneID_to].x + (cardPos2 * (self.card_width + self.void_size))
+        # cord_x_from = self.entities[zoneID_from].x + (cardPos1 * (self.card_width + self.void_size))
+        cord_x_to = self.entities[zoneID_to].x + (1 * (self.card_width + self.void_size))
+        cord_x_from = self.entities[zoneID_from].x + (1 * (self.card_width + self.void_size))
+        self.anims.setdefault(card1.objectName(), []).append(MoveCardAnim(card1, cord_x_to, self.entities[zoneID_to].y))
+        self.anims.setdefault(card1.objectName(), []).append(MoveCardAnim(card1, cord_x_from, self.entities[zoneID_from].y))

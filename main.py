@@ -3,6 +3,8 @@ from hearthstone.enums import BlockType, Zone
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
+from fireplace.actions import Attack
+from fireplace.card import HeroPower, Hero
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
 from PySide6.QtWidgets import *
@@ -76,9 +78,10 @@ def card_downloader():
 class NewObserver(BaseObserver):
     def __init__(self, window):
         self.window = window
-    def action_start(self, type, source, index, target):
+    def action_start(self, action_type, source, index, target):
         # if type == BlockType.
-        # print(f"Action started,\n {type=}\n {source=}\n {index=}\n {target=}")
+        if action_type == BlockType.ATTACK:
+            print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
         pass
 
     def action_end(self, type, source):
@@ -102,13 +105,21 @@ class NewObserver(BaseObserver):
         pass
 
     def change_zone(self, card, zone, prev_zone):
-        if zone == Zone.HAND and card.zone_position != 0 and card.controller.name == "Player1":
+        # TODO: Fix entity_id of this classes
+        # print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
+        # if type(card) == HeroPower or type(card) == Hero:
+        #     return
+        if zone == Zone.HAND and card.zone_position != 0:
             self.window.add_entity_to_hand(card)
             print(f"Changed zone to hand,")
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
-        elif prev_zone == Zone.HAND and card.controller.name == "Player1":
-            self.window.remove_entity_from_hand(card)
-            print(f"Changed zone from hand,")
+        elif prev_zone == Zone.HAND and zone == Zone.DECK or prev_zone == Zone.PLAY and zone == Zone.GRAVEYARD:
+            self.window.remove_entity(card, prev_zone)
+            print(f"Changed zone from hand or card died,")
+            print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
+        elif prev_zone != Zone.INVALID:
+            self.window.change_zone(card, prev_zone, zone)
+            print(f"Changed zone,")
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
 
 
@@ -136,8 +147,18 @@ if __name__ == "__main__":
     g.game.manager.observers.append(NewObserver(window))
     g.start_game()
     g.mulligan_choice()
-    # print(g.game.player1.hand)
+    g.do_action([0, 0])
+    g.do_action([0, 0])
+    g.do_action([19, 0])
+    g.do_action([0, 0])
+    g.do_action([0, 0])
+    g.do_action([19, 0])
+    # tiny fin (or desk imp) attacks
+    g.do_action([10, 1])
+    g.do_action([19, 0])
+    g.do_action([10, 1])
     print(g.game.players[0].hand)
+    print(g.game.players[1].hand)
     # app.processEvents()
 
     # test actions
