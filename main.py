@@ -1,3 +1,5 @@
+from hearthstone.enums import BlockType
+
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
@@ -69,12 +71,39 @@ def card_downloader():
             file.write(webpage)
 
 
+# noinspection PyMethodMayBeStatic
+class BaseObserver:
+    def action_start(self, type, source, index, target):
+        # if type == BlockType.
+        print(f"Action started,\n {type=}\n {source=}\n {index=}\n {target=}")
+
+    def action_end(self, type, source):
+        print(f"Action ended,\n {type=}\n{source=}")
+
+    def game_step(self, step, next_step):
+        print(f"Game step,\n {step=}\n {next_step=}")
+
+    def new_entity(self, entity):
+        print(f"New entity,\n {entity=}")
+
+    def start_game(self):
+        print(f"Game started!")
+
+    def turn(self, player):
+        print(f"Turn, {player=}")
+
+
 if __name__ == "__main__":
     # card_downloader()
 
     args = Args()
     g = Game()
     g.init_game()
+    g.game.manager.observers.append(BaseObserver())
+    g.start_game()
+
+    g.mulligan_choice()
+
     # for i in range(len(g.game.players[0].hand)):
     #     print(g.game.players[0].hand[i])
     # for i in range(len(g.game.players[1].hand)):
@@ -89,10 +118,10 @@ if __name__ == "__main__":
     window = MainWindow(g.game)
 
     # test actions
-    window.summon("VAN_CS2_120", 1)
-    window.change_zone(1, "Hand2", "Field2")
-    window.change_zone(1, "Hand2", "Field2", 0)
-    window.change_zone(0, "Field2", "Hand2")
+    # window.summon("VAN_CS2_120", 1)
+    # window.change_zone(1, "Hand2", "Field2")
+    # window.change_zone(1, "Hand2", "Field2", 0)
+    # window.change_zone(0, "Field2", "Hand2")
 
     sys.exit(app.exec())
 
