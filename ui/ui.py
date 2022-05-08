@@ -47,6 +47,11 @@ class OutlinedLabel(QLabel):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.textColor = Qt.GlobalColor.white
+
+    def setColor(self, color):
+        self.textColor = color
+        # self.render()
 
     def paintEvent(self, a0: QtGui.QPaintEvent) -> None:
         off = 10
@@ -56,7 +61,7 @@ class OutlinedLabel(QLabel):
         path.addText(off, draw_font.pointSize() + off, draw_font, self.text())
         painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing)
         painter.strokePath(path, QPen(QColor(Qt.GlobalColor.black), 2))
-        painter.fillPath(path, QBrush(Qt.GlobalColor.white))
+        painter.fillPath(path, QBrush(self.textColor))
         size = path.boundingRect().size().toSize()
         self.resize(size.width() + off * 2, size.height() + off * 2)
 
@@ -80,7 +85,6 @@ class QCard(QLabel):
         self.cost.setText(str(entity.cost))
         self.cost.move(int(self.width * 0.031), int(self.height * 0.067))
         self.cost.setFont(QFont(FONT, self.FONT_SIZE - 1))
-        self.cost.setStyleSheet("color:white;")
         self.cost.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         overlay_path = "ui/images/spell.png"
@@ -89,15 +93,13 @@ class QCard(QLabel):
             self.at = OutlinedLabel(self)
             self.hp = OutlinedLabel(self)
             self.hp.setText(str(entity.health))
-            self.at.setText(str(entity._atk))
+            self.at.setText(str(entity.atk))
 
             self.at.setFont(QFont(FONT, self.FONT_SIZE - 2))
             self.at.setGeometry(QtCore.QRect(int(self.width * 0.04), int(self.height * 0.715), 500, 500))
-            self.at.setStyleSheet("color:white;")
 
             self.hp.move(int(self.width * 0.70), int(self.height * 0.715))
             self.hp.setFont(QFont(FONT, self.FONT_SIZE - 2))
-            self.hp.setStyleSheet("color:white;")
             self.hp.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
             overlay_path = "ui/images/minion.png"
@@ -105,7 +107,17 @@ class QCard(QLabel):
         self.card_overlay.setPixmap(QPixmap(overlay_path))
         self.card_overlay.move(int(self.width * 0.045), int(self.height * 0.07))
         self.card_overlay.setScaledContents(True)
-        self.card_overlay.resize(self.width * 0.9, self.height * 0.85)
+        self.card_overlay.resize(int(self.width * 0.9), int(self.height * 0.85))
+
+    def rerender(self, entity):
+        self.cost.setText(str(entity.cost))
+        if type(entity) != Spell:
+            if entity.damage > 0:
+                self.hp.setColor(Qt.GlobalColor.red)
+
+            self.hp.setText(str(entity.health))
+            self.at.setText(str(entity.atk))
+            print(f"All set, {entity.cost} {entity.health} {entity.atk}")
 
 
 class MainWindow(QWidget):
@@ -121,8 +133,8 @@ class MainWindow(QWidget):
                          'Hand1': Zone(200, 600, 0),
                          'Hand2': Zone(200, 50, 0),
                          'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
-            # ,
-            #              'Face1': Zone(0, 0), 'Face2': Zone(0, 600)}
+        # ,
+        #              'Face1': Zone(0, 0), 'Face2': Zone(0, 600)}
 
         self.id_list = []
         self.anims = {}
@@ -162,6 +174,9 @@ class MainWindow(QWidget):
         self.reorganise(hand)
         self.entities[entity.uuid] = self.entities[hand].cards[entity_zone_pos]
         self.entities[hand].cards[entity_zone_pos].show()
+
+    def change_card(self, entity):
+        self.entities[entity.uuid].rerender(entity)
 
     def change_zone(self, entity, zoneID_from, zoneID_to):  # cardID: CardID, zoneID: ZoneID,
         player_name = entity.controller.name

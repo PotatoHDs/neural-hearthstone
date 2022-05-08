@@ -14,7 +14,7 @@ Core_Neutral = ['CORE_AT_092', 'CORE_BOT_083', 'BOT_083e', 'CORE_CS2_117', 'CORE
                 'CS3_033', 'CS3_034', 'CS3_035', 'CS3_035e', 'CS3_036', 'CS3_037', 'CS3_038', 'GAME_005', 'CS2_122e',
                 'CS2_222o', 'CS2_188o', 'EX1_004e', 'EX1_014t', 'EX1_014te', 'EX1_046e', 'EX1_059e', 'EX1_093e',
                 'EX1_103e', 'EX1_110t', 'EX1_162o', 'EX1_187e', 'EX1_399e', 'EX1_509e', 'FP1_007t', 'EX1_116t',
-                'tt_004o', 'NEW1_018e', 'NEW1_026t', 'NEW1_027e', 'KAR_036e', ]
+                'tt_004o', 'NEW1_018e', 'NEW1_026t', 'NEW1_027e', 'KAR_036e', 'GVG_093']
 Core_Hunter = ['CORE_AT_061', 'CORE_BRM_013', 'CORE_DS1_184', 'CORE_DS1_185', 'CORE_EX1_531', 'CORE_EX1_534',
                'CORE_EX1_543', 'CORE_EX1_554', 'CORE_EX1_610', 'CORE_EX1_611', 'CORE_EX1_617', 'CORE_FP1_011',
                'CORE_GIL_828', 'CORE_ICC_419', 'CORE_TRL_111', 'CS3_015', ]

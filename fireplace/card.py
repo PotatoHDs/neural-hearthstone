@@ -10,7 +10,7 @@ from .entity import BaseEntity, Entity, boolean_property, int_property
 from .exceptions import InvalidAction
 from .managers import CardManager
 from .targeting import TARGETING_PREREQUISITES, is_valid_target
-from .utils import CardList 
+from .utils import CardList
 from .logging import log
 
 THE_COIN = "GAME_005"
@@ -30,9 +30,9 @@ def Card(id):
 		subclass = Secret
 	if subclass is Spell:
 		if hasattr(data,'sidequest') and data.sidequest:
-			subclass = Sidequest# 
+			subclass = Sidequest#
 		if hasattr(data,'questline') and data.questline:
-			subclass = Sidequest# 
+			subclass = Sidequest#
 	return subclass(data)
 
 
@@ -113,7 +113,7 @@ class BaseCard(BaseEntity):
 			Zone.SETASIDE: self.game.setaside,
 		}
 		if caches.get(old) is not None:
-			if self in caches[old]:# 
+			if self in caches[old]:#
 				caches[old].remove(self)
 		if caches.get(value) is not None:
 			if hasattr(self, "_summon_index") and self._summon_index is not None:
@@ -154,16 +154,16 @@ class BaseCard(BaseEntity):
 
 
 class PlayableCard(BaseCard, Entity, TargetableByAuras):
-	cant_be_frozen = boolean_property("cant_be_frozen")# 
+	cant_be_frozen = boolean_property("cant_be_frozen")#
 	corrupt = boolean_property('corrupt')# darkmoon
 	corruptedcard = boolean_property('corruptedcard')#darkmoon
 	has_choose_one = boolean_property("has_choose_one")
 	honorable_kill = boolean_property("honorable_kill")
 	lifesteal = boolean_property("lifesteal")
-	mark_of_evil = boolean_property("mark_of_evil")# 
+	mark_of_evil = boolean_property("mark_of_evil")#
 	piece_of_cthun=int_property("piece_of_cthun")#
 	playable_zone = Zone.HAND
-	reborn = boolean_property("reborn")# 
+	reborn = boolean_property("reborn")#
 	script_data_num_1 = int_property("script_data_num_1")
 	trade_cost = int_property("trade_cost")#stormwind
 	tradeable = boolean_property("tradeable")#stormwind
@@ -220,7 +220,10 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 
 	@cost.setter
 	def cost(self, value):
+		prev_value = self._getattr("cost", 0)
 		self._cost = value
+		if self.controller is not None:
+			self.game.manager.change_card(self, "cost", prev_value, value)
 
 	@property
 	def must_choose_one(self):
@@ -255,7 +258,7 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 		if self.zone == Zone.HAND:
 			return self.controller.hand.index(self) + 1
 		return 0
-	
+
 	def _set_zone(self, zone):
 		old_zone = self.zone
 		super()._set_zone(zone)
@@ -286,7 +289,7 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 			self.log("%s draws %r", self.controller, self)
 			if self.zone != Zone.HAND:
 				self.zone = Zone.HAND
-			# if self is 'casts_when_drawn' then immediately play. 
+			# if self is 'casts_when_drawn' then immediately play.
 			self.game.card_when_drawn(self, self.controller)
 			self.controller.cards_drawn_this_turn += 1
 
@@ -375,8 +378,8 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 			self.logger.warning("%r does not require a target, ignoring target %r", self, target)
 			target = None
 		self.game.play_card(self, target, index, choose)
-		if not self.id in self.controller.starting_deck:# aharalab ## DRG_109 
-			self.controller.times_card_to_play_out_of_deck += 1 
+		if not self.id in self.controller.starting_deck:# aharalab ## DRG_109
+			self.controller.times_card_to_play_out_of_deck += 1
 		return self
 
 	def is_summonable(self) -> bool:
@@ -483,11 +486,11 @@ class LiveEntity(PlayableCard, Entity):
 	immune_while_attacking = boolean_property("immune_while_attacking")
 	incoming_damage_multiplier = int_property("incoming_damage_multiplier")
 	max_health = int_property("max_health")
+	damage = int_property("damage")
 
 	def __init__(self, data):
 		super().__init__(data)
 		self._to_be_destroyed = False
-		self.damage = 0
 		self.forgetful = False
 		self.predamage = 0
 		self.turns_in_play = 0
@@ -712,7 +715,7 @@ class Hero(Character):
 			# if there is an former hero copy hero's health
 			if old_hero:
 				self.max_health=old_hero.max_health
-				self.damage = old_hero.damage 
+				self.damage = old_hero.damage
 				old_hero.zone = Zone.GRAVEYARD
 			if self.data.hero_power:
 				self.controller.summon(self.data.hero_power)
@@ -820,7 +823,7 @@ class Minion(Character):
 				self.controller.field.insert(self._summon_index, self)
 			else:
 				self.controller.field.append(self)
-		elif value == Zone.GRAVEYARD: ## -> graveyard  
+		elif value == Zone.GRAVEYARD: ## -> graveyard
 			if self.zone == Zone.PLAY: ## play -> graveyard
 				self.controller.minions_killed_this_turn += 1
 				self.log("%r is removed from the field", self)
@@ -941,11 +944,11 @@ class Secret(Spell):
 			# Move secrets to the SECRET Zone when played
 			value = Zone.SECRET
 			self.secret_twice=False# aharalab  want to make a new flag for this part.
-			for card in self.controller.field:# aharalab 
-				if 'DAL_573'==card.id :# aharalab 
-					self.secret_twice=True #  
+			for card in self.controller.field:# aharalab
+				if 'DAL_573'==card.id :# aharalab
+					self.secret_twice=True #
 		if self.zone == Zone.SECRET:
-			if hasattr(self,'secret_twice') and self.secret_twice:# aharalab 
+			if hasattr(self,'secret_twice') and self.secret_twice:# aharalab
 				self.secret_twice=False
 				return
 			else:

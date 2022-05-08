@@ -93,6 +93,10 @@ class GameManager(Manager):
 		for observer in self.observers:
 			observer.trigger_action(action, source, at, *args)
 
+	def change_card(self, card, field_name, prev_value, curr_value):
+		for observer in self.observers:
+			observer.change_card(card, field_name, prev_value, curr_value)
+
 
 class BaseObserver:
 	def action_start(self, type, source, index, target):
@@ -117,6 +121,9 @@ class BaseObserver:
 		pass
 
 	def trigger_action(self, action, source, at, *args):
+		pass
+
+	def change_card(self, card, field_name, prev_value, curr_value):
 		pass
 
 

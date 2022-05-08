@@ -5,7 +5,7 @@ from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
 from fireplace.actions import Attack, Summon, Hit, EndTurn
-from fireplace.card import HeroPower, Hero
+from fireplace.card import HeroPower, Hero, Character
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
 from PyQt6.QtWidgets import *
@@ -78,7 +78,7 @@ def card_downloader():
 
 
 # noinspection PyMethodMayBeStatic
-class NewObserver(BaseObserver):
+class UiObserver(BaseObserver):
     def __init__(self, window):
         self.window = window
 
@@ -138,6 +138,13 @@ class NewObserver(BaseObserver):
         # print(f"Turn, {player=}")
         pass
 
+    def change_card(self, card, field_name, prev_value, curr_value):
+        # print(f"Card changed,\n {card=}\n {field_name=}\n {prev_value=}\n {curr_value=}")
+
+        if isinstance(card, Character) and (field_name == "damage" or field_name == "max_health"):
+            self.window.change_card(card)
+            print(f"Card changed,\n {card=}\n {field_name=}\n {prev_value=}\n {curr_value=}")
+
     def change_zone(self, card, zone, prev_zone):
         # TODO: Fix entity_id of this classes
         # print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
@@ -157,6 +164,10 @@ class NewObserver(BaseObserver):
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
 
 
+class HsObserver(BaseObserver):
+    pass
+
+
 def main():
     card_downloader()
 
@@ -170,10 +181,11 @@ def main():
 
     app = QApplication(sys.argv)
 
-    fontId = QFontDatabase.addApplicationFont("ui/fonts/belwebdbtaltstylerusbym_bold.otf")
-    if fontId < 0:
-        print('font not loaded')
-    families = QFontDatabase.applicationFontFamilies(fontId)
+    QFontDatabase.addApplicationFont("ui/fonts/belwebdbtaltstylerusbym_bold.otf")
+    # fontId =
+    # if fontId < 0:
+    #     print('font not loaded')
+    # families = QFontDatabase.applicationFontFamilies(fontId)
     # print(f'"{families[0]}"')
     # font = QFont(families[0])
 
@@ -184,21 +196,22 @@ def main():
     window = MainWindow()
 
     g.init_game()
-    g.game.manager.observers.append(NewObserver(window))
+    g.game.manager.register(UiObserver(window))
+    g.game.manager.register(HsObserver())
     g.start_game()
     g.mulligan_choice()
     g.do_action([0, 0])
-    g.do_action([0, 0])
+    # g.do_action([0, 0])
     g.do_action([19, 0])
-    g.do_action([0, 0])
+    # g.do_action([0, 0])
     g.do_action([0, 0])
     g.do_action([19, 0])
     # tiny fin (or desk imp) attacks
-    g.do_action([10, 1])
+    g.do_action([10, 0])
     g.do_action([19, 0])
-    g.do_action([10, 1])
-    print(g.game.players[0].hand)
-    print(g.game.players[1].hand)
+    g.do_action([10, 0])
+    # print(g.game.players[0].hand)
+    # print(g.game.players[1].hand)
     # app.processEvents()
 
     # test actions

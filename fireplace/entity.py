@@ -147,6 +147,11 @@ def int_property(attr):
 
 	@func.setter
 	def func(self, value):
+		prev_value = getattr(self, attr)
 		setattr(self, "_" + attr, value)
+
+		if self.controller is not None:
+			self.game.manager.change_card(self, attr, prev_value, value)
+
 
 	return func
