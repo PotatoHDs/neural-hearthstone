@@ -10,6 +10,7 @@ from PyQt6.QtWidgets import *
 from hearthstone.enums import Zone as HS_Zone
 from PyQt6.QtCore import Qt
 
+from fireplace.card import Spell
 from ui.animations import MoveCardAnim, DeathCardAnim
 
 # cards_path = os.path.join(os.path.abspath(os.getcwd()), "ui", "cards")
@@ -60,61 +61,54 @@ class OutlinedLabel(QLabel):
         self.resize(size.width() + off * 2, size.height() + off * 2)
 
 
-class QCard(QFrame):
+class QCard(QLabel):
     # TODO:
     FONT_SIZE = 21
 
-    def __init__(self, qwindow, width, height):
+    def __init__(self, qwindow, width, height, entity):
         super().__init__(qwindow)
 
         self.width = width
         self.height = height
 
-        self.label = QLabel(self)
-        self.at = OutlinedLabel(self)
-        self.hp = OutlinedLabel(self)
+        # self.label = QLabel(self)
+        self.card_overlay = QLabel(self)
+        # self.at = OutlinedLabel(self)
+        # self.hp = OutlinedLabel(self)
         self.cost = OutlinedLabel(self)
 
-        self.cost.setText("0")
-        self.hp.setText("1")
-        self.at.setText("1")
-
-        # eff = QGraphicsDropShadowEffect(self)
-        # eff.setColor(QColor.black(QColor()))
-        # eff.setOffset(0, 0)
-        # eff.setBlurRadius(2)
-        # eff.setBlurRadius(5)
-
-        self.cost.move(int(self.width * 0.03), int(self.height * 0.075))
-        self.cost.setFont(QFont(FONT, self.FONT_SIZE))
+        self.cost.setText(str(entity.cost))
+        self.cost.move(int(self.width * 0.031), int(self.height * 0.067))
+        self.cost.setFont(QFont(FONT, self.FONT_SIZE - 1))
         self.cost.setStyleSheet("color:white;")
-        # self.cost.setGraphicsEffect(eff)
+        self.cost.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.at.move(int(self.width * 0.04), int(self.height * 0.715))
-        self.at.setFont(QFont(FONT, self.FONT_SIZE - 2))
-        self.cost.setStyleSheet("color:white;")
+        overlay_path = "ui/images/spell.png"
 
-        self.hp.move(int(self.width * 0.70), int(self.height * 0.715))
-        self.hp.setFont(QFont(FONT, self.FONT_SIZE - 2))
-        self.cost.setStyleSheet("color:white;")
+        if type(entity) != Spell:
+            self.at = OutlinedLabel(self)
+            self.hp = OutlinedLabel(self)
+            self.hp.setText(str(entity.health))
+            self.at.setText(str(entity._atk))
 
-    def setPixmap(self, pixmap):
-        self.label.setPixmap(pixmap)
-        pass
+            self.at.setFont(QFont(FONT, self.FONT_SIZE - 2))
+            self.at.setGeometry(QtCore.QRect(int(self.width * 0.04), int(self.height * 0.715), 500, 500))
+            self.at.setStyleSheet("color:white;")
 
-    def setScaledContents(self, scaled):
-        self.label.setScaledContents(scaled)
-        pass
+            self.hp.move(int(self.width * 0.70), int(self.height * 0.715))
+            self.hp.setFont(QFont(FONT, self.FONT_SIZE - 2))
+            self.hp.setStyleSheet("color:white;")
+            self.hp.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-    def resize(self, w: int, h: int) -> None:
-        super().resize(w, h)
-        self.label.resize(w, h)
+            overlay_path = "ui/images/minion.png"
 
-    # def resize(self, width, length):
-    #     self.label.resize(width, length)
+        self.card_overlay.setPixmap(QPixmap(overlay_path))
+        self.card_overlay.move(int(self.width * 0.045), int(self.height * 0.07))
+        self.card_overlay.setScaledContents(True)
+        self.card_overlay.resize(self.width * 0.9, self.height * 0.85)
 
 
-class MainWindow(QMainWindow):
+class MainWindow(QWidget):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setWindowTitle("Game Ep")
@@ -127,6 +121,8 @@ class MainWindow(QMainWindow):
                          'Hand1': Zone(200, 600, 0),
                          'Hand2': Zone(200, 50, 0),
                          'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
+            # ,
+            #              'Face1': Zone(0, 0), 'Face2': Zone(0, 600)}
 
         self.id_list = []
         self.anims = {}
@@ -156,7 +152,7 @@ class MainWindow(QMainWindow):
 
         # while cardID in self.id_list:
         # cardID += "_1"
-        self.entities[hand].cards.insert(entity_zone_pos, QCard(self, self.card_width, self.card_height))
+        self.entities[hand].cards.insert(entity_zone_pos, QCard(self, self.card_width, self.card_height, entity))
         # self.entity[hand].cards.append(QLabel(self))
         self.entities[hand].cards[entity_zone_pos].setObjectName(str(entity.uuid))
         self.entities[hand].cards[entity_zone_pos].setScaledContents(True)
@@ -213,7 +209,10 @@ class MainWindow(QMainWindow):
         self.entities[zone].cards.remove(label)
         del self.entities[entity.uuid]
 
+        # ql = QLabel(self)
+        # ql.layout().removeWidget(ql)
         self.add_animation(label, DeathCardAnim(label))
+        # label.clear()
         self.reorganise(zone)
         # self.entities[hand].cards[entity.zone_position - 1].clear()
         # del self.entities[hand].cards[entity.zone_position - 1]
@@ -273,15 +272,22 @@ class MainWindow(QMainWindow):
             self.anims[id][0].step()
         self.update()
 
-    def attack(self, zoneID_from, zoneID_to, source, target):
-        zoneID_from = self.get_zone(zoneID_from, source.controller.name)
-        zoneID_to = self.get_zone(zoneID_to, target.controller.name)
+    def attack(self, source, target):
+        zoneID_from = self.get_zone(HS_Zone.PLAY, source.controller.name)
+        zoneID_to = self.get_zone(HS_Zone.PLAY, target.controller.name)
 
         card1 = self.entities[source.uuid]
         card1.raise_()
         # cord_x_to = self.entities[zoneID_to].x + (cardPos2 * (self.card_width + self.void_size))
         # cord_x_from = self.entities[zoneID_from].x + (cardPos1 * (self.card_width + self.void_size))
-        cord_x_to = self.entities[zoneID_to].x + (1 * (self.card_width + self.void_size))
-        cord_x_from = self.entities[zoneID_from].x + (1 * (self.card_width + self.void_size))
+        cord_x_to = self.entities[zoneID_to].x + (target.zone_position * (self.card_width + self.void_size))
+        cord_x_from = self.entities[zoneID_from].x + (source.zone_position * (self.card_width + self.void_size))
         self.add_animation(card1, MoveCardAnim(card1, cord_x_to, self.entities[zoneID_to].y))
         self.add_animation(card1, MoveCardAnim(card1, cord_x_from, self.entities[zoneID_from].y))
+
+    # def send_to_graveyard(self, entity, prev_zone):
+    #     player_name = entity.controller.name
+    #     zone = self.get_zone(prev_zone, player_name)
+    #     self.change_zone(entity, zone, "Graveyard" + player_name[-1])
+    #     label = self.entities[entity.uuid]
+    #     label.setPixmap(QtGui.QPixmap(os.path.join(cards_path, "card_back.png")))

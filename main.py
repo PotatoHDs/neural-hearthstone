@@ -85,6 +85,9 @@ class NewObserver(BaseObserver):
     def action_start(self, action_type, source, index, target):
         # if type == BlockType.
         if action_type == BlockType.ATTACK:
+            self.window.attack(source, target)
+            print(target.zone_position)
+            print(source.zone_position)
             print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
         pass
 

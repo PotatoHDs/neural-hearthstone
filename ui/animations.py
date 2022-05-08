@@ -4,8 +4,6 @@ from PyQt6 import sip
 
 
 class Anim:
-    def init_step(self):
-        pass
     def step(self):
         pass
     def last_step(self):
@@ -46,15 +44,9 @@ class DeathCardAnim(Anim):
     def __init__(self, card):
         self.steps = 0
         self.card = card
-        self.started = False
-
-    def init_step(self):
-        self.steps = 20
-        self.started = True
 
     def step(self):
-        pass
+        self.steps = 20
 
     def last_step(self):
         sip.delete(self.card)
-        pass
