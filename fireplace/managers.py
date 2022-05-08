@@ -89,6 +89,10 @@ class GameManager(Manager):
 		for observer in self.observers:
 			observer.turn(player)
 
+	def trigger_action(self, action, source, at, *args):
+		for observer in self.observers:
+			observer.trigger_action(action, source, at, *args)
+
 
 class BaseObserver:
 	def action_start(self, type, source, index, target):
@@ -110,6 +114,9 @@ class BaseObserver:
 		pass
 
 	def change_zone(self, card, zone, prev_zone):
+		pass
+
+	def trigger_action(self, action, source, at, *args):
 		pass
 
 

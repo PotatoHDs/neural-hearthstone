@@ -150,6 +150,7 @@ class Action(metaclass=ActionMeta):
         for hand in source.game.hands:
             for entity in hand.entities:
                 self._broadcast(entity, source, at, *args)
+        source.game.manager.trigger_action(self, source, at, *args)
 
     def queue_broadcast(self, obj, args):
         self.event_queue.append((obj, args))

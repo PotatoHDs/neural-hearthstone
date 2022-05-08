@@ -4,7 +4,7 @@ from hearthstone.enums import BlockType, Zone
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
-from fireplace.actions import Attack
+from fireplace.actions import Attack, Summon, Hit, EndTurn
 from fireplace.card import HeroPower, Hero
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
@@ -82,13 +82,39 @@ class NewObserver(BaseObserver):
     def __init__(self, window):
         self.window = window
 
+    def trigger_action(self, action, source, at, *args):
+        # print(f"Trigger, \n {action=}\n {source=}\n {at=}\n {args=}")
+        if at != 1:
+            return
+        if type(action) == Attack:
+            self.window.attack(args[0], args[1])
+            print(f"Attack,\n {action=}\n")
+        elif type(action) == Summon and type(args[1]) == Hero:
+            print(f"Summon, \n {action=}\n {args[1].controller=}\n {args[1]=}")
+        elif type(action) == Summon and type(args[1]) == HeroPower:
+            print(f"Summon, \n {action=}\n {args[1].controller=}\n {args[1]=}")
+        elif type(action) == EndTurn:
+            print(f"End turn, \n {action=}\n {source=}\n {args=}")
+            # print(f"Summon, \n {action=}\n {source=}\n {args=}")
+        # if type(entity) == Hero and type(action) == Summon:
+        #
+        #     print(f"Summoned Hero,\n {action=}\n {entity=}\n {source=}\n")
+        # elif type(entity) == HeroPower and type(action) == Summon:
+        #     print(f"Summoned hero power,\n {action=}\n {entity=}\n {source=}\n")
+        # elif type(action) == Attack:
+        #     print(f"Attacking,\n {action=}\n {entity=}\n {source[0]=}\n")
+        pass
+
     def action_start(self, action_type, source, index, target):
         # if type == BlockType.
         if action_type == BlockType.ATTACK:
-            self.window.attack(source, target)
+            # self.window.attack(source, target)
             print(target.zone_position)
             print(source.zone_position)
             print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
+        elif action_type == BlockType.TRIGGER:
+            print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
+        # print(action_type)
         pass
 
     def action_end(self, type, source):
@@ -100,7 +126,8 @@ class NewObserver(BaseObserver):
         pass
 
     def new_entity(self, entity):
-        # print(f"New entity,\n {entity=}")
+        if type(entity) == Hero:
+            print(f"New entity,\n {entity=}")
         pass
 
     def start_game(self):

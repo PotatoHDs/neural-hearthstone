@@ -245,9 +245,11 @@ class MainWindow(QWidget):
     def reorganise(self, zoneID):
         for i in range(self.entities[zoneID].count):
             card = self.entities[zoneID].cards[i]
-            if card.x != self.entities[zoneID].x + ((i - 1) * (self.card_width + self.void_size)):
+            # if "Hand" in zoneID:
+            i -= 1
+            if card.x != self.entities[zoneID].x + (i * (self.card_width + self.void_size)):
                 self.add_animation(card, MoveCardAnim(card, self.entities[zoneID].x + (
-                        (i - 1) * (self.card_width + self.void_size)),
+                        i * (self.card_width + self.void_size)),
                                                       self.entities[zoneID].y))
 
     def render_hand(self, hand):
