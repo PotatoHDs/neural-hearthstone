@@ -66,19 +66,22 @@ def card_downloader():
 
     print(len(collection))
 
-    for i in range(len(collection)):
-        print(collection[i])
-        req = Request('https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(collection[i].id),
-                      headers={'User-Agent': 'Mozilla/5.0'})
-        webpage = urlopen(req).read()
-        with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
-            file.write(webpage)
+    for card in collection:
+        card_id = card.id
+        if not os.path.exists(os.path.join("ui/cards", card_id + ".png")):
+            print(card)
+            req = Request('https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(card_id),
+                          headers={'User-Agent': 'Mozilla/5.0'})
+            webpage = urlopen(req).read()
+            with open("ui/cards/{}.png".format(card_id), "wb") as file:
+                file.write(webpage)
 
 
 # noinspection PyMethodMayBeStatic
 class NewObserver(BaseObserver):
     def __init__(self, window):
         self.window = window
+
     def action_start(self, action_type, source, index, target):
         # if type == BlockType.
         if action_type == BlockType.ATTACK:
@@ -124,12 +127,11 @@ class NewObserver(BaseObserver):
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
 
 
-if __name__ == "__main__":
-    # card_downloader()
+def main():
+    card_downloader()
 
     args = Args()
     g = Game()
-
 
     # for i in range(len(g.game.players[0].hand)):
     #     print(g.game.players[0].hand[i])
@@ -188,3 +190,7 @@ if __name__ == "__main__":
     #     print("Load trainExamples from file")
     #     c.load_train_examples()
     # c.learn()
+
+
+if __name__ == "__main__":
+    main()

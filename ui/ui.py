@@ -1,26 +1,16 @@
 import math
-import sys
-import re
-import typing
+import os
 from urllib.request import Request, urlopen
 
-import numpy as np
 from PyQt6 import QtCore, QtGui
-from PyQt6.QtGui import QPixmap, QResizeEvent, QFont, QPainterPath, QPainter
-from PyQt6.QtWidgets import *
-
-from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
-
-from PIL import Image
-import os
-
-from PyQt6 import sip
+from PyQt6.QtGui import QPixmap, QFont, QPainterPath, QPainter
+from PyQt6.QtWidgets import *
+from hearthstone.enums import Zone as HS_Zone
+from PyQt6.QtCore import Qt
 
 from ui.animations import MoveCardAnim, DeathCardAnim
-
-from hearthstone.enums import Zone as HS_Zone
 
 # cards_path = os.path.join(os.path.abspath(os.getcwd()), "ui", "cards")
 cards_path = os.path.join("ui", "cards")
@@ -43,6 +33,7 @@ print(f"PATH TO CARDS = {cards_path}")
 
 FONT = "Belwe Bd BT Alt Style [Rus by m"
 
+
 class Zone:
     def __init__(self, x, y, count=0):
         self.x = x
@@ -50,7 +41,28 @@ class Zone:
         self.count = count
         self.cards = []
 
+
+class OutlinedLabel(QLabel):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def paintEvent(self, a0: QtGui.QPaintEvent) -> None:
+        off = 10
+        painter = QPainter(self)
+        path = QPainterPath()
+        draw_font = self.font()
+        path.addText(off, draw_font.pointSize() + off, draw_font, self.text())
+        painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing)
+        painter.strokePath(path, QPen(QColor(Qt.GlobalColor.black), 2))
+        painter.fillPath(path, QBrush(Qt.GlobalColor.white))
+        size = path.boundingRect().size().toSize()
+        self.resize(size.width() + off * 2, size.height() + off * 2)
+
+
 class QCard(QFrame):
+    # TODO:
+    FONT_SIZE = 21
 
     def __init__(self, qwindow, width, height):
         super().__init__(qwindow)
@@ -59,34 +71,37 @@ class QCard(QFrame):
         self.height = height
 
         self.label = QLabel(self)
-        self.at = QLabel(self)
-        self.hp = QLabel(self)
-        self.cost = QLabel(self)
+        self.at = OutlinedLabel(self)
+        self.hp = OutlinedLabel(self)
+        self.cost = OutlinedLabel(self)
 
         self.cost.setText("0")
         self.hp.setText("1")
         self.at.setText("1")
 
-        eff = QGraphicsDropShadowEffect(self)
-        eff.setColor(QColor.black(QColor()))
-        eff.setOffset(0, 0)
-        eff.setBlurRadius(5)
+        # eff = QGraphicsDropShadowEffect(self)
+        # eff.setColor(QColor.black(QColor()))
+        # eff.setOffset(0, 0)
+        # eff.setBlurRadius(2)
+        # eff.setBlurRadius(5)
 
-        self.cost.move(self.width*0.1, self.height*0.075)
-        self.cost.setFont(QFont(FONT, 23))
+        self.cost.move(int(self.width * 0.03), int(self.height * 0.075))
+        self.cost.setFont(QFont(FONT, self.FONT_SIZE))
         self.cost.setStyleSheet("color:white;")
-        self.cost.setGraphicsEffect(eff)
+        # self.cost.setGraphicsEffect(eff)
 
-        self.at.move(self.width*0.115, self.height * 0.73)
-        self.at.setFont(QFont(FONT, 23))
+        self.at.move(int(self.width * 0.04), int(self.height * 0.715))
+        self.at.setFont(QFont(FONT, self.FONT_SIZE - 2))
+        self.cost.setStyleSheet("color:white;")
 
-        self.hp.move(self.width * 0.77, self.height * 0.73)
-        self.hp.setFont(QFont(FONT, 23))
-
+        self.hp.move(int(self.width * 0.70), int(self.height * 0.715))
+        self.hp.setFont(QFont(FONT, self.FONT_SIZE - 2))
+        self.cost.setStyleSheet("color:white;")
 
     def setPixmap(self, pixmap):
         self.label.setPixmap(pixmap)
         pass
+
     def setScaledContents(self, scaled):
         self.label.setScaledContents(scaled)
         pass
@@ -109,75 +124,11 @@ class MainWindow(QMainWindow):
         self.card_height = 194
 
         self.entities = {'Deck1': Zone(1000, 600, 0), 'Deck2': Zone(1000, 50, 0),
-                       'Hand1': Zone(200, 600, 0),
-                       'Hand2': Zone(200, 50, 0),
-                       'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
+                         'Hand1': Zone(200, 600, 0),
+                         'Hand2': Zone(200, 50, 0),
+                         'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
 
         self.id_list = []
-
-        # for i in range(len(game.players[0].hand)):
-        #     cardID = game.players[0].hand[i].id
-        #     while cardID in self.id_list:
-        #         cardID += "_1"
-        #     self.entity['Hand1'].cards.append(QLabel(self, objectName=cardID))
-        #     self.entity['Hand1'].cards[i].setScaledContents(True)
-        #     self.entity['Hand1'].cards[i].setPixmap(QPixmap(os.path.join(cards_path,
-        #                                                                  game.players[0].hand[i].id + ".png")))
-        #     self.entity['Hand1'].cards[i].resize(self.card_width, self.card_length)
-        #     self.entity['Hand1'].cards[i].move(self.entity['Hand1'].x + (self.card_width + self.void_size) * i,
-        #                                        self.entity['Hand1'].y)
-        #     # print(os.path.join(cards_path, game.players[0].hand[i].id + ".png"))
-        #     if not os.path.join(cards_path, game.players[0].hand[i].id + ".png"):
-        #         req = Request(
-        #             'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
-        #                 game.players[0].hand[i].id),
-        #             headers={'User-Agent': 'Mozilla/5.0'})
-        #         webpage = urlopen(req).read()
-        #         with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
-        #             file.write(webpage)
-        #
-        #     # print(self.entity['Hand1'].cards[i])
-        #     # self.entity['Hand1'].cards[i].setStyleSheet(
-        #     #     "border-image: url({}) 0 0 0 0 stretch stretch;".format(os.path.join(cards_path,
-        #     #                                                                          game.players[0].hand[
-        #     #                                                                              i].id + ".png")))
-        #
-        #     # self.entity['Hand1'].cards[i].setStyleSheet("background-color: red;")
-        #
-        #     self.entity['Hand1'].cards[i].show()
-        #     print(cardID)
-
-        # for i in range(len(game.players[1].hand)):
-        #     cardID = game.players[1].hand[i].id
-        #     while cardID in self.id_list:
-        #         cardID += "_1"
-        #     self.entity['Hand2'].cards.append(QLabel(self, objectName=cardID))
-        #     self.entity['Hand2'].cards[i].setScaledContents(True)
-        #     self.entity['Hand2'].cards[i].setPixmap(QPixmap(os.path.join(cards_path,
-        #                                                                  game.players[1].hand[i].id + ".png")))
-        #     self.entity['Hand2'].cards[i].resize(self.card_width, self.card_length)
-        #     self.entity['Hand2'].cards[i].move(self.entity['Hand2'].x + 140 * i, self.entity['Hand2'].y)
-        #     if not os.path.join(cards_path, game.players[1].hand[i].id + ".png"):
-        #         req = Request(
-        #             'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
-        #                 game.players[1].hand[i].id),
-        #             headers={'User-Agent': 'Mozilla/5.0'})
-        #         webpage = urlopen(req).read()
-        #         with open("ui/cards/{}.png".format(collection[i].id), "wb") as file:
-        #             file.write(webpage)
-        #     # print(os.path.join(cards_path,
-        #     #                    game.players[1].hand[
-        #     #                        i].id + ".png"))
-        #     # self.entity['Hand2'].cards[i].setStyleSheet(
-        #     #     'border-image: url(https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png) 0 0 0 0 stretch stretch;'.format(
-        #     #         os.path.join(cards_path, game.players[1].hand[
-        #     #             i].id)))
-        #
-        #     # self.entity['Hand2'].cards[i].setStyleSheet("background-color: red;")
-        #
-        #     self.entity['Hand2'].cards[i].show()
-        #     print(cardID)
-
         self.anims = {}
         self.start_timer()
         self.resize(1300, 800)
@@ -185,26 +136,26 @@ class MainWindow(QMainWindow):
 
     def add_animation(self, entity, animation):
         self.anims.setdefault(entity.objectName(), []).append(animation)
-        
+
     def add_entity_to_hand(self, entity):
         player_name = entity.controller.name
         hand = "Hand" + player_name[-1]
         self.entities[hand].count += 1
         card_position = len(self.entities[hand].cards) - 1
         cardID = entity.id
-        entity_zone_pos = entity.zone_position-1
+        entity_zone_pos = entity.zone_position - 1
 
         if not os.path.exists(os.path.join(cards_path, cardID + ".png")):
             req = Request(
-                    'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
-                        cardID),
-                    headers={'User-Agent': 'Mozilla/5.0'})
+                'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
+                    cardID),
+                headers={'User-Agent': 'Mozilla/5.0'})
             webpage = urlopen(req).read()
             with open("ui/cards/{}.png".format(cardID), "wb") as file:
                 file.write(webpage)
 
         # while cardID in self.id_list:
-            # cardID += "_1"
+        # cardID += "_1"
         self.entities[hand].cards.insert(entity_zone_pos, QCard(self, self.card_width, self.card_height))
         # self.entity[hand].cards.append(QLabel(self))
         self.entities[hand].cards[entity_zone_pos].setObjectName(str(entity.uuid))
@@ -267,7 +218,6 @@ class MainWindow(QMainWindow):
         # self.entities[hand].cards[entity.zone_position - 1].clear()
         # del self.entities[hand].cards[entity.zone_position - 1]
 
-
     def summon(self, id, player):
         zone_from = "Deck" + str(player)
         zone_to = "Hand" + str(player)
@@ -296,13 +246,14 @@ class MainWindow(QMainWindow):
     def reorganise(self, zoneID):
         for i in range(self.entities[zoneID].count):
             card = self.entities[zoneID].cards[i]
-            if card.x != self.entities[zoneID].x + ((i-1) * (self.card_width + self.void_size)):
-                self.add_animation(card, MoveCardAnim(card, self.entities[zoneID].x + ((i-1) * (self.card_width + self.void_size)),
-                                                                                 self.entities[zoneID].y))
+            if card.x != self.entities[zoneID].x + ((i - 1) * (self.card_width + self.void_size)):
+                self.add_animation(card, MoveCardAnim(card, self.entities[zoneID].x + (
+                        (i - 1) * (self.card_width + self.void_size)),
+                                                      self.entities[zoneID].y))
 
     def render_hand(self, hand):
         for card_position, card in enumerate(self.entities[hand].cards):
-            card.move(self.entities[hand].x + 140 * (card_position-1), self.entities[hand].y)
+            card.move(self.entities[hand].x + 140 * (card_position - 1), self.entities[hand].y)
 
     def start_timer(self):
         timer = QtCore.QTimer(self)
@@ -325,7 +276,7 @@ class MainWindow(QMainWindow):
     def attack(self, zoneID_from, zoneID_to, source, target):
         zoneID_from = self.get_zone(zoneID_from, source.controller.name)
         zoneID_to = self.get_zone(zoneID_to, target.controller.name)
-        
+
         card1 = self.entities[source.uuid]
         card1.raise_()
         # cord_x_to = self.entities[zoneID_to].x + (cardPos2 * (self.card_width + self.void_size))
