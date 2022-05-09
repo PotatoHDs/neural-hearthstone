@@ -3,13 +3,13 @@ import json
 import rel
 import websocket
 from PyQt6.QtGui import QFontDatabase
-from hearthstone.enums import BlockType, Zone, Step
+from hearthstone.enums import BlockType, Zone, Step, PlayState
 
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
 from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice, \
-    BeginTurn
+    BeginTurn, Death
 from fireplace.card import HeroPower, Hero, Character
 from fireplace.exceptions import GameOver
 from fireplace.managers import BaseObserver
@@ -96,6 +96,7 @@ class UiObserver(BaseObserver):
 
     def trigger_action(self, action, source, at, *args):
         # print(f"Trigger, \n {action=}\n {source=}\n {at=}\n {args=}")
+
         if at != 1:
             return
         if type(action) == Attack:
@@ -116,6 +117,12 @@ class UiObserver(BaseObserver):
         elif type(action) == BeginTurn:
             self.window.change_state(args[0].name + " turn")
             print(f"Begin turn, \n {action=}\n {source=}\n {args=}")
+        elif type(action) == Death and type(args[0]) == Hero:
+            state = "Tie..."
+            for player in source.game.players:
+                if player.playstate == PlayState.WON:
+                    state = f"{player.name} wins!"
+            self.window.change_state(state)
         # if type(entity) == Hero and type(action) == Summon:
         #
         #     print(f"Summoned Hero,\n {action=}\n {entity=}\n {source=}\n")
