@@ -11,6 +11,7 @@ from NN import NNetWrapper as nn
 from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice, \
     BeginTurn
 from fireplace.card import HeroPower, Hero, Character
+from fireplace.exceptions import GameOver
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
 from PyQt6.QtWidgets import *
@@ -174,10 +175,12 @@ class UiObserver(BaseObserver):
             print(f"Changed zone to hand,")
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
         elif prev_zone == Zone.HAND and zone == Zone.DECK or prev_zone == Zone.PLAY and zone == Zone.GRAVEYARD:
+            if type(card) == HeroPower:
+                return
             self.window.remove_entity(card, prev_zone)
             print(f"Changed zone from hand or card died,")
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
-        elif prev_zone != Zone.INVALID:
+        elif prev_zone != Zone.INVALID and prev_zone != Zone.DECK:
             self.window.change_zone(card, prev_zone, zone)
             print(f"Changed zone,")
             print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
@@ -310,8 +313,9 @@ def main():
     for i in range(120):
         try:
             g.do_action([10, 0])
-        except KeyError:
-            print("OMEGALUL")
+        except GameOver:
+            print("Game is over")
+            break
     # print(g.game.players[0].hand)
     # print(g.game.players[1].hand)
     # app.processEvents()

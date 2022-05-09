@@ -175,8 +175,11 @@ def setup_game():
 	from .game import Game
 	from .player import Player
 
-	deck1 = random_draft(CardClass.MAGE)
-	deck2 = random_draft(CardClass.WARRIOR)
+	deck1 = ["SCH_145"] * 30
+	deck2 = ["CORE_LOEA10_3"] * 30
+
+	# deck1 = random_draft(CardClass.MAGE)
+	# deck2 = random_draft(CardClass.WARRIOR)
 	player1 = Player("Player1", deck1, CardClass.MAGE.default_hero)
 	player2 = Player("Player2", deck2, CardClass.WARRIOR.default_hero)
 

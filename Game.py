@@ -104,12 +104,12 @@ class GameImp:
 
     def do_action(self, a):
         player = self.game.current_player
-        self.game.process_deaths()
+        # self.game.process_deaths()
         if not self.game.ended:
             try:
                 if 0 <= a[0] <= 9:
                     if player.hand[a[0]].requires_target():
-                        player.hand[a[0]].play(player.hand[a[0]].targets[a[1]])
+                        player.hand[a[0]].play(target=player.hand[a[0]].targets[a[1]])
                     else:
                         player.hand[a[0]].play()
                 elif 10 <= a[0] <= 16:

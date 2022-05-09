@@ -283,7 +283,10 @@ class MainWindow(QWidget):
 
     def remove_entity(self, entity, prev_zone):
         player_name = entity.controller.name
-        zone = self.get_zone(prev_zone, player_name)
+        if type(entity) == Hero:
+            zone = self.get_zone("Face", player_name)
+        else:
+            zone = self.get_zone(prev_zone, player_name)
         # self.entity[hand].cards
         label = self.entities[entity.uuid]
         # label.clear()
