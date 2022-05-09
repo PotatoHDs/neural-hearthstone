@@ -8,7 +8,8 @@ from hearthstone.enums import BlockType, Zone
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
-from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice
+from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice, \
+    BeginTurn
 from fireplace.card import HeroPower, Hero, Character
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
@@ -63,9 +64,9 @@ def card_downloader():
         cls = cards.db[card]
         if not cls.collectible:
             continue
-        if cls.type == CardType.HERO:
-            # Heroes are collectible...
-            continue
+        # if cls.type == CardType.HERO:
+        #     # Heroes are collectible...
+        #     continue
         collection.append(cls)
 
     print(len(collection))
@@ -94,12 +95,19 @@ class UiObserver(BaseObserver):
             self.window.attack(args[0], args[1])
             print(f"Attack,\n {action=}\n")
         elif type(action) == Summon and type(args[1]) == Hero:
+            self.window.add_hero(args[1])
             print(f"Summon, \n {action=}\n {args[1].controller=}\n {args[1]=}")
         elif type(action) == Summon and type(args[1]) == HeroPower:
             print(f"Summon, \n {action=}\n {args[1].controller=}\n {args[1]=}")
         elif type(action) == EndTurn:
+            # self.window.end_turn(args[0].name)
             print(f"End turn, \n {action=}\n {source=}\n {args=}")
             # print(f"Summon, \n {action=}\n {source=}\n {args=}")
+        elif type(action) == MulliganChoice:
+            self.window.change_state("Mulligan")
+        elif type(action) == BeginTurn:
+            self.window.change_state(args[0].name + " turn")
+            print(f"Begin turn, \n {action=}\n {source=}\n {args=}")
         # if type(entity) == Hero and type(action) == Summon:
         #
         #     print(f"Summoned Hero,\n {action=}\n {entity=}\n {source=}\n")
@@ -126,7 +134,7 @@ class UiObserver(BaseObserver):
         pass
 
     def game_step(self, step, next_step):
-        # print(f"Game step,\n {step=}\n {next_step=}")
+        print(f"Game step,\n {step=}\n {next_step=}")
         pass
 
     def new_entity(self, entity):
@@ -284,7 +292,7 @@ def main():
     g.do_action([19, 0])
     # tiny fin (or desk imp) attacks
     g.do_action([10, 0])
-    g.do_action([19, 0])
+    g.do_action([10, 0])
     g.do_action([10, 0])
     # print(g.game.players[0].hand)
     # print(g.game.players[1].hand)

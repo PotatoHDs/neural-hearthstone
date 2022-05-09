@@ -15,8 +15,6 @@ class MoveCardAnim(Anim):
         self.y = y
         self.x_step = 0
         self.y_step = 0
-        self.x_last = 0
-        self.y_last = 0
         self.card = card
         self.steps = 0
         self.started = False
@@ -24,12 +22,7 @@ class MoveCardAnim(Anim):
     def init_step(self):
         self.x_step = math.trunc((self.x - self.card.x()) / 20)
         self.y_step = math.trunc((self.y - self.card.y()) / 20)
-        self.x_last = int(math.fabs(self.x - self.card.x()) % 20 * math.copysign(1, self.x - self.card.x()))
-        self.y_last = int(math.fabs(self.y - self.card.y()) % 20 * math.copysign(1, self.y - self.card.y()))
         self.started = True
-
-        # print(self.x - self.card.x(), self.y - self.card.y(), self.x_step, self.y_step, (self.x - self.card.x()) % 20,
-        #       (self.y - self.card.y()) % 20, self.x_last, self.y_last)
 
     def step(self):
         if not self.started:
@@ -38,7 +31,7 @@ class MoveCardAnim(Anim):
         self.steps += 1
 
     def last_step(self):
-        self.card.move(self.card.x() + self.x_last, self.card.y() + self.y_last)
+        self.card.move(self.x, self.y)
 
 class DeathCardAnim(Anim):
     def __init__(self, card):
@@ -50,3 +43,44 @@ class DeathCardAnim(Anim):
 
     def last_step(self):
         sip.delete(self.card)
+
+class SuperAnim(Anim):
+    def __init__(self):
+        self.anims = []
+        self.steps = 0
+
+    def step(self):
+        for anim in self.anims:
+            anim.step()
+        self.steps+=1
+
+    def last_step(self):
+        for anim in self.anims:
+            anim.last_step()
+
+class ChangeAnim(Anim):
+    def __init__(self, card):
+        self.card = card
+        self.steps = 0
+
+    def step(self):
+        self.card.rerender()
+        self.steps+=20
+
+    def last_step(self):
+        pass
+
+class ChangeTextAnim(Anim):
+    def __init__(self, label, text):
+        self.label = label
+        self.text = text
+        self.steps = 0
+
+    def step(self):
+        self.steps += 20
+
+    def last_step(self):
+        self.label.setText(self.text)
+
+
+
