@@ -188,19 +188,26 @@ class HsObserver(BaseObserver):
         # print(f"Trigger, \n {action=}\n {source=}\n {at=}\n {args=}")
         if at != 1:
             return
+        print(f"Source:\n {source=}\n {args=}")
         action_type = type(action)
         packet_type = "unknown"
         if action_type == Attack:
+            if source.game.current_player.name != "Player1":
+                return
             packet_type = "attack"
             # print(f"Attack,\n {action=}\n")
         elif action_type == Play:
             packet_type = "play"
         elif action_type == EndTurn:
+            if args[0].name != "Player1":
+                return
             packet_type = "endturn"
             # print(f"End turn, \n {action=}\n {source=}\n {args=}")
         elif action_type == Discover:
             packet_type = "discover"
         elif action_type == MulliganChoice:
+            if source.name != "Player1":
+                return
             packet_type = "mulligan"
         elif action_type == GenericChoice:
             packet_type = "choice"

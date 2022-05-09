@@ -104,6 +104,7 @@ class GameImp:
 
     def do_action(self, a):
         player = self.game.current_player
+        self.game.process_deaths()
         if not self.game.ended:
             try:
                 if 0 <= a[0] <= 9:

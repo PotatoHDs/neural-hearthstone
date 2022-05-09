@@ -7,8 +7,10 @@ from PyQt6 import sip
 class Anim:
     def step(self):
         pass
+
     def last_step(self):
         pass
+
 
 class MoveCardAnim(Anim):
     def __init__(self, card, x, y, _raise = False):
@@ -36,6 +38,7 @@ class MoveCardAnim(Anim):
 
     def last_step(self):
         self.card.move(self.x, self.y)
+
 
 class DeathCardAnim(Anim):
     def __init__(self, card):
