@@ -1,4 +1,5 @@
 import math
+from copy import copy
 
 from PyQt6 import sip
 
@@ -10,7 +11,7 @@ class Anim:
         pass
 
 class MoveCardAnim(Anim):
-    def __init__(self, card, x, y):
+    def __init__(self, card, x, y, _raise = False):
         self.x = x
         self.y = y
         self.x_step = 0
@@ -18,8 +19,11 @@ class MoveCardAnim(Anim):
         self.card = card
         self.steps = 0
         self.started = False
+        self._raise = _raise
 
     def init_step(self):
+        if self._raise:
+            self.card.raise_()
         self.x_step = math.trunc((self.x - self.card.x()) / 20)
         self.y_step = math.trunc((self.y - self.card.y()) / 20)
         self.started = True
@@ -61,10 +65,11 @@ class SuperAnim(Anim):
 class ChangeAnim(Anim):
     def __init__(self, card):
         self.card = card
+        self.entity = copy(card.entity)
         self.steps = 0
 
     def step(self):
-        self.card.rerender()
+        self.card.rerender(self.entity)
         self.steps+=20
 
     def last_step(self):

@@ -3,7 +3,7 @@ import json
 import rel
 import websocket
 from PyQt6.QtGui import QFontDatabase
-from hearthstone.enums import BlockType, Zone
+from hearthstone.enums import BlockType, Zone, Step
 
 from Coach import Coach
 from Game import GameImp as Game
@@ -87,6 +87,12 @@ class UiObserver(BaseObserver):
     def __init__(self, window):
         self.window = window
 
+    def change_deck(self, player):
+        if player.game.step == Step.BEGIN_DRAW:
+            return
+        self.window.change_deck_amount(player.name, len(player.deck))
+        print(f"Deck changed, \n {player=}\n {player.deck=}\n {len(player.deck)=}")
+
     def trigger_action(self, action, source, at, *args):
         # print(f"Trigger, \n {action=}\n {source=}\n {at=}\n {args=}")
         if at != 1:
@@ -104,6 +110,7 @@ class UiObserver(BaseObserver):
             print(f"End turn, \n {action=}\n {source=}\n {args=}")
             # print(f"Summon, \n {action=}\n {source=}\n {args=}")
         elif type(action) == MulliganChoice:
+            self.window.change_deck_amount(source.name, len(source.deck))
             self.window.change_state("Mulligan")
         elif type(action) == BeginTurn:
             self.window.change_state(args[0].name + " turn")
@@ -291,9 +298,13 @@ def main():
     g.do_action([0, 0])
     g.do_action([19, 0])
     # tiny fin (or desk imp) attacks
-    g.do_action([10, 0])
-    g.do_action([10, 0])
-    g.do_action([10, 0])
+    # g.do_action([10, 0])
+    # g.do_action([10, 0])
+    for i in range(120):
+        try:
+            g.do_action([10, 0])
+        except KeyError:
+            print("OMEGALUL")
     # print(g.game.players[0].hand)
     # print(g.game.players[1].hand)
     # app.processEvents()

@@ -1,4 +1,5 @@
 import random
+from array import array
 from copy import copy
 from itertools import chain
 
@@ -48,7 +49,7 @@ class Player(Entity, TargetableByAuras):
 		self.name = name
 		self.hero = None
 		super().__init__()
-		self.deck = Deck()
+		self.deck = Deck(None, self)
 		self.hand = CardList()
 		self.discarded = CardList()
 		self.field = CardList()

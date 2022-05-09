@@ -1,3 +1,4 @@
+import copy
 import math
 import os
 from urllib.request import Request, urlopen
@@ -81,10 +82,7 @@ class QCard(QLabel):
         self.width = width
         self.height = height
 
-        # self.label = QLabel(self)
         self.card_overlay = QLabel(self)
-        # self.at = OutlinedLabel(self)
-        # self.hp = OutlinedLabel(self)
         self.cost = OutlinedLabel(self)
 
         self.cost.setText(str(entity.cost))
@@ -116,8 +114,9 @@ class QCard(QLabel):
 
         self.resize(self.width, self.height)
 
-    def rerender(self):
-        entity = self.entity
+    def rerender(self, entity=None):
+        if entity is None:
+            entity = self.entity
         self.cost.setText(str(entity.cost))
         if type(entity) != Spell:
             if entity.damage > 0:
@@ -137,7 +136,7 @@ class MainWindow(QWidget):
         self.card_width = 128
         self.card_height = 194
 
-        self.entities = {'Deck1': Zone(1000, 600), 'Deck2': Zone(1000, 50),
+        self.entities = {'Deck1': Zone(1100, 600), 'Deck2': Zone(1100, 50),
                          'Hand1': Zone(200, 600), 'Hand2': Zone(200, 50),
                          'Face1': Zone(52, 600), 'Face2': Zone(52, 50),
                          'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
@@ -148,6 +147,34 @@ class MainWindow(QWidget):
         self.turn_label.setText("Game starting")
         self.turn_label.move(1100, 400)
         self.turn_label.show()
+
+        self.deck1_amount_label = OutlinedLabel(self)
+        self.deck1_amount_label.resize(400, 50)
+        self.deck1_amount_label.setFont(QFont(FONT, 20))
+        self.deck1_amount_label.setText("30")
+        self.deck1_amount_label.move(self.entities["Deck1"].x - 25 + self.card_width//2,
+                                     self.entities["Deck1"].y - 20 + self.card_height//2)
+        self.deck1_amount_label.show()
+
+        self.deck2_amount_label = OutlinedLabel(self)
+        self.deck2_amount_label.resize(400, 50)
+        self.deck2_amount_label.setFont(QFont(FONT, 20))
+        self.deck2_amount_label.setText("30")
+        self.deck2_amount_label.move(self.entities["Deck2"].x - 25 + self.card_width//2,
+                                     self.entities["Deck2"].y - 20 + self.card_height//2)
+        self.deck2_amount_label.show()
+
+        self.card_back1_label = QLabel(self)
+        self.card_back1_label.resize(self.card_width+10, self.card_height+10)
+        self.card_back1_label.move(self.entities["Deck1"].x-5, self.entities["Deck1"].y-5)
+        self.card_back1_label.setScaledContents(True)
+        self.card_back1_label.setPixmap(QPixmap("ui/images/cardback.png"))
+
+        self.card_back2_label = QLabel(self)
+        self.card_back2_label.resize(self.card_width+10, self.card_height+10)
+        self.card_back2_label.move(self.entities["Deck2"].x-5, self.entities["Deck2"].y-5)
+        self.card_back2_label.setScaledContents(True)
+        self.card_back2_label.setPixmap(QPixmap("ui/images/cardback.png"))
 
         self.id_list = []
         self.anims = []
@@ -187,11 +214,26 @@ class MainWindow(QWidget):
                                                                                   cardID + ".png")))
         self.reorganise(hand)
         self.entities[entity.uuid] = self.entities[hand].cards[entity_zone_pos]
+        zone = self.entities[self.get_zone(HS_Zone.DECK, entity.controller.name)]
+        self.entities[entity.uuid].move(zone.x, zone.y)
         self.entities[hand].cards[entity_zone_pos].show()
+
+        self.card_back1_label.raise_()
+        self.card_back2_label.raise_()
+
+        self.deck1_amount_label.raise_()
+        self.deck2_amount_label.raise_()
 
     def change_card(self, entity):
         self.anims.append(ChangeAnim(self.entities[entity.uuid]))
         # self.entities[entity.uuid].rerender(entity)
+
+    def change_deck_amount(self, p_name, cards_amount):
+        if p_name[-1] == '1':
+            cur = self.deck1_amount_label
+        else:
+            cur = self.deck2_amount_label
+        self.add_animation(ChangeTextAnim(cur, str(cards_amount)))
 
     def add_hero(self, hero):
         zone = 'Face' + hero.controller.name[-1]
@@ -233,6 +275,8 @@ class MainWindow(QWidget):
             _zone = "Hand" + player_name[-1]
         elif zone == HS_Zone.PLAY:
             _zone = "Field" + player_name[-1]
+        elif zone == HS_Zone.DECK:
+            _zone = "Deck" + player_name[-1]
         elif zone == "Face":
             _zone = "Face" + player_name[-1]
         return _zone
@@ -298,7 +342,8 @@ class MainWindow(QWidget):
         self.update()
 
     def get_void_size(self, zoneID):
-        return self.void_size / (self.entities[zoneID].count + 1)
+        # return self.void_size / (self.entities[zoneID].count * 2 + 10)
+        return 1000//(self.entities[zoneID].count+1) - self.card_width
 
     def attack(self, source, target):
         zoneID_from = self.get_zone(HS_Zone.PLAY, source.controller.name)
@@ -313,14 +358,13 @@ class MainWindow(QWidget):
             zoneID_to = self.get_zone("Face", target.controller.name)
 
         card1 = self.entities[source.uuid]
-        card1.raise_()
         # cord_x_to = self.entities[zoneID_to].x + (cardPos2 * (self.card_width + self.void_size))
         # cord_x_from = self.entities[zoneID_from].x + (cardPos1 * (self.card_width + self.void_size))
         # prev_card_x = card1.x
         # prev_card_y = card1.y
         cord_x_to = self.entities[zoneID_to].x + (target_pos * (self.card_width + self.get_void_size(zoneID_from)))
         cord_x_from = self.entities[zoneID_from].x + (source_pos * (self.card_width + self.get_void_size(zoneID_from)))
-        self.add_animation(MoveCardAnim(card1, cord_x_to, self.entities[zoneID_to].y))
+        self.add_animation(MoveCardAnim(card1, cord_x_to, self.entities[zoneID_to].y, True))
         self.add_animation(MoveCardAnim(card1, cord_x_from, self.entities[zoneID_from].y))
         # self.add_animation(MoveCardAnim(card1, prev_card_x, prev_card_y))
 
