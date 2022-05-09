@@ -404,6 +404,7 @@ class Choice(GameAction):
     def choose(self, card):
         if card not in self.cards:
             raise InvalidAction("%r is not a valid choice (one of %r)" % (card, self.cards))
+        self.broadcast(self.player, 1, self.cards, card)
         for action in self.callback:
             self.source.game.trigger(
                 self.source, [action], [self.player, self.cards, card])
@@ -530,6 +531,8 @@ class MulliganChoice(GameAction):
 
     def choose(self, *cards):
         self.player.max_hand_size = 20  # loose the limitter temporarily
+        self.broadcast(self.player, 1, *cards)
+
         self.player.draw(len(cards))
         for card in cards:
             assert card in self.cards
@@ -538,6 +541,7 @@ class MulliganChoice(GameAction):
         self.player.shuffle_deck()
         self.player.max_hand_size = 10
         self.player.mulligan_state = Mulligan.DONE
+
 
         if self.player.opponent.mulligan_state == Mulligan.DONE:
             self.callback()

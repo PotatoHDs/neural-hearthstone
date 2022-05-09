@@ -1,10 +1,14 @@
+import json
+
+import rel
+import websocket
 from PyQt6.QtGui import QFontDatabase
 from hearthstone.enums import BlockType, Zone
 
 from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
-from fireplace.actions import Attack, Summon, Hit, EndTurn
+from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice
 from fireplace.card import HeroPower, Hero, Character
 from fireplace.managers import BaseObserver
 from ui.ui import MainWindow
@@ -107,13 +111,13 @@ class UiObserver(BaseObserver):
 
     def action_start(self, action_type, source, index, target):
         # if type == BlockType.
-        if action_type == BlockType.ATTACK:
-            # self.window.attack(source, target)
-            print(target.zone_position)
-            print(source.zone_position)
-            print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
-        elif action_type == BlockType.TRIGGER:
-            print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
+        # if action_type == BlockType.ATTACK:
+        #     # self.window.attack(source, target)
+        #     print(target.zone_position)
+        #     print(source.zone_position)
+        #     print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
+        # elif action_type == BlockType.TRIGGER:
+        #     print(f"Action started,\n {action_type=}\n {source=}\n {index=}\n {target=}")
         # print(action_type)
         pass
 
@@ -165,7 +169,70 @@ class UiObserver(BaseObserver):
 
 
 class HsObserver(BaseObserver):
-    pass
+    def trigger_action(self, action, source, at, *args):
+        # print(f"Trigger, \n {action=}\n {source=}\n {at=}\n {args=}")
+        if at != 1:
+            return
+        action_type = type(action)
+        packet_type = "unknown"
+        if action_type == Attack:
+            packet_type = "attack"
+            # print(f"Attack,\n {action=}\n")
+        elif action_type == Play:
+            packet_type = "play"
+        elif action_type == EndTurn:
+            packet_type = "endturn"
+            # print(f"End turn, \n {action=}\n {source=}\n {args=}")
+        elif action_type == Discover:
+            packet_type = "discover"
+        elif action_type == MulliganChoice:
+            packet_type = "mulligan"
+        elif action_type == GenericChoice:
+            packet_type = "choice"
+            # print(f"Choice, \n {action=}\n {source=}\n {args=}")
+        if packet_type != "unknown":
+            values = [str(el.uuid) for el in args if el is not None and type(el) != int]
+
+            res = {
+                "data": {
+                    "action": packet_type,
+                    "values": values
+                }
+            }
+
+            json_str = json.dumps(res, indent=4)
+            print(json_str)
+        # else:
+        # if isinstance(action, Choice):
+        # print(f"Choice, \n {action=}\n {source=}\n {args=}")
+
+        # elif type(action) == Mulligan
+
+        # print(f"Summon, \n {action=}\n {source=}\n {args=}")
+        # if type(entity) == Hero and type(action) == Summon:
+        #
+        #     print(f"Summoned Hero,\n {action=}\n {entity=}\n {source=}\n")
+        # elif type(entity) == HeroPower and type(action) == Summon:
+        #     print(f"Summoned hero power,\n {action=}\n {entity=}\n {source=}\n")
+        # elif type(action) == Attack:
+        #     print(f"Attacking,\n {action=}\n {entity=}\n {source[0]=}\n")
+        pass
+
+
+def on_message(ws, message):
+    print(message)
+
+
+def on_error(ws, error):
+    print(error)
+
+
+def on_close(ws, close_status_code, close_msg):
+    print("### closed ###")
+
+
+def on_open(ws):
+    print("Opened connection")
 
 
 def main():
@@ -192,7 +259,16 @@ def main():
     # with open("style.qss", "r") as f:
     #     _style = f.read()
     #     app.setStyleSheet(_style)
-
+    # websocket.enableTrace(True)
+    # ws = websocket.WebSocketApp("wss://api.gemini.com/v1/marketdata/BTCUSD",
+    #                             on_open=on_open,
+    #                             on_message=on_message,
+    #                             on_error=on_error,
+    #                             on_close=on_close)
+    #
+    # ws.run_forever(dispatcher=rel)  # Set dispatcher to automatic reconnection
+    # rel.signal(2, rel.abort)  # Keyboard Interrupt
+    # rel.dispatch()
     window = MainWindow()
 
     g.init_game()
