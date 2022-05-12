@@ -19,18 +19,7 @@ cards_path = os.path.join("ui", "cards")
 print(f"PATH TO CARDS = {cards_path}")
 
 """
-    ZoneID: Deck1, Deck2, Hand1, Hand2, Field1, Field2, Graveyard1, Graveyard2
-    
     (known card zones): INVALID, PLAY, DECK, HAND, GRAVEYARD, REMOVEDFROMGAME, SETASIDE, SECRET
-    
-    Animations: {cardID: [list of animations]}
-"""
-
-"""
-    Done:
-        card movement
-        consequential animations
-        summoning (should be changed only for cards in deck)
 """
 
 FONT = "Belwe Bd BT Alt Style [Rus by m"
@@ -127,7 +116,7 @@ class QCard(QLabel):
             # print(f"All set, {entity.cost} {entity.health} {entity.atk}")
 
 
-class MainWindow(QWidget):
+class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setWindowTitle("Game Ep")
@@ -152,27 +141,27 @@ class MainWindow(QWidget):
         self.deck1_amount_label.resize(400, 50)
         self.deck1_amount_label.setFont(QFont(FONT, 20))
         self.deck1_amount_label.setText("30")
-        self.deck1_amount_label.move(self.entities["Deck1"].x - 25 + self.card_width//2,
-                                     self.entities["Deck1"].y - 20 + self.card_height//2)
+        self.deck1_amount_label.move(self.entities["Deck1"].x - 25 + self.card_width // 2,
+                                     self.entities["Deck1"].y - 20 + self.card_height // 2)
         self.deck1_amount_label.show()
 
         self.deck2_amount_label = OutlinedLabel(self)
         self.deck2_amount_label.resize(400, 50)
         self.deck2_amount_label.setFont(QFont(FONT, 20))
         self.deck2_amount_label.setText("30")
-        self.deck2_amount_label.move(self.entities["Deck2"].x - 25 + self.card_width//2,
-                                     self.entities["Deck2"].y - 20 + self.card_height//2)
+        self.deck2_amount_label.move(self.entities["Deck2"].x - 25 + self.card_width // 2,
+                                     self.entities["Deck2"].y - 20 + self.card_height // 2)
         self.deck2_amount_label.show()
 
         self.card_back1_label = QLabel(self)
-        self.card_back1_label.resize(self.card_width+10, self.card_height+10)
-        self.card_back1_label.move(self.entities["Deck1"].x-5, self.entities["Deck1"].y-5)
+        self.card_back1_label.resize(self.card_width + 10, self.card_height + 10)
+        self.card_back1_label.move(self.entities["Deck1"].x - 5, self.entities["Deck1"].y - 5)
         self.card_back1_label.setScaledContents(True)
         self.card_back1_label.setPixmap(QPixmap("ui/images/cardback.png"))
 
         self.card_back2_label = QLabel(self)
-        self.card_back2_label.resize(self.card_width+10, self.card_height+10)
-        self.card_back2_label.move(self.entities["Deck2"].x-5, self.entities["Deck2"].y-5)
+        self.card_back2_label.resize(self.card_width + 10, self.card_height + 10)
+        self.card_back2_label.move(self.entities["Deck2"].x - 5, self.entities["Deck2"].y - 5)
         self.card_back2_label.setScaledContents(True)
         self.card_back2_label.setPixmap(QPixmap("ui/images/cardback.png"))
 
@@ -242,6 +231,15 @@ class MainWindow(QWidget):
         self.entities[zone].cards.append(QCard(self, self.card_width, self.card_height, hero))
         self.entities[zone].cards[entity_zone_pos].setObjectName(str(hero.uuid))
         self.entities[zone].cards[entity_zone_pos].setScaledContents(True)
+
+        if not os.path.exists(os.path.join(cards_path, cardID + ".png")):
+            req = Request(
+                'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
+                    cardID),
+                headers={'User-Agent': 'Mozilla/5.0'})
+            webpage = urlopen(req).read()
+            with open("ui/cards/{}.png".format(cardID), "wb") as file:
+                file.write(webpage)
         self.entities[zone].cards[entity_zone_pos].setPixmap(QPixmap(os.path.join(cards_path,
                                                                                   cardID + ".png")))
         self.entities[zone].cards[entity_zone_pos].show()
@@ -258,7 +256,7 @@ class MainWindow(QWidget):
         card = self.entities[entity.uuid]  # cardPos: original position
         self.entities[zoneID_from].cards.remove(card)
         self.reorganise(zoneID_from)
-        position = entity.zone_position-1
+        position = entity.zone_position - 1
 
         # moving to another position
         self.entities[zoneID_to].cards.insert(position, card)
@@ -346,18 +344,18 @@ class MainWindow(QWidget):
 
     def get_void_size(self, zoneID):
         # return self.void_size / (self.entities[zoneID].count * 2 + 10)
-        return 1000//(self.entities[zoneID].count+1) - self.card_width
+        return 1000 // (self.entities[zoneID].count + 1) - self.card_width
 
     def attack(self, source, target):
         zoneID_from = self.get_zone(HS_Zone.PLAY, source.controller.name)
         zoneID_to = self.get_zone(HS_Zone.PLAY, target.controller.name)
-        target_pos = target.zone_position-1
+        target_pos = target.zone_position - 1
         source_pos = source.zone_position - 1
         if type(source) == Hero:
-            source_pos+=1
+            source_pos += 1
             zoneID_from = self.get_zone("Face", source.controller.name)
         if type(target) == Hero:
-            target_pos+=1
+            target_pos += 1
             zoneID_to = self.get_zone("Face", target.controller.name)
 
         card1 = self.entities[source.uuid]
@@ -371,6 +369,46 @@ class MainWindow(QWidget):
         self.add_animation(MoveCardAnim(card1, cord_x_from, self.entities[zoneID_from].y))
         # self.add_animation(MoveCardAnim(card1, prev_card_x, prev_card_y))
 
+    def card_choice(self, cards):
+        background = QWidget(objectName='background')
+        background.setStyleSheet('''#background { background: rgba(64, 64, 64, 64); }''')
+        backLayout = QVBoxLayout(background)
+        container = QWidget(self, objectName="Container")
+        backLayout.addWidget(container, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
+        layout = QHBoxLayout(container)
+        layout.setContentsMargins(10, 10, 10, 10)
+        layout.setSpacing(20)
+
+        choice_cards = []
+        for entity in cards:
+            cardID = entity.id
+
+            if not os.path.exists(os.path.join(cards_path, cardID + ".png")):
+                req = Request(
+                    'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
+                        cardID),
+                    headers={'User-Agent': 'Mozilla/5.0'})
+                webpage = urlopen(req).read()
+                with open("ui/cards/{}.png".format(cardID), "wb") as file:
+                    file.write(webpage)
+
+            card = QLabel(self)
+            choice_cards.append(card)
+            card.setScaledContents(True)
+            card.setPixmap(QPixmap(os.path.join(cards_path, cardID + ".png")))
+            layout.addWidget(card)
+
+        # actually implement getting chosen ones and updating through signals(?)
+        i = [0, 1]  # chosen ones e.g
+        for j in range(len(choice_cards)):
+            if j not in i:
+                opacity_effect = QGraphicsOpacityEffect()
+                opacity_effect.setOpacity(0.5)
+                choice_cards[j].setGraphicsEffect(opacity_effect)
+
+        self.setCentralWidget(background)
+        # also probably use signals or smth else to get rid of choice window
+        # self.signal.connect(background.deleteLater)
 
     # def send_to_graveyard(self, entity, prev_zone):
     #     player_name = entity.controller.name

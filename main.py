@@ -65,9 +65,6 @@ def card_downloader():
         cls = cards.db[card]
         if not cls.collectible:
             continue
-        # if cls.type == CardType.HERO:
-        #     # Heroes are collectible...
-        #     continue
         collection.append(cls)
 
     print(len(collection))
@@ -112,6 +109,7 @@ class UiObserver(BaseObserver):
             print(f"End turn, \n {action=}\n {source=}\n {args=}")
             # print(f"Summon, \n {action=}\n {source=}\n {args=}")
         elif type(action) == MulliganChoice:
+            self.window.card_choice(source.choice.cards)
             self.window.change_deck_amount(source.name, len(source.deck))
             self.window.change_state("Mulligan")
         elif type(action) == BeginTurn:
@@ -268,15 +266,10 @@ def on_open(ws):
 
 
 def main():
-    card_downloader()
+    # card_downloader()
 
     args = Args()
     g = Game()
-
-    # for i in range(len(g.game.players[0].hand)):
-    #     print(g.game.players[0].hand[i])
-    # for i in range(len(g.game.players[1].hand)):
-    #     print(g.game.players[1].hand[i])
 
     app = QApplication(sys.argv)
 
@@ -309,29 +302,22 @@ def main():
     g.start_game()
     g.mulligan_choice()
     g.do_action([0, 0])
-    # g.do_action([0, 0])
     g.do_action([19, 0])
-    # g.do_action([0, 0])
     g.do_action([0, 0])
     g.do_action([19, 0])
+
     # tiny fin (or desk imp) attacks
     # g.do_action([10, 0])
     # g.do_action([10, 0])
-    for i in range(120):
-        try:
-            g.do_action([10, 0])
-        except GameOver:
-            print("Game is over")
-            break
+    # for i in range(120):
+    #     try:
+    #         g.do_action([10, 0])
+    #     except GameOver:
+    #         print("Game is over")
+    #         break
     # print(g.game.players[0].hand)
     # print(g.game.players[1].hand)
     # app.processEvents()
-
-    # test actions
-    # window.summon("VAN_CS2_120", 1)
-    # window.change_zone(1, "Hand2", "Field2")
-    # window.change_zone(1, "Hand2", "Field2", 0)
-    # window.change_zone(0, "Field2", "Hand2")
 
     sys.exit(app.exec())
 
