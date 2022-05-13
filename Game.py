@@ -37,8 +37,10 @@ class GameImp:
         #          "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
         #          "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
         #          ]
-        deck1 = ["SCH_145"]*30
-        deck2 = ["CORE_LOEA10_3"]*30
+        # deck1 = ["DAL_092"]*30
+        # deck2 = ["DAL_092"]*30
+        deck1 = ["LOOT_258"]*30
+        deck2 = ["LOOT_258"]*30
         c1 = CardClass(6)
         c2 = CardClass(3)
 

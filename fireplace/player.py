@@ -9,7 +9,7 @@ from .actions import Concede, Draw, Fatigue, Give, Hit, Steal, Summon
 from .aura import TargetableByAuras
 from .card import Card
 from .deck import Deck
-from .entity import Entity, slot_property
+from .entity import Entity, slot_property, int_property
 from .managers import PlayerManager
 from .utils import CardList
 from .config import Config #by AharaLab
@@ -41,8 +41,13 @@ class Player(Entity, TargetableByAuras):
 	spells_cost_health = slot_property("spells_cost_health")
 	murlocs_cost_health = slot_property("murlocs_cost_health")
 	type = CardType.PLAYER
+	used_mana = int_property("used_mana")
+	temp_mana = int_property("temp_mana")
+	# _max_mana = int_property("max_mana")
+	overload_locked = int_property("overload_locked")
 
 	def __init__(self, name, deck, hero):
+		self.ignore_scripts = True
 		self.starting_deck = deck
 		self.starting_hero = hero
 		self.data = None
@@ -66,14 +71,14 @@ class Player(Entity, TargetableByAuras):
 		self.last_card_played = None
 		self.cards_drawn_this_turn = 0
 		self.overloaded = 0
-		self.overload_locked = 0
+		# self.overload_locked = 0
 		self._max_mana = 0
 		self._start_hand_size = 3
 		self.playstate = PlayState.INVALID
-		self.temp_mana = 0
+		# self.temp_mana = 0
 		self.timeout = 75
 		self.times_hero_power_used_this_game = 0
-		self.used_mana = 0
+		# self.used_mana = 0
 		self.minions_killed_this_turn = 0
 		self.weapon = None
 		self.zone = Zone.INVALID
@@ -126,7 +131,9 @@ class Player(Entity, TargetableByAuras):
 
 	@max_mana.setter
 	def max_mana(self, amount):
+		prev_value = self._max_mana
 		self._max_mana = min(self.max_resources, max(0, amount))
+		self.game.manager.change_card(self, "max_mana", prev_value, self._max_mana)
 		self.log("%s is now at %i mana crystals", self, self._max_mana)
 
 	@property

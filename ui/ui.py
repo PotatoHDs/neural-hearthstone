@@ -167,6 +167,22 @@ class MainWindow(QMainWindow):
         self.card_back2_label.setScaledContents(True)
         self.card_back2_label.setPixmap(QPixmap("ui/images/cardback.png"))
 
+        self.mana_label1 = QLabel(self)
+        self.mana_label1.resize(400, 50)
+        self.mana_label1.setFont(QFont(FONT, 20))
+        self.mana_label1.setText("mana: 0/0")
+        self.mana_label1.move(self.entities["Deck1"].x,
+                                self.entities["Deck1"].y - 50)
+        self.mana_label1.show()
+
+        self.mana_label2 = QLabel(self)
+        self.mana_label2.resize(400, 50)
+        self.mana_label2.setFont(QFont(FONT, 20))
+        self.mana_label2.setText("mana: 0/0")
+        self.mana_label2.move(self.entities["Deck2"].x,
+                              self.entities["Deck2"].y + 25 + self.card_height)
+        self.mana_label2.show()
+
         self.id_list = []
         self.anims = []
         self.start_timer()
@@ -225,6 +241,13 @@ class MainWindow(QMainWindow):
         else:
             cur = self.deck2_amount_label
         self.add_animation(ChangeTextAnim(cur, str(cards_amount)))
+
+    def change_mana(self, p_name, max_mana, mana):
+        if p_name[-1] == '1':
+            cur = self.mana_label1
+        else:
+            cur = self.mana_label2
+        self.add_animation(ChangeTextAnim(cur, "mana: " + str(mana) + "/" + str(max_mana)))
 
     def add_hero(self, hero):
         zone = 'Face' + hero.controller.name[-1]

@@ -13,6 +13,7 @@ from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, Mu
 from fireplace.card import HeroPower, Hero, Character
 from fireplace.exceptions import GameOver
 from fireplace.managers import BaseObserver
+from fireplace.player import Player
 from ui.ui import MainWindow
 from PyQt6.QtWidgets import *
 import sys
@@ -171,6 +172,12 @@ class UiObserver(BaseObserver):
             self.window.change_card(card)
             print(f"Card changed,\n {card=}\n {field_name=}\n {prev_value=}\n {curr_value=}")
 
+        if isinstance(card, Player) and prev_value != curr_value and \
+                (field_name == "used_mana" or field_name == "temp_mana" or
+                 field_name == "max_mana" or field_name == "overload_locked"):
+            self.window.change_mana(card.name, card.max_mana, card.mana)
+            print(f"Mana changed, \n {field_name=}\n {card.mana=}\n {prev_value=}\n {curr_value=}")
+
     def change_zone(self, card, zone, prev_zone):
         # TODO: Fix entity_id of this classes
         # print(f"\n{card=}\n {card.zone_position=}\n {card.controller=}\n {zone=}\n {prev_zone=} ")
@@ -302,10 +309,11 @@ def main():
     g.game.manager.register(HsObserver())
     g.start_game()
     g.mulligan_choice()
-    g.do_action([0, 0])
-    g.do_action([19, 0])
-    g.do_action([0, 0])
-    g.do_action([19, 0])
+    # g.do_action([0, 0])
+    # g.do_action([19, 0])
+    for i in range(0, 4):
+        g.do_action([0, 0])
+        g.do_action([19, 0])
 
     # tiny fin (or desk imp) attacks
     # g.do_action([10, 0])
