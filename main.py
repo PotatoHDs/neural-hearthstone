@@ -109,9 +109,10 @@ class UiObserver(BaseObserver):
             print(f"End turn, \n {action=}\n {source=}\n {args=}")
             # print(f"Summon, \n {action=}\n {source=}\n {args=}")
         elif type(action) == MulliganChoice:
-            self.window.card_choice(source.choice.cards)
+            self.window.card_mulligan(source.choice.cards, args)
             self.window.change_deck_amount(source.name, len(source.deck))
             self.window.change_state("Mulligan")
+            print(f"Mulligan, \n {action=}\n {source=}\n {args=}")
         elif type(action) == BeginTurn:
             self.window.change_state(args[0].name + " turn")
             print(f"Begin turn, \n {action=}\n {source=}\n {args=}")

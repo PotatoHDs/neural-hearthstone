@@ -2,6 +2,8 @@ import math
 from copy import copy
 
 from PyQt6 import sip
+from PyQt6.QtGui import QPixmap
+from PyQt6.QtWidgets import *
 
 
 class Anim:
@@ -40,16 +42,16 @@ class MoveCardAnim(Anim):
         self.card.move(self.x, self.y)
 
 
-class DeathCardAnim(Anim):
-    def __init__(self, card):
+class DeleteWidgetAnim(Anim):
+    def __init__(self, widget):
         self.steps = 0
-        self.card = card
+        self.widget = widget
 
     def step(self):
         self.steps = 20
 
     def last_step(self):
-        sip.delete(self.card)
+        sip.delete(self.widget)
 
 class SuperAnim(Anim):
     def __init__(self):
@@ -90,5 +92,51 @@ class ChangeTextAnim(Anim):
     def last_step(self):
         self.label.setText(self.text)
 
+class BackgroundAnim(Anim):
+    def __init__(self, widget):
+        self.steps = 0
+        self.widget = widget
 
+    def step(self):
+        self.steps += 20
 
+    def last_step(self):
+        self.widget.setStyleSheet('background-color: rgba(64, 64, 64, 64);')
+
+class AddCardMulliganAnim(Anim):
+    def __init__(self, widget, card):
+        self.steps = 0
+        self.widget = widget
+        self.card = card
+
+    def step(self):
+        self.steps += 20
+
+    def last_step(self):
+        self.card.show()
+        self.widget.addWidget(self.card)
+
+class SetGraphicsEffectAnim(Anim):
+    def __init__(self, widget, effect):
+        self.steps = 0
+        self.widget = widget
+        self.effect = effect
+
+    def step(self):
+        self.steps += 20
+
+    def last_step(self):
+        self.widget.setGraphicsEffect(self.effect)
+
+class WaitAnim(Anim):
+    def __init__(self, speed):
+        self.speed = speed
+        self.steps = 0
+
+    def step(self):
+        if self.speed <= 0:
+            self.steps += 20
+        self.steps += self.speed
+
+    def last_step(self):
+        pass

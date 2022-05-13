@@ -12,7 +12,7 @@ from hearthstone.enums import Zone as HS_Zone
 from PyQt6.QtCore import Qt
 
 from fireplace.card import Spell, Hero
-from ui.animations import MoveCardAnim, DeathCardAnim, SuperAnim, ChangeAnim, ChangeTextAnim
+from ui.animations import *
 
 # cards_path = os.path.join(os.path.abspath(os.getcwd()), "ui", "cards")
 cards_path = os.path.join("ui", "cards")
@@ -120,6 +120,8 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setWindowTitle("Game Ep")
+
+        # self.setStyleSheet('background: rgb(255, 64, 64);')
 
         self.void_size = 20
         self.card_width = 128
@@ -294,7 +296,7 @@ class MainWindow(QMainWindow):
 
         # ql = QLabel(self)
         # ql.layout().removeWidget(ql)
-        self.add_animation(DeathCardAnim(label))
+        self.add_animation(DeleteWidgetAnim(label))
         # label.clear()
         self.reorganise(zone)
         # self.entities[hand].cards[entity.zone_position - 1].clear()
@@ -369,17 +371,20 @@ class MainWindow(QMainWindow):
         self.add_animation(MoveCardAnim(card1, cord_x_from, self.entities[zoneID_from].y))
         # self.add_animation(MoveCardAnim(card1, prev_card_x, prev_card_y))
 
-    def card_choice(self, cards):
-        background = QWidget(objectName='background')
-        background.setStyleSheet('''#background { background: rgba(64, 64, 64, 64); }''')
+    def card_mulligan(self, cards, args):
+        background = QWidget(self)
+        background.setObjectName("background")
+        # background.setStyleSheet('background-color: #000000;')
+        background.resize(1000, 1000)
         backLayout = QVBoxLayout(background)
-        container = QWidget(self, objectName="Container")
+        container = QWidget(self)
+        container.setObjectName("Container")
         backLayout.addWidget(container, alignment=QtCore.Qt.AlignmentFlag.AlignCenter)
         layout = QHBoxLayout(container)
         layout.setContentsMargins(10, 10, 10, 10)
         layout.setSpacing(20)
 
-        choice_cards = []
+        choice_cards = {}
         for entity in cards:
             cardID = entity.id
 
@@ -392,23 +397,30 @@ class MainWindow(QMainWindow):
                 with open("ui/cards/{}.png".format(cardID), "wb") as file:
                     file.write(webpage)
 
-            card = QLabel(self)
-            choice_cards.append(card)
+            card = QCard(self, self.card_width, self.card_height, entity)
+            choice_cards[entity.uuid] = card
             card.setScaledContents(True)
             card.setPixmap(QPixmap(os.path.join(cards_path, cardID + ".png")))
-            layout.addWidget(card)
+            # layout.addWidget(card)
+            self.add_animation(AddCardMulliganAnim(layout, card))
 
         # actually implement getting chosen ones and updating through signals(?)
-        i = [0, 1]  # chosen ones e.g
-        for j in range(len(choice_cards)):
-            if j not in i:
-                opacity_effect = QGraphicsOpacityEffect()
-                opacity_effect.setOpacity(0.5)
-                choice_cards[j].setGraphicsEffect(opacity_effect)
-
-        self.setCentralWidget(background)
+        # i = [0, 1]  # chosen ones e.g
+        for arg in args:
+            opacity_effect = QGraphicsOpacityEffect()
+            opacity_effect.setOpacity(0.5)
+            # choice_cards[arg.uuid].setGraphicsEffect(opacity_effect)
+            self.add_animation(WaitAnim(1))
+            self.add_animation(SetGraphicsEffectAnim(choice_cards[arg.uuid], opacity_effect))
         # also probably use signals or smth else to get rid of choice window
         # self.signal.connect(background.deleteLater)
+        background.show()
+        # self.add_animation(BackgroundAnim(background))
+
+        # for card in choice_cards:
+        #     self.add_animation(DeleteWidgetAnim(card))
+        self.add_animation(WaitAnim(1))
+        self.add_animation(DeleteWidgetAnim(background))
 
     # def send_to_graveyard(self, entity, prev_zone):
     #     player_name = entity.controller.name
