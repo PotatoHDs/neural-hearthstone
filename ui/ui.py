@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import *
 from hearthstone.enums import Zone as HS_Zone
 from PyQt6.QtCore import Qt
 
-from fireplace.card import Spell, Hero
+from fireplace.card import Spell, Hero, HeroPower
 from ui.animations import *
 
 # cards_path = os.path.join(os.path.abspath(os.getcwd()), "ui", "cards")
@@ -81,7 +81,7 @@ class QCard(QLabel):
 
         overlay_path = "ui/images/spell.png"
 
-        if type(entity) != Spell:
+        if type(entity) != Spell and type(entity) != HeroPower:
             self.at = OutlinedLabel(self)
             self.hp = OutlinedLabel(self)
             self.hp.setText(str(entity.health))
@@ -108,7 +108,7 @@ class QCard(QLabel):
             entity = self.entity
         self.cost.setText(str(entity.cost))
         if type(entity) != Spell:
-            if entity.damage > 0:
+            if entity.damage > 0 :
                 self.hp.setColor(Qt.GlobalColor.red)
 
             self.hp.setText(str(entity.health))
@@ -129,8 +129,9 @@ class MainWindow(QMainWindow):
 
         self.entities = {'Deck1': Zone(1100, 600), 'Deck2': Zone(1100, 50),
                          'Hand1': Zone(200, 600), 'Hand2': Zone(200, 50),
-                         'Face1': Zone(52, 600), 'Face2': Zone(52, 50),
-                         'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
+                         'Face1': Zone(12, 600), 'Face2': Zone(12, 50),
+                         'Power1': Zone(100, 600), 'Power2': Zone(100, 50),
+                         'Field1': Zone(200, 430), 'Field2': Zone(200, 240),}
 
         self.turn_label = QLabel(self)
         self.turn_label.resize(400, 50)
@@ -273,6 +274,30 @@ class MainWindow(QMainWindow):
         self.entities[hero.uuid].move(self.entities[zone].x, self.entities[zone].y)
         # self.reorganise(zone)
 
+    def add_hero_power(self, heropower):
+        zone = 'Power' + heropower.controller.name[-1]
+        entity_zone_pos = heropower.zone_position - 1
+        cardID = heropower.id
+        self.entities[zone].cards.append(QCard(self, self.card_width, self.card_height, heropower))
+        self.entities[zone].cards[entity_zone_pos].setObjectName(str(heropower.uuid))
+        self.entities[zone].cards[entity_zone_pos].setScaledContents(True)
+
+        if not os.path.exists(os.path.join(cards_path, cardID + ".png")):
+            req = Request(
+                'https://art.hearthstonejson.com/v1/render/latest/enUS/256x/{}.png'.format(
+                    cardID),
+                headers={'User-Agent': 'Mozilla/5.0'})
+            webpage = urlopen(req).read()
+            with open("ui/cards/{}.png".format(cardID), "wb") as file:
+                file.write(webpage)
+        self.entities[zone].cards[entity_zone_pos].setPixmap(QPixmap(os.path.join(cards_path,
+                                                                                  cardID + ".png")))
+        self.entities[zone].cards[entity_zone_pos].show()
+        self.entities[heropower.uuid] = self.entities[zone].cards[entity_zone_pos]
+
+        self.entities[heropower.uuid].move(self.entities[zone].x, self.entities[zone].y)
+        self.entities[heropower.uuid].raise_()
+
     def change_zone(self, entity, zoneID_from, zoneID_to):  # cardID: CardID, zoneID: ZoneID,
         player_name = entity.controller.name
         zoneID_from = self.get_zone(zoneID_from, player_name)
@@ -347,16 +372,6 @@ class MainWindow(QMainWindow):
         timer.start(10)  # 50 for debugging
 
     def animation(self):
-        # for id in list(self.anims.keys()):
-        #     if self.anims[id][0].steps >= 20:
-        #         self.anims[id][0].last_step()
-        #         if len(self.anims[id]) == 1:
-        #             del self.anims[id]
-        #         else:
-        #             self.anims[id].pop(0)
-        #         # print("card moved")
-        #         continue
-        #     self.anims[id][0].step()
         if 0 >= len(self.anims):
             return
         if self.anims[0].steps >= 20:
@@ -368,7 +383,6 @@ class MainWindow(QMainWindow):
         self.update()
 
     def get_void_size(self, zoneID):
-        # return self.void_size / (self.entities[zoneID].count * 2 + 10)
         return 1000 // (self.entities[zoneID].count + 1) - self.card_width
 
     def attack(self, source, target):
@@ -384,20 +398,34 @@ class MainWindow(QMainWindow):
             zoneID_to = self.get_zone("Face", target.controller.name)
 
         card1 = self.entities[source.uuid]
-        # cord_x_to = self.entities[zoneID_to].x + (cardPos2 * (self.card_width + self.void_size))
-        # cord_x_from = self.entities[zoneID_from].x + (cardPos1 * (self.card_width + self.void_size))
-        # prev_card_x = card1.x
-        # prev_card_y = card1.y
         cord_x_to = self.entities[zoneID_to].x + (target_pos * (self.card_width + self.get_void_size(zoneID_from)))
         cord_x_from = self.entities[zoneID_from].x + (source_pos * (self.card_width + self.get_void_size(zoneID_from)))
         self.add_animation(MoveCardAnim(card1, cord_x_to, self.entities[zoneID_to].y, True))
         self.add_animation(MoveCardAnim(card1, cord_x_from, self.entities[zoneID_from].y))
-        # self.add_animation(MoveCardAnim(card1, prev_card_x, prev_card_y))
+
+    def activate_hero_power(self, entity, target):
+        # This method place red square on target
+        opacity_effect = QGraphicsOpacityEffect()
+        opacity_effect.setOpacity(0.5)
+        self.add_animation(SetGraphicsEffectAnim(self.entities[entity.uuid], opacity_effect))
+        red_square = None
+        if target is not None:
+            red_square = QWidget(self)
+            red_square.setStyleSheet("background-color: red")
+            red_square.move(self.entities[target.uuid].x() - 30 + self.card_width // 2,
+                            self.entities[target.uuid].y() - 30 + self.card_height // 2)
+            red_square.resize(60, 60)
+            self.add_animation(AddWidgetAnim(red_square))
+        self.add_animation(WaitAnim(3))
+        clear_effect = QGraphicsOpacityEffect()
+        clear_effect.setOpacity(1)
+        self.add_animation(SetGraphicsEffectAnim(self.entities[entity.uuid], clear_effect))
+        if red_square is not None:
+            self.add_animation(DeleteWidgetAnim(red_square))
 
     def card_mulligan(self, cards, args):
         background = QWidget(self)
         background.setObjectName("background")
-        # background.setStyleSheet('background-color: #000000;')
         background.resize(1000, 1000)
         backLayout = QVBoxLayout(background)
         container = QWidget(self)
@@ -424,24 +452,15 @@ class MainWindow(QMainWindow):
             choice_cards[entity.uuid] = card
             card.setScaledContents(True)
             card.setPixmap(QPixmap(os.path.join(cards_path, cardID + ".png")))
-            # layout.addWidget(card)
             self.add_animation(AddCardMulliganAnim(layout, card))
 
-        # actually implement getting chosen ones and updating through signals(?)
-        # i = [0, 1]  # chosen ones e.g
         for arg in args:
             opacity_effect = QGraphicsOpacityEffect()
             opacity_effect.setOpacity(0.5)
-            # choice_cards[arg.uuid].setGraphicsEffect(opacity_effect)
             self.add_animation(WaitAnim(1))
             self.add_animation(SetGraphicsEffectAnim(choice_cards[arg.uuid], opacity_effect))
-        # also probably use signals or smth else to get rid of choice window
-        # self.signal.connect(background.deleteLater)
         background.show()
-        # self.add_animation(BackgroundAnim(background))
 
-        # for card in choice_cards:
-        #     self.add_animation(DeleteWidgetAnim(card))
         self.add_animation(WaitAnim(1))
         self.add_animation(DeleteWidgetAnim(background))
 

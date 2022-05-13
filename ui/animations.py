@@ -140,3 +140,14 @@ class WaitAnim(Anim):
 
     def last_step(self):
         pass
+
+class AddWidgetAnim(Anim):
+    def __init__(self, widget):
+        self.widget = widget
+        self.steps = 0
+
+    def step(self):
+        self.steps += 20
+
+    def last_step(self):
+        self.widget.show()

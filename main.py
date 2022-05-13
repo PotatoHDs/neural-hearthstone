@@ -9,7 +9,7 @@ from Coach import Coach
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
 from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice, \
-    BeginTurn, Death
+    BeginTurn, Death, TargetedAction, Activate
 from fireplace.card import HeroPower, Hero, Character
 from fireplace.exceptions import GameOver
 from fireplace.managers import BaseObserver
@@ -104,6 +104,7 @@ class UiObserver(BaseObserver):
             self.window.add_hero(args[1])
             print(f"Summon, \n {action=}\n {args[1].controller=}\n {args[1]=}")
         elif type(action) == Summon and type(args[1]) == HeroPower:
+            self.window.add_hero_power(args[1])
             print(f"Summon, \n {action=}\n {args[1].controller=}\n {args[1]=}")
         elif type(action) == EndTurn:
             # self.window.end_turn(args[0].name)
@@ -123,6 +124,12 @@ class UiObserver(BaseObserver):
                 if player.playstate == PlayState.WON:
                     state = f"{player.name} wins!"
             self.window.change_state(state)
+        elif type(action) == Activate:
+            target = None
+            if len(args) > 2:
+                target = args[2]
+            print(f"Targeted action, \n {action=}\n {source=}\n {args=}")
+            self.window.activate_hero_power(args[1], target)
         # if type(entity) == Hero and type(action) == Summon:
         #
         #     print(f"Summoned Hero,\n {action=}\n {entity=}\n {source=}\n")
@@ -314,7 +321,9 @@ def main():
     for i in range(0, 4):
         g.do_action([0, 0])
         g.do_action([19, 0])
-
+    for i in range(0, 4):
+        g.do_action([17, 0])
+        g.do_action([19, 0])
     # tiny fin (or desk imp) attacks
     # g.do_action([10, 0])
     # g.do_action([10, 0])
