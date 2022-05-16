@@ -9,31 +9,72 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import os
+import numpy as np
 
 from utils import Bar, AverageMeter
 
 
-class SimpleNN(nn.Module):
-    def __init__(self, args):
-        super(SimpleNN, self).__init__()
-        self.ngpu = args.ngpu
-        self.dense1 = nn.Linear(args.n_in, 64, bias=False)
-        self.dense2 = nn.Linear(64, 128, bias=False)
-        self.dense3 = nn.Linear(128, args.n_out, bias=False)
-        self.dense4 = nn.Linear(128, 1, bias=False)
-
-        self.conv1 = nn.Conv2d(1, 64, 3, stride=1, padding=1)
-        self.conv2 = nn.Conv2d(64, 128, 3, stride=1, padding=1)
-
-        self.bn1 = nn.BatchNorm1d(64)
-        self.bn2 = nn.BatchNorm1d(128)
-
-        self.flat = nn.Flatten()
+class ConvBlock(nn.Module):
+    def __init__(self, ni, nf):
+        super(ConvBlock, self).__init__()
+        self.conv = nn.Conv1d(ni, nf, kernel_size=3, stride=1)
+        self.bn = nn.BatchNorm1d(nf)
 
     def forward(self, x):
-        x = self.flat(x)
-        x = F.relu(self.bn1(self.dense1(x)))
-        x = F.relu(self.bn2(self.dense2(x)))
+        x = F.relu(self.bn(self.conv(x)))
+        return x
+
+class ResBlock(nn.Module):
+    def __init__(self, ni, nf):
+        super(ResBlock, self).__init__()
+
+        self.conv1 = nn.Conv1d(nf, nf,
+                kernel_size=3, padding=1)
+        self.conv2 = nn.Conv1d(nf, nf,
+                kernel_size=3, padding=1)
+
+        self.bn1 = nn.BatchNorm1d(nf)
+        self.bn2 = nn.BatchNorm1d(nf)
+
+    def forward(self, x):
+        residual = x
+        x = F.relu(self.bn1(self.conv1(x)))
+        x = F.relu(self.bn2(self.conv2(residual+x)))
+        return x
+
+class SimpleNN(nn.Module):
+    def __init__(self, args):
+        self.layers = [16, 32, 64, 128, 256]
+        super(SimpleNN, self).__init__()
+        self.ngpu = args.ngpu
+        self.dense1 = nn.Linear(args.n_in, 8, bias=False)
+        self.dense2 = nn.Linear(256, 16, bias=False)
+        self.dense3 = nn.Linear(256, args.n_out, bias=False)
+        self.dense4 = nn.Linear(256, 1, bias=False)
+        
+        self.conv1 = nn.Conv1d(1, 16, kernel_size=3, padding=1)
+
+#         self.conv1 = nn.Conv2d(1, 64, 3, stride=1, padding=1)
+        self.conv2 = nn.Conv2d(64, 128, 3, stride=1, padding=1)
+
+        self.bn1 = nn.BatchNorm1d(8)
+        self.bn2 = nn.BatchNorm1d(16)
+
+        self.flat = nn.Flatten()
+        self.layers1 = nn.ModuleList([ConvBlock(self.layers[i], self.layers[i+1])
+            for i in range(len(self.layers) - 1)])
+        self.layers2 = nn.ModuleList([ResBlock(self.layers[i+1], self.layers[i+1])
+            for i in range(len(self.layers) - 1)])
+
+    def forward(self, x):
+#         x = self.flat(x)
+        x = F.relu(self.bn2(self.conv1(x)))
+#         x = F.relu(self.bn2(self.dense2(x)))
+       
+        for l1,l2 in zip(self.layers1, self.layers2):
+            x = l2(l1(x))
+            
+        x = x.view(-1,256)
         pi = self.dense3(x)
         v = self.dense4(x)
 
@@ -47,6 +88,7 @@ class NNetWrapper:
         self.args = args
 
         if (args.device.type == 'cuda') and (args.ngpu > 1):
+            print("NN using gpu")
             self.nnet = nn.DataParallel(self.nnet, list(range(args.ngpu)))
 
     def train(self, examples, logfile):
@@ -121,7 +163,8 @@ class NNetWrapper:
         state: np array with state
         """
         # preparing input
-        state = torch.FloatTensor(state.astype(np.float64)).unsqueeze(0).unsqueeze(0)
+        state = torch.FloatTensor(state.astype(np.float64))
+        state = state.view(-1).unsqueeze(0).unsqueeze(0)
         with torch.no_grad():
             state = Variable(state)
         # state = state.view(1, self.board_x, self.board_y)

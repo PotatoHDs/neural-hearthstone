@@ -1,0 +1,11 @@
+------ITER 1------
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 13
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended

@@ -1,7 +1,7 @@
-# import json
-#
-# import rel
-# import websocket
+import json
+
+import rel
+import websocket
 from PyQt6.QtGui import QFontDatabase
 # from hearthstone.enums import BlockType, Zone, Step, PlayState
 
@@ -25,6 +25,7 @@ import math
 import torch
 import torch.utils.data
 from observers import UiObserver, HsObserver
+
 
 class Args:
     def __init__(self):
@@ -81,6 +82,22 @@ def card_downloader():
                 file.write(webpage)
 
 
+def on_message(ws, message):
+    print(message)
+
+
+def on_error(ws, error):
+    print(error)
+
+
+def on_close(ws, close_status_code, close_msg):
+    print("### closed ###")
+
+
+def on_open(ws):
+    print("Opened connection")
+
+
 def main():
     args = Args()
     g = Game()
@@ -95,17 +112,24 @@ def main():
         print("Load trainExamples from file")
         c.load_train_examples()
     c.learn()
+    # obj = Args()
+    #
+    #
+    #
+    # setattr(obj, "property_name", "value")
+    # getattr(obj, "property_name")
 
-# def main():
-#     g = Game()
-#     g.init_game()
-#     player = g.game.players[0]
-#     for i in range(len(player.hand)):
-#         print(player.hand[i])
-#         print(player.hand[i].__class__.__name__)
-#         print(player.hand[i].card_class)
-#         print(player.hand[i].type)
-#         print(player.hand[i].cost)
+
+    # def main():
+    #     g = Game()
+    #     g.init_game()
+    #     player = g.game.players[0]
+    #     for i in range(len(player.hand)):
+    #         print(player.hand[i])
+    #         print(player.hand[i].__class__.__name__)
+    #         print(player.hand[i].card_class)
+    #         print(player.hand[i].type)
+    #         print(player.hand[i].cost)
 
     # card_downloader()
     #

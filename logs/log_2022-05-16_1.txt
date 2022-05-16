@@ -1,0 +1,8440 @@
+------ITER 1------
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 16
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 11
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 3
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 7
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 12
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 29
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 29
+Used HeroPower on 1
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 29
+Played card 3 on 9
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 29
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 29
+Played card 1 on 5
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 29
+Card 11 attacked card 1
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 29
+Card 10 attacked card 0
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 3
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 12
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 3
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 27
+Card 11 attacked card 1
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 27
+Played card 2 on 12
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 27
+Used HeroPower on 3
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 27
+Card 10 attacked card 1
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Played card 0 on 6
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Card 10 attacked card 2
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Played card 1 on 5
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Card 11 attacked card 1
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Card 10 attacked card 0
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 22
+Turn ended
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 22
+Played card 0 on 12
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 22
+Used HeroPower on 0
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 22
+Card 10 attacked card 3
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 22
+Turn ended
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 22
+Played card 0 on 8
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 22
+Used HeroPower on 5
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 43 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 15
+Turn ended
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 15
+Played card 0 on 17
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 15
+Card 10 attacked card 3
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 15
+Turn ended
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 15
+Played card 0 on 9
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 15
+Used HeroPower on 13
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 13
+Card 12 attacked card 1
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 13
+Card 10 attacked card 0
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 8
+Card 11 attacked card 1
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 8
+Turn ended
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 12
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 8
+Played card 1 on 1
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 8
+Turn ended
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 2
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 1
+Simulated 58 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 8
+Card 10 attacked card 1
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 8
+Card 10 attacked card 1
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 8
+Turn ended
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 4
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 17
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 16
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 24
+Player 2 health: 8
+Turn ended
+Simulated 65 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 8
+Card 10 attacked card 4
+Simulated 66 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 8
+Played card 0 on 0
+Simulated 67 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 8
+Card 11 attacked card 3
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 8
+Used HeroPower on 8
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 6
+Card 11 attacked card 0
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 4
+Turn ended
+Simulated 71 step
+ Game turn: 18
+Player 1 health: 24
+Player 2 health: 4
+Played card 0 on 0
+Simulated 72 step
+ Game turn: 18
+Player 1 health: 24
+Player 2 health: 4
+Used HeroPower on 5
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 4
+Card 11 attacked card 0
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 18
+Player 2 health: 4
+Card 10 attacked card 2
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 18
+Player 2 health: 4
+Turn ended
+Simulated 76 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 4
+Played card 0 on 14
+Simulated 77 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 4
+Card 12 attacked card 2
+Simulated 78 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 4
+Card 11 attacked card 1
+Simulated 79 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 4
+Used HeroPower on 5
+Simulated 80 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 2
+Card 10 attacked card 1
+Simulated 81 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 2
+Turn ended
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 18
+Player 2 health: 2
+Played card 0 on 12
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 18
+Player 2 health: 2
+Used HeroPower on 11
+Simulated 84 step
+ Game turn: 20
+Player 1 health: 16
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 85 step
+ Game turn: 20
+Player 1 health: 12
+Player 2 health: 2
+Turn ended
+Simulated 86 step
+ Game turn: 21
+Player 1 health: 12
+Player 2 health: 2
+Turn ended
+Simulated 87 step
+ Game turn: 22
+Player 1 health: 12
+Player 2 health: 2
+Played card 0 on 1
+Simulated 88 step
+ Game turn: 22
+Player 1 health: 12
+Player 2 health: 2
+Card 10 attacked card 1
+Simulated 89 step
+ Game turn: 22
+Player 1 health: 12
+Player 2 health: 2
+Used HeroPower on 4
+Simulated 90 step
+ Game turn: 22
+Player 1 health: 10
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 91 step
+ Game turn: 22
+Player 1 health: 9
+Player 2 health: 2
+Turn ended
+Simulated 92 step
+ Game turn: 23
+Player 1 health: 9
+Player 2 health: 2
+Played card 0 on 0
+Simulated 93 step
+ Game turn: 23
+Player 1 health: 9
+Player 2 health: 2
+Turn ended
+Simulated 94 step
+ Game turn: 24
+Player 1 health: 9
+Player 2 health: 2
+Played card 0 on 14
+Simulated 95 step
+ Game turn: 24
+Player 1 health: 9
+Player 2 health: 2
+Used HeroPower on 3
+Simulated 96 step
+ Game turn: 24
+Player 1 health: 7
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 97 step
+ Game turn: 24
+Player 1 health: 6
+Player 2 health: 2
+Card 11 attacked card 0
+Simulated 98 step
+ Game turn: 24
+Player 1 health: 5
+Player 2 health: 2
+Turn ended
+Simulated 99 step
+ Game turn: 25
+Player 1 health: 5
+Player 2 health: 2
+Played card 0 on 0
+Simulated 100 step
+ Game turn: 25
+Player 1 health: 5
+Player 2 health: 2
+Turn ended
+Simulated 101 step
+ Game turn: 26
+Player 1 health: 5
+Player 2 health: 2
+Played card 0 on 1
+Simulated 102 step
+ Game turn: 26
+Player 1 health: 5
+Player 2 health: 2
+Used HeroPower on 14
+Simulated 103 step
+ Game turn: 26
+Player 1 health: 3
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 104 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 2
+Card 11 attacked card 0
+Simulated 105 step
+ Game turn: 26
+Player 1 health: 1
+Player 2 health: 2
+Card 12 attacked card 0
+Executed 0 eps
+Self Play (1/25) Eps Time: 853.288s | Total: 0:14:13 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 17
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 13
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 5
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 3
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 14
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 4
+Simulated 8 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 0
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 3
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 2
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 3
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 15 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Played card 2 on 2
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Played card 1 on 0
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 19 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 20 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 11
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 23 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Used HeroPower on 6
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Played card 1 on 12
+Simulated 27 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 28 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 26
+Card 11 attacked card 1
+Simulated 29 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 26
+Turn ended
+Simulated 30 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Played card 1 on 9
+Simulated 31 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Played card 2 on 0
+Simulated 32 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 33 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Turn ended
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Played card 0 on 2
+Simulated 35 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Played card 0 on 16
+Simulated 36 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Card 10 attacked card 3
+Simulated 37 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Turn ended
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 26
+Played card 0 on 2
+Simulated 39 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 40 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 24
+Card 11 attacked card 0
+Simulated 41 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 20
+Turn ended
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Played card 0 on 5
+Simulated 43 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Card 10 attacked card 2
+Simulated 44 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Used HeroPower on 2
+Simulated 45 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 46 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 47 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 20
+Turn ended
+Simulated 48 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 20
+Played card 0 on 4
+Simulated 49 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 20
+Played card 0 on 8
+Simulated 50 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 20
+Played card 0 on 0
+Simulated 51 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 20
+Card 10 attacked card 2
+Simulated 52 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 20
+Turn ended
+Simulated 53 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 20
+Played card 0 on 0
+Simulated 54 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 55 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 20
+Used HeroPower on 6
+Simulated 56 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 57 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 20
+Turn ended
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 20
+Played card 0 on 5
+Simulated 60 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 20
+Used HeroPower on 5
+Simulated 61 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 62 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 15
+Card 11 attacked card 1
+Simulated 63 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 15
+Turn ended
+Simulated 64 step
+ Game turn: 15
+Player 1 health: 19
+Player 2 health: 15
+Played card 0 on 13
+Simulated 65 step
+ Game turn: 15
+Player 1 health: 19
+Player 2 health: 15
+Used HeroPower on 4
+Simulated 66 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 15
+Turn ended
+Simulated 67 step
+ Game turn: 16
+Player 1 health: 17
+Player 2 health: 15
+Played card 0 on 16
+Simulated 68 step
+ Game turn: 16
+Player 1 health: 17
+Player 2 health: 15
+Used HeroPower on 4
+Simulated 69 step
+ Game turn: 16
+Player 1 health: 17
+Player 2 health: 13
+Card 10 attacked card 0
+Simulated 70 step
+ Game turn: 16
+Player 1 health: 17
+Player 2 health: 10
+Turn ended
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 17
+Player 2 health: 10
+Played card 0 on 3
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 17
+Player 2 health: 10
+Used HeroPower on 5
+Simulated 73 step
+ Game turn: 17
+Player 1 health: 15
+Player 2 health: 10
+Card 10 attacked card 0
+Simulated 74 step
+ Game turn: 17
+Player 1 health: 12
+Player 2 health: 10
+Turn ended
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 12
+Player 2 health: 10
+Played card 0 on 0
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 12
+Player 2 health: 10
+Used HeroPower on 13
+Simulated 77 step
+ Game turn: 18
+Player 1 health: 12
+Player 2 health: 8
+Card 10 attacked card 0
+Simulated 78 step
+ Game turn: 18
+Player 1 health: 12
+Player 2 health: 5
+Turn ended
+Simulated 79 step
+ Game turn: 19
+Player 1 health: 12
+Player 2 health: 5
+Played card 0 on 1
+Simulated 80 step
+ Game turn: 19
+Player 1 health: 12
+Player 2 health: 5
+Card 11 attacked card 0
+Simulated 81 step
+ Game turn: 19
+Player 1 health: 7
+Player 2 health: 5
+Card 10 attacked card 1
+Simulated 82 step
+ Game turn: 19
+Player 1 health: 7
+Player 2 health: 5
+Used HeroPower on 0
+Simulated 83 step
+ Game turn: 19
+Player 1 health: 5
+Player 2 health: 5
+Turn ended
+Simulated 84 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 5
+Played card 0 on 9
+Simulated 85 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 5
+Card 10 attacked card 1
+Simulated 86 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 5
+Used HeroPower on 1
+Simulated 87 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 3
+Card 10 attacked card 0
+Simulated 88 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 2
+Turn ended
+Simulated 89 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 2
+Used HeroPower on 0
+Simulated 90 step
+ Game turn: 21
+Player 1 health: 3
+Player 2 health: 2
+Turn ended
+Simulated 91 step
+ Game turn: 22
+Player 1 health: 3
+Player 2 health: 2
+Card 11 attacked card 0
+Executed 1 eps
+Self Play (2/25) Eps Time: 795.316s | Total: 0:26:30 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 16
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 14
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 15
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 11
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 2
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Used HeroPower on 12
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 12
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 26
+Player 2 health: 28
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 28
+Used HeroPower on 13
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Played card 3 on 13
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Played card 4 on 5
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Played card 1 on 0
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Played card 3 on 9
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 24
+Turn ended
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 24
+Played card 0 on 4
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 24
+Card 10 attacked card 0
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 24
+Turn ended
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 24
+Used HeroPower on 17
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 22
+Played card 2 on 10
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 22
+Played card 2 on 4
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 22
+Card 12 attacked card 1
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 22
+Card 10 attacked card 1
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 20
+Turn ended
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 20
+Played card 0 on 4
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 20
+Played card 3 on 16
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 20
+Turn ended
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Played card 0 on 12
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 20
+Used HeroPower on 7
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 18
+Card 10 attacked card 1
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 14
+Turn ended
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 14
+Used HeroPower on 7
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Played card 3 on 0
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Played card 0 on 6
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Card 11 attacked card 0
+Simulated 47 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 48 step
+ Game turn: 12
+Player 1 health: 15
+Player 2 health: 14
+Turn ended
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 14
+Played card 1 on 2
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 14
+Played card 1 on 12
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 14
+Turn ended
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 15
+Player 2 health: 14
+Played card 0 on 7
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 15
+Player 2 health: 14
+Used HeroPower on 3
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 13
+Player 2 health: 14
+Card 11 attacked card 1
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 13
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 13
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 8
+Player 2 health: 14
+Turn ended
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 8
+Player 2 health: 14
+Played card 1 on 1
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 8
+Player 2 health: 14
+Played card 0 on 2
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 8
+Player 2 health: 14
+Used HeroPower on 5
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 8
+Player 2 health: 12
+Card 10 attacked card 2
+Simulated 63 step
+ Game turn: 15
+Player 1 health: 8
+Player 2 health: 12
+Turn ended
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 12
+Played card 1 on 5
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 12
+Played card 1 on 13
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 12
+Used HeroPower on 3
+Simulated 67 step
+ Game turn: 16
+Player 1 health: 6
+Player 2 health: 12
+Turn ended
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 12
+Played card 0 on 0
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 12
+Card 11 attacked card 0
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 5
+Used HeroPower on 3
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 3
+Card 10 attacked card 1
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 3
+Turn ended
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 6
+Player 2 health: 3
+Card 11 attacked card 0
+Executed 2 eps
+Self Play (3/25) Eps Time: 723.974s | Total: 0:36:11 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 6
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 3
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 14
+Simulated 4 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 3
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 9
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 29
+Used HeroPower on 4
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 27
+Card 10 attacked card 0
+Simulated 11 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 26
+Used HeroPower on 9
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 26
+Card 11 attacked card 0
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 25
+Played card 1 on 0
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 25
+Card 12 attacked card 0
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 23
+Turn ended
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 23
+Played card 0 on 6
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 23
+Played card 5 on 5
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 23
+Turn ended
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 23
+Used HeroPower on 4
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 21
+Played card 0 on 11
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 21
+Played card 1 on 3
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 21
+Card 10 attacked card 1
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 21
+Card 10 attacked card 0
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 27 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 18
+Card 12 attacked card 1
+Simulated 28 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 18
+Turn ended
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 18
+Used HeroPower on 10
+Simulated 30 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 18
+Played card 0 on 3
+Simulated 31 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 18
+Turn ended
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 18
+Played card 0 on 0
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 18
+Card 11 attacked card 0
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 16
+Played card 0 on 4
+Simulated 35 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 16
+Card 10 attacked card 1
+Simulated 36 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 16
+Used HeroPower on 11
+Simulated 37 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 14
+Card 12 attacked card 0
+Simulated 38 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 12
+Card 13 attacked card 0
+Simulated 39 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 11
+Card 11 attacked card 1
+Simulated 40 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 11
+Turn ended
+Simulated 41 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 11
+Played card 3 on 13
+Simulated 42 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 11
+Played card 4 on 0
+Simulated 43 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 11
+Used HeroPower on 5
+Simulated 44 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 11
+Turn ended
+Simulated 45 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 11
+Card 10 attacked card 1
+Simulated 46 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 11
+Played card 0 on 0
+Simulated 47 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 11
+Card 10 attacked card 1
+Simulated 48 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 11
+Card 11 attacked card 1
+Simulated 49 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 11
+Card 10 attacked card 2
+Simulated 50 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 11
+Used HeroPower on 3
+Simulated 51 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 9
+Card 11 attacked card 1
+Simulated 52 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 9
+Turn ended
+Simulated 53 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 9
+Played card 0 on 17
+Simulated 54 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 9
+Played card 3 on 5
+Simulated 55 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 9
+Turn ended
+Simulated 56 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 9
+Used HeroPower on 1
+Simulated 57 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 7
+Played card 0 on 8
+Simulated 58 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 7
+Card 11 attacked card 1
+Simulated 59 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 7
+Card 10 attacked card 1
+Simulated 60 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 7
+Card 10 attacked card 1
+Simulated 61 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 7
+Turn ended
+Simulated 62 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 7
+Played card 0 on 15
+Simulated 63 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 7
+Played card 1 on 3
+Simulated 64 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 7
+Played card 1 on 0
+Simulated 65 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 7
+Turn ended
+Simulated 66 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 7
+Played card 0 on 1
+Simulated 67 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 7
+Card 10 attacked card 3
+Simulated 68 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 7
+Used HeroPower on 3
+Simulated 69 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 5
+Turn ended
+Simulated 70 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 5
+Played card 0 on 9
+Simulated 71 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 5
+Card 11 attacked card 1
+Simulated 72 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 5
+Played card 0 on 7
+Simulated 73 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 5
+Used HeroPower on 1
+Simulated 74 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 5
+Card 10 attacked card 0
+Simulated 75 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 5
+Turn ended
+Simulated 76 step
+ Game turn: 17
+Player 1 health: 16
+Player 2 health: 5
+Card 11 attacked card 4
+Simulated 77 step
+ Game turn: 17
+Player 1 health: 16
+Player 2 health: 5
+Played card 0 on 2
+Simulated 78 step
+ Game turn: 17
+Player 1 health: 16
+Player 2 health: 5
+Card 10 attacked card 1
+Simulated 79 step
+ Game turn: 17
+Player 1 health: 16
+Player 2 health: 5
+Used HeroPower on 5
+Simulated 80 step
+ Game turn: 17
+Player 1 health: 16
+Player 2 health: 3
+Turn ended
+Simulated 81 step
+ Game turn: 18
+Player 1 health: 16
+Player 2 health: 3
+Played card 0 on 6
+Simulated 82 step
+ Game turn: 18
+Player 1 health: 16
+Player 2 health: 3
+Used HeroPower on 4
+Simulated 83 step
+ Game turn: 18
+Player 1 health: 14
+Player 2 health: 3
+Card 10 attacked card 0
+Simulated 84 step
+ Game turn: 18
+Player 1 health: 10
+Player 2 health: 3
+Card 12 attacked card 1
+Simulated 85 step
+ Game turn: 18
+Player 1 health: 10
+Player 2 health: 3
+Card 11 attacked card 0
+Simulated 86 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 3
+Turn ended
+Simulated 87 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 3
+Played card 0 on 6
+Simulated 88 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 3
+Card 10 attacked card 1
+Simulated 89 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 3
+Used HeroPower on 0
+Simulated 90 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 1
+Turn ended
+Simulated 91 step
+ Game turn: 20
+Player 1 health: 9
+Player 2 health: 1
+Played card 0 on 6
+Simulated 92 step
+ Game turn: 20
+Player 1 health: 9
+Player 2 health: 1
+Card 10 attacked card 0
+Simulated 93 step
+ Game turn: 20
+Player 1 health: 8
+Player 2 health: 1
+Used HeroPower on 11
+Simulated 94 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 1
+Card 11 attacked card 0
+Simulated 95 step
+ Game turn: 20
+Player 1 health: 4
+Player 2 health: 1
+Turn ended
+Simulated 96 step
+ Game turn: 21
+Player 1 health: 4
+Player 2 health: 1
+Turn ended
+Simulated 97 step
+ Game turn: 22
+Player 1 health: 4
+Player 2 health: 1
+Played card 0 on 2
+Simulated 98 step
+ Game turn: 22
+Player 1 health: 4
+Player 2 health: 1
+Used HeroPower on 0
+Simulated 99 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 1
+Card 11 attacked card 0
+Executed 3 eps
+Self Play (4/25) Eps Time: 753.389s | Total: 0:50:13 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 8
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 5
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 3
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 3
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 3
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 6
+Simulated 8 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 17
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 11 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 10
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 16
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 6
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 30
+Turn ended
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 30
+Played card 1 on 10
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 30
+Played card 1 on 7
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 30
+Turn ended
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 30
+Played card 0 on 17
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 30
+Turn ended
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 30
+Played card 1 on 7
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 30
+Played card 0 on 0
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 30
+Turn ended
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 30
+Played card 0 on 10
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 30
+Used HeroPower on 8
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 22
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 22
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 22
+Player 2 health: 30
+Turn ended
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 30
+Played card 0 on 4
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 30
+Used HeroPower on 1
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 22
+Turn ended
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 22
+Used HeroPower on 3
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 20
+Player 2 health: 22
+Played card 0 on 2
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 20
+Player 2 health: 22
+Turn ended
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 22
+Played card 0 on 0
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 22
+Used HeroPower on 10
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 17
+Card 10 attacked card 0
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 11
+Turn ended
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 11
+Played card 1 on 11
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 11
+Played card 1 on 6
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 11
+Played card 0 on 5
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 11
+Card 10 attacked card 2
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 11
+Turn ended
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 11
+Played card 0 on 10
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 11
+Card 11 attacked card 1
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 11
+Used HeroPower on 1
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 9
+Card 10 attacked card 0
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 3
+Turn ended
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 20
+Player 2 health: 3
+Played card 0 on 4
+Simulated 58 step
+ Game turn: 15
+Player 1 health: 20
+Player 2 health: 3
+Card 11 attacked card 0
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 14
+Player 2 health: 3
+Used HeroPower on 0
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 12
+Player 2 health: 3
+Turn ended
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 3
+Card 10 attacked card 0
+Executed 4 eps
+Self Play (5/25) Eps Time: 699.926s | Total: 0:58:19 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 8
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 14
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 6
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 12
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 11
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 28
+Played card 1 on 12
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 28
+Played card 3 on 11
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 28
+Played card 4 on 3
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Played card 0 on 1
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 26
+Turn ended
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 26
+Played card 0 on 16
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 26
+Played card 3 on 2
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 0 on 12
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 0
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Card 11 attacked card 2
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Card 11 attacked card 3
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 1
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 0 on 2
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 26
+Turn ended
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Played card 0 on 14
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Played card 0 on 0
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 24
+Card 11 attacked card 2
+Simulated 39 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 24
+Card 11 attacked card 1
+Simulated 40 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 24
+Turn ended
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 24
+Played card 0 on 1
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 24
+Used HeroPower on 7
+Simulated 43 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 24
+Card 10 attacked card 3
+Simulated 44 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 24
+Turn ended
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 24
+Used HeroPower on 2
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 22
+Played card 0 on 3
+Simulated 47 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 22
+Card 10 attacked card 1
+Simulated 48 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 22
+Card 10 attacked card 2
+Simulated 49 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 22
+Played card 0 on 15
+Simulated 50 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 22
+Card 10 attacked card 2
+Simulated 51 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 22
+Turn ended
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 22
+Played card 1 on 4
+Simulated 53 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 22
+Played card 1 on 3
+Simulated 54 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 55 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 22
+Turn ended
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 22
+Played card 0 on 2
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 22
+Card 11 attacked card 2
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 22
+Used HeroPower on 8
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 20
+Card 10 attacked card 3
+Simulated 60 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 20
+Turn ended
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 20
+Played card 0 on 11
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 20
+Played card 0 on 11
+Simulated 63 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 20
+Used HeroPower on 7
+Simulated 64 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 65 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 66 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 67 step
+ Game turn: 15
+Player 1 health: 9
+Player 2 health: 20
+Turn ended
+Simulated 68 step
+ Game turn: 16
+Player 1 health: 9
+Player 2 health: 20
+Played card 0 on 0
+Simulated 69 step
+ Game turn: 16
+Player 1 health: 9
+Player 2 health: 20
+Used HeroPower on 0
+Simulated 70 step
+ Game turn: 16
+Player 1 health: 9
+Player 2 health: 18
+Turn ended
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 9
+Player 2 health: 18
+Played card 0 on 0
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 9
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 73 step
+ Game turn: 17
+Player 1 health: 9
+Player 2 health: 18
+Turn ended
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 18
+Played card 0 on 10
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 18
+Used HeroPower on 5
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 16
+Turn ended
+Simulated 77 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 16
+Played card 0 on 3
+Simulated 78 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 16
+Turn ended
+Simulated 79 step
+ Game turn: 20
+Player 1 health: 9
+Player 2 health: 16
+Played card 0 on 12
+Simulated 80 step
+ Game turn: 20
+Player 1 health: 9
+Player 2 health: 16
+Used HeroPower on 2
+Simulated 81 step
+ Game turn: 20
+Player 1 health: 9
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 9
+Player 2 health: 14
+Turn ended
+Simulated 83 step
+ Game turn: 21
+Player 1 health: 9
+Player 2 health: 14
+Played card 0 on 2
+Simulated 84 step
+ Game turn: 21
+Player 1 health: 9
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 85 step
+ Game turn: 21
+Player 1 health: 9
+Player 2 health: 14
+Card 11 attacked card 1
+Simulated 86 step
+ Game turn: 21
+Player 1 health: 9
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 87 step
+ Game turn: 21
+Player 1 health: 9
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 88 step
+ Game turn: 21
+Player 1 health: 8
+Player 2 health: 14
+Used HeroPower on 4
+Simulated 89 step
+ Game turn: 21
+Player 1 health: 6
+Player 2 health: 14
+Turn ended
+Simulated 90 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 14
+Played card 0 on 15
+Simulated 91 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 14
+Used HeroPower on 1
+Simulated 92 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 12
+Turn ended
+Simulated 93 step
+ Game turn: 23
+Player 1 health: 6
+Player 2 health: 12
+Played card 0 on 0
+Simulated 94 step
+ Game turn: 23
+Player 1 health: 6
+Player 2 health: 12
+Card 10 attacked card 1
+Simulated 95 step
+ Game turn: 23
+Player 1 health: 6
+Player 2 health: 12
+Used HeroPower on 7
+Simulated 96 step
+ Game turn: 23
+Player 1 health: 4
+Player 2 health: 12
+Card 10 attacked card 1
+Simulated 97 step
+ Game turn: 23
+Player 1 health: 4
+Player 2 health: 12
+Turn ended
+Simulated 98 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 12
+Played card 0 on 13
+Simulated 99 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 12
+Used HeroPower on 9
+Simulated 100 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 10
+Card 10 attacked card 0
+Simulated 101 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 9
+Turn ended
+Simulated 102 step
+ Game turn: 25
+Player 1 health: 4
+Player 2 health: 9
+Card 10 attacked card 2
+Simulated 103 step
+ Game turn: 25
+Player 1 health: 4
+Player 2 health: 9
+Played card 0 on 10
+Simulated 104 step
+ Game turn: 25
+Player 1 health: 4
+Player 2 health: 9
+Used HeroPower on 5
+Simulated 105 step
+ Game turn: 25
+Player 1 health: 2
+Player 2 health: 9
+Turn ended
+Simulated 106 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 9
+Played card 0 on 6
+Simulated 107 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 9
+Card 10 attacked card 1
+Simulated 108 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 9
+Used HeroPower on 13
+Simulated 109 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 7
+Card 10 attacked card 0
+Simulated 110 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 2
+Turn ended
+Simulated 111 step
+ Game turn: 27
+Player 1 health: 2
+Player 2 health: 2
+Turn ended
+Simulated 112 step
+ Game turn: 28
+Player 1 health: 2
+Player 2 health: 2
+Card 10 attacked card 0
+Executed 5 eps
+Self Play (6/25) Eps Time: 754.589s | Total: 1:15:27 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 6
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 11
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 10
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 17
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 14
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 7
+Simulated 8 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 11
+Simulated 9 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 9
+Simulated 11 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 6
+Simulated 12 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 16
+Simulated 15 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 3
+Simulated 16 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 17 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 29
+Turn ended
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 29
+Played card 0 on 14
+Simulated 19 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 29
+Card 10 attacked card 2
+Simulated 20 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 29
+Turn ended
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 29
+Played card 0 on 2
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 29
+Card 10 attacked card 0
+Simulated 23 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 27
+Turn ended
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 27
+Played card 0 on 14
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 27
+Played card 0 on 9
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 27
+Card 11 attacked card 0
+Simulated 27 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 27
+Card 12 attacked card 0
+Simulated 28 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 27
+Card 10 attacked card 0
+Simulated 29 step
+ Game turn: 7
+Player 1 health: 23
+Player 2 health: 27
+Turn ended
+Simulated 30 step
+ Game turn: 8
+Player 1 health: 23
+Player 2 health: 27
+Card 12 attacked card 5
+Simulated 31 step
+ Game turn: 8
+Player 1 health: 23
+Player 2 health: 27
+Played card 0 on 15
+Simulated 32 step
+ Game turn: 8
+Player 1 health: 23
+Player 2 health: 27
+Card 10 attacked card 4
+Simulated 33 step
+ Game turn: 8
+Player 1 health: 23
+Player 2 health: 27
+Card 10 attacked card 0
+Simulated 34 step
+ Game turn: 8
+Player 1 health: 23
+Player 2 health: 23
+Turn ended
+Simulated 35 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 36 step
+ Game turn: 9
+Player 1 health: 21
+Player 2 health: 23
+Played card 0 on 3
+Simulated 37 step
+ Game turn: 9
+Player 1 health: 21
+Player 2 health: 23
+Card 11 attacked card 0
+Simulated 38 step
+ Game turn: 9
+Player 1 health: 17
+Player 2 health: 23
+Used HeroPower on 3
+Simulated 39 step
+ Game turn: 9
+Player 1 health: 15
+Player 2 health: 23
+Card 12 attacked card 3
+Simulated 40 step
+ Game turn: 9
+Player 1 health: 15
+Player 2 health: 23
+Card 13 attacked card 2
+Simulated 41 step
+ Game turn: 9
+Player 1 health: 15
+Player 2 health: 23
+Turn ended
+Simulated 42 step
+ Game turn: 10
+Player 1 health: 15
+Player 2 health: 23
+Played card 0 on 3
+Simulated 43 step
+ Game turn: 10
+Player 1 health: 15
+Player 2 health: 23
+Card 10 attacked card 2
+Simulated 44 step
+ Game turn: 10
+Player 1 health: 15
+Player 2 health: 23
+Card 11 attacked card 1
+Simulated 45 step
+ Game turn: 10
+Player 1 health: 15
+Player 2 health: 23
+Turn ended
+Simulated 46 step
+ Game turn: 11
+Player 1 health: 15
+Player 2 health: 23
+Played card 0 on 3
+Simulated 47 step
+ Game turn: 11
+Player 1 health: 15
+Player 2 health: 23
+Card 11 attacked card 1
+Simulated 48 step
+ Game turn: 11
+Player 1 health: 15
+Player 2 health: 23
+Used HeroPower on 8
+Simulated 49 step
+ Game turn: 11
+Player 1 health: 13
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 50 step
+ Game turn: 11
+Player 1 health: 12
+Player 2 health: 23
+Turn ended
+Simulated 51 step
+ Game turn: 12
+Player 1 health: 12
+Player 2 health: 23
+Used HeroPower on 2
+Simulated 52 step
+ Game turn: 12
+Player 1 health: 12
+Player 2 health: 21
+Played card 0 on 3
+Simulated 53 step
+ Game turn: 12
+Player 1 health: 12
+Player 2 health: 21
+Played card 0 on 7
+Simulated 54 step
+ Game turn: 12
+Player 1 health: 12
+Player 2 health: 21
+Card 10 attacked card 1
+Simulated 55 step
+ Game turn: 12
+Player 1 health: 12
+Player 2 health: 21
+Card 11 attacked card 0
+Simulated 56 step
+ Game turn: 12
+Player 1 health: 12
+Player 2 health: 15
+Turn ended
+Simulated 57 step
+ Game turn: 13
+Player 1 health: 12
+Player 2 health: 15
+Card 11 attacked card 0
+Simulated 58 step
+ Game turn: 13
+Player 1 health: 11
+Player 2 health: 15
+Used HeroPower on 5
+Simulated 59 step
+ Game turn: 13
+Player 1 health: 9
+Player 2 health: 15
+Card 10 attacked card 1
+Simulated 60 step
+ Game turn: 13
+Player 1 health: 9
+Player 2 health: 15
+Played card 0 on 5
+Simulated 61 step
+ Game turn: 13
+Player 1 health: 9
+Player 2 health: 15
+Turn ended
+Simulated 62 step
+ Game turn: 14
+Player 1 health: 9
+Player 2 health: 15
+Played card 0 on 5
+Simulated 63 step
+ Game turn: 14
+Player 1 health: 9
+Player 2 health: 15
+Card 10 attacked card 0
+Simulated 64 step
+ Game turn: 14
+Player 1 health: 9
+Player 2 health: 11
+Used HeroPower on 0
+Simulated 65 step
+ Game turn: 14
+Player 1 health: 9
+Player 2 health: 9
+Card 11 attacked card 0
+Simulated 66 step
+ Game turn: 14
+Player 1 health: 9
+Player 2 health: 3
+Card 12 attacked card 0
+Executed 6 eps
+Self Play (7/25) Eps Time: 730.979s | Total: 1:25:16 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 3
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 6
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 3
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 6
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 1
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 2
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 29
+Player 2 health: 30
+Turn ended
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 29
+Player 2 health: 30
+Played card 1 on 16
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 29
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 29
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 29
+Player 2 health: 28
+Turn ended
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 29
+Player 2 health: 28
+Played card 1 on 9
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 29
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 29
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Played card 2 on 6
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Used HeroPower on 4
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 23 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 26
+Turn ended
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 26
+Played card 1 on 17
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 2 on 1
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 2 on 8
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 0 on 4
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 17
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 26
+Turn ended
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Played card 0 on 7
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Card 10 attacked card 3
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 26
+Turn ended
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 26
+Played card 1 on 6
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 26
+Used HeroPower on 10
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 26
+Card 11 attacked card 1
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 43 step
+ Game turn: 11
+Player 1 health: 19
+Player 2 health: 26
+Turn ended
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 19
+Player 2 health: 26
+Played card 1 on 2
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 19
+Player 2 health: 26
+Played card 1 on 14
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 19
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 47 step
+ Game turn: 12
+Player 1 health: 19
+Player 2 health: 26
+Turn ended
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 26
+Played card 1 on 12
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 26
+Played card 0 on 9
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 26
+Used HeroPower on 0
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 26
+Turn ended
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 26
+Used HeroPower on 7
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 24
+Played card 0 on 0
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 24
+Played card 0 on 10
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 24
+Card 10 attacked card 3
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 24
+Card 10 attacked card 2
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 24
+Turn ended
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 24
+Played card 0 on 3
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 24
+Used HeroPower on 5
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 24
+Card 10 attacked card 2
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 24
+Turn ended
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 15
+Player 2 health: 24
+Played card 0 on 12
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 15
+Player 2 health: 24
+Used HeroPower on 12
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 15
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 15
+Player 2 health: 18
+Turn ended
+Simulated 67 step
+ Game turn: 17
+Player 1 health: 15
+Player 2 health: 18
+Played card 0 on 6
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 15
+Player 2 health: 18
+Used HeroPower on 0
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 13
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 18
+Card 11 attacked card 2
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 18
+Turn ended
+Simulated 72 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 18
+Played card 0 on 2
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 18
+Used HeroPower on 1
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 16
+Card 10 attacked card 3
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 16
+Card 11 attacked card 1
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 16
+Turn ended
+Simulated 77 step
+ Game turn: 19
+Player 1 health: 11
+Player 2 health: 16
+Played card 0 on 4
+Simulated 78 step
+ Game turn: 19
+Player 1 health: 11
+Player 2 health: 16
+Card 10 attacked card 0
+Simulated 79 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 16
+Used HeroPower on 2
+Simulated 80 step
+ Game turn: 19
+Player 1 health: 7
+Player 2 health: 16
+Card 11 attacked card 0
+Simulated 81 step
+ Game turn: 19
+Player 1 health: 5
+Player 2 health: 16
+Turn ended
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 16
+Played card 0 on 4
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 16
+Card 10 attacked card 2
+Simulated 84 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 16
+Used HeroPower on 13
+Simulated 85 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 14
+Card 11 attacked card 2
+Simulated 86 step
+ Game turn: 20
+Player 1 health: 5
+Player 2 health: 14
+Turn ended
+Simulated 87 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 14
+Played card 0 on 1
+Simulated 88 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 89 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 90 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 14
+Used HeroPower on 4
+Simulated 91 step
+ Game turn: 21
+Player 1 health: 3
+Player 2 health: 14
+Turn ended
+Simulated 92 step
+ Game turn: 22
+Player 1 health: 3
+Player 2 health: 14
+Used HeroPower on 11
+Simulated 93 step
+ Game turn: 22
+Player 1 health: 3
+Player 2 health: 12
+Played card 0 on 1
+Simulated 94 step
+ Game turn: 22
+Player 1 health: 3
+Player 2 health: 12
+Card 10 attacked card 1
+Simulated 95 step
+ Game turn: 22
+Player 1 health: 3
+Player 2 health: 12
+Turn ended
+Simulated 96 step
+ Game turn: 23
+Player 1 health: 3
+Player 2 health: 12
+Played card 0 on 10
+Simulated 97 step
+ Game turn: 23
+Player 1 health: 3
+Player 2 health: 12
+Used HeroPower on 5
+Simulated 98 step
+ Game turn: 23
+Player 1 health: 1
+Player 2 health: 12
+Turn ended
+Simulated 99 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 12
+Played card 0 on 7
+Simulated 100 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 12
+Used HeroPower on 8
+Simulated 101 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 10
+Card 11 attacked card 0
+Simulated 102 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 8
+Card 10 attacked card 0
+Simulated 103 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 6
+Turn ended
+Simulated 104 step
+ Game turn: 25
+Player 1 health: 1
+Player 2 health: 6
+Turn ended
+Simulated 105 step
+ Game turn: 26
+Player 1 health: 1
+Player 2 health: 6
+Played card 0 on 4
+Simulated 106 step
+ Game turn: 26
+Player 1 health: 1
+Player 2 health: 6
+Used HeroPower on 0
+Simulated 107 step
+ Game turn: 26
+Player 1 health: 1
+Player 2 health: 4
+Card 10 attacked card 0
+Simulated 108 step
+ Game turn: 26
+Player 1 health: 1
+Player 2 health: 2
+Card 11 attacked card 0
+Executed 7 eps
+Self Play (8/25) Eps Time: 769.360s | Total: 1:42:34 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 3
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 9
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 13
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 9
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Used HeroPower on 6
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 27
+Played card 5 on 6
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 27
+Used HeroPower on 15
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 27
+Used HeroPower on 9
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 25
+Played card 2 on 2
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 25
+Card 10 attacked card 0
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 24
+Card 11 attacked card 0
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 23
+Turn ended
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 23
+Played card 0 on 9
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 25
+Player 2 health: 23
+Turn ended
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 23
+Played card 0 on 3
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 23
+Card 10 attacked card 2
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 23
+Played card 2 on 5
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 23
+Used HeroPower on 3
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 21
+Card 10 attacked card 1
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 21
+Turn ended
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 21
+Played card 3 on 1
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 21
+Played card 1 on 0
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 21
+Turn ended
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 21
+Played card 0 on 7
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 21
+Card 11 attacked card 1
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 21
+Card 10 attacked card 0
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 19
+Card 12 attacked card 1
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 19
+Turn ended
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 19
+Played card 0 on 11
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 19
+Card 10 attacked card 3
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 19
+Turn ended
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 19
+Played card 1 on 6
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 19
+Card 10 attacked card 1
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 19
+Card 11 attacked card 1
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 19
+Card 10 attacked card 0
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 17
+Turn ended
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 17
+Played card 1 on 16
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 17
+Played card 1 on 11
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 17
+Played card 2 on 2
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 17
+Turn ended
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 17
+Played card 0 on 4
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 17
+Played card 0 on 4
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 17
+Card 10 attacked card 0
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 15
+Card 11 attacked card 3
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 15
+Turn ended
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 25
+Player 2 health: 15
+Played card 0 on 1
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 25
+Player 2 health: 15
+Card 10 attacked card 3
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 25
+Player 2 health: 15
+Used HeroPower on 3
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 15
+Card 10 attacked card 1
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 15
+Turn ended
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 15
+Used HeroPower on 2
+Simulated 58 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 13
+Played card 1 on 1
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 13
+Card 10 attacked card 1
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 13
+Card 12 attacked card 1
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 13
+Card 11 attacked card 0
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 8
+Turn ended
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 8
+Played card 1 on 0
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 8
+Played card 0 on 11
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 8
+Played card 0 on 10
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 8
+Turn ended
+Simulated 67 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 8
+Played card 0 on 8
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 8
+Played card 0 on 7
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 8
+Card 10 attacked card 1
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 8
+Card 10 attacked card 2
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 8
+Card 10 attacked card 2
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 8
+Turn ended
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 23
+Player 2 health: 8
+Played card 0 on 6
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 23
+Player 2 health: 8
+Used HeroPower on 5
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 21
+Player 2 health: 8
+Card 10 attacked card 3
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 21
+Player 2 health: 8
+Turn ended
+Simulated 77 step
+ Game turn: 19
+Player 1 health: 21
+Player 2 health: 8
+Played card 0 on 5
+Simulated 78 step
+ Game turn: 19
+Player 1 health: 21
+Player 2 health: 8
+Card 12 attacked card 1
+Simulated 79 step
+ Game turn: 19
+Player 1 health: 21
+Player 2 health: 8
+Used HeroPower on 11
+Simulated 80 step
+ Game turn: 19
+Player 1 health: 21
+Player 2 health: 6
+Card 10 attacked card 0
+Simulated 81 step
+ Game turn: 19
+Player 1 health: 21
+Player 2 health: 5
+Turn ended
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 21
+Player 2 health: 5
+Played card 0 on 0
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 21
+Player 2 health: 5
+Used HeroPower on 4
+Simulated 84 step
+ Game turn: 20
+Player 1 health: 19
+Player 2 health: 5
+Turn ended
+Simulated 85 step
+ Game turn: 21
+Player 1 health: 19
+Player 2 health: 5
+Played card 0 on 7
+Simulated 86 step
+ Game turn: 21
+Player 1 health: 19
+Player 2 health: 5
+Turn ended
+Simulated 87 step
+ Game turn: 22
+Player 1 health: 19
+Player 2 health: 5
+Used HeroPower on 12
+Simulated 88 step
+ Game turn: 22
+Player 1 health: 17
+Player 2 health: 5
+Played card 0 on 14
+Simulated 89 step
+ Game turn: 22
+Player 1 health: 17
+Player 2 health: 5
+Card 10 attacked card 1
+Simulated 90 step
+ Game turn: 22
+Player 1 health: 17
+Player 2 health: 5
+Turn ended
+Simulated 91 step
+ Game turn: 23
+Player 1 health: 17
+Player 2 health: 5
+Played card 0 on 3
+Simulated 92 step
+ Game turn: 23
+Player 1 health: 17
+Player 2 health: 5
+Turn ended
+Simulated 93 step
+ Game turn: 24
+Player 1 health: 17
+Player 2 health: 5
+Card 10 attacked card 5
+Simulated 94 step
+ Game turn: 24
+Player 1 health: 17
+Player 2 health: 5
+Played card 0 on 13
+Simulated 95 step
+ Game turn: 24
+Player 1 health: 17
+Player 2 health: 5
+Used HeroPower on 1
+Simulated 96 step
+ Game turn: 24
+Player 1 health: 15
+Player 2 health: 5
+Turn ended
+Simulated 97 step
+ Game turn: 25
+Player 1 health: 15
+Player 2 health: 5
+Played card 0 on 4
+Simulated 98 step
+ Game turn: 25
+Player 1 health: 15
+Player 2 health: 5
+Turn ended
+Simulated 99 step
+ Game turn: 26
+Player 1 health: 15
+Player 2 health: 5
+Played card 0 on 11
+Simulated 100 step
+ Game turn: 26
+Player 1 health: 15
+Player 2 health: 5
+Turn ended
+Simulated 101 step
+ Game turn: 27
+Player 1 health: 15
+Player 2 health: 5
+Card 11 attacked card 0
+Simulated 102 step
+ Game turn: 27
+Player 1 health: 15
+Player 2 health: 1
+Turn ended
+Simulated 103 step
+ Game turn: 28
+Player 1 health: 15
+Player 2 health: 1
+Played card 0 on 12
+Simulated 104 step
+ Game turn: 28
+Player 1 health: 15
+Player 2 health: 1
+Card 10 attacked card 5
+Simulated 105 step
+ Game turn: 28
+Player 1 health: 15
+Player 2 health: 1
+Used HeroPower on 1
+Simulated 106 step
+ Game turn: 28
+Player 1 health: 13
+Player 2 health: 1
+Turn ended
+Simulated 107 step
+ Game turn: 29
+Player 1 health: 13
+Player 2 health: 1
+Played card 0 on 2
+Simulated 108 step
+ Game turn: 29
+Player 1 health: 13
+Player 2 health: 1
+Turn ended
+Simulated 109 step
+ Game turn: 30
+Player 1 health: 13
+Player 2 health: 1
+Played card 0 on 12
+Simulated 110 step
+ Game turn: 30
+Player 1 health: 13
+Player 2 health: 1
+Card 10 attacked card 3
+Simulated 111 step
+ Game turn: 30
+Player 1 health: 13
+Player 2 health: 1
+Card 10 attacked card 4
+Simulated 112 step
+ Game turn: 30
+Player 1 health: 13
+Player 2 health: 1
+Used HeroPower on 5
+Simulated 113 step
+ Game turn: 30
+Player 1 health: 11
+Player 2 health: 1
+Turn ended
+Simulated 114 step
+ Game turn: 31
+Player 1 health: 11
+Player 2 health: 1
+Played card 0 on 5
+Simulated 115 step
+ Game turn: 31
+Player 1 health: 11
+Player 2 health: 1
+Turn ended
+Simulated 116 step
+ Game turn: 32
+Player 1 health: 11
+Player 2 health: 1
+Card 10 attacked card 0
+Simulated 117 step
+ Game turn: 32
+Player 1 health: 10
+Player 2 health: 1
+Played card 0 on 3
+Simulated 118 step
+ Game turn: 32
+Player 1 health: 10
+Player 2 health: 1
+Used HeroPower on 3
+Simulated 119 step
+ Game turn: 32
+Player 1 health: 8
+Player 2 health: 1
+Turn ended
+Simulated 120 step
+ Game turn: 33
+Player 1 health: 8
+Player 2 health: 1
+Played card 0 on 2
+Simulated 121 step
+ Game turn: 33
+Player 1 health: 8
+Player 2 health: 1
+Turn ended
+Simulated 122 step
+ Game turn: 34
+Player 1 health: 8
+Player 2 health: 1
+Card 11 attacked card 5
+Simulated 123 step
+ Game turn: 34
+Player 1 health: 8
+Player 2 health: 1
+Used HeroPower on 2
+Simulated 124 step
+ Game turn: 34
+Player 1 health: 6
+Player 2 health: 1
+Card 10 attacked card 3
+Simulated 125 step
+ Game turn: 34
+Player 1 health: 6
+Player 2 health: 1
+Played card 0 on 2
+Simulated 126 step
+ Game turn: 34
+Player 1 health: 6
+Player 2 health: 1
+Turn ended
+Simulated 127 step
+ Game turn: 35
+Player 1 health: 6
+Player 2 health: 1
+Played card 0 on 4
+Simulated 128 step
+ Game turn: 35
+Player 1 health: 6
+Player 2 health: 1
+Turn ended
+Simulated 129 step
+ Game turn: 36
+Player 1 health: 6
+Player 2 health: 1
+Card 11 attacked card 6
+Simulated 130 step
+ Game turn: 36
+Player 1 health: 6
+Player 2 health: 1
+Played card 0 on 9
+Simulated 131 step
+ Game turn: 36
+Player 1 health: 6
+Player 2 health: 1
+Used HeroPower on 8
+Simulated 132 step
+ Game turn: 36
+Player 1 health: 4
+Player 2 health: 1
+Card 10 attacked card 4
+Simulated 133 step
+ Game turn: 36
+Player 1 health: 4
+Player 2 health: 1
+Turn ended
+Simulated 134 step
+ Game turn: 37
+Player 1 health: 4
+Player 2 health: 1
+Played card 0 on 4
+Simulated 135 step
+ Game turn: 37
+Player 1 health: 4
+Player 2 health: 1
+Turn ended
+Simulated 136 step
+ Game turn: 38
+Player 1 health: 4
+Player 2 health: 1
+Played card 0 on 13
+Simulated 137 step
+ Game turn: 38
+Player 1 health: 4
+Player 2 health: 1
+Card 11 attacked card 0
+Simulated 138 step
+ Game turn: 38
+Player 1 health: 2
+Player 2 health: 1
+Card 12 attacked card 0
+Executed 8 eps
+Self Play (9/25) Eps Time: 834.821s | Total: 2:05:13 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 5
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 9
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 16
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 6
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 4
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 14
+Simulated 8 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 9
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 11 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 5
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 15 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 29
+Card 11 attacked card 1
+Simulated 16 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 29
+Turn ended
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 29
+Played card 0 on 14
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 29
+Card 10 attacked card 0
+Simulated 19 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 29
+Turn ended
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 29
+Played card 1 on 12
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 29
+Card 10 attacked card 0
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 23 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 28
+Played card 1 on 12
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 28
+Used HeroPower on 9
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 27 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 28
+Turn ended
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 28
+Played card 1 on 2
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 30 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 24
+Turn ended
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 24
+Played card 1 on 7
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 24
+Card 10 attacked card 0
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 24
+Card 11 attacked card 2
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 24
+Turn ended
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 24
+Played card 1 on 0
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 24
+Played card 0 on 4
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 24
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 39 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 16
+Turn ended
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 16
+Played card 0 on 3
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 16
+Card 10 attacked card 1
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 16
+Turn ended
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 16
+Played card 0 on 5
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 16
+Played card 0 on 6
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 16
+Used HeroPower on 16
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 47 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 14
+Turn ended
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 23
+Player 2 health: 14
+Played card 0 on 11
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 23
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 23
+Player 2 health: 14
+Played card 1 on 1
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 23
+Player 2 health: 14
+Played card 0 on 3
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 23
+Player 2 health: 14
+Turn ended
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 14
+Card 11 attacked card 2
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 14
+Played card 0 on 4
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 14
+Used HeroPower on 3
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 12
+Card 11 attacked card 1
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 12
+Turn ended
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 12
+Played card 0 on 3
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 12
+Card 10 attacked card 1
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 12
+Turn ended
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 12
+Played card 0 on 0
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 12
+Card 10 attacked card 0
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 10
+Used HeroPower on 6
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 8
+Card 11 attacked card 0
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 2
+Turn ended
+Simulated 67 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 2
+Played card 0 on 8
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 2
+Card 10 attacked card 1
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 2
+Card 11 attacked card 2
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 23
+Player 2 health: 2
+Turn ended
+Simulated 71 step
+ Game turn: 18
+Player 1 health: 23
+Player 2 health: 2
+Card 10 attacked card 0
+Executed 9 eps
+Self Play (10/25) Eps Time: 814.544s | Total: 2:15:45 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 17
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 3
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 9
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 1
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 4
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 11 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 17
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 13 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 3
+Simulated 14 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 1
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 16 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 4
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Played card 2 on 8
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Played card 3 on 4
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 30
+Played card 0 on 12
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 30
+Card 11 attacked card 2
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 30
+Played card 0 on 4
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 30
+Played card 0 on 3
+Simulated 31 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 30
+Card 10 attacked card 3
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 30
+Played card 0 on 3
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 30
+Used HeroPower on 5
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 30
+Played card 1 on 3
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 17
+Player 2 health: 30
+Turn ended
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 17
+Player 2 health: 30
+Played card 0 on 0
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 17
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 41 step
+ Game turn: 12
+Player 1 health: 17
+Player 2 health: 30
+Card 10 attacked card 3
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 17
+Player 2 health: 30
+Used HeroPower on 4
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 17
+Player 2 health: 28
+Turn ended
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Played card 0 on 11
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Played card 0 on 5
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Turn ended
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 28
+Played card 1 on 10
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 28
+Used HeroPower on 1
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 26
+Turn ended
+Simulated 52 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 26
+Played card 0 on 14
+Simulated 53 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 54 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 26
+Used HeroPower on 5
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 12
+Player 2 health: 26
+Card 11 attacked card 0
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 8
+Player 2 health: 26
+Turn ended
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 26
+Played card 1 on 15
+Simulated 59 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 26
+Played card 1 on 5
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 26
+Used HeroPower on 0
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 24
+Turn ended
+Simulated 62 step
+ Game turn: 17
+Player 1 health: 8
+Player 2 health: 24
+Used HeroPower on 2
+Simulated 63 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 24
+Card 11 attacked card 1
+Simulated 64 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 24
+Card 10 attacked card 1
+Simulated 65 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 24
+Played card 0 on 8
+Simulated 66 step
+ Game turn: 17
+Player 1 health: 6
+Player 2 health: 24
+Turn ended
+Simulated 67 step
+ Game turn: 18
+Player 1 health: 6
+Player 2 health: 24
+Played card 0 on 4
+Simulated 68 step
+ Game turn: 18
+Player 1 health: 6
+Player 2 health: 24
+Played card 0 on 6
+Simulated 69 step
+ Game turn: 18
+Player 1 health: 6
+Player 2 health: 24
+Turn ended
+Simulated 70 step
+ Game turn: 19
+Player 1 health: 6
+Player 2 health: 24
+Played card 0 on 5
+Simulated 71 step
+ Game turn: 19
+Player 1 health: 6
+Player 2 health: 24
+Turn ended
+Simulated 72 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 24
+Played card 0 on 4
+Simulated 73 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 24
+Card 10 attacked card 1
+Simulated 74 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 24
+Used HeroPower on 12
+Simulated 75 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 22
+Card 11 attacked card 0
+Simulated 76 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 17
+Turn ended
+Simulated 77 step
+ Game turn: 21
+Player 1 health: 6
+Player 2 health: 17
+Played card 0 on 4
+Simulated 78 step
+ Game turn: 21
+Player 1 health: 6
+Player 2 health: 17
+Turn ended
+Simulated 79 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 17
+Played card 0 on 17
+Simulated 80 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 17
+Used HeroPower on 2
+Simulated 81 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 15
+Card 10 attacked card 1
+Simulated 82 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 15
+Card 10 attacked card 0
+Simulated 83 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 10
+Card 11 attacked card 1
+Simulated 84 step
+ Game turn: 22
+Player 1 health: 6
+Player 2 health: 10
+Turn ended
+Simulated 85 step
+ Game turn: 23
+Player 1 health: 6
+Player 2 health: 10
+Played card 0 on 16
+Simulated 86 step
+ Game turn: 23
+Player 1 health: 6
+Player 2 health: 10
+Turn ended
+Simulated 87 step
+ Game turn: 24
+Player 1 health: 6
+Player 2 health: 10
+Played card 0 on 13
+Simulated 88 step
+ Game turn: 24
+Player 1 health: 6
+Player 2 health: 10
+Used HeroPower on 0
+Simulated 89 step
+ Game turn: 24
+Player 1 health: 6
+Player 2 health: 8
+Card 10 attacked card 0
+Simulated 90 step
+ Game turn: 24
+Player 1 health: 6
+Player 2 health: 3
+Card 11 attacked card 0
+Executed 10 eps
+Self Play (11/25) Eps Time: 814.154s | Total: 2:29:15 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 12
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 2
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 5 on 16
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 5
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 12
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 14
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Card 11 attacked card 2
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 11 step
+ Game turn: 3
+Player 1 health: 27
+Player 2 health: 30
+Turn ended
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Played card 1 on 7
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Played card 2 on 14
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 15 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 16 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 28
+Played card 1 on 12
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 28
+Turn ended
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Played card 1 on 5
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 25
+Card 11 attacked card 1
+Simulated 23 step
+ Game turn: 6
+Player 1 health: 27
+Player 2 health: 25
+Turn ended
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 25
+Played card 0 on 10
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 27
+Player 2 health: 25
+Turn ended
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 27
+Player 2 health: 25
+Played card 0 on 5
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 27
+Player 2 health: 25
+Played card 1 on 3
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 27
+Player 2 health: 25
+Used HeroPower on 0
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 27
+Player 2 health: 23
+Card 11 attacked card 0
+Simulated 30 step
+ Game turn: 8
+Player 1 health: 27
+Player 2 health: 21
+Card 10 attacked card 0
+Simulated 31 step
+ Game turn: 8
+Player 1 health: 27
+Player 2 health: 18
+Turn ended
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 27
+Player 2 health: 18
+Played card 0 on 5
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 27
+Player 2 health: 18
+Card 10 attacked card 1
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 27
+Player 2 health: 18
+Turn ended
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 27
+Player 2 health: 18
+Played card 0 on 10
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 27
+Player 2 health: 18
+Played card 0 on 3
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 27
+Player 2 health: 18
+Card 12 attacked card 2
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 27
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 39 step
+ Game turn: 10
+Player 1 health: 27
+Player 2 health: 16
+Card 11 attacked card 1
+Simulated 40 step
+ Game turn: 10
+Player 1 health: 27
+Player 2 health: 16
+Turn ended
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 27
+Player 2 health: 16
+Played card 1 on 1
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 27
+Player 2 health: 16
+Played card 2 on 4
+Simulated 43 step
+ Game turn: 11
+Player 1 health: 27
+Player 2 health: 16
+Played card 1 on 7
+Simulated 44 step
+ Game turn: 11
+Player 1 health: 27
+Player 2 health: 16
+Card 10 attacked card 2
+Simulated 45 step
+ Game turn: 11
+Player 1 health: 27
+Player 2 health: 16
+Turn ended
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 27
+Player 2 health: 16
+Played card 0 on 5
+Simulated 47 step
+ Game turn: 12
+Player 1 health: 27
+Player 2 health: 16
+Card 10 attacked card 0
+Simulated 48 step
+ Game turn: 12
+Player 1 health: 27
+Player 2 health: 14
+Card 11 attacked card 0
+Simulated 49 step
+ Game turn: 12
+Player 1 health: 27
+Player 2 health: 12
+Used HeroPower on 3
+Simulated 50 step
+ Game turn: 12
+Player 1 health: 27
+Player 2 health: 10
+Turn ended
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 27
+Player 2 health: 10
+Played card 0 on 2
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 27
+Player 2 health: 10
+Card 10 attacked card 2
+Simulated 53 step
+ Game turn: 13
+Player 1 health: 27
+Player 2 health: 10
+Used HeroPower on 8
+Simulated 54 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 10
+Card 10 attacked card 2
+Simulated 55 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 10
+Card 11 attacked card 0
+Simulated 56 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 10
+Card 12 attacked card 0
+Simulated 57 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 10
+Turn ended
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 10
+Played card 0 on 1
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 10
+Card 10 attacked card 0
+Simulated 60 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 8
+Used HeroPower on 4
+Simulated 61 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 6
+Turn ended
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 6
+Played card 0 on 13
+Simulated 63 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 6
+Played card 0 on 5
+Simulated 64 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 6
+Turn ended
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 18
+Player 2 health: 6
+Card 11 attacked card 0
+Executed 11 eps
+Self Play (12/25) Eps Time: 794.300s | Total: 2:38:51 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 0
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 12
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 8
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 14
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Used HeroPower on 5
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 1
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 25
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 28
+Used HeroPower on 4
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 12
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Played card 4 on 7
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Played card 4 on 3
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 20 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 10
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 6
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 0 on 3
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 22
+Turn ended
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 22
+Played card 2 on 16
+Simulated 28 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 22
+Card 10 attacked card 3
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 22
+Card 11 attacked card 1
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 22
+Turn ended
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 22
+Played card 0 on 10
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 22
+Played card 2 on 3
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 18
+Turn ended
+Simulated 35 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 18
+Played card 0 on 7
+Simulated 36 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 18
+Played card 0 on 9
+Simulated 37 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 18
+Card 10 attacked card 2
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 18
+Turn ended
+Simulated 40 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Played card 1 on 4
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Played card 1 on 3
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 14
+Card 11 attacked card 0
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 12
+Card 12 attacked card 0
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 11
+Turn ended
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 11
+Played card 2 on 14
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 11
+Played card 2 on 0
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 11
+Played card 2 on 9
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 11
+Card 10 attacked card 1
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 11
+Card 11 attacked card 4
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 11
+Card 11 attacked card 0
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 16
+Player 2 health: 11
+Turn ended
+Simulated 53 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 11
+Card 12 attacked card 5
+Simulated 54 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 11
+Played card 0 on 14
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 11
+Played card 0 on 16
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 11
+Card 10 attacked card 2
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 11
+Used HeroPower on 8
+Simulated 58 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 9
+Card 10 attacked card 0
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 8
+Turn ended
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 8
+Played card 0 on 17
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 8
+Played card 0 on 3
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 8
+Played card 0 on 16
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 8
+Card 13 attacked card 1
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 8
+Card 10 attacked card 1
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 8
+Card 10 attacked card 0
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 11
+Player 2 health: 8
+Turn ended
+Simulated 67 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 8
+Played card 0 on 0
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 8
+Card 10 attacked card 3
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 8
+Card 10 attacked card 3
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 8
+Used HeroPower on 3
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 6
+Turn ended
+Simulated 72 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 6
+Played card 0 on 13
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 6
+Card 12 attacked card 1
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 6
+Used HeroPower on 0
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 6
+Card 12 attacked card 0
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 4
+Player 2 health: 6
+Card 10 attacked card 0
+Executed 12 eps
+Self Play (13/25) Eps Time: 780.514s | Total: 2:49:06 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 2 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 9
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 7
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 8
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 15
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 8
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 3 on 2
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 11 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Played card 4 on 15
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 13 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 14
+Simulated 14 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Played card 4 on 0
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Played card 1 on 2
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 20 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 28
+Played card 1 on 1
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 22 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 28
+Played card 1 on 13
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 8
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 28 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 24
+Card 11 attacked card 0
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 23
+Turn ended
+Simulated 30 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 23
+Played card 2 on 9
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 23
+Played card 2 on 8
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 23
+Played card 2 on 11
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 23
+Card 10 attacked card 2
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 23
+Turn ended
+Simulated 35 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 23
+Used HeroPower on 7
+Simulated 36 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 21
+Played card 0 on 1
+Simulated 37 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 21
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 17
+Card 11 attacked card 1
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 17
+Turn ended
+Simulated 40 step
+ Game turn: 13
+Player 1 health: 28
+Player 2 health: 17
+Played card 0 on 7
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 28
+Player 2 health: 17
+Card 11 attacked card 0
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 17
+Played card 1 on 11
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 17
+Card 10 attacked card 0
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 17
+Card 12 attacked card 1
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 17
+Turn ended
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 17
+Played card 0 on 1
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 17
+Played card 1 on 17
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 17
+Played card 1 on 8
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 17
+Card 10 attacked card 3
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 17
+Turn ended
+Simulated 51 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 17
+Played card 0 on 3
+Simulated 52 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 17
+Card 11 attacked card 0
+Simulated 53 step
+ Game turn: 15
+Player 1 health: 20
+Player 2 health: 17
+Played card 0 on 6
+Simulated 54 step
+ Game turn: 15
+Player 1 health: 20
+Player 2 health: 17
+Card 10 attacked card 3
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 20
+Player 2 health: 17
+Card 12 attacked card 1
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 20
+Player 2 health: 17
+Turn ended
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 17
+Played card 1 on 2
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 17
+Played card 0 on 7
+Simulated 59 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 17
+Card 10 attacked card 1
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 17
+Used HeroPower on 0
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 15
+Card 11 attacked card 0
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 20
+Player 2 health: 14
+Turn ended
+Simulated 63 step
+ Game turn: 17
+Player 1 health: 20
+Player 2 health: 14
+Played card 0 on 11
+Simulated 64 step
+ Game turn: 17
+Player 1 health: 20
+Player 2 health: 14
+Used HeroPower on 0
+Simulated 65 step
+ Game turn: 17
+Player 1 health: 18
+Player 2 health: 14
+Card 12 attacked card 4
+Simulated 66 step
+ Game turn: 17
+Player 1 health: 18
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 67 step
+ Game turn: 17
+Player 1 health: 18
+Player 2 health: 14
+Card 11 attacked card 2
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 18
+Player 2 health: 14
+Turn ended
+Simulated 69 step
+ Game turn: 18
+Player 1 health: 18
+Player 2 health: 14
+Played card 0 on 2
+Simulated 70 step
+ Game turn: 18
+Player 1 health: 18
+Player 2 health: 14
+Card 10 attacked card 3
+Simulated 71 step
+ Game turn: 18
+Player 1 health: 18
+Player 2 health: 14
+Used HeroPower on 2
+Simulated 72 step
+ Game turn: 18
+Player 1 health: 18
+Player 2 health: 12
+Turn ended
+Simulated 73 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 12
+Played card 0 on 2
+Simulated 74 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 12
+Card 11 attacked card 2
+Simulated 75 step
+ Game turn: 19
+Player 1 health: 18
+Player 2 health: 12
+Used HeroPower on 0
+Simulated 76 step
+ Game turn: 19
+Player 1 health: 16
+Player 2 health: 12
+Card 10 attacked card 0
+Simulated 77 step
+ Game turn: 19
+Player 1 health: 14
+Player 2 health: 12
+Turn ended
+Simulated 78 step
+ Game turn: 20
+Player 1 health: 14
+Player 2 health: 12
+Played card 0 on 1
+Simulated 79 step
+ Game turn: 20
+Player 1 health: 14
+Player 2 health: 12
+Used HeroPower on 8
+Simulated 80 step
+ Game turn: 20
+Player 1 health: 14
+Player 2 health: 10
+Turn ended
+Simulated 81 step
+ Game turn: 21
+Player 1 health: 14
+Player 2 health: 10
+Card 11 attacked card 0
+Simulated 82 step
+ Game turn: 21
+Player 1 health: 13
+Player 2 health: 10
+Played card 0 on 1
+Simulated 83 step
+ Game turn: 21
+Player 1 health: 13
+Player 2 health: 10
+Used HeroPower on 11
+Simulated 84 step
+ Game turn: 21
+Player 1 health: 11
+Player 2 health: 10
+Card 10 attacked card 2
+Simulated 85 step
+ Game turn: 21
+Player 1 health: 11
+Player 2 health: 10
+Turn ended
+Simulated 86 step
+ Game turn: 22
+Player 1 health: 11
+Player 2 health: 10
+Used HeroPower on 0
+Simulated 87 step
+ Game turn: 22
+Player 1 health: 11
+Player 2 health: 8
+Played card 0 on 0
+Simulated 88 step
+ Game turn: 22
+Player 1 health: 11
+Player 2 health: 8
+Card 10 attacked card 2
+Simulated 89 step
+ Game turn: 22
+Player 1 health: 11
+Player 2 health: 8
+Card 10 attacked card 0
+Simulated 90 step
+ Game turn: 22
+Player 1 health: 11
+Player 2 health: 6
+Turn ended
+Simulated 91 step
+ Game turn: 23
+Player 1 health: 11
+Player 2 health: 6
+Played card 0 on 8
+Simulated 92 step
+ Game turn: 23
+Player 1 health: 11
+Player 2 health: 6
+Used HeroPower on 4
+Simulated 93 step
+ Game turn: 23
+Player 1 health: 9
+Player 2 health: 6
+Card 10 attacked card 1
+Simulated 94 step
+ Game turn: 23
+Player 1 health: 9
+Player 2 health: 6
+Card 10 attacked card 0
+Simulated 95 step
+ Game turn: 23
+Player 1 health: 4
+Player 2 health: 6
+Turn ended
+Simulated 96 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 6
+Played card 0 on 8
+Simulated 97 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 6
+Card 10 attacked card 0
+Simulated 98 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 2
+Used HeroPower on 0
+Executed 13 eps
+Self Play (14/25) Eps Time: 791.600s | Total: 3:04:42 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 6
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 16
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 8
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 0
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Played card 0 on 1
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 1
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 30
+Played card 4 on 0
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 30
+Used HeroPower on 10
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 26
+Card 11 attacked card 1
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 2
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Card 11 attacked card 0
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Played card 0 on 2
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 1 on 6
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 2 on 5
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Played card 2 on 4
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Turn ended
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Played card 0 on 3
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 26
+Card 11 attacked card 0
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 20
+Card 10 attacked card 2
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 20
+Turn ended
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 20
+Played card 0 on 0
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 20
+Played card 0 on 4
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 20
+Turn ended
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Played card 0 on 0
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Played card 0 on 1
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Card 10 attacked card 2
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Card 11 attacked card 3
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Turn ended
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 20
+Played card 1 on 3
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 23
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 19
+Player 2 health: 20
+Used HeroPower on 1
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 17
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 15
+Player 2 health: 20
+Turn ended
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 20
+Played card 0 on 8
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 20
+Played card 0 on 1
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 8
+Card 13 attacked card 2
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 8
+Card 12 attacked card 1
+Simulated 53 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 8
+Used HeroPower on 1
+Simulated 54 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 6
+Turn ended
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 15
+Player 2 health: 6
+Played card 0 on 16
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 15
+Player 2 health: 6
+Played card 0 on 0
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 15
+Player 2 health: 6
+Card 10 attacked card 0
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 13
+Player 2 health: 6
+Card 11 attacked card 2
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 13
+Player 2 health: 6
+Turn ended
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 6
+Played card 0 on 7
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 6
+Card 12 attacked card 2
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 6
+Used HeroPower on 0
+Simulated 63 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 4
+Card 10 attacked card 1
+Simulated 64 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 4
+Card 10 attacked card 1
+Simulated 65 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 4
+Played card 0 on 11
+Simulated 66 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 4
+Card 10 attacked card 1
+Simulated 67 step
+ Game turn: 15
+Player 1 health: 13
+Player 2 health: 4
+Turn ended
+Simulated 68 step
+ Game turn: 16
+Player 1 health: 13
+Player 2 health: 4
+Played card 0 on 2
+Simulated 69 step
+ Game turn: 16
+Player 1 health: 13
+Player 2 health: 4
+Used HeroPower on 12
+Simulated 70 step
+ Game turn: 16
+Player 1 health: 11
+Player 2 health: 4
+Card 10 attacked card 0
+Simulated 71 step
+ Game turn: 16
+Player 1 health: 9
+Player 2 health: 4
+Turn ended
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 9
+Player 2 health: 4
+Used HeroPower on 2
+Simulated 73 step
+ Game turn: 17
+Player 1 health: 9
+Player 2 health: 2
+Turn ended
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 2
+Played card 0 on 4
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 2
+Card 10 attacked card 2
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 2
+Used HeroPower on 6
+Simulated 77 step
+ Game turn: 18
+Player 1 health: 7
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 78 step
+ Game turn: 18
+Player 1 health: 6
+Player 2 health: 2
+Turn ended
+Simulated 79 step
+ Game turn: 19
+Player 1 health: 6
+Player 2 health: 2
+Played card 0 on 13
+Simulated 80 step
+ Game turn: 19
+Player 1 health: 6
+Player 2 health: 2
+Turn ended
+Simulated 81 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 2
+Played card 0 on 3
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 2
+Card 10 attacked card 2
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 6
+Player 2 health: 2
+Used HeroPower on 0
+Simulated 84 step
+ Game turn: 20
+Player 1 health: 4
+Player 2 health: 2
+Turn ended
+Simulated 85 step
+ Game turn: 21
+Player 1 health: 4
+Player 2 health: 2
+Played card 0 on 15
+Simulated 86 step
+ Game turn: 21
+Player 1 health: 4
+Player 2 health: 2
+Turn ended
+Simulated 87 step
+ Game turn: 22
+Player 1 health: 4
+Player 2 health: 2
+Card 10 attacked card 0
+Executed 14 eps
+Self Play (15/25) Eps Time: 795.003s | Total: 3:18:45 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 15
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 0
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 15
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 6 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 17
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 2
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Played card 4 on 15
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Played card 2 on 7
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Played card 0 on 2
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Played card 3 on 2
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 28
+Played card 0 on 4
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 10
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 27
+Card 11 attacked card 2
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 27
+Played card 0 on 8
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 27
+Played card 2 on 2
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 27
+Card 10 attacked card 1
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 27
+Card 11 attacked card 0
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 27
+Played card 0 on 8
+Simulated 31 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 27
+Played card 0 on 0
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 27
+Played card 1 on 1
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 27
+Card 10 attacked card 4
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 27
+Card 11 attacked card 1
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 27
+Played card 0 on 9
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 27
+Played card 1 on 4
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 27
+Card 10 attacked card 2
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 27
+Used HeroPower on 4
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 27
+Card 10 attacked card 1
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 27
+Turn ended
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 27
+Played card 0 on 4
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 27
+Played card 0 on 9
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 27
+Card 10 attacked card 3
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 27
+Used HeroPower on 3
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 25
+Card 11 attacked card 0
+Simulated 47 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 23
+Card 12 attacked card 0
+Simulated 48 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 22
+Turn ended
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 22
+Played card 0 on 17
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 22
+Played card 0 on 6
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 22
+Card 11 attacked card 0
+Simulated 53 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 22
+Turn ended
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 20
+Played card 0 on 15
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 20
+Used HeroPower on 2
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 18
+Card 11 attacked card 3
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 18
+Card 11 attacked card 3
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 60 step
+ Game turn: 14
+Player 1 health: 17
+Player 2 health: 18
+Turn ended
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 18
+Played card 0 on 4
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 18
+Used HeroPower on 4
+Simulated 63 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 64 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 65 step
+ Game turn: 15
+Player 1 health: 10
+Player 2 health: 18
+Card 12 attacked card 1
+Simulated 66 step
+ Game turn: 15
+Player 1 health: 10
+Player 2 health: 18
+Turn ended
+Simulated 67 step
+ Game turn: 16
+Player 1 health: 10
+Player 2 health: 18
+Played card 0 on 5
+Simulated 68 step
+ Game turn: 16
+Player 1 health: 10
+Player 2 health: 18
+Used HeroPower on 5
+Simulated 69 step
+ Game turn: 16
+Player 1 health: 10
+Player 2 health: 16
+Turn ended
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 10
+Player 2 health: 16
+Played card 0 on 2
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 10
+Player 2 health: 16
+Card 10 attacked card 1
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 10
+Player 2 health: 16
+Card 12 attacked card 1
+Simulated 73 step
+ Game turn: 17
+Player 1 health: 10
+Player 2 health: 16
+Used HeroPower on 13
+Simulated 74 step
+ Game turn: 17
+Player 1 health: 8
+Player 2 health: 16
+Card 11 attacked card 0
+Simulated 75 step
+ Game turn: 17
+Player 1 health: 5
+Player 2 health: 16
+Card 10 attacked card 0
+Simulated 76 step
+ Game turn: 17
+Player 1 health: 3
+Player 2 health: 16
+Turn ended
+Simulated 77 step
+ Game turn: 18
+Player 1 health: 3
+Player 2 health: 16
+Played card 0 on 10
+Simulated 78 step
+ Game turn: 18
+Player 1 health: 3
+Player 2 health: 16
+Used HeroPower on 7
+Simulated 79 step
+ Game turn: 18
+Player 1 health: 3
+Player 2 health: 14
+Turn ended
+Simulated 80 step
+ Game turn: 19
+Player 1 health: 3
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 81 step
+ Game turn: 19
+Player 1 health: 1
+Player 2 health: 14
+Turn ended
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 14
+Played card 0 on 6
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 14
+Used HeroPower on 3
+Simulated 84 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 12
+Card 10 attacked card 0
+Simulated 85 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 11
+Turn ended
+Simulated 86 step
+ Game turn: 21
+Player 1 health: 1
+Player 2 health: 11
+Played card 0 on 6
+Simulated 87 step
+ Game turn: 21
+Player 1 health: 1
+Player 2 health: 11
+Turn ended
+Simulated 88 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 11
+Played card 0 on 1
+Simulated 89 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 11
+Card 10 attacked card 0
+Simulated 90 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 10
+Used HeroPower on 0
+Simulated 91 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 8
+Card 11 attacked card 0
+Simulated 92 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 3
+Turn ended
+Simulated 93 step
+ Game turn: 23
+Player 1 health: 1
+Player 2 health: 3
+Played card 0 on 7
+Simulated 94 step
+ Game turn: 23
+Player 1 health: 1
+Player 2 health: 3
+Turn ended
+Simulated 95 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 3
+Card 11 attacked card 0
+Executed 15 eps
+Self Play (16/25) Eps Time: 804.629s | Total: 3:34:34 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 4
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 1
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 0
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 0
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 14
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 3
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 16
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 29
+Card 10 attacked card 0
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Played card 2 on 2
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Played card 2 on 10
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 28
+Turn ended
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 28
+Used HeroPower on 14
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 20
+Turn ended
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 20
+Played card 0 on 10
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 20
+Played card 1 on 14
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 20
+Turn ended
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 20
+Played card 0 on 10
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 14
+Turn ended
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 14
+Played card 0 on 7
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 14
+Played card 0 on 16
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 14
+Used HeroPower on 9
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 14
+Card 11 attacked card 1
+Simulated 35 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 14
+Turn ended
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 14
+Played card 0 on 1
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 14
+Card 10 attacked card 2
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 14
+Turn ended
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 14
+Played card 0 on 5
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 14
+Used HeroPower on 0
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 14
+Turn ended
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Played card 0 on 3
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Card 10 attacked card 1
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 22
+Player 2 health: 14
+Turn ended
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 14
+Played card 0 on 16
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 22
+Player 2 health: 14
+Used HeroPower on 10
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 14
+Turn ended
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 14
+Played card 0 on 0
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 14
+Played card 0 on 8
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 14
+Played card 1 on 13
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 14
+Card 10 attacked card 3
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 14
+Card 10 attacked card 0
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 9
+Turn ended
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 19
+Player 2 health: 9
+Played card 0 on 9
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 19
+Player 2 health: 9
+Card 10 attacked card 0
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 9
+Used HeroPower on 4
+Simulated 58 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 9
+Card 11 attacked card 1
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 9
+Turn ended
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 9
+Played card 1 on 1
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 9
+Played card 0 on 6
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 9
+Card 10 attacked card 0
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 4
+Card 11 attacked card 0
+Executed 16 eps
+Self Play (17/25) Eps Time: 792.592s | Total: 3:44:34 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 2 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 4
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 2
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 5 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Used HeroPower on 14
+Simulated 6 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 7 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 1
+Simulated 8 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 9 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Played card 5 on 14
+Simulated 10 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 11 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 3
+Simulated 12 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 3
+Simulated 13 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 14 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 1
+Simulated 15 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Played card 1 on 10
+Simulated 16 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 17 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 9
+Simulated 18 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Played card 1 on 5
+Simulated 19 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 20 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 22 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 26
+Played card 2 on 12
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 26
+Played card 2 on 0
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 25 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 12
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 15
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 28 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 29 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 10
+Simulated 30 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 26
+Played card 3 on 5
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 26
+Played card 2 on 8
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 28
+Player 2 health: 25
+Turn ended
+Simulated 35 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 25
+Played card 1 on 7
+Simulated 36 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 25
+Played card 0 on 3
+Simulated 37 step
+ Game turn: 12
+Player 1 health: 28
+Player 2 health: 25
+Used HeroPower on 6
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 25
+Card 12 attacked card 3
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 25
+Card 11 attacked card 1
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 25
+Card 10 attacked card 2
+Simulated 41 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 25
+Card 11 attacked card 0
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 24
+Player 2 health: 25
+Turn ended
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 25
+Played card 0 on 5
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 25
+Played card 1 on 12
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 25
+Used HeroPower on 3
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 17
+Turn ended
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 17
+Played card 1 on 12
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 17
+Played card 0 on 1
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 17
+Card 10 attacked card 0
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 22
+Player 2 health: 17
+Used HeroPower on 7
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 17
+Card 11 attacked card 0
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 17
+Card 12 attacked card 0
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 16
+Player 2 health: 17
+Turn ended
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 17
+Played card 0 on 13
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 17
+Card 11 attacked card 0
+Simulated 57 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 13
+Played card 0 on 13
+Simulated 58 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 13
+Card 10 attacked card 2
+Simulated 59 step
+ Game turn: 15
+Player 1 health: 16
+Player 2 health: 13
+Turn ended
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 13
+Played card 0 on 1
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 13
+Card 10 attacked card 2
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 13
+Card 13 attacked card 0
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 11
+Player 2 health: 13
+Card 10 attacked card 2
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 11
+Player 2 health: 13
+Card 10 attacked card 0
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 8
+Player 2 health: 13
+Card 11 attacked card 0
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 7
+Player 2 health: 13
+Used HeroPower on 2
+Simulated 67 step
+ Game turn: 16
+Player 1 health: 5
+Player 2 health: 13
+Turn ended
+Simulated 68 step
+ Game turn: 17
+Player 1 health: 5
+Player 2 health: 13
+Card 12 attacked card 2
+Simulated 69 step
+ Game turn: 17
+Player 1 health: 5
+Player 2 health: 13
+Played card 0 on 5
+Simulated 70 step
+ Game turn: 17
+Player 1 health: 5
+Player 2 health: 13
+Card 10 attacked card 2
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 5
+Player 2 health: 13
+Used HeroPower on 2
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 5
+Player 2 health: 11
+Turn ended
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 5
+Player 2 health: 11
+Card 11 attacked card 0
+Executed 17 eps
+Self Play (18/25) Eps Time: 786.213s | Total: 3:55:51 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 9
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 16
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 15
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 6
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 11
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 4
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 26
+Player 2 health: 28
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 28
+Used HeroPower on 7
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Played card 1 on 2
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 24
+Player 2 health: 26
+Turn ended
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 26
+Played card 1 on 17
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 26
+Played card 4 on 1
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 26
+Played card 1 on 3
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 26
+Turn ended
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Played card 0 on 11
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Played card 3 on 4
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Card 11 attacked card 1
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 26
+Turn ended
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Card 11 attacked card 3
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Played card 1 on 0
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Played card 1 on 13
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 25
+Turn ended
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 25
+Played card 2 on 7
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 25
+Card 10 attacked card 0
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 25
+Card 12 attacked card 1
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 25
+Used HeroPower on 12
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 20
+Player 2 health: 25
+Card 11 attacked card 0
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 18
+Player 2 health: 25
+Turn ended
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 25
+Played card 0 on 1
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 25
+Card 10 attacked card 4
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 25
+Used HeroPower on 0
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 23
+Card 11 attacked card 0
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 22
+Turn ended
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 22
+Played card 1 on 6
+Simulated 44 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 22
+Played card 2 on 7
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 22
+Card 10 attacked card 1
+Simulated 46 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 22
+Turn ended
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 22
+Played card 2 on 8
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 22
+Played card 0 on 10
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 22
+Played card 0 on 7
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 22
+Card 10 attacked card 4
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 22
+Card 10 attacked card 1
+Simulated 52 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 22
+Turn ended
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Played card 0 on 13
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Played card 1 on 2
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Card 11 attacked card 2
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Card 10 attacked card 2
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Card 12 attacked card 1
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Card 12 attacked card 2
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 22
+Turn ended
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 22
+Played card 0 on 2
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 22
+Card 10 attacked card 1
+Simulated 62 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 22
+Used HeroPower on 6
+Simulated 63 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 20
+Card 10 attacked card 2
+Simulated 64 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 20
+Turn ended
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 18
+Player 2 health: 20
+Played card 1 on 4
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 18
+Player 2 health: 20
+Played card 0 on 12
+Simulated 67 step
+ Game turn: 16
+Player 1 health: 18
+Player 2 health: 20
+Used HeroPower on 14
+Simulated 68 step
+ Game turn: 16
+Player 1 health: 16
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 69 step
+ Game turn: 16
+Player 1 health: 14
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 70 step
+ Game turn: 16
+Player 1 health: 13
+Player 2 health: 20
+Turn ended
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 13
+Player 2 health: 20
+Played card 0 on 13
+Simulated 72 step
+ Game turn: 17
+Player 1 health: 13
+Player 2 health: 20
+Used HeroPower on 5
+Simulated 73 step
+ Game turn: 17
+Player 1 health: 13
+Player 2 health: 18
+Turn ended
+Simulated 74 step
+ Game turn: 18
+Player 1 health: 13
+Player 2 health: 18
+Played card 0 on 1
+Simulated 75 step
+ Game turn: 18
+Player 1 health: 13
+Player 2 health: 18
+Used HeroPower on 5
+Simulated 76 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 77 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 18
+Card 13 attacked card 0
+Simulated 78 step
+ Game turn: 18
+Player 1 health: 5
+Player 2 health: 18
+Card 12 attacked card 0
+Simulated 79 step
+ Game turn: 18
+Player 1 health: 4
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 80 step
+ Game turn: 18
+Player 1 health: 3
+Player 2 health: 18
+Turn ended
+Simulated 81 step
+ Game turn: 19
+Player 1 health: 3
+Player 2 health: 18
+Played card 0 on 16
+Simulated 82 step
+ Game turn: 19
+Player 1 health: 3
+Player 2 health: 18
+Turn ended
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 3
+Player 2 health: 18
+Card 13 attacked card 0
+Executed 18 eps
+Self Play (19/25) Eps Time: 787.163s | Total: 4:09:16 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 6
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 15
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 4
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 6 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 4
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 3
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 10
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 2
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 14 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 0
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 0
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 30
+Played card 1 on 1
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 5
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Played card 0 on 15
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Card 12 attacked card 0
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Card 11 attacked card 3
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 26
+Used HeroPower on 7
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 24
+Card 12 attacked card 0
+Simulated 27 step

@@ -78,7 +78,7 @@ class Coach:
             temp = int(episode_step < self.args.tempThreshold)
 
             pi = self.mcts.get_action_prob(temp=temp)
-            # print("Simulated {} step".format(episode_step))
+            print("Simulated {} step".format(episode_step))
             logfile.write("Simulated {} step\n".format(episode_step))
 
             pi_reshape = np.reshape(pi, (21, 18))
@@ -88,7 +88,7 @@ class Coach:
             a, b = np.unravel_index(action, pi_reshape.shape)
             # print(a, b)
             logfile.write(action_name((a,b), current_game))
-            # print(action_name((a,b), current_game))
+#             print(action_name((a,b), current_game))
             cur_game, self.cur_player = self.game.get_next_state(self.cur_player, (a, b))
 
             r = self.game.get_game_ended()
@@ -100,9 +100,9 @@ class Coach:
     def learn(self):
         if not os.path.exists('logs'):
             os.makedirs('logs')
-        logfile = open(f'logs/log_{date.today()}.txt', 'w')
 
         for i in range(1, self.args.numIters + 1):
+            logfile = open(f'logs/log_{date.today()}_{i}.txt', 'w')
             print('------ITER ' + str(i) + '------')
             logfile.write('------ITER ' + str(i) + '------\n')
             if not self.skipFirstSelfPlay or i > 1:
@@ -167,7 +167,7 @@ class Coach:
                 self.nnet.save_checkpoint(folder=self.args.checkpoint, filename=self.get_checkpoint_file(i))
                 self.nnet.save_checkpoint(folder=self.args.checkpoint, filename='best.pth.tar')
 
-        logfile.close()
+            logfile.close()
 
     def get_checkpoint_file(self, iteration):
         return 'checkpoint_' + str(iteration) + '.pth.tar'
