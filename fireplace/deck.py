@@ -32,4 +32,9 @@ class Deck(CardList):
 	def broadcast(self):
 		if self.player is None:
 			return
-		self.player.game.manager.change_deck(self.player)
+		# if self.player.game is None:
+		# 	return
+		try:
+			self.player.game.manager.change_deck(self.player)
+		except AttributeError:
+			return

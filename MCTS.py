@@ -53,6 +53,7 @@ class MCTS:
         # self.Vs = {}  # stores game.getValidMoves for board s
 
     def get_action_prob(self, temp=1):
+        # print(self.game.game.players)
         self.root = MCTSNode(self.game.get_state(), copy.deepcopy(self.game))
         self.root.policy, self.root.value = self.nnet.predict(self.root.state)
         self.root.policy.shape = (21, 18)

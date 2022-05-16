@@ -130,8 +130,8 @@ class MainWindow(QMainWindow):
         self.entities = {'Deck1': Zone(1100, 600), 'Deck2': Zone(1100, 50),
                          'Hand1': Zone(200, 600), 'Hand2': Zone(200, 50),
                          'Face1': Zone(12, 600), 'Face2': Zone(12, 50),
-                         'Power1': Zone(100, 600), 'Power2': Zone(100, 50),
-                         'Field1': Zone(200, 430), 'Field2': Zone(200, 240),}
+                         'Power1': Zone(100, 590), 'Power2': Zone(100, 40),
+                         'Field1': Zone(200, 430), 'Field2': Zone(200, 240)}
 
         self.turn_label = QLabel(self)
         self.turn_label.resize(400, 50)
@@ -426,7 +426,7 @@ class MainWindow(QMainWindow):
     def card_mulligan(self, cards, args):
         background = QWidget(self)
         background.setObjectName("background")
-        background.resize(1000, 1000)
+        background.resize(1300, 800)
         backLayout = QVBoxLayout(background)
         container = QWidget(self)
         container.setObjectName("Container")

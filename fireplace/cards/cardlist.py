@@ -257,6 +257,8 @@ test_deck_h = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
                "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
                "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"]
 
+caught = ["CFM_334e", "GVG_010b"]
+
 All = [Core_Hunter, Core_Neutral, Core_Mage, Core_Druid, Core_Warrior,
        # Core_Paladin, Core_Shaman,Core_Rogue,Core_Warlock,Core_Priest,
        AOO_Neutral, AOO_Hunter, AOO_Mage, AOO_Druid, AOO_Warrior,
@@ -268,5 +270,5 @@ All = [Core_Hunter, Core_Neutral, Core_Mage, Core_Druid, Core_Warrior,
        Alterac_Neutral, Alterac_Hunter, Alterac_Mage, Alteric_Druid, Alterac_Warrior,
        # Alterac_Paladin, Alterac_Shaman,Alterac_Rogue,Alterac_Warlock,Alterac_Priest,
        Heroes, Dream, Etc,
-       faceHunter, bigWarrior, clownDruid, test_deck_p, test_deck_h
+       faceHunter, bigWarrior, clownDruid, test_deck_p, test_deck_h, caught
        ]

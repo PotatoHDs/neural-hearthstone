@@ -536,7 +536,7 @@ class LiveEntity(PlayableCard, Entity):
 
 	@property
 	def to_be_destroyed(self):
-		print(f"health on {self} = {getattr(self, self.health_attribute)},\n damage = {self.damage}")
+		# print(f"health on {self} = {getattr(self, self.health_attribute)},\n damage = {self.damage}")
 		return getattr(self, self.health_attribute) <= 0 or self._to_be_destroyed
 
 	@to_be_destroyed.setter

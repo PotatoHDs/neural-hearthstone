@@ -49,11 +49,12 @@ class NNetWrapper:
         if (args.device.type == 'cuda') and (args.ngpu > 1):
             self.nnet = nn.DataParallel(self.nnet, list(range(args.ngpu)))
 
-    def train(self, examples):
+    def train(self, examples, logfile):
         optimizer = optim.Adam(self.nnet.parameters())
 
         for epoch in range(self.args.epochs):
-            print('EPOCH ::: ' + str(epoch + 1))
+            # print('EPOCH ::: ' + str(epoch + 1))
+            logfile.write('EPOCH ::: ' + str(epoch + 1) + '\n')
             self.nnet.train()
             data_time = AverageMeter()
             batch_time = AverageMeter()
@@ -84,8 +85,10 @@ class NNetWrapper:
                 total_loss = l_pi + l_v
 
                 # record loss
-                pi_losses.update(l_pi.data[0], states.size(0))
-                v_losses.update(l_v.data[0], states.size(0))
+                # pi_losses.update(l_pi.data[0], states.size(0))
+                # v_losses.update(l_v.data[0], states.size(0))
+                pi_losses.update(l_pi.item(), states.size(0))
+                v_losses.update(l_v.item(), states.size(0))
 
                 # compute gradient and do SGD step
                 optimizer.zero_grad()
@@ -98,7 +101,7 @@ class NNetWrapper:
                 batch_idx += 1
 
                 # plot progress
-                bar.suffix = '({batch}/{size}) Data: {data:.3f}s | Batch: {bt:.3f}s | Total: {total:} | ETA: {eta:} | Loss_pi: {lpi:.4f} | Loss_v: {lv:.3f}'.format(
+                bar.suffix = '({batch}/{size}) Data: {data:.3f}s | Batch: {bt:.3f}s | Total: {total:} | ETA: {eta:} | Loss_pi: {lpi:.4f} | Loss_v: {lv:.3f}\n'.format(
                     batch=batch_idx,
                     size=int(len(examples) / self.args.batch_size),
                     data=data_time.avg,
@@ -108,7 +111,9 @@ class NNetWrapper:
                     lpi=pi_losses.avg,
                     lv=v_losses.avg,
                 )
-                bar.next()
+                logfile.write("Training Net ")
+                logfile.write(bar.suffix)
+                # bar.next()
             bar.finish()
 
     def predict(self, state):
@@ -127,11 +132,13 @@ class NNetWrapper:
         return torch.exp(pi).data.cpu().numpy()[0], v.data.cpu().numpy()[0]
 
     def loss_pi(self, targets, outputs):
+        outputs = outputs.view(-1, 21, 18)
         targets = targets.view(-1, 21, 18)
         return -torch.sum(targets * outputs) / targets.size()[0]
 
     def loss_v(self, targets, outputs):
-        return torch.sum((targets - outputs.view(-1)) ** 2) / targets.size()[0]
+        # return torch.sum((targets - outputs.view(-1)) ** 2) / targets.size()[0]
+        return torch.sum((targets - outputs) ** 2) / targets.size()[0]
 
     def save_checkpoint(self, folder='checkpoint', filename='checkpoint.pth.tar'):
         filepath = os.path.join(folder, filename)

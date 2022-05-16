@@ -14,7 +14,7 @@ class GameImp:
     def __init__(self):
         self.game = None
 
-    def init_game(self):
+    def init_game(self, UiObserver=None, HsObserver=None):
         cards.db.initialize()
         # print('i\'m doing things')
 
@@ -30,28 +30,39 @@ class GameImp:
         #           "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
         #           "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239"
         #           ]
-        # deck2 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
-        #          "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
-        #          "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
-        #          "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
-        #          "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
-        #          "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
-        #          ]
+        deck2 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
+                 "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
+                 ]
+        deck1 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
+                 "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
+                 ]
         # deck1 = ["DAL_092"]*30
         # deck2 = ["DAL_092"]*30
-        deck1 = ["LOOT_258"]*30
-        deck2 = ["LOOT_258"]*30
-        c1 = CardClass(6)
+        # deck1 = ["LOOT_258"]*30
+        # deck2 = ["LOOT_258"]*30
+        # c1 = CardClass(6)
         c2 = CardClass(3)
+        c1 = CardClass(3)
 
         players = []
         players.append(Player("Player1", deck1, c1.default_hero))
         players.append(Player("Player2", deck2, c2.default_hero))
         self.game = Game(players=players)
 
-    def start_game(self):
-        self.game.start()
+        if UiObserver:
+            self.game.manager.register(UiObserver)
+        if HsObserver:
+            self.game.manager.register(HsObserver)
 
+        self.game.start()
         return self.game
 
     def mulligan_choice(self):
