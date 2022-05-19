@@ -1,0 +1,5500 @@
+------ITER 1------
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 4
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 5 on 10
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 5
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 3
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Used HeroPower on 11
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 12
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 17
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 14 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Played card 4 on 0
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 16 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Played card 3 on 1
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 18 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 5
+Simulated 19 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 20 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 26
+Played card 0 on 16
+Simulated 21 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 22 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 21
+Turn ended
+Simulated 23 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 21
+Played card 0 on 7
+Simulated 24 step
+ Game turn: 10
+Player 1 health: 28
+Player 2 health: 21
+Used HeroPower on 8
+Simulated 25 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 21
+Card 10 attacked card 2
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 21
+Turn ended
+Simulated 27 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 21
+Played card 4 on 16
+Simulated 28 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 21
+Used HeroPower on 17
+Simulated 29 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 19
+Played card 4 on 1
+Simulated 30 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 19
+Card 11 attacked card 0
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 13
+Card 10 attacked card 0
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 8
+Played card 3 on 6
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 8
+Turn ended
+Simulated 34 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 8
+Played card 1 on 1
+Simulated 35 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 8
+Turn ended
+Simulated 36 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 8
+Played card 3 on 13
+Simulated 37 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 8
+Card 10 attacked card 3
+Simulated 38 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 8
+Played card 0 on 4
+Simulated 39 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 8
+Card 12 attacked card 3
+Simulated 40 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 8
+Card 11 attacked card 0
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 7
+Card 10 attacked card 1
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 7
+Card 11 attacked card 0
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 4
+Used HeroPower on 16
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 2
+Turn ended
+Simulated 45 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 2
+Played card 3 on 12
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 2
+Used HeroPower on 6
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 2
+Card 10 attacked card 3
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 2
+Turn ended
+Simulated 49 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 2
+Turn ended
+Simulated 50 step
+ Game turn: 16
+Player 1 health: 24
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 51 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 2
+Played card 1 on 0
+Simulated 52 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 2
+Played card 0 on 12
+Simulated 53 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 2
+Card 11 attacked card 2
+Simulated 54 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 2
+Played card 2 on 11
+Simulated 55 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 2
+Turn ended
+Simulated 56 step
+ Game turn: 17
+Player 1 health: 22
+Player 2 health: 2
+Turn ended
+Simulated 57 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 2
+Used HeroPower on 11
+Simulated 58 step
+ Game turn: 18
+Player 1 health: 20
+Player 2 health: 2
+Played card 2 on 12
+Simulated 59 step
+ Game turn: 18
+Player 1 health: 20
+Player 2 health: 2
+Card 14 attacked card 0
+Simulated 60 step
+ Game turn: 18
+Player 1 health: 19
+Player 2 health: 2
+Card 13 attacked card 0
+Simulated 61 step
+ Game turn: 18
+Player 1 health: 14
+Player 2 health: 2
+Card 11 attacked card 0
+Simulated 62 step
+ Game turn: 18
+Player 1 health: 9
+Player 2 health: 2
+Card 12 attacked card 0
+Simulated 63 step
+ Game turn: 18
+Player 1 health: 5
+Player 2 health: 2
+Card 10 attacked card 0
+Simulated 64 step
+ Game turn: 18
+Player 1 health: 3
+Player 2 health: 2
+Played card 1 on 8
+Simulated 65 step
+ Game turn: 18
+Player 1 health: 3
+Player 2 health: 2
+Turn ended
+Simulated 66 step
+ Game turn: 19
+Player 1 health: 3
+Player 2 health: 2
+Turn ended
+Simulated 67 step
+ Game turn: 20
+Player 1 health: 3
+Player 2 health: 2
+Card 13 attacked card 0
+Executed 0 eps
+Self Play (1/13) Eps Time: 540.880s | Total: 0:09:00 | ETA: 0:00:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 4
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 14
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 14
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 14
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 0
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 12
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 17
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 30
+Played card 1 on 16
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 25
+Player 2 health: 30
+Used HeroPower on 6
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 23
+Player 2 health: 30
+Played card 3 on 1
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 23
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 21
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 20
+Player 2 health: 30
+Played card 2 on 1
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 20
+Player 2 health: 30
+Turn ended
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 20
+Player 2 health: 30
+Played card 3 on 10
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 20
+Player 2 health: 30
+Turn ended
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 20
+Player 2 health: 30
+Used HeroPower on 4
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 18
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 16
+Player 2 health: 30
+Card 13 attacked card 0
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 14
+Player 2 health: 30
+Card 12 attacked card 0
+Simulated 29 step
+ Game turn: 8
+Player 1 health: 13
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 30 step
+ Game turn: 8
+Player 1 health: 12
+Player 2 health: 30
+Played card 0 on 11
+Simulated 31 step
+ Game turn: 8
+Player 1 health: 12
+Player 2 health: 30
+Played card 1 on 15
+Simulated 32 step
+ Game turn: 8
+Player 1 health: 12
+Player 2 health: 30
+Turn ended
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 12
+Player 2 health: 30
+Turn ended
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 12
+Player 2 health: 30
+Played card 0 on 5
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 12
+Player 2 health: 30
+Card 13 attacked card 2
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 12
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 37 step
+ Game turn: 10
+Player 1 health: 12
+Player 2 health: 30
+Card 11 attacked card 0
+Simulated 38 step
+ Game turn: 10
+Player 1 health: 11
+Player 2 health: 30
+Card 13 attacked card 0
+Simulated 39 step
+ Game turn: 10
+Player 1 health: 10
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 40 step
+ Game turn: 10
+Player 1 health: 8
+Player 2 health: 30
+Card 12 attacked card 0
+Simulated 41 step
+ Game turn: 10
+Player 1 health: 5
+Player 2 health: 30
+Turn ended
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 5
+Player 2 health: 30
+Turn ended
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 5
+Player 2 health: 30
+Card 14 attacked card 0
+Executed 1 eps
+Self Play (2/13) Eps Time: 441.752s | Total: 0:14:43 | ETA: 1:48:11
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 7
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 1
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 11
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 1
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 0
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 2
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 10
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Card 11 attacked card 1
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 6
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Played card 3 on 6
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Played card 1 on 1
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 19 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 20 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 22 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 1
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 9
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 16
+Simulated 26 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 6
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 28
+Played card 0 on 13
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 28
+Turn ended
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 28
+Played card 2 on 14
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 28
+Turn ended
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 28
+Played card 0 on 5
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 28
+Card 12 attacked card 0
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 20
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 28
+Played card 1 on 10
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 28
+Turn ended
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 28
+Turn ended
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Card 12 attacked card 1
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Card 13 attacked card 1
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Played card 1 on 11
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Played card 0 on 14
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 15
+Player 2 health: 28
+Card 14 attacked card 0
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 12
+Player 2 health: 28
+Used HeroPower on 2
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 10
+Player 2 health: 28
+Turn ended
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 10
+Player 2 health: 28
+Turn ended
+Simulated 51 step
+ Game turn: 15
+Player 1 health: 10
+Player 2 health: 28
+Turn ended
+Simulated 52 step
+ Game turn: 16
+Player 1 health: 10
+Player 2 health: 28
+Turn ended
+Simulated 53 step
+ Game turn: 17
+Player 1 health: 10
+Player 2 health: 28
+Turn ended
+Simulated 54 step
+ Game turn: 18
+Player 1 health: 10
+Player 2 health: 28
+Played card 5 on 13
+Simulated 55 step
+ Game turn: 18
+Player 1 health: 10
+Player 2 health: 28
+Turn ended
+Simulated 56 step
+ Game turn: 19
+Player 1 health: 10
+Player 2 health: 28
+Card 13 attacked card 1
+Simulated 57 step
+ Game turn: 19
+Player 1 health: 10
+Player 2 health: 28
+Played card 0 on 12
+Simulated 58 step
+ Game turn: 19
+Player 1 health: 10
+Player 2 health: 28
+Card 13 attacked card 0
+Simulated 59 step
+ Game turn: 19
+Player 1 health: 7
+Player 2 health: 28
+Turn ended
+Simulated 60 step
+ Game turn: 20
+Player 1 health: 7
+Player 2 health: 28
+Played card 4 on 8
+Simulated 61 step
+ Game turn: 20
+Player 1 health: 7
+Player 2 health: 28
+Turn ended
+Simulated 62 step
+ Game turn: 21
+Player 1 health: 7
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 63 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 28
+Card 16 attacked card 1
+Simulated 64 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 28
+Played card 1 on 2
+Simulated 65 step
+ Game turn: 21
+Player 1 health: 5
+Player 2 health: 28
+Turn ended
+Simulated 66 step
+ Game turn: 22
+Player 1 health: 5
+Player 2 health: 28
+Played card 3 on 4
+Simulated 67 step
+ Game turn: 22
+Player 1 health: 5
+Player 2 health: 28
+Turn ended
+Simulated 68 step
+ Game turn: 23
+Player 1 health: 5
+Player 2 health: 28
+Card 11 attacked card 2
+Simulated 69 step
+ Game turn: 23
+Player 1 health: 5
+Player 2 health: 28
+Played card 0 on 13
+Simulated 70 step
+ Game turn: 23
+Player 1 health: 5
+Player 2 health: 28
+Card 14 attacked card 2
+Simulated 71 step
+ Game turn: 23
+Player 1 health: 5
+Player 2 health: 28
+Card 15 attacked card 1
+Simulated 72 step
+ Game turn: 23
+Player 1 health: 5
+Player 2 health: 28
+Used HeroPower on 15
+Simulated 73 step
+ Game turn: 23
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 74 step
+ Game turn: 24
+Player 1 health: 3
+Player 2 health: 28
+Played card 5 on 14
+Simulated 75 step
+ Game turn: 24
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 76 step
+ Game turn: 25
+Player 1 health: 3
+Player 2 health: 28
+Played card 2 on 5
+Simulated 77 step
+ Game turn: 25
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 78 step
+ Game turn: 26
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 79 step
+ Game turn: 27
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 80 step
+ Game turn: 28
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 81 step
+ Game turn: 29
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 82 step
+ Game turn: 30
+Player 1 health: 3
+Player 2 health: 28
+Played card 3 on 11
+Simulated 83 step
+ Game turn: 30
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 84 step
+ Game turn: 31
+Player 1 health: 3
+Player 2 health: 28
+Card 16 attacked card 2
+Simulated 85 step
+ Game turn: 31
+Player 1 health: 3
+Player 2 health: 28
+Played card 2 on 8
+Simulated 86 step
+ Game turn: 31
+Player 1 health: 3
+Player 2 health: 28
+Turn ended
+Simulated 87 step
+ Game turn: 32
+Player 1 health: 3
+Player 2 health: 28
+Played card 3 on 8
+Simulated 88 step
+ Game turn: 32
+Player 1 health: 3
+Player 2 health: 28
+Played card 2 on 7
+Simulated 89 step
+ Game turn: 32
+Player 1 health: 3
+Player 2 health: 28
+Played card 3 on 17
+Simulated 90 step
+ Game turn: 32
+Player 1 health: 3
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 91 step
+ Game turn: 32
+Player 1 health: 3
+Player 2 health: 23
+Turn ended
+Simulated 92 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Card 15 attacked card 3
+Simulated 93 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Card 14 attacked card 1
+Simulated 94 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Played card 2 on 0
+Simulated 95 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Card 12 attacked card 3
+Simulated 96 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Played card 1 on 5
+Simulated 97 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Card 14 attacked card 1
+Simulated 98 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Card 10 attacked card 1
+Simulated 99 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Played card 0 on 0
+Simulated 100 step
+ Game turn: 33
+Player 1 health: 3
+Player 2 health: 23
+Turn ended
+Simulated 101 step
+ Game turn: 34
+Player 1 health: 3
+Player 2 health: 23
+Played card 3 on 12
+Simulated 102 step
+ Game turn: 34
+Player 1 health: 3
+Player 2 health: 23
+Card 10 attacked card 5
+Simulated 103 step
+ Game turn: 34
+Player 1 health: 3
+Player 2 health: 23
+Played card 3 on 12
+Simulated 104 step
+ Game turn: 34
+Player 1 health: 3
+Player 2 health: 23
+Used HeroPower on 6
+Simulated 105 step
+ Game turn: 34
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 106 step
+ Game turn: 35
+Player 1 health: 3
+Player 2 health: 21
+Card 14 attacked card 4
+Simulated 107 step
+ Game turn: 35
+Player 1 health: 3
+Player 2 health: 21
+Played card 2 on 10
+Simulated 108 step
+ Game turn: 35
+Player 1 health: 3
+Player 2 health: 21
+Card 10 attacked card 3
+Simulated 109 step
+ Game turn: 35
+Player 1 health: 3
+Player 2 health: 21
+Card 10 attacked card 2
+Simulated 110 step
+ Game turn: 35
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 111 step
+ Game turn: 36
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 112 step
+ Game turn: 37
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 1
+Simulated 113 step
+ Game turn: 37
+Player 1 health: 3
+Player 2 health: 21
+Card 12 attacked card 2
+Simulated 114 step
+ Game turn: 37
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 115 step
+ Game turn: 38
+Player 1 health: 3
+Player 2 health: 21
+Played card 3 on 5
+Simulated 116 step
+ Game turn: 38
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 117 step
+ Game turn: 39
+Player 1 health: 3
+Player 2 health: 21
+Card 11 attacked card 1
+Simulated 118 step
+ Game turn: 39
+Player 1 health: 3
+Player 2 health: 21
+Played card 1 on 1
+Simulated 119 step
+ Game turn: 39
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 120 step
+ Game turn: 40
+Player 1 health: 3
+Player 2 health: 21
+Played card 2 on 14
+Simulated 121 step
+ Game turn: 40
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 122 step
+ Game turn: 41
+Player 1 health: 3
+Player 2 health: 21
+Played card 2 on 3
+Simulated 123 step
+ Game turn: 41
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 13
+Simulated 124 step
+ Game turn: 41
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 125 step
+ Game turn: 42
+Player 1 health: 3
+Player 2 health: 21
+Played card 4 on 10
+Simulated 126 step
+ Game turn: 42
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 17
+Simulated 127 step
+ Game turn: 42
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 128 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Card 16 attacked card 2
+Simulated 129 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Card 11 attacked card 2
+Simulated 130 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Played card 1 on 5
+Simulated 131 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Card 10 attacked card 2
+Simulated 132 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Card 12 attacked card 1
+Simulated 133 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 6
+Simulated 134 step
+ Game turn: 43
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 135 step
+ Game turn: 44
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 8
+Simulated 136 step
+ Game turn: 44
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 137 step
+ Game turn: 45
+Player 1 health: 3
+Player 2 health: 21
+Card 11 attacked card 1
+Simulated 138 step
+ Game turn: 45
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 4
+Simulated 139 step
+ Game turn: 45
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 140 step
+ Game turn: 46
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 141 step
+ Game turn: 47
+Player 1 health: 3
+Player 2 health: 21
+Card 13 attacked card 1
+Simulated 142 step
+ Game turn: 47
+Player 1 health: 3
+Player 2 health: 21
+Played card 0 on 6
+Simulated 143 step
+ Game turn: 47
+Player 1 health: 3
+Player 2 health: 21
+Turn ended
+Simulated 144 step
+ Game turn: 48
+Player 1 health: 3
+Player 2 health: 21
+Used HeroPower on 16
+Simulated 145 step
+ Game turn: 48
+Player 1 health: 3
+Player 2 health: 19
+Turn ended
+Simulated 146 step
+ Game turn: 49
+Player 1 health: 3
+Player 2 health: 19
+Turn ended
+Simulated 147 step
+ Game turn: 50
+Player 1 health: 3
+Player 2 health: 19
+Played card 6 on 3
+Simulated 148 step
+ Game turn: 50
+Player 1 health: 3
+Player 2 health: 19
+Played card 1 on 13
+Simulated 149 step
+ Game turn: 50
+Player 1 health: 3
+Player 2 health: 19
+Turn ended
+Simulated 150 step
+ Game turn: 51
+Player 1 health: 3
+Player 2 health: 19
+Played card 1 on 5
+Simulated 151 step
+ Game turn: 51
+Player 1 health: 3
+Player 2 health: 19
+Played card 0 on 0
+Simulated 152 step
+ Game turn: 51
+Player 1 health: 3
+Player 2 health: 19
+Turn ended
+Simulated 153 step
+ Game turn: 52
+Player 1 health: 3
+Player 2 health: 19
+Played card 1 on 3
+Simulated 154 step
+ Game turn: 52
+Player 1 health: 3
+Player 2 health: 19
+Card 10 attacked card 4
+Simulated 155 step
+ Game turn: 52
+Player 1 health: 3
+Player 2 health: 19
+Played card 1 on 16
+Simulated 156 step
+ Game turn: 52
+Player 1 health: 3
+Player 2 health: 19
+Turn ended
+Simulated 157 step
+ Game turn: 53
+Player 1 health: 3
+Player 2 health: 19
+Card 10 attacked card 3
+Simulated 158 step
+ Game turn: 53
+Player 1 health: 3
+Player 2 health: 19
+Card 14 attacked card 1
+Simulated 159 step
+ Game turn: 53
+Player 1 health: 3
+Player 2 health: 19
+Card 16 attacked card 2
+Simulated 160 step
+ Game turn: 53
+Player 1 health: 3
+Player 2 health: 19
+Played card 0 on 9
+Simulated 161 step
+ Game turn: 53
+Player 1 health: 3
+Player 2 health: 19
+Turn ended
+Simulated 162 step
+ Game turn: 54
+Player 1 health: 2
+Player 2 health: 19
+Used HeroPower on 4
+Simulated 163 step
+ Game turn: 54
+Player 1 health: 2
+Player 2 health: 17
+Card 10 attacked card 0
+Simulated 164 step
+ Game turn: 54
+Player 1 health: 2
+Player 2 health: 15
+Played card 0 on 14
+Simulated 165 step
+ Game turn: 54
+Player 1 health: 2
+Player 2 health: 15
+Played card 1 on 5
+Simulated 166 step
+ Game turn: 54
+Player 1 health: 2
+Player 2 health: 15
+Card 11 attacked card 0
+Simulated 167 step
+ Game turn: 54
+Player 1 health: 2
+Player 2 health: 13
+Turn ended
+Simulated 168 step
+ Game turn: 55
+Player 1 health: 2
+Player 2 health: 12
+Card 13 attacked card 3
+Simulated 169 step
+ Game turn: 55
+Player 1 health: 2
+Player 2 health: 12
+Card 15 attacked card 3
+Simulated 170 step
+ Game turn: 55
+Player 1 health: 2
+Player 2 health: 12
+Card 12 attacked card 0
+Simulated 171 step
+ Game turn: 55
+Player 1 health: 1
+Player 2 health: 12
+Card 11 attacked card 3
+Simulated 172 step
+ Game turn: 55
+Player 1 health: 1
+Player 2 health: 12
+Card 16 attacked card 3
+Simulated 173 step
+ Game turn: 55
+Player 1 health: 1
+Player 2 health: 12
+Card 14 attacked card 2
+Simulated 174 step
+ Game turn: 55
+Player 1 health: 1
+Player 2 health: 12
+Card 10 attacked card 3
+Simulated 175 step
+ Game turn: 55
+Player 1 health: 1
+Player 2 health: 12
+Used HeroPower on 14
+Executed 2 eps
+Self Play (3/13) Eps Time: 884.712s | Total: 0:44:14 | ETA: 1:21:00
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 16
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 15
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 17
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 0
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 13
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 27
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Played card 2 on 10
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Played card 2 on 5
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 27
+Player 2 health: 30
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 27
+Player 2 health: 30
+Used HeroPower on 2
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 30
+Played card 4 on 4
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 30
+Card 10 attacked card 2
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 25
+Player 2 health: 30
+Turn ended
+Simulated 19 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 30
+Used HeroPower on 16
+Simulated 20 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 27
+Card 11 attacked card 0
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 24
+Card 12 attacked card 0
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 25
+Player 2 health: 23
+Turn ended
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 23
+Played card 0 on 4
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 25
+Player 2 health: 23
+Turn ended
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 23
+Played card 3 on 3
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 23
+Card 12 attacked card 0
+Simulated 28 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 22
+Card 11 attacked card 0
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 19
+Card 10 attacked card 0
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 18
+Used HeroPower on 14
+Simulated 31 step
+ Game turn: 10
+Player 1 health: 25
+Player 2 health: 16
+Turn ended
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 16
+Played card 3 on 2
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 25
+Player 2 health: 16
+Turn ended
+Simulated 34 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 16
+Played card 2 on 10
+Simulated 35 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 16
+Card 13 attacked card 1
+Simulated 36 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 16
+Card 10 attacked card 0
+Simulated 37 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 15
+Card 12 attacked card 0
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 14
+Card 11 attacked card 0
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 11
+Played card 3 on 9
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 25
+Player 2 health: 11
+Turn ended
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 11
+Played card 4 on 7
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 25
+Player 2 health: 11
+Used HeroPower on 13
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 23
+Player 2 health: 11
+Turn ended
+Simulated 44 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 11
+Card 14 attacked card 2
+Simulated 45 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 11
+Card 13 attacked card 1
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 11
+Played card 1 on 1
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 11
+Card 11 attacked card 0
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 8
+Card 12 attacked card 0
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 7
+Card 10 attacked card 0
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 6
+Used HeroPower on 14
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 23
+Player 2 health: 4
+Turn ended
+Simulated 52 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 4
+Played card 1 on 11
+Simulated 53 step
+ Game turn: 15
+Player 1 health: 23
+Player 2 health: 4
+Turn ended
+Simulated 54 step
+ Game turn: 16
+Player 1 health: 23
+Player 2 health: 4
+Card 13 attacked card 0
+Executed 3 eps
+Self Play (4/13) Eps Time: 778.177s | Total: 0:51:52 | ETA: 2:27:28
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 2 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 4
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 10
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 5 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 14
+Simulated 6 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 7
+Simulated 8 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 9 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 13
+Simulated 10 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 4
+Simulated 11 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 13 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Played card 4 on 12
+Simulated 14 step
+ Game turn: 6
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 15 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 5
+Simulated 16 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 24
+Card 12 attacked card 2
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 30
+Player 2 health: 24
+Turn ended
+Simulated 19 step
+ Game turn: 8
+Player 1 health: 30
+Player 2 health: 24
+Played card 1 on 0
+Simulated 20 step
+ Game turn: 8
+Player 1 health: 30
+Player 2 health: 24
+Turn ended
+Simulated 21 step
+ Game turn: 9
+Player 1 health: 30
+Player 2 health: 24
+Played card 4 on 13
+Simulated 22 step
+ Game turn: 9
+Player 1 health: 30
+Player 2 health: 24
+Used HeroPower on 2
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 30
+Player 2 health: 22
+Card 11 attacked card 3
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 30
+Player 2 health: 22
+Card 10 attacked card 3
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 30
+Player 2 health: 22
+Turn ended
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 30
+Player 2 health: 22
+Played card 2 on 3
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 30
+Player 2 health: 22
+Played card 1 on 2
+Simulated 28 step
+ Game turn: 10
+Player 1 health: 30
+Player 2 health: 22
+Card 10 attacked card 1
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 30
+Player 2 health: 22
+Turn ended
+Simulated 30 step
+ Game turn: 11
+Player 1 health: 30
+Player 2 health: 22
+Used HeroPower on 9
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 30
+Player 2 health: 20
+Played card 2 on 5
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 30
+Player 2 health: 20
+Turn ended
+Simulated 33 step
+ Game turn: 12
+Player 1 health: 30
+Player 2 health: 20
+Played card 2 on 4
+Simulated 34 step
+ Game turn: 12
+Player 1 health: 30
+Player 2 health: 20
+Played card 1 on 2
+Simulated 35 step
+ Game turn: 12
+Player 1 health: 30
+Player 2 health: 20
+Card 12 attacked card 0
+Simulated 36 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 37 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 20
+Card 11 attacked card 1
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 20
+Card 13 attacked card 1
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 20
+Card 14 attacked card 1
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 20
+Turn ended
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 20
+Used HeroPower on 3
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 18
+Played card 1 on 13
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 18
+Turn ended
+Simulated 44 step
+ Game turn: 14
+Player 1 health: 20
+Player 2 health: 18
+Card 14 attacked card 0
+Simulated 45 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 18
+Card 12 attacked card 0
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 14
+Player 2 health: 18
+Card 13 attacked card 0
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Card 15 attacked card 0
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 6
+Player 2 health: 18
+Card 10 attacked card 0
+Executed 4 eps
+Self Play (5/13) Eps Time: 701.720s | Total: 0:58:28 | ETA: 1:56:44
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 17
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 2
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 3
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 7
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 14
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 2
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 2
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 7
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 3
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 11
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Played card 3 on 7
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Played card 4 on 17
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 26
+Used HeroPower on 17
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 24
+Turn ended
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 24
+Used HeroPower on 1
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 24
+Played card 1 on 5
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 24
+Turn ended
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 24
+Used HeroPower on 7
+Simulated 28 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 22
+Played card 2 on 4
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 22
+Played card 3 on 8
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 31 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 20
+Turn ended
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 20
+Played card 3 on 8
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Card 10 attacked card 1
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Used HeroPower on 11
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 20
+Turn ended
+Simulated 37 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 18
+Played card 1 on 14
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 18
+Played card 1 on 4
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 18
+Card 11 attacked card 3
+Simulated 41 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 18
+Turn ended
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Played card 0 on 3
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Played card 0 on 2
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Card 12 attacked card 2
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Played card 2 on 1
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Card 11 attacked card 2
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Card 10 attacked card 2
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 18
+Turn ended
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 18
+Played card 2 on 11
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 18
+Played card 1 on 6
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 16
+Used HeroPower on 11
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 14
+Turn ended
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 21
+Player 2 health: 14
+Turn ended
+Simulated 56 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 14
+Played card 1 on 8
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 14
+Played card 0 on 2
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 14
+Card 11 attacked card 0
+Simulated 59 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 13
+Card 10 attacked card 1
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 13
+Card 11 attacked card 0
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 8
+Used HeroPower on 2
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 21
+Player 2 health: 6
+Turn ended
+Simulated 63 step
+ Game turn: 17
+Player 1 health: 21
+Player 2 health: 6
+Turn ended
+Simulated 64 step
+ Game turn: 18
+Player 1 health: 21
+Player 2 health: 6
+Card 11 attacked card 0
+Simulated 65 step
+ Game turn: 18
+Player 1 health: 21
+Player 2 health: 1
+Used HeroPower on 11
+Executed 5 eps
+Self Play (6/13) Eps Time: 677.598s | Total: 1:07:45 | ETA: 1:33:34
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 14
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 15
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 16
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Played card 4 on 2
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Played card 0 on 16
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 6
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 1
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 27
+Played card 3 on 11
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 27
+Played card 0 on 2
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 27
+Card 11 attacked card 1
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 27
+Used HeroPower on 3
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 27
+Played card 3 on 1
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 27
+Used HeroPower on 7
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 25
+Played card 3 on 4
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 25
+Card 10 attacked card 2
+Simulated 25 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 25
+Turn ended
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 25
+Played card 4 on 13
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 25
+Used HeroPower on 13
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 25
+Card 10 attacked card 0
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 25
+Turn ended
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 25
+Card 11 attacked card 0
+Simulated 31 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 22
+Used HeroPower on 11
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 20
+Played card 3 on 4
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 20
+Card 10 attacked card 2
+Simulated 34 step
+ Game turn: 10
+Player 1 health: 23
+Player 2 health: 20
+Turn ended
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Played card 3 on 2
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Played card 1 on 1
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 23
+Player 2 health: 20
+Card 10 attacked card 0
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 20
+Player 2 health: 20
+Played card 2 on 14
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 20
+Player 2 health: 20
+Turn ended
+Simulated 41 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 20
+Used HeroPower on 7
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 18
+Played card 0 on 0
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 20
+Player 2 health: 18
+Turn ended
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 18
+Card 13 attacked card 1
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 18
+Played card 2 on 8
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 18
+Card 14 attacked card 1
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 20
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 19
+Player 2 health: 18
+Card 12 attacked card 0
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 16
+Player 2 health: 18
+Card 11 attacked card 0
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 14
+Player 2 health: 18
+Used HeroPower on 0
+Simulated 51 step
+ Game turn: 13
+Player 1 health: 12
+Player 2 health: 18
+Turn ended
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Card 12 attacked card 3
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Played card 0 on 16
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Played card 2 on 9
+Simulated 56 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Played card 0 on 7
+Simulated 57 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 58 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 15
+Used HeroPower on 5
+Simulated 59 step
+ Game turn: 14
+Player 1 health: 12
+Player 2 health: 13
+Turn ended
+Simulated 60 step
+ Game turn: 15
+Player 1 health: 12
+Player 2 health: 13
+Played card 0 on 2
+Simulated 61 step
+ Game turn: 15
+Player 1 health: 12
+Player 2 health: 13
+Turn ended
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 13
+Card 10 attacked card 3
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 13
+Played card 0 on 4
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 13
+Used HeroPower on 10
+Simulated 65 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 11
+Card 10 attacked card 3
+Simulated 66 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 11
+Card 12 attacked card 2
+Simulated 67 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 11
+Card 11 attacked card 1
+Simulated 68 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 11
+Card 10 attacked card 0
+Simulated 69 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 7
+Played card 0 on 1
+Simulated 70 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 7
+Turn ended
+Simulated 71 step
+ Game turn: 17
+Player 1 health: 12
+Player 2 health: 7
+Turn ended
+Simulated 72 step
+ Game turn: 18
+Player 1 health: 12
+Player 2 health: 7
+Card 13 attacked card 0
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 12
+Player 2 health: 2
+Used HeroPower on 11
+Executed 6 eps
+Self Play (7/13) Eps Time: 678.230s | Total: 1:19:07 | ETA: 1:19:04
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 2 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 5 on 16
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 17
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 15
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Played card 2 on 8
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 9
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 1 on 8
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 0 on 0
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 27
+Played card 0 on 10
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 27
+Played card 3 on 2
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 27
+Turn ended
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 27
+Used HeroPower on 14
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 25
+Turn ended
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 25
+Played card 1 on 11
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 25
+Card 11 attacked card 3
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 25
+Turn ended
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 25
+Used HeroPower on 12
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 23
+Card 10 attacked card 2
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 23
+Card 10 attacked card 2
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 28
+Player 2 health: 23
+Turn ended
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 23
+Played card 4 on 16
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 23
+Played card 3 on 17
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 23
+Played card 1 on 6
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 28
+Player 2 health: 23
+Card 11 attacked card 0
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 23
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 21
+Player 2 health: 23
+Played card 1 on 8
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 21
+Player 2 health: 23
+Turn ended
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 21
+Player 2 health: 23
+Played card 4 on 14
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 21
+Player 2 health: 23
+Turn ended
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 23
+Played card 0 on 2
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 19
+Player 2 health: 23
+Played card 0 on 0
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 19
+Player 2 health: 23
+Card 12 attacked card 0
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 23
+Card 15 attacked card 1
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 23
+Card 13 attacked card 1
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 23
+Card 13 attacked card 1
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 23
+Turn ended
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 23
+Played card 0 on 16
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 23
+Turn ended
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 23
+Played card 0 on 7
+Simulated 45 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 23
+Card 12 attacked card 0
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 17
+Player 2 health: 23
+Card 11 attacked card 0
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 12
+Player 2 health: 23
+Card 10 attacked card 0
+Simulated 48 step
+ Game turn: 13
+Player 1 health: 10
+Player 2 health: 23
+Card 13 attacked card 0
+Simulated 49 step
+ Game turn: 13
+Player 1 health: 4
+Player 2 health: 23
+Used HeroPower on 3
+Simulated 50 step
+ Game turn: 13
+Player 1 health: 2
+Player 2 health: 23
+Turn ended
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 2
+Player 2 health: 23
+Played card 1 on 1
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 2
+Player 2 health: 23
+Used HeroPower on 1
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 2
+Player 2 health: 21
+Card 10 attacked card 5
+Simulated 54 step
+ Game turn: 14
+Player 1 health: 2
+Player 2 health: 21
+Played card 2 on 14
+Simulated 55 step
+ Game turn: 14
+Player 1 health: 2
+Player 2 health: 21
+Turn ended
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 2
+Player 2 health: 21
+Turn ended
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 21
+Played card 2 on 3
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 21
+Played card 0 on 3
+Simulated 59 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 21
+Card 10 attacked card 3
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 21
+Used HeroPower on 7
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 19
+Card 11 attacked card 0
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 18
+Card 12 attacked card 0
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 15
+Turn ended
+Simulated 64 step
+ Game turn: 17
+Player 1 health: 2
+Player 2 health: 15
+Turn ended
+Simulated 65 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 15
+Used HeroPower on 1
+Simulated 66 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 13
+Played card 1 on 4
+Simulated 67 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 13
+Card 10 attacked card 0
+Simulated 68 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 8
+Played card 1 on 0
+Simulated 69 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 8
+Card 14 attacked card 2
+Simulated 70 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 8
+Card 13 attacked card 0
+Simulated 71 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 6
+Card 12 attacked card 0
+Simulated 72 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 3
+Card 11 attacked card 0
+Simulated 73 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 2
+Turn ended
+Simulated 74 step
+ Game turn: 19
+Player 1 health: 2
+Player 2 health: 2
+Turn ended
+Simulated 75 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 2
+Used HeroPower on 11
+Executed 7 eps
+Self Play (8/13) Eps Time: 682.011s | Total: 1:30:56 | ETA: 1:07:50
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 17
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 1
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 1
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 17
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 13
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 10
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 17
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 11 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 12 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 13 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Played card 1 on 8
+Simulated 14 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 15 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Played card 1 on 15
+Simulated 17 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 2
+Simulated 18 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 19 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 24
+Card 11 attacked card 2
+Simulated 20 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 24
+Turn ended
+Simulated 21 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 24
+Used HeroPower on 2
+Simulated 22 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 24
+Turn ended
+Simulated 23 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 24
+Played card 1 on 17
+Simulated 24 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 24
+Used HeroPower on 7
+Simulated 25 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 22
+Card 10 attacked card 2
+Simulated 26 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 22
+Turn ended
+Simulated 27 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 22
+Played card 3 on 1
+Simulated 28 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 22
+Turn ended
+Simulated 29 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 22
+Played card 2 on 6
+Simulated 30 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 22
+Played card 0 on 10
+Simulated 31 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 32 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 20
+Card 11 attacked card 0
+Simulated 33 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 16
+Played card 0 on 5
+Simulated 34 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 16
+Turn ended
+Simulated 35 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 16
+Played card 0 on 14
+Simulated 36 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 16
+Turn ended
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 16
+Played card 0 on 9
+Simulated 38 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 16
+Card 13 attacked card 1
+Simulated 39 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 16
+Card 12 attacked card 0
+Simulated 40 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 15
+Card 14 attacked card 0
+Simulated 41 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 11
+Card 11 attacked card 0
+Simulated 42 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 7
+Card 10 attacked card 0
+Simulated 43 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 5
+Used HeroPower on 6
+Simulated 44 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 3
+Turn ended
+Simulated 45 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 3
+Turn ended
+Simulated 46 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 3
+Played card 0 on 11
+Simulated 47 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 3
+Turn ended
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 3
+Played card 2 on 14
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 3
+Card 11 attacked card 4
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 3
+Played card 0 on 11
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 3
+Turn ended
+Simulated 52 step
+ Game turn: 15
+Player 1 health: 26
+Player 2 health: 3
+Card 13 attacked card 3
+Simulated 53 step
+ Game turn: 15
+Player 1 health: 26
+Player 2 health: 3
+Played card 0 on 8
+Simulated 54 step
+ Game turn: 15
+Player 1 health: 26
+Player 2 health: 3
+Turn ended
+Simulated 55 step
+ Game turn: 16
+Player 1 health: 26
+Player 2 health: 3
+Card 10 attacked card 5
+Simulated 56 step
+ Game turn: 16
+Player 1 health: 26
+Player 2 health: 3
+Played card 4 on 4
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 26
+Player 2 health: 3
+Used HeroPower on 12
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 24
+Player 2 health: 3
+Turn ended
+Simulated 59 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 3
+Played card 0 on 1
+Simulated 60 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 3
+Card 13 attacked card 3
+Simulated 61 step
+ Game turn: 17
+Player 1 health: 24
+Player 2 health: 3
+Turn ended
+Simulated 62 step
+ Game turn: 18
+Player 1 health: 24
+Player 2 health: 3
+Used HeroPower on 10
+Simulated 63 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 3
+Played card 2 on 14
+Simulated 64 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 3
+Turn ended
+Simulated 65 step
+ Game turn: 19
+Player 1 health: 22
+Player 2 health: 3
+Played card 0 on 6
+Simulated 66 step
+ Game turn: 19
+Player 1 health: 22
+Player 2 health: 3
+Card 14 attacked card 4
+Simulated 67 step
+ Game turn: 19
+Player 1 health: 22
+Player 2 health: 3
+Card 10 attacked card 5
+Simulated 68 step
+ Game turn: 19
+Player 1 health: 22
+Player 2 health: 3
+Turn ended
+Simulated 69 step
+ Game turn: 20
+Player 1 health: 22
+Player 2 health: 3
+Played card 3 on 7
+Simulated 70 step
+ Game turn: 20
+Player 1 health: 22
+Player 2 health: 3
+Card 12 attacked card 4
+Simulated 71 step
+ Game turn: 20
+Player 1 health: 22
+Player 2 health: 3
+Card 11 attacked card 3
+Simulated 72 step
+ Game turn: 20
+Player 1 health: 22
+Player 2 health: 3
+Turn ended
+Simulated 73 step
+ Game turn: 21
+Player 1 health: 22
+Player 2 health: 3
+Card 11 attacked card 1
+Simulated 74 step
+ Game turn: 21
+Player 1 health: 22
+Player 2 health: 3
+Card 11 attacked card 2
+Simulated 75 step
+ Game turn: 21
+Player 1 health: 22
+Player 2 health: 3
+Played card 0 on 3
+Simulated 76 step
+ Game turn: 21
+Player 1 health: 22
+Player 2 health: 3
+Card 10 attacked card 2
+Simulated 77 step
+ Game turn: 21
+Player 1 health: 22
+Player 2 health: 3
+Used HeroPower on 11
+Simulated 78 step
+ Game turn: 21
+Player 1 health: 22
+Player 2 health: 1
+Turn ended
+Simulated 79 step
+ Game turn: 22
+Player 1 health: 22
+Player 2 health: 1
+Played card 3 on 4
+Simulated 80 step
+ Game turn: 22
+Player 1 health: 22
+Player 2 health: 1
+Played card 1 on 1
+Simulated 81 step
+ Game turn: 22
+Player 1 health: 22
+Player 2 health: 1
+Used HeroPower on 5
+Simulated 82 step
+ Game turn: 22
+Player 1 health: 20
+Player 2 health: 1
+Played card 2 on 10
+Simulated 83 step
+ Game turn: 22
+Player 1 health: 20
+Player 2 health: 1
+Card 11 attacked card 0
+Simulated 84 step
+ Game turn: 22
+Player 1 health: 18
+Player 2 health: 1
+Card 10 attacked card 0
+Simulated 85 step
+ Game turn: 22
+Player 1 health: 14
+Player 2 health: 1
+Turn ended
+Simulated 86 step
+ Game turn: 23
+Player 1 health: 14
+Player 2 health: 1
+Turn ended
+Simulated 87 step
+ Game turn: 24
+Player 1 health: 14
+Player 2 health: 1
+Card 14 attacked card 2
+Simulated 88 step
+ Game turn: 24
+Player 1 health: 14
+Player 2 health: 1
+Card 10 attacked card 0
+Simulated 89 step
+ Game turn: 24
+Player 1 health: 10
+Player 2 health: 1
+Played card 0 on 14
+Simulated 90 step
+ Game turn: 24
+Player 1 health: 10
+Player 2 health: 1
+Played card 1 on 8
+Simulated 91 step
+ Game turn: 24
+Player 1 health: 10
+Player 2 health: 1
+Card 11 attacked card 0
+Simulated 92 step
+ Game turn: 24
+Player 1 health: 8
+Player 2 health: 1
+Card 13 attacked card 0
+Simulated 93 step
+ Game turn: 24
+Player 1 health: 4
+Player 2 health: 1
+Card 12 attacked card 0
+Simulated 94 step
+ Game turn: 24
+Player 1 health: 3
+Player 2 health: 1
+Used HeroPower on 14
+Simulated 95 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 1
+Turn ended
+Simulated 96 step
+ Game turn: 25
+Player 1 health: 1
+Player 2 health: 1
+Turn ended
+Simulated 97 step
+ Game turn: 26
+Player 1 health: 1
+Player 2 health: 1
+Used HeroPower on 11
+Executed 8 eps
+Self Play (9/13) Eps Time: 704.067s | Total: 1:45:36 | ETA: 0:56:51
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 1
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 5 on 4
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 0
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 5
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 13
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Card 10 attacked card 1
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 1
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 17
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 14 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 12
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 26
+Turn ended
+Simulated 16 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 26
+Used HeroPower on 3
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Played card 0 on 16
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 19 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 26
+Played card 1 on 2
+Simulated 20 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 21 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 26
+Played card 1 on 4
+Simulated 22 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 26
+Card 11 attacked card 1
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 24 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 26
+Played card 5 on 2
+Simulated 25 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 26
+Played card 1 on 6
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 26
+Card 10 attacked card 2
+Simulated 27 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 28 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 26
+Played card 2 on 10
+Simulated 29 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 26
+Card 11 attacked card 2
+Simulated 30 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 26
+Turn ended
+Simulated 31 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 26
+Used HeroPower on 2
+Simulated 32 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 24
+Card 10 attacked card 0
+Simulated 33 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 22
+Played card 4 on 8
+Simulated 34 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 22
+Turn ended
+Simulated 35 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 22
+Played card 4 on 5
+Simulated 36 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 22
+Used HeroPower on 17
+Simulated 37 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 22
+Played card 2 on 12
+Simulated 38 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 22
+Card 10 attacked card 2
+Simulated 39 step
+ Game turn: 13
+Player 1 health: 24
+Player 2 health: 22
+Turn ended
+Simulated 40 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 22
+Card 10 attacked card 0
+Simulated 41 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 20
+Played card 4 on 6
+Simulated 42 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 20
+Used HeroPower on 1
+Simulated 43 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 18
+Played card 1 on 15
+Simulated 44 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 18
+Card 11 attacked card 1
+Simulated 45 step
+ Game turn: 14
+Player 1 health: 24
+Player 2 health: 18
+Turn ended
+Simulated 46 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 18
+Card 10 attacked card 2
+Simulated 47 step
+ Game turn: 15
+Player 1 health: 24
+Player 2 health: 18
+Used HeroPower on 0
+Simulated 48 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 18
+Played card 2 on 12
+Simulated 49 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 18
+Played card 2 on 17
+Simulated 50 step
+ Game turn: 15
+Player 1 health: 22
+Player 2 health: 18
+Turn ended
+Simulated 51 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 18
+Played card 2 on 12
+Simulated 52 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 18
+Played card 0 on 3
+Simulated 53 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 18
+Card 10 attacked card 3
+Simulated 54 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 18
+Card 11 attacked card 0
+Simulated 55 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 13
+Played card 1 on 13
+Simulated 56 step
+ Game turn: 16
+Player 1 health: 22
+Player 2 health: 13
+Turn ended
+Simulated 57 step
+ Game turn: 17
+Player 1 health: 22
+Player 2 health: 13
+Turn ended
+Simulated 58 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 13
+Card 10 attacked card 0
+Simulated 59 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 11
+Played card 1 on 2
+Simulated 60 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 11
+Played card 0 on 1
+Simulated 61 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 11
+Card 11 attacked card 0
+Simulated 62 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 6
+Card 14 attacked card 0
+Simulated 63 step
+ Game turn: 18
+Player 1 health: 22
+Player 2 health: 4
+Card 13 attacked card 0
+Executed 9 eps
+Self Play (10/13) Eps Time: 687.312s | Total: 1:54:33 | ETA: 0:46:57
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 1 on 7
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 17
+Simulated 3 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 12
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 0 on 11
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 8
+Simulated 7 step
+ Game turn: 2
+Player 1 health: 28
+Player 2 health: 30
+Turn ended
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Played card 2 on 6
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 30
+Card 10 attacked card 0
+Simulated 10 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 29
+Turn ended
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 29
+Used HeroPower on 15
+Simulated 12 step
+ Game turn: 4
+Player 1 health: 26
+Player 2 health: 29
+Turn ended
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 29
+Played card 0 on 9
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 29
+Played card 1 on 6
+Simulated 15 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 29
+Card 10 attacked card 1
+Simulated 16 step
+ Game turn: 5
+Player 1 health: 26
+Player 2 health: 29
+Turn ended
+Simulated 17 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 29
+Played card 3 on 5
+Simulated 18 step
+ Game turn: 6
+Player 1 health: 26
+Player 2 health: 29
+Turn ended
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 29
+Used HeroPower on 10
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 21 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 27
+Played card 3 on 17
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 27
+Turn ended
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Played card 1 on 2
+Simulated 24 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 27
+Card 10 attacked card 0
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 25
+Card 11 attacked card 2
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 25
+Card 12 attacked card 0
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 24
+Played card 1 on 2
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 24
+Turn ended
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 24
+Played card 0 on 14
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 26
+Player 2 health: 24
+Turn ended
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 24
+Played card 0 on 10
+Simulated 32 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 24
+Card 13 attacked card 2
+Simulated 33 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 24
+Card 11 attacked card 0
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 20
+Card 12 attacked card 0
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 19
+Card 10 attacked card 1
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 19
+Card 13 attacked card 2
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 26
+Player 2 health: 19
+Turn ended
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 19
+Played card 3 on 0
+Simulated 39 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 19
+Played card 2 on 14
+Simulated 40 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 19
+Played card 2 on 8
+Simulated 41 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 19
+Card 10 attacked card 3
+Simulated 42 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 19
+Card 11 attacked card 1
+Simulated 43 step
+ Game turn: 12
+Player 1 health: 26
+Player 2 health: 19
+Turn ended
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 26
+Player 2 health: 19
+Turn ended
+Simulated 45 step
+ Game turn: 14
+Player 1 health: 26
+Player 2 health: 19
+Card 11 attacked card 0
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 19
+Played card 0 on 17
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 21
+Player 2 health: 19
+Used HeroPower on 8
+Simulated 48 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 19
+Card 14 attacked card 1
+Simulated 49 step
+ Game turn: 14
+Player 1 health: 19
+Player 2 health: 19
+Card 10 attacked card 0
+Simulated 50 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 19
+Card 13 attacked card 0
+Simulated 51 step
+ Game turn: 14
+Player 1 health: 16
+Player 2 health: 19
+Card 12 attacked card 0
+Simulated 52 step
+ Game turn: 14
+Player 1 health: 14
+Player 2 health: 19
+Played card 2 on 12
+Simulated 53 step
+ Game turn: 14
+Player 1 health: 14
+Player 2 health: 19
+Turn ended
+Simulated 54 step
+ Game turn: 15
+Player 1 health: 14
+Player 2 health: 19
+Turn ended
+Simulated 55 step
+ Game turn: 16
+Player 1 health: 14
+Player 2 health: 19
+Card 13 attacked card 0
+Simulated 56 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 19
+Card 14 attacked card 1
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 19
+Played card 2 on 12
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 19
+Played card 1 on 0
+Simulated 59 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 19
+Played card 0 on 7
+Simulated 60 step
+ Game turn: 16
+Player 1 health: 12
+Player 2 health: 19
+Card 10 attacked card 0
+Simulated 61 step
+ Game turn: 16
+Player 1 health: 11
+Player 2 health: 19
+Card 11 attacked card 0
+Simulated 62 step
+ Game turn: 16
+Player 1 health: 6
+Player 2 health: 19
+Card 12 attacked card 0
+Simulated 63 step
+ Game turn: 16
+Player 1 health: 4
+Player 2 health: 19
+Used HeroPower on 0
+Simulated 64 step
+ Game turn: 16
+Player 1 health: 2
+Player 2 health: 19
+Turn ended
+Simulated 65 step
+ Game turn: 17
+Player 1 health: 2
+Player 2 health: 19
+Turn ended
+Simulated 66 step
+ Game turn: 18
+Player 1 health: 2
+Player 2 health: 19
+Used HeroPower on 17
+Executed 10 eps
+Self Play (11/13) Eps Time: 676.596s | Total: 2:04:02 | ETA: 0:34:22
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 1
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 15
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 3 on 14
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 10
+Simulated 6 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 7
+Simulated 8 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 9 step
+ Game turn: 3
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 10 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Played card 1 on 3
+Simulated 11 step
+ Game turn: 4
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Played card 3 on 3
+Simulated 13 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Played card 3 on 11
+Simulated 14 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 15 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 4 on 11
+Simulated 16 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 10
+Simulated 18 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 19 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 28
+Card 12 attacked card 1
+Simulated 20 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 21 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 28
+Turn ended
+Simulated 22 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 23 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 28
+Played card 4 on 4
+Simulated 24 step
+ Game turn: 8
+Player 1 health: 26
+Player 2 health: 28
+Turn ended
+Simulated 25 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 26 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 28
+Played card 2 on 14
+Simulated 27 step
+ Game turn: 9
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 28 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 28
+Turn ended
+Simulated 29 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 28
+Played card 0 on 6
+Simulated 30 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 28
+Played card 1 on 11
+Simulated 31 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 28
+Card 11 attacked card 3
+Simulated 32 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 33 step
+ Game turn: 10
+Player 1 health: 24
+Player 2 health: 28
+Turn ended
+Simulated 34 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 28
+Played card 3 on 4
+Simulated 35 step
+ Game turn: 11
+Player 1 health: 24
+Player 2 health: 28
+Used HeroPower on 9
+Simulated 36 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 37 step
+ Game turn: 11
+Player 1 health: 21
+Player 2 health: 28
+Turn ended
+Simulated 38 step
+ Game turn: 12
+Player 1 health: 21
+Player 2 health: 28
+Turn ended
+Simulated 39 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 28
+Played card 2 on 14
+Simulated 40 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 28
+Played card 1 on 11
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 28
+Played card 0 on 1
+Simulated 42 step
+ Game turn: 13
+Player 1 health: 21
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 43 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 44 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 28
+Turn ended
+Simulated 45 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 28
+Played card 4 on 8
+Simulated 46 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 28
+Played card 1 on 17
+Simulated 47 step
+ Game turn: 14
+Player 1 health: 18
+Player 2 health: 28
+Turn ended
+Simulated 48 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Card 13 attacked card 4
+Simulated 49 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 50 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Played card 1 on 7
+Simulated 51 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Played card 0 on 16
+Simulated 52 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 53 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Card 12 attacked card 1
+Simulated 54 step
+ Game turn: 15
+Player 1 health: 18
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 55 step
+ Game turn: 15
+Player 1 health: 17
+Player 2 health: 28
+Used HeroPower on 14
+Simulated 56 step
+ Game turn: 15
+Player 1 health: 15
+Player 2 health: 28
+Turn ended
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 15
+Player 2 health: 28
+Played card 0 on 4
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 15
+Player 2 health: 28
+Turn ended
+Simulated 59 step
+ Game turn: 17
+Player 1 health: 15
+Player 2 health: 28
+Played card 0 on 5
+Simulated 60 step
+ Game turn: 17
+Player 1 health: 15
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 61 step
+ Game turn: 17
+Player 1 health: 15
+Player 2 health: 28
+Used HeroPower on 14
+Simulated 62 step
+ Game turn: 17
+Player 1 health: 13
+Player 2 health: 28
+Card 11 attacked card 0
+Simulated 63 step
+ Game turn: 17
+Player 1 health: 12
+Player 2 health: 28
+Card 12 attacked card 0
+Simulated 64 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 28
+Card 13 attacked card 2
+Simulated 65 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 28
+Card 10 attacked card 2
+Simulated 66 step
+ Game turn: 17
+Player 1 health: 11
+Player 2 health: 28
+Turn ended
+Simulated 67 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 28
+Card 10 attacked card 1
+Simulated 68 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 28
+Used HeroPower on 13
+Simulated 69 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 26
+Played card 1 on 5
+Simulated 70 step
+ Game turn: 18
+Player 1 health: 11
+Player 2 health: 26
+Turn ended
+Simulated 71 step
+ Game turn: 19
+Player 1 health: 11
+Player 2 health: 26
+Used HeroPower on 11
+Simulated 72 step
+ Game turn: 19
+Player 1 health: 9
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 73 step
+ Game turn: 19
+Player 1 health: 8
+Player 2 health: 26
+Card 11 attacked card 0
+Simulated 74 step
+ Game turn: 19
+Player 1 health: 2
+Player 2 health: 26
+Played card 0 on 0
+Simulated 75 step
+ Game turn: 19
+Player 1 health: 2
+Player 2 health: 26
+Turn ended
+Simulated 76 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 26
+Card 10 attacked card 1
+Simulated 77 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 26
+Played card 1 on 11
+Simulated 78 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 26
+Played card 2 on 8
+Simulated 79 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 26
+Used HeroPower on 16
+Simulated 80 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 24
+Played card 0 on 13
+Simulated 81 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 24
+Card 10 attacked card 1
+Simulated 82 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 24
+Played card 0 on 7
+Simulated 83 step
+ Game turn: 20
+Player 1 health: 2
+Player 2 health: 24
+Turn ended
+Simulated 84 step
+ Game turn: 21
+Player 1 health: 2
+Player 2 health: 24
+Turn ended
+Simulated 85 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 24
+Played card 0 on 1
+Simulated 86 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 24
+Used HeroPower on 9
+Simulated 87 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 22
+Card 12 attacked card 0
+Simulated 88 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 16
+Card 10 attacked card 2
+Simulated 89 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 16
+Card 10 attacked card 0
+Simulated 90 step
+ Game turn: 22
+Player 1 health: 2
+Player 2 health: 14
+Turn ended
+Simulated 91 step
+ Game turn: 23
+Player 1 health: 2
+Player 2 health: 14
+Turn ended
+Simulated 92 step
+ Game turn: 24
+Player 1 health: 2
+Player 2 health: 14
+Played card 0 on 5
+Simulated 93 step
+ Game turn: 24
+Player 1 health: 2
+Player 2 health: 14
+Used HeroPower on 17
+Simulated 94 step
+ Game turn: 24
+Player 1 health: 2
+Player 2 health: 12
+Card 11 attacked card 0
+Simulated 95 step
+ Game turn: 24
+Player 1 health: 2
+Player 2 health: 6
+Card 10 attacked card 1
+Simulated 96 step
+ Game turn: 24
+Player 1 health: 2
+Player 2 health: 6
+Card 11 attacked card 0
+Simulated 97 step
+ Game turn: 24
+Player 1 health: 2
+Player 2 health: 4
+Turn ended
+Simulated 98 step
+ Game turn: 25
+Player 1 health: 2
+Player 2 health: 4
+Turn ended
+Simulated 99 step
+ Game turn: 26
+Player 1 health: 2
+Player 2 health: 4
+Card 10 attacked card 0
+Executed 11 eps
+Self Play (12/13) Eps Time: 696.255s | Total: 2:19:15 | ETA: 0:23:01
+Simulated 1 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Played card 2 on 3
+Simulated 2 step
+ Game turn: 1
+Player 1 health: 30
+Player 2 health: 30
+Turn ended
+Simulated 3 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Played card 4 on 10
+Simulated 4 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 30
+Used HeroPower on 1
+Simulated 5 step
+ Game turn: 2
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 6 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Played card 2 on 1
+Simulated 7 step
+ Game turn: 3
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 8 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Played card 5 on 4
+Simulated 9 step
+ Game turn: 4
+Player 1 health: 30
+Player 2 health: 28
+Turn ended
+Simulated 10 step
+ Game turn: 5
+Player 1 health: 30
+Player 2 health: 28
+Used HeroPower on 11
+Simulated 11 step
+ Game turn: 5
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 12 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Played card 2 on 2
+Simulated 13 step
+ Game turn: 6
+Player 1 health: 28
+Player 2 health: 28
+Turn ended
+Simulated 14 step
+ Game turn: 7
+Player 1 health: 28
+Player 2 health: 28
+Used HeroPower on 2
+Simulated 15 step
+ Game turn: 7
+Player 1 health: 26
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 16 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 28
+Played card 4 on 14
+Simulated 17 step
+ Game turn: 7
+Player 1 health: 24
+Player 2 health: 28
+Turn ended
+Simulated 18 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 28
+Played card 4 on 1
+Simulated 19 step
+ Game turn: 8
+Player 1 health: 24
+Player 2 health: 28
+Turn ended
+Simulated 20 step
+ Game turn: 9
+Player 1 health: 24
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 21 step
+ Game turn: 9
+Player 1 health: 22
+Player 2 health: 28
+Card 11 attacked card 1
+Simulated 22 step
+ Game turn: 9
+Player 1 health: 22
+Player 2 health: 28
+Played card 0 on 5
+Simulated 23 step
+ Game turn: 9
+Player 1 health: 22
+Player 2 health: 28
+Turn ended
+Simulated 24 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 28
+Played card 4 on 0
+Simulated 25 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 28
+Played card 1 on 9
+Simulated 26 step
+ Game turn: 10
+Player 1 health: 22
+Player 2 health: 28
+Turn ended
+Simulated 27 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 28
+Played card 2 on 1
+Simulated 28 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 28
+Card 11 attacked card 2
+Simulated 29 step
+ Game turn: 11
+Player 1 health: 22
+Player 2 health: 28
+Card 10 attacked card 0
+Simulated 30 step
+ Game turn: 11
+Player 1 health: 20
+Player 2 health: 28
+Used HeroPower on 1
+Simulated 31 step
+ Game turn: 11
+Player 1 health: 18
+Player 2 health: 28
+Turn ended
+Simulated 32 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 28
+Played card 2 on 7
+Simulated 33 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 28
+Used HeroPower on 11
+Simulated 34 step
+ Game turn: 12
+Player 1 health: 18
+Player 2 health: 26
+Turn ended
+Simulated 35 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 26
+Played card 0 on 10
+Simulated 36 step
+ Game turn: 13
+Player 1 health: 18
+Player 2 health: 26
+Used HeroPower on 5
+Simulated 37 step
+ Game turn: 13
+Player 1 health: 16
+Player 2 health: 26
+Card 11 attacked card 3
+Simulated 38 step
+ Game turn: 13
+Player 1 health: 16
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 39 step
+ Game turn: 13
+Player 1 health: 14
+Player 2 health: 26
+Card 12 attacked card 0
+Simulated 40 step
+ Game turn: 13
+Player 1 health: 9
+Player 2 health: 26
+Played card 1 on 0
+Simulated 41 step
+ Game turn: 13
+Player 1 health: 9
+Player 2 health: 26
+Turn ended
+Simulated 42 step
+ Game turn: 14
+Player 1 health: 9
+Player 2 health: 26
+Turn ended
+Simulated 43 step
+ Game turn: 15
+Player 1 health: 9
+Player 2 health: 26
+Played card 3 on 1
+Simulated 44 step
+ Game turn: 15
+Player 1 health: 9
+Player 2 health: 26
+Played card 2 on 12
+Simulated 45 step
+ Game turn: 15
+Player 1 health: 9
+Player 2 health: 26
+Card 10 attacked card 0
+Simulated 46 step
+ Game turn: 15
+Player 1 health: 7
+Player 2 health: 26
+Card 12 attacked card 2
+Simulated 47 step
+ Game turn: 15
+Player 1 health: 7
+Player 2 health: 26
+Card 14 attacked card 1
+Simulated 48 step
+ Game turn: 15
+Player 1 health: 7
+Player 2 health: 26
+Card 13 attacked card 0
+Simulated 49 step
+ Game turn: 15
+Player 1 health: 3
+Player 2 health: 26
+Played card 0 on 16
+Simulated 50 step
+ Game turn: 15
+Player 1 health: 3
+Player 2 health: 26
+Card 11 attacked card 1
+Simulated 51 step
+ Game turn: 15
+Player 1 health: 3
+Player 2 health: 26
+Used HeroPower on 11
+Simulated 52 step
+ Game turn: 15
+Player 1 health: 1
+Player 2 health: 26
+Turn ended
+Simulated 53 step
+ Game turn: 16
+Player 1 health: 1
+Player 2 health: 26
+Played card 4 on 9
+Simulated 54 step
+ Game turn: 16
+Player 1 health: 1
+Player 2 health: 26
+Played card 3 on 3
+Simulated 55 step
+ Game turn: 16
+Player 1 health: 1
+Player 2 health: 26
+Played card 2 on 0
+Simulated 56 step
+ Game turn: 16
+Player 1 health: 1
+Player 2 health: 26
+Played card 2 on 4
+Simulated 57 step
+ Game turn: 16
+Player 1 health: 1
+Player 2 health: 26
+Used HeroPower on 12
+Simulated 58 step
+ Game turn: 16
+Player 1 health: 1
+Player 2 health: 24
+Turn ended
+Simulated 59 step
+ Game turn: 17
+Player 1 health: 1
+Player 2 health: 24
+Turn ended
+Simulated 60 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 24
+Card 11 attacked card 2
+Simulated 61 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 24
+Played card 0 on 4
+Simulated 62 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 24
+Card 11 attacked card 0
+Simulated 63 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 22
+Used HeroPower on 6
+Simulated 64 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 20
+Played card 0 on 14
+Simulated 65 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 20
+Card 12 attacked card 0
+Simulated 66 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 18
+Card 10 attacked card 2
+Simulated 67 step
+ Game turn: 18
+Player 1 health: 1
+Player 2 health: 18
+Turn ended
+Simulated 68 step
+ Game turn: 19
+Player 1 health: 1
+Player 2 health: 18
+Turn ended
+Simulated 69 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 18
+Played card 0 on 1
+Simulated 70 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 18
+Card 10 attacked card 1
+Simulated 71 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 18
+Card 10 attacked card 0
+Simulated 72 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 16
+Card 11 attacked card 4
+Simulated 73 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 16
+Used HeroPower on 11
+Simulated 74 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 14
+Card 12 attacked card 1
+Simulated 75 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 14
+Card 13 attacked card 2
+Simulated 76 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 14
+Played card 0 on 14
+Simulated 77 step
+ Game turn: 20
+Player 1 health: 1
+Player 2 health: 14
+Turn ended
+Simulated 78 step
+ Game turn: 21
+Player 1 health: 1
+Player 2 health: 14
+Turn ended
+Simulated 79 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 14
+Card 15 attacked card 2
+Simulated 80 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 14
+Card 13 attacked card 2
+Simulated 81 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 14
+Played card 0 on 0
+Simulated 82 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 14
+Card 12 attacked card 0
+Simulated 83 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 12
+Card 11 attacked card 0
+Simulated 84 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 10
+Card 10 attacked card 0
+Simulated 85 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 8
+Card 13 attacked card 0
+Simulated 86 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 3
+Used HeroPower on 1
+Simulated 87 step
+ Game turn: 22
+Player 1 health: 1
+Player 2 health: 1
+Turn ended
+Simulated 88 step
+ Game turn: 23
+Player 1 health: 1
+Player 2 health: 1
+Turn ended
+Simulated 89 step
+ Game turn: 24
+Player 1 health: 1
+Player 2 health: 1
+Used HeroPower on 11
+Executed 12 eps
+Self Play (13/13) Eps Time: 704.717s | Total: 2:32:41 | ETA: 0:12:28
+EPOCH ::: 1
+Training Net (1/7) Data: 0.002s | Batch: 1.543s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 5.9383 | Loss_v: 128.508
+Training Net (2/7) Data: 0.003s | Batch: 1.581s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 5.8809 | Loss_v: 196.818
+Training Net (3/7) Data: 0.004s | Batch: 1.564s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 5.9975 | Loss_v: 207.119
+Training Net (4/7) Data: 0.003s | Batch: 1.559s | Total: 0:00:06 | ETA: 0:00:07 | Loss_pi: 6.0289 | Loss_v: 213.325
+Training Net (5/7) Data: 0.003s | Batch: 1.537s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 6.0419 | Loss_v: 221.819
+Training Net (6/7) Data: 0.003s | Batch: 1.534s | Total: 0:00:09 | ETA: 0:00:04 | Loss_pi: 6.0020 | Loss_v: 232.347
+Training Net (7/7) Data: 0.003s | Batch: 1.520s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 5.9794 | Loss_v: 223.196
+EPOCH ::: 2
+Training Net (1/7) Data: 0.002s | Batch: 1.559s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 5.9886 | Loss_v: 221.033
+Training Net (2/7) Data: 0.003s | Batch: 1.505s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 5.7367 | Loss_v: 219.504
+Training Net (3/7) Data: 0.003s | Batch: 1.513s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 5.6432 | Loss_v: 221.359
+Training Net (4/7) Data: 0.003s | Batch: 1.495s | Total: 0:00:05 | ETA: 0:00:07 | Loss_pi: 5.4680 | Loss_v: 226.816
+Training Net (5/7) Data: 0.003s | Batch: 1.500s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 5.3766 | Loss_v: 236.093
+Training Net (6/7) Data: 0.003s | Batch: 1.486s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 5.2290 | Loss_v: 236.565
+Training Net (7/7) Data: 0.003s | Batch: 1.488s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 5.1286 | Loss_v: 235.832
+EPOCH ::: 3
+Training Net (1/7) Data: 0.004s | Batch: 1.460s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.4680 | Loss_v: 238.607
+Training Net (2/7) Data: 0.003s | Batch: 1.522s | Total: 0:00:03 | ETA: 0:00:09 | Loss_pi: 4.4405 | Loss_v: 236.317
+Training Net (3/7) Data: 0.003s | Batch: 1.510s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.4500 | Loss_v: 236.884
+Training Net (4/7) Data: 0.003s | Batch: 1.519s | Total: 0:00:06 | ETA: 0:00:07 | Loss_pi: 4.5358 | Loss_v: 231.560
+Training Net (5/7) Data: 0.003s | Batch: 1.513s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.5516 | Loss_v: 231.548
+Training Net (6/7) Data: 0.003s | Batch: 1.533s | Total: 0:00:09 | ETA: 0:00:04 | Loss_pi: 4.5786 | Loss_v: 232.854
+Training Net (7/7) Data: 0.003s | Batch: 1.519s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.5940 | Loss_v: 232.975
+EPOCH ::: 4
+Training Net (1/7) Data: 0.004s | Batch: 1.564s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 5.1503 | Loss_v: 250.690
+Training Net (2/7) Data: 0.004s | Batch: 1.500s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 4.8282 | Loss_v: 238.012
+Training Net (3/7) Data: 0.004s | Batch: 1.510s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.6607 | Loss_v: 227.438
+Training Net (4/7) Data: 0.004s | Batch: 1.487s | Total: 0:00:05 | ETA: 0:00:07 | Loss_pi: 4.6207 | Loss_v: 227.043
+Training Net (5/7) Data: 0.004s | Batch: 1.495s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.5328 | Loss_v: 227.942
+Training Net (6/7) Data: 0.004s | Batch: 1.486s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.5136 | Loss_v: 219.436
+Training Net (7/7) Data: 0.004s | Batch: 1.489s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.6252 | Loss_v: 224.809
+EPOCH ::: 5
+Training Net (1/7) Data: 0.004s | Batch: 1.437s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.8906 | Loss_v: 184.130
+Training Net (2/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.5451 | Loss_v: 205.515
+Training Net (3/7) Data: 0.004s | Batch: 1.440s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.4252 | Loss_v: 208.707
+Training Net (4/7) Data: 0.004s | Batch: 1.449s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.3613 | Loss_v: 199.696
+Training Net (5/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.3364 | Loss_v: 196.424
+Training Net (6/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.3157 | Loss_v: 196.020
+Training Net (7/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.2985 | Loss_v: 194.139
+EPOCH ::: 6
+Training Net (1/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.2119 | Loss_v: 168.965
+Training Net (2/7) Data: 0.003s | Batch: 1.494s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.1974 | Loss_v: 166.651
+Training Net (3/7) Data: 0.003s | Batch: 1.466s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.1283 | Loss_v: 179.001
+Training Net (4/7) Data: 0.003s | Batch: 1.469s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.1269 | Loss_v: 176.434
+Training Net (5/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.1361 | Loss_v: 171.122
+Training Net (6/7) Data: 0.003s | Batch: 1.452s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.1427 | Loss_v: 168.890
+Training Net (7/7) Data: 0.003s | Batch: 1.448s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.1589 | Loss_v: 166.257
+EPOCH ::: 7
+Training Net (1/7) Data: 0.003s | Batch: 1.485s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.5086 | Loss_v: 145.864
+Training Net (2/7) Data: 0.003s | Batch: 1.472s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.4395 | Loss_v: 144.902
+Training Net (3/7) Data: 0.003s | Batch: 1.469s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.4215 | Loss_v: 146.126
+Training Net (4/7) Data: 0.003s | Batch: 1.465s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.4270 | Loss_v: 143.106
+Training Net (5/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.4441 | Loss_v: 140.495
+Training Net (6/7) Data: 0.003s | Batch: 1.467s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.4679 | Loss_v: 140.247
+Training Net (7/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.4723 | Loss_v: 140.765
+EPOCH ::: 8
+Training Net (1/7) Data: 0.002s | Batch: 1.613s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.4648 | Loss_v: 133.350
+Training Net (2/7) Data: 0.003s | Batch: 1.627s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 4.5427 | Loss_v: 131.166
+Training Net (3/7) Data: 0.003s | Batch: 1.628s | Total: 0:00:04 | ETA: 0:00:09 | Loss_pi: 4.5109 | Loss_v: 132.742
+Training Net (4/7) Data: 0.004s | Batch: 1.628s | Total: 0:00:06 | ETA: 0:00:07 | Loss_pi: 4.5630 | Loss_v: 132.539
+Training Net (5/7) Data: 0.003s | Batch: 1.604s | Total: 0:00:08 | ETA: 0:00:05 | Loss_pi: 4.5309 | Loss_v: 132.392
+Training Net (6/7) Data: 0.003s | Batch: 1.585s | Total: 0:00:09 | ETA: 0:00:04 | Loss_pi: 4.5316 | Loss_v: 131.802
+Training Net (7/7) Data: 0.003s | Batch: 1.563s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.5420 | Loss_v: 131.696
+EPOCH ::: 9
+Training Net (1/7) Data: 0.003s | Batch: 1.527s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.5834 | Loss_v: 131.439
+Training Net (2/7) Data: 0.003s | Batch: 1.504s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 4.5925 | Loss_v: 130.157
+Training Net (3/7) Data: 0.004s | Batch: 1.511s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.6446 | Loss_v: 129.741
+Training Net (4/7) Data: 0.004s | Batch: 1.492s | Total: 0:00:05 | ETA: 0:00:07 | Loss_pi: 4.6010 | Loss_v: 128.733
+Training Net (5/7) Data: 0.004s | Batch: 1.496s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.6112 | Loss_v: 129.957
+Training Net (6/7) Data: 0.004s | Batch: 1.512s | Total: 0:00:09 | ETA: 0:00:03 | Loss_pi: 4.5720 | Loss_v: 130.472
+Training Net (7/7) Data: 0.004s | Batch: 1.527s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.5474 | Loss_v: 130.943
+EPOCH ::: 10
+Training Net (1/7) Data: 0.003s | Batch: 1.456s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.3296 | Loss_v: 134.704
+Training Net (2/7) Data: 0.003s | Batch: 1.482s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.2791 | Loss_v: 131.293
+Training Net (3/7) Data: 0.003s | Batch: 1.479s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.3307 | Loss_v: 131.816
+Training Net (4/7) Data: 0.004s | Batch: 1.485s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.2790 | Loss_v: 132.175
+Training Net (5/7) Data: 0.003s | Batch: 1.484s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.2460 | Loss_v: 131.317
+Training Net (6/7) Data: 0.004s | Batch: 1.490s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.2404 | Loss_v: 130.727
+Training Net (7/7) Data: 0.004s | Batch: 1.484s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.2219 | Loss_v: 130.349
+EPOCH ::: 11
+Training Net (1/7) Data: 0.003s | Batch: 1.515s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.2998 | Loss_v: 127.345
+Training Net (2/7) Data: 0.004s | Batch: 1.502s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 4.1272 | Loss_v: 127.741
+Training Net (3/7) Data: 0.003s | Batch: 1.514s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.1146 | Loss_v: 127.874
+Training Net (4/7) Data: 0.004s | Batch: 1.494s | Total: 0:00:05 | ETA: 0:00:07 | Loss_pi: 4.1012 | Loss_v: 128.758
+Training Net (5/7) Data: 0.003s | Batch: 1.507s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.0656 | Loss_v: 128.890
+Training Net (6/7) Data: 0.003s | Batch: 1.502s | Total: 0:00:09 | ETA: 0:00:04 | Loss_pi: 4.0985 | Loss_v: 128.715
+Training Net (7/7) Data: 0.003s | Batch: 1.502s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.1126 | Loss_v: 128.405
+EPOCH ::: 12
+Training Net (1/7) Data: 0.004s | Batch: 1.463s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8486 | Loss_v: 128.469
+Training Net (2/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.0480 | Loss_v: 128.268
+Training Net (3/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.0014 | Loss_v: 128.212
+Training Net (4/7) Data: 0.004s | Batch: 1.468s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9559 | Loss_v: 128.296
+Training Net (5/7) Data: 0.004s | Batch: 1.461s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9249 | Loss_v: 128.318
+Training Net (6/7) Data: 0.004s | Batch: 1.471s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9703 | Loss_v: 128.317
+Training Net (7/7) Data: 0.004s | Batch: 1.464s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9508 | Loss_v: 128.441
+EPOCH ::: 13
+Training Net (1/7) Data: 0.002s | Batch: 1.489s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9903 | Loss_v: 125.358
+Training Net (2/7) Data: 0.004s | Batch: 1.464s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8726 | Loss_v: 127.588
+Training Net (3/7) Data: 0.003s | Batch: 1.480s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8681 | Loss_v: 127.714
+Training Net (4/7) Data: 0.004s | Batch: 1.484s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8712 | Loss_v: 127.856
+Training Net (5/7) Data: 0.004s | Batch: 1.485s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8662 | Loss_v: 127.976
+Training Net (6/7) Data: 0.004s | Batch: 1.490s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8268 | Loss_v: 128.166
+Training Net (7/7) Data: 0.004s | Batch: 1.498s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8441 | Loss_v: 128.215
+EPOCH ::: 14
+Training Net (1/7) Data: 0.003s | Batch: 1.478s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9744 | Loss_v: 128.740
+Training Net (2/7) Data: 0.003s | Batch: 1.472s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9164 | Loss_v: 128.600
+Training Net (3/7) Data: 0.003s | Batch: 1.474s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8690 | Loss_v: 127.474
+Training Net (4/7) Data: 0.003s | Batch: 1.491s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8686 | Loss_v: 128.311
+Training Net (5/7) Data: 0.003s | Batch: 1.496s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8982 | Loss_v: 129.831
+Training Net (6/7) Data: 0.003s | Batch: 1.495s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8746 | Loss_v: 129.372
+Training Net (7/7) Data: 0.003s | Batch: 1.489s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8665 | Loss_v: 129.229
+EPOCH ::: 15
+Training Net (1/7) Data: 0.003s | Batch: 1.489s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8984 | Loss_v: 128.531
+Training Net (2/7) Data: 0.003s | Batch: 1.476s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8917 | Loss_v: 127.432
+Training Net (3/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9393 | Loss_v: 128.684
+Training Net (4/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9599 | Loss_v: 129.286
+Training Net (5/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9567 | Loss_v: 129.328
+Training Net (6/7) Data: 0.003s | Batch: 1.472s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9220 | Loss_v: 129.323
+Training Net (7/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9550 | Loss_v: 129.083
+EPOCH ::: 16
+Training Net (1/7) Data: 0.004s | Batch: 1.499s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0547 | Loss_v: 128.463
+Training Net (2/7) Data: 0.004s | Batch: 1.473s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9586 | Loss_v: 128.156
+Training Net (3/7) Data: 0.004s | Batch: 1.481s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9734 | Loss_v: 127.574
+Training Net (4/7) Data: 0.004s | Batch: 1.468s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9582 | Loss_v: 127.490
+Training Net (5/7) Data: 0.003s | Batch: 1.474s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8976 | Loss_v: 127.695
+Training Net (6/7) Data: 0.004s | Batch: 1.468s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9015 | Loss_v: 128.415
+Training Net (7/7) Data: 0.004s | Batch: 1.466s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9212 | Loss_v: 129.238
+EPOCH ::: 17
+Training Net (1/7) Data: 0.003s | Batch: 1.511s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0353 | Loss_v: 127.403
+Training Net (2/7) Data: 0.003s | Batch: 1.489s | Total: 0:00:02 | ETA: 0:00:10 | Loss_pi: 3.9418 | Loss_v: 127.635
+Training Net (3/7) Data: 0.003s | Batch: 1.481s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8578 | Loss_v: 127.188
+Training Net (4/7) Data: 0.003s | Batch: 1.473s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8743 | Loss_v: 127.305
+Training Net (5/7) Data: 0.003s | Batch: 1.473s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9039 | Loss_v: 127.505
+Training Net (6/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8991 | Loss_v: 127.584
+Training Net (7/7) Data: 0.003s | Batch: 1.472s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9015 | Loss_v: 127.691
+EPOCH ::: 18
+Training Net (1/7) Data: 0.003s | Batch: 1.433s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9148 | Loss_v: 127.940
+Training Net (2/7) Data: 0.003s | Batch: 1.486s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9828 | Loss_v: 128.381
+Training Net (3/7) Data: 0.003s | Batch: 1.481s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9287 | Loss_v: 128.278
+Training Net (4/7) Data: 0.003s | Batch: 1.490s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9406 | Loss_v: 128.294
+Training Net (5/7) Data: 0.003s | Batch: 1.494s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9939 | Loss_v: 128.195
+Training Net (6/7) Data: 0.004s | Batch: 1.506s | Total: 0:00:09 | ETA: 0:00:03 | Loss_pi: 3.9498 | Loss_v: 128.151
+Training Net (7/7) Data: 0.004s | Batch: 1.498s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9301 | Loss_v: 128.035
+EPOCH ::: 19
+Training Net (1/7) Data: 0.003s | Batch: 1.537s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.7853 | Loss_v: 126.825
+Training Net (2/7) Data: 0.004s | Batch: 1.542s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 3.9173 | Loss_v: 125.780
+Training Net (3/7) Data: 0.003s | Batch: 1.539s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9269 | Loss_v: 127.124
+Training Net (4/7) Data: 0.004s | Batch: 1.521s | Total: 0:00:06 | ETA: 0:00:07 | Loss_pi: 3.9757 | Loss_v: 127.461
+Training Net (5/7) Data: 0.004s | Batch: 1.520s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9759 | Loss_v: 127.708
+Training Net (6/7) Data: 0.004s | Batch: 1.527s | Total: 0:00:09 | ETA: 0:00:04 | Loss_pi: 3.9580 | Loss_v: 127.864
+Training Net (7/7) Data: 0.004s | Batch: 1.538s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9400 | Loss_v: 127.995
+EPOCH ::: 20
+Training Net (1/7) Data: 0.003s | Batch: 1.602s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0451 | Loss_v: 129.709
+Training Net (2/7) Data: 0.004s | Batch: 1.568s | Total: 0:00:03 | ETA: 0:00:10 | Loss_pi: 4.0186 | Loss_v: 130.291
+Training Net (3/7) Data: 0.004s | Batch: 1.567s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.0609 | Loss_v: 129.293
+Training Net (4/7) Data: 0.004s | Batch: 1.538s | Total: 0:00:06 | ETA: 0:00:07 | Loss_pi: 4.0401 | Loss_v: 129.057
+Training Net (5/7) Data: 0.004s | Batch: 1.550s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.0451 | Loss_v: 128.823
+Training Net (6/7) Data: 0.004s | Batch: 1.543s | Total: 0:00:09 | ETA: 0:00:04 | Loss_pi: 4.0097 | Loss_v: 128.856
+Training Net (7/7) Data: 0.004s | Batch: 1.539s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9822 | Loss_v: 128.778
+EPOCH ::: 21
+Training Net (1/7) Data: 0.002s | Batch: 1.415s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8562 | Loss_v: 127.728
+Training Net (2/7) Data: 0.003s | Batch: 1.453s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9625 | Loss_v: 128.384
+Training Net (3/7) Data: 0.003s | Batch: 1.444s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9888 | Loss_v: 128.450
+Training Net (4/7) Data: 0.003s | Batch: 1.455s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.0068 | Loss_v: 128.350
+Training Net (5/7) Data: 0.003s | Batch: 1.450s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9932 | Loss_v: 128.593
+Training Net (6/7) Data: 0.003s | Batch: 1.452s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9710 | Loss_v: 128.413
+Training Net (7/7) Data: 0.004s | Batch: 1.455s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9680 | Loss_v: 128.325
+EPOCH ::: 22
+Training Net (1/7) Data: 0.003s | Batch: 1.465s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8521 | Loss_v: 128.535
+Training Net (2/7) Data: 0.003s | Batch: 1.460s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9999 | Loss_v: 127.003
+Training Net (3/7) Data: 0.003s | Batch: 1.452s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.0365 | Loss_v: 127.868
+Training Net (4/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9942 | Loss_v: 127.332
+Training Net (5/7) Data: 0.004s | Batch: 1.464s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.0152 | Loss_v: 127.881
+Training Net (6/7) Data: 0.004s | Batch: 1.471s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.0084 | Loss_v: 127.716
+Training Net (7/7) Data: 0.004s | Batch: 1.470s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.0112 | Loss_v: 127.511
+EPOCH ::: 23
+Training Net (1/7) Data: 0.003s | Batch: 1.533s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.1380 | Loss_v: 127.534
+Training Net (2/7) Data: 0.003s | Batch: 1.486s | Total: 0:00:02 | ETA: 0:00:10 | Loss_pi: 3.8526 | Loss_v: 126.957
+Training Net (3/7) Data: 0.004s | Batch: 1.493s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9268 | Loss_v: 127.696
+Training Net (4/7) Data: 0.004s | Batch: 1.477s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9567 | Loss_v: 127.522
+Training Net (5/7) Data: 0.004s | Batch: 1.485s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9691 | Loss_v: 127.426
+Training Net (6/7) Data: 0.004s | Batch: 1.474s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9570 | Loss_v: 127.518
+Training Net (7/7) Data: 0.004s | Batch: 1.474s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9489 | Loss_v: 127.454
+EPOCH ::: 24
+Training Net (1/7) Data: 0.004s | Batch: 1.475s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.6577 | Loss_v: 127.085
+Training Net (2/7) Data: 0.004s | Batch: 1.475s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8527 | Loss_v: 128.049
+Training Net (3/7) Data: 0.004s | Batch: 1.475s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9280 | Loss_v: 127.795
+Training Net (4/7) Data: 0.004s | Batch: 1.476s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9360 | Loss_v: 127.839
+Training Net (5/7) Data: 0.004s | Batch: 1.483s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9010 | Loss_v: 127.934
+Training Net (6/7) Data: 0.004s | Batch: 1.481s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8937 | Loss_v: 127.794
+Training Net (7/7) Data: 0.003s | Batch: 1.478s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9018 | Loss_v: 127.763
+EPOCH ::: 25
+Training Net (1/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8667 | Loss_v: 127.044
+Training Net (2/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9115 | Loss_v: 126.988
+Training Net (3/7) Data: 0.004s | Batch: 1.453s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8875 | Loss_v: 127.854
+Training Net (4/7) Data: 0.004s | Batch: 1.462s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9013 | Loss_v: 127.953
+Training Net (5/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9246 | Loss_v: 128.000
+Training Net (6/7) Data: 0.004s | Batch: 1.457s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9255 | Loss_v: 128.114
+Training Net (7/7) Data: 0.004s | Batch: 1.450s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9055 | Loss_v: 127.957
+EPOCH ::: 26
+Training Net (1/7) Data: 0.003s | Batch: 1.486s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0041 | Loss_v: 127.443
+Training Net (2/7) Data: 0.004s | Batch: 1.467s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9097 | Loss_v: 127.662
+Training Net (3/7) Data: 0.003s | Batch: 1.471s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8537 | Loss_v: 128.193
+Training Net (4/7) Data: 0.004s | Batch: 1.466s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8807 | Loss_v: 128.098
+Training Net (5/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9089 | Loss_v: 128.018
+Training Net (6/7) Data: 0.003s | Batch: 1.469s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9036 | Loss_v: 127.976
+Training Net (7/7) Data: 0.004s | Batch: 1.465s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9051 | Loss_v: 127.916
+EPOCH ::: 27
+Training Net (1/7) Data: 0.003s | Batch: 1.478s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0696 | Loss_v: 127.181
+Training Net (2/7) Data: 0.003s | Batch: 1.455s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9900 | Loss_v: 126.762
+Training Net (3/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9700 | Loss_v: 127.260
+Training Net (4/7) Data: 0.004s | Batch: 1.455s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9686 | Loss_v: 127.792
+Training Net (5/7) Data: 0.004s | Batch: 1.459s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9623 | Loss_v: 127.709
+Training Net (6/7) Data: 0.004s | Batch: 1.452s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9807 | Loss_v: 127.658
+Training Net (7/7) Data: 0.004s | Batch: 1.452s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9586 | Loss_v: 127.424
+EPOCH ::: 28
+Training Net (1/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8233 | Loss_v: 123.408
+Training Net (2/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8876 | Loss_v: 129.991
+Training Net (3/7) Data: 0.003s | Batch: 1.460s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8942 | Loss_v: 129.600
+Training Net (4/7) Data: 0.003s | Batch: 1.453s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8629 | Loss_v: 129.143
+Training Net (5/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8768 | Loss_v: 128.660
+Training Net (6/7) Data: 0.003s | Batch: 1.456s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8735 | Loss_v: 128.506
+Training Net (7/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8749 | Loss_v: 128.381
+EPOCH ::: 29
+Training Net (1/7) Data: 0.003s | Batch: 1.406s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.1541 | Loss_v: 128.396
+Training Net (2/7) Data: 0.004s | Batch: 1.439s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.0844 | Loss_v: 128.162
+Training Net (3/7) Data: 0.004s | Batch: 1.435s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9645 | Loss_v: 127.840
+Training Net (4/7) Data: 0.004s | Batch: 1.444s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9918 | Loss_v: 128.199
+Training Net (5/7) Data: 0.004s | Batch: 1.446s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9288 | Loss_v: 128.165
+Training Net (6/7) Data: 0.004s | Batch: 1.449s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9320 | Loss_v: 127.929
+Training Net (7/7) Data: 0.004s | Batch: 1.458s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9226 | Loss_v: 128.044
+EPOCH ::: 30
+Training Net (1/7) Data: 0.003s | Batch: 1.467s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.1485 | Loss_v: 128.377
+Training Net (2/7) Data: 0.003s | Batch: 1.485s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9753 | Loss_v: 128.678
+Training Net (3/7) Data: 0.003s | Batch: 1.472s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.0225 | Loss_v: 128.476
+Training Net (4/7) Data: 0.003s | Batch: 1.469s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.0338 | Loss_v: 128.597
+Training Net (5/7) Data: 0.003s | Batch: 1.467s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.0209 | Loss_v: 128.388
+Training Net (6/7) Data: 0.004s | Batch: 1.471s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.0015 | Loss_v: 128.318
+Training Net (7/7) Data: 0.004s | Batch: 1.463s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9788 | Loss_v: 128.238
+EPOCH ::: 31
+Training Net (1/7) Data: 0.003s | Batch: 1.480s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.7534 | Loss_v: 128.230
+Training Net (2/7) Data: 0.004s | Batch: 1.449s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8101 | Loss_v: 127.891
+Training Net (3/7) Data: 0.004s | Batch: 1.462s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8604 | Loss_v: 127.995
+Training Net (4/7) Data: 0.004s | Batch: 1.452s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8196 | Loss_v: 128.261
+Training Net (5/7) Data: 0.004s | Batch: 1.452s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8139 | Loss_v: 128.188
+Training Net (6/7) Data: 0.004s | Batch: 1.452s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8074 | Loss_v: 128.095
+Training Net (7/7) Data: 0.004s | Batch: 1.449s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8154 | Loss_v: 128.014
+EPOCH ::: 32
+Training Net (1/7) Data: 0.003s | Batch: 1.474s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.7144 | Loss_v: 127.765
+Training Net (2/7) Data: 0.003s | Batch: 1.456s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.7439 | Loss_v: 127.235
+Training Net (3/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.7152 | Loss_v: 127.469
+Training Net (4/7) Data: 0.003s | Batch: 1.451s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.7793 | Loss_v: 127.786
+Training Net (5/7) Data: 0.004s | Batch: 1.463s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8189 | Loss_v: 127.784
+Training Net (6/7) Data: 0.004s | Batch: 1.458s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8346 | Loss_v: 127.608
+Training Net (7/7) Data: 0.004s | Batch: 1.460s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8588 | Loss_v: 127.717
+EPOCH ::: 33
+Training Net (1/7) Data: 0.004s | Batch: 1.417s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.7903 | Loss_v: 127.522
+Training Net (2/7) Data: 0.004s | Batch: 1.468s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8543 | Loss_v: 128.321
+Training Net (3/7) Data: 0.004s | Batch: 1.461s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9222 | Loss_v: 128.286
+Training Net (4/7) Data: 0.004s | Batch: 1.458s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8847 | Loss_v: 128.531
+Training Net (5/7) Data: 0.004s | Batch: 1.461s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9078 | Loss_v: 128.536
+Training Net (6/7) Data: 0.004s | Batch: 1.457s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9306 | Loss_v: 128.600
+Training Net (7/7) Data: 0.004s | Batch: 1.461s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9065 | Loss_v: 128.648
+EPOCH ::: 34
+Training Net (1/7) Data: 0.004s | Batch: 1.419s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0838 | Loss_v: 129.849
+Training Net (2/7) Data: 0.004s | Batch: 1.455s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8968 | Loss_v: 128.950
+Training Net (3/7) Data: 0.004s | Batch: 1.442s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9076 | Loss_v: 128.398
+Training Net (4/7) Data: 0.004s | Batch: 1.453s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9117 | Loss_v: 128.306
+Training Net (5/7) Data: 0.004s | Batch: 1.451s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9252 | Loss_v: 128.405
+Training Net (6/7) Data: 0.004s | Batch: 1.452s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9052 | Loss_v: 128.157
+Training Net (7/7) Data: 0.004s | Batch: 1.450s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8908 | Loss_v: 128.410
+EPOCH ::: 35
+Training Net (1/7) Data: 0.003s | Batch: 1.467s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.7827 | Loss_v: 127.525
+Training Net (2/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8116 | Loss_v: 127.974
+Training Net (3/7) Data: 0.003s | Batch: 1.469s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8303 | Loss_v: 126.850
+Training Net (4/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8219 | Loss_v: 127.095
+Training Net (5/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8625 | Loss_v: 126.881
+Training Net (6/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8597 | Loss_v: 127.021
+Training Net (7/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8876 | Loss_v: 127.462
+EPOCH ::: 36
+Training Net (1/7) Data: 0.002s | Batch: 1.531s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8800 | Loss_v: 128.272
+Training Net (2/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:02 | ETA: 0:00:10 | Loss_pi: 3.9077 | Loss_v: 129.039
+Training Net (3/7) Data: 0.003s | Batch: 1.474s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9143 | Loss_v: 128.538
+Training Net (4/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8938 | Loss_v: 128.431
+Training Net (5/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9178 | Loss_v: 128.310
+Training Net (6/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9432 | Loss_v: 128.267
+Training Net (7/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9419 | Loss_v: 128.224
+EPOCH ::: 37
+Training Net (1/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8621 | Loss_v: 128.334
+Training Net (2/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8874 | Loss_v: 128.143
+Training Net (3/7) Data: 0.004s | Batch: 1.472s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9397 | Loss_v: 128.149
+Training Net (4/7) Data: 0.004s | Batch: 1.466s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9263 | Loss_v: 128.068
+Training Net (5/7) Data: 0.003s | Batch: 1.471s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9570 | Loss_v: 128.001
+Training Net (6/7) Data: 0.004s | Batch: 1.464s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9552 | Loss_v: 127.782
+Training Net (7/7) Data: 0.004s | Batch: 1.472s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9335 | Loss_v: 127.879
+EPOCH ::: 38
+Training Net (1/7) Data: 0.004s | Batch: 1.392s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9043 | Loss_v: 125.970
+Training Net (2/7) Data: 0.004s | Batch: 1.418s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9902 | Loss_v: 125.227
+Training Net (3/7) Data: 0.004s | Batch: 1.419s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9520 | Loss_v: 125.150
+Training Net (4/7) Data: 0.004s | Batch: 1.424s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9040 | Loss_v: 125.085
+Training Net (5/7) Data: 0.004s | Batch: 1.430s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8672 | Loss_v: 125.348
+Training Net (6/7) Data: 0.004s | Batch: 1.434s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8893 | Loss_v: 124.517
+Training Net (7/7) Data: 0.004s | Batch: 1.444s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8621 | Loss_v: 124.908
+EPOCH ::: 39
+Training Net (1/7) Data: 0.003s | Batch: 1.444s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8735 | Loss_v: 135.508
+Training Net (2/7) Data: 0.003s | Batch: 1.469s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.7928 | Loss_v: 132.344
+Training Net (3/7) Data: 0.003s | Batch: 1.451s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.7743 | Loss_v: 132.369
+Training Net (4/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8021 | Loss_v: 130.646
+Training Net (5/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8730 | Loss_v: 130.316
+Training Net (6/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8713 | Loss_v: 129.963
+Training Net (7/7) Data: 0.004s | Batch: 1.462s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8799 | Loss_v: 129.447
+EPOCH ::: 40
+Training Net (1/7) Data: 0.002s | Batch: 1.464s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.1213 | Loss_v: 128.509
+Training Net (2/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.1506 | Loss_v: 128.014
+Training Net (3/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.0821 | Loss_v: 128.045
+Training Net (4/7) Data: 0.003s | Batch: 1.465s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.1342 | Loss_v: 127.985
+Training Net (5/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.1487 | Loss_v: 127.996
+Training Net (6/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.1497 | Loss_v: 127.998
+Training Net (7/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.1329 | Loss_v: 128.053
+EPOCH ::: 41
+Training Net (1/7) Data: 0.003s | Batch: 1.493s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.1083 | Loss_v: 127.997
+Training Net (2/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 4.1764 | Loss_v: 128.015
+Training Net (3/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 4.1816 | Loss_v: 128.013
+Training Net (4/7) Data: 0.004s | Batch: 1.457s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 4.1549 | Loss_v: 127.906
+Training Net (5/7) Data: 0.004s | Batch: 1.465s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 4.1149 | Loss_v: 127.848
+Training Net (6/7) Data: 0.004s | Batch: 1.458s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 4.0610 | Loss_v: 127.623
+Training Net (7/7) Data: 0.004s | Batch: 1.469s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 4.0474 | Loss_v: 127.781
+EPOCH ::: 42
+Training Net (1/7) Data: 0.004s | Batch: 1.434s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9055 | Loss_v: 132.063
+Training Net (2/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.9961 | Loss_v: 131.658
+Training Net (3/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9811 | Loss_v: 131.184
+Training Net (4/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9307 | Loss_v: 130.303
+Training Net (5/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9351 | Loss_v: 129.827
+Training Net (6/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9365 | Loss_v: 129.530
+Training Net (7/7) Data: 0.003s | Batch: 1.466s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8999 | Loss_v: 129.414
+EPOCH ::: 43
+Training Net (1/7) Data: 0.003s | Batch: 1.427s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8631 | Loss_v: 128.546
+Training Net (2/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8350 | Loss_v: 128.456
+Training Net (3/7) Data: 0.003s | Batch: 1.451s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.7262 | Loss_v: 128.283
+Training Net (4/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.7812 | Loss_v: 128.105
+Training Net (5/7) Data: 0.003s | Batch: 1.449s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.7866 | Loss_v: 127.729
+Training Net (6/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8068 | Loss_v: 127.563
+Training Net (7/7) Data: 0.004s | Batch: 1.461s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.7992 | Loss_v: 127.779
+EPOCH ::: 44
+Training Net (1/7) Data: 0.004s | Batch: 1.460s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9765 | Loss_v: 128.839
+Training Net (2/7) Data: 0.003s | Batch: 1.448s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8956 | Loss_v: 127.922
+Training Net (3/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9472 | Loss_v: 128.817
+Training Net (4/7) Data: 0.003s | Batch: 1.460s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9415 | Loss_v: 127.866
+Training Net (5/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9457 | Loss_v: 128.406
+Training Net (6/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9053 | Loss_v: 128.397
+Training Net (7/7) Data: 0.003s | Batch: 1.457s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8855 | Loss_v: 128.812
+EPOCH ::: 45
+Training Net (1/7) Data: 0.003s | Batch: 1.505s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 4.0417 | Loss_v: 127.871
+Training Net (2/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:02 | ETA: 0:00:10 | Loss_pi: 3.8834 | Loss_v: 127.338
+Training Net (3/7) Data: 0.003s | Batch: 1.464s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8292 | Loss_v: 127.407
+Training Net (4/7) Data: 0.003s | Batch: 1.457s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8695 | Loss_v: 127.426
+Training Net (5/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8873 | Loss_v: 127.417
+Training Net (6/7) Data: 0.003s | Batch: 1.455s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8897 | Loss_v: 127.403
+Training Net (7/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9092 | Loss_v: 127.460
+EPOCH ::: 46
+Training Net (1/7) Data: 0.003s | Batch: 1.443s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.9193 | Loss_v: 128.106
+Training Net (2/7) Data: 0.003s | Batch: 1.457s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.7534 | Loss_v: 127.777
+Training Net (3/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.7738 | Loss_v: 127.813
+Training Net (4/7) Data: 0.003s | Batch: 1.452s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8936 | Loss_v: 128.011
+Training Net (5/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8744 | Loss_v: 127.752
+Training Net (6/7) Data: 0.004s | Batch: 1.470s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8482 | Loss_v: 128.000
+Training Net (7/7) Data: 0.004s | Batch: 1.478s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8839 | Loss_v: 128.104
+EPOCH ::: 47
+Training Net (1/7) Data: 0.003s | Batch: 1.403s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8706 | Loss_v: 127.205
+Training Net (2/7) Data: 0.003s | Batch: 1.445s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8267 | Loss_v: 127.406
+Training Net (3/7) Data: 0.003s | Batch: 1.434s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8984 | Loss_v: 127.079
+Training Net (4/7) Data: 0.003s | Batch: 1.452s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8808 | Loss_v: 127.156
+Training Net (5/7) Data: 0.003s | Batch: 1.447s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8522 | Loss_v: 127.022
+Training Net (6/7) Data: 0.003s | Batch: 1.456s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.8761 | Loss_v: 126.487
+Training Net (7/7) Data: 0.004s | Batch: 1.458s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8339 | Loss_v: 126.642
+EPOCH ::: 48
+Training Net (1/7) Data: 0.003s | Batch: 1.458s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8708 | Loss_v: 128.173
+Training Net (2/7) Data: 0.003s | Batch: 1.455s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8328 | Loss_v: 126.858
+Training Net (3/7) Data: 0.003s | Batch: 1.461s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.8630 | Loss_v: 127.458
+Training Net (4/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8889 | Loss_v: 127.246
+Training Net (5/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9697 | Loss_v: 127.123
+Training Net (6/7) Data: 0.003s | Batch: 1.465s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9610 | Loss_v: 127.578
+Training Net (7/7) Data: 0.003s | Batch: 1.459s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9595 | Loss_v: 127.589
+EPOCH ::: 49
+Training Net (1/7) Data: 0.003s | Batch: 1.491s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8819 | Loss_v: 127.406
+Training Net (2/7) Data: 0.003s | Batch: 1.446s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.7524 | Loss_v: 127.993
+Training Net (3/7) Data: 0.003s | Batch: 1.455s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.7796 | Loss_v: 127.498
+Training Net (4/7) Data: 0.004s | Batch: 1.453s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.8265 | Loss_v: 127.827
+Training Net (5/7) Data: 0.004s | Batch: 1.454s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.8644 | Loss_v: 127.602
+Training Net (6/7) Data: 0.004s | Batch: 1.451s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9043 | Loss_v: 127.429
+Training Net (7/7) Data: 0.004s | Batch: 1.451s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.9276 | Loss_v: 127.103
+EPOCH ::: 50
+Training Net (1/7) Data: 0.002s | Batch: 1.464s | Total: 0:00:01 | ETA: 0:00:00 | Loss_pi: 3.8843 | Loss_v: 128.240
+Training Net (2/7) Data: 0.003s | Batch: 1.447s | Total: 0:00:02 | ETA: 0:00:09 | Loss_pi: 3.8907 | Loss_v: 126.738
+Training Net (3/7) Data: 0.003s | Batch: 1.466s | Total: 0:00:04 | ETA: 0:00:08 | Loss_pi: 3.9648 | Loss_v: 127.465
+Training Net (4/7) Data: 0.003s | Batch: 1.463s | Total: 0:00:05 | ETA: 0:00:06 | Loss_pi: 3.9472 | Loss_v: 127.479
+Training Net (5/7) Data: 0.003s | Batch: 1.468s | Total: 0:00:07 | ETA: 0:00:05 | Loss_pi: 3.9201 | Loss_v: 127.120
+Training Net (6/7) Data: 0.003s | Batch: 1.462s | Total: 0:00:08 | ETA: 0:00:03 | Loss_pi: 3.9069 | Loss_v: 127.250
+Training Net (7/7) Data: 0.003s | Batch: 1.470s | Total: 0:00:10 | ETA: 0:00:02 | Loss_pi: 3.8906 | Loss_v: 127.299
+PITTING AGAINST PREVIOUS VERSION
+NEW/PREV WINS : 5 / 35 ; DRAWS : 0
+REJECTING NEW MODEL

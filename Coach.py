@@ -78,7 +78,8 @@ class Coach:
             temp = int(episode_step < self.args.tempThreshold)
 
             pi = self.mcts.get_action_prob(temp=temp)
-            print("Simulated {} step".format(episode_step))
+            if episode_step%10 == 0:
+                print("Simulated {} step".format(episode_step))
             logfile.write("Simulated {} step\n".format(episode_step))
 
             pi_reshape = np.reshape(pi, (21, 18))
@@ -87,14 +88,13 @@ class Coach:
             action = np.random.choice(len(pi), p=pi)
             a, b = np.unravel_index(action, pi_reshape.shape)
             # print(a, b)
-            logfile.write(action_name((a,b), current_game))
+#             logfile.write(action_name((a,b), current_game))
 #             print(action_name((a,b), current_game))
             cur_game, self.cur_player = self.game.get_next_state(self.cur_player, (a, b))
 
             r = self.game.get_game_ended()
 
             if r != 0:
-                # window.close()
                 return [(x[0], x[2], r * ((-1) ** (x[1] != self.cur_player))) for x in train_examples]
 
     def learn(self):
@@ -123,7 +123,7 @@ class Coach:
                     bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}\n'.format(
                         eps=eps + 1, maxeps=self.args.numEps, et=eps_time.avg,
                         total=bar.elapsed_td, eta=bar.eta_td)
-                    # bar.next()
+                    bar.next()
                     logfile.write('Self Play ')
                     logfile.write(bar.suffix)
                 bar.finish()
@@ -181,7 +181,7 @@ class Coach:
             Pickler(f).dump(self.trainExamplesHistory)
 
     def load_train_examples(self):
-        model_file = os.path.join(self.args.load_folder_file[0], self.args.load_folder_file[1])
+        model_file = os.path.join(self.args.load_examples[0], self.args.load_examples[1])
         examples_file = model_file + ".examples"
         if not os.path.isfile(examples_file):
             print(examples_file)

@@ -47,36 +47,40 @@ class SimpleNN(nn.Module):
         self.layers = [16, 32, 64, 128, 256]
         super(SimpleNN, self).__init__()
         self.ngpu = args.ngpu
-        self.dense1 = nn.Linear(args.n_in, 8, bias=False)
-        self.dense2 = nn.Linear(256, 16, bias=False)
-        self.dense3 = nn.Linear(256, args.n_out, bias=False)
-        self.dense4 = nn.Linear(256, 1, bias=False)
         
-        self.conv1 = nn.Conv1d(1, 16, kernel_size=3, padding=1)
+        self.conv1 = nn.Conv1d(1, 16, kernel_size=3, stride=1, padding=1)
+        self.bn1 = nn.BatchNorm1d(16)
 
-#         self.conv1 = nn.Conv2d(1, 64, 3, stride=1, padding=1)
-        self.conv2 = nn.Conv2d(64, 128, 3, stride=1, padding=1)
-
-        self.bn1 = nn.BatchNorm1d(8)
-        self.bn2 = nn.BatchNorm1d(16)
-
-        self.flat = nn.Flatten()
         self.layers1 = nn.ModuleList([ConvBlock(self.layers[i], self.layers[i+1])
             for i in range(len(self.layers) - 1)])
         self.layers2 = nn.ModuleList([ResBlock(self.layers[i+1], self.layers[i+1])
             for i in range(len(self.layers) - 1)])
+        self.squeeze_conv = nn.Conv1d(256, 2, kernel_size=1)
+        self.dense1 = nn.Linear(1072, 256, bias=False)
+        self.dense_pi = nn.Linear(256, args.n_out, bias=False)
+        self.dense_v = nn.Linear(256, 1, bias=False)
 
-    def forward(self, x):
-#         x = self.flat(x)
-        x = F.relu(self.bn2(self.conv1(x)))
-#         x = F.relu(self.bn2(self.dense2(x)))
+    def forward(self, x, training=False):
+        x = F.relu(self.bn1(self.conv1(x)))
        
         for l1,l2 in zip(self.layers1, self.layers2):
+            if training:
+                print(np.shape(x))
             x = l2(l1(x))
             
-        x = x.view(-1,256)
-        pi = self.dense3(x)
-        v = self.dense4(x)
+        if training:
+            print(np.shape(x))
+        x = self.squeeze_conv(x)
+        x = x.view(np.shape(x)[0],-1)
+        if training:
+            print(np.shape(x))
+        x = self.dense1(x)
+        pi = self.dense_pi(x)
+        v = self.dense_v(x)
+        
+        if training:
+            print(np.shape(pi))
+            print(np.shape(v))
 
         return F.log_softmax(pi, dim=1), torch.tanh(v)
 
@@ -95,7 +99,7 @@ class NNetWrapper:
         optimizer = optim.Adam(self.nnet.parameters())
 
         for epoch in range(self.args.epochs):
-            # print('EPOCH ::: ' + str(epoch + 1))
+            print('EPOCH ::: ' + str(epoch + 1))
             logfile.write('EPOCH ::: ' + str(epoch + 1) + '\n')
             self.nnet.train()
             data_time = AverageMeter()
@@ -110,7 +114,8 @@ class NNetWrapper:
             while batch_idx < int(len(examples) / self.args.batch_size):
                 sample_ids = np.random.randint(len(examples), size=self.args.batch_size)
                 states, pis, vs = list(zip(*[examples[i] for i in sample_ids]))
-                states = torch.FloatTensor(np.array(states).astype(np.float64)).unsqueeze(1)
+                states = torch.FloatTensor(np.array(states).astype(np.float64)) 
+                states = states.view(-1,34*16).unsqueeze(1)
                 target_pis = torch.FloatTensor(np.array(pis))
                 target_vs = torch.FloatTensor(np.array(vs).astype(np.float64))
 
@@ -154,8 +159,8 @@ class NNetWrapper:
                     lv=v_losses.avg,
                 )
                 logfile.write("Training Net ")
+                bar.next()
                 logfile.write(bar.suffix)
-                # bar.next()
             bar.finish()
 
     def predict(self, state):
@@ -167,7 +172,6 @@ class NNetWrapper:
         state = state.view(-1).unsqueeze(0).unsqueeze(0)
         with torch.no_grad():
             state = Variable(state)
-        # state = state.view(1, self.board_x, self.board_y)
 
         self.nnet.eval()
         pi, v = self.nnet(state)
@@ -198,6 +202,7 @@ class NNetWrapper:
         # https://github.com/pytorch/examples/blob/master/imagenet/main.py#L98
         filepath = os.path.join(folder, filename)
         if not os.path.exists(filepath):
-            raise ("No model in path {}".format(filepath))
+            print("No model in path {}".format(filepath))
+            return
         checkpoint = torch.load(filepath)
         self.nnet.load_state_dict(checkpoint['state_dict'])
