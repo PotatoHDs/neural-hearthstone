@@ -46,7 +46,7 @@ class SimpleNN(nn.Module):
     def __init__(self, args):
         super(SimpleNN, self).__init__()
         self.ngpu = args.ngpu
-
+        self.layer_norm = nn.LayerNorm([1, args.n_in])
         self.dense1 = nn.Linear(args.n_in, args.n_in * 2, bias=True)
         self.dense_pi = nn.Linear(args.n_in * 2, args.n_out, bias=True)
         self.dense_v = nn.Linear(args.n_in * 2, 1, bias=True)
@@ -55,6 +55,9 @@ class SimpleNN(nn.Module):
         if training:
             print(np.shape(x))
         x = x[0]
+        if training:
+            print(np.shape(x))
+        x = self.layer_norm(x)
 
         if training:
             print(np.shape(x))

@@ -100,7 +100,7 @@ class Coach:
     def learn(self):
         if not os.path.exists('logs'):
             os.makedirs('logs')
-
+        new = False
         for i in range(1, self.args.numIters + 1):
             logfile = open(f'logs/log_{date.today()}_{i}.txt', 'w')
             print('------ITER ' + str(i) + '------')
@@ -114,7 +114,8 @@ class Coach:
 
                 for eps in range(self.args.numEps):
                     self.mcts = MCTS(self.game, self.nnet, self.args)  # reset search tree
-                    iteration_train_examples += self.execute_episode(logfile)
+                    if new:
+                        iteration_train_examples += self.execute_episode(logfile)
                     # print("Executed {} eps".format(eps))
                     logfile.write("Executed {} eps\n".format(eps))
                     # print(iteration_train_examples)
@@ -161,7 +162,9 @@ class Coach:
                 print('REJECTING NEW MODEL')
                 logfile.write('REJECTING NEW MODEL\n')
                 self.nnet.load_checkpoint(folder=self.args.checkpoint, filename='temp.pth.tar')
+                new = False
             else:
+                new = True
                 print('ACCEPTING NEW MODEL')
                 logfile.write('ACCEPTING NEW MODEL\n')
                 self.nnet.save_checkpoint(folder=self.args.checkpoint, filename=self.get_checkpoint_file(i))

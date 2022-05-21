@@ -32,18 +32,18 @@ class Args:
         self.n_in = 34 * 16
         self.n_out = 21 * 18
 
-        self.epochs = 200
+        self.epochs = 100
         self.batch_size = 128
-        self.lr = 1e-4
+        self.lr = 1e-3
 
         self.arenaCompare = 10
         self.numIters = 20
         self.numEps = 10
-        self.maxlenOfQueue = 1000
-        self.numMCTS = 50
-        self.numItersForTrainExamplesHistory = 20
+        self.maxlenOfQueue = 100000
+        self.numMCTS = 10
+        self.numItersForTrainExamplesHistory = 50
 
-        self.tempThreshold = 15
+        self.tempThreshold = 150
         self.updateThreshold = 0.6
 
         self.ngpu = 0

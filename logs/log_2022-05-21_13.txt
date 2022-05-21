@@ -1,0 +1,757 @@
+------ITER 13------
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Simulated 64 step
+Simulated 65 step
+Simulated 66 step
+Simulated 67 step
+Simulated 68 step
+Simulated 69 step
+Simulated 70 step
+Simulated 71 step
+Simulated 72 step
+Simulated 73 step
+Simulated 74 step
+Simulated 75 step
+Executed 0 eps
+Self Play (1/10) Eps Time: 4.910s | Total: 0:00:04 | ETA: 0:00:00
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Executed 1 eps
+Self Play (2/10) Eps Time: 4.480s | Total: 0:00:08 | ETA: 0:00:45
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Simulated 64 step
+Executed 2 eps
+Self Play (3/10) Eps Time: 4.698s | Total: 0:00:14 | ETA: 0:00:36
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Executed 3 eps
+Self Play (4/10) Eps Time: 4.244s | Total: 0:00:16 | ETA: 0:00:33
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Simulated 64 step
+Simulated 65 step
+Simulated 66 step
+Simulated 67 step
+Simulated 68 step
+Simulated 69 step
+Simulated 70 step
+Simulated 71 step
+Simulated 72 step
+Simulated 73 step
+Simulated 74 step
+Simulated 75 step
+Simulated 76 step
+Simulated 77 step
+Simulated 78 step
+Simulated 79 step
+Executed 4 eps
+Self Play (5/10) Eps Time: 4.462s | Total: 0:00:22 | ETA: 0:00:26
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Simulated 64 step
+Simulated 65 step
+Simulated 66 step
+Simulated 67 step
+Simulated 68 step
+Simulated 69 step
+Simulated 70 step
+Simulated 71 step
+Simulated 72 step
+Simulated 73 step
+Simulated 74 step
+Simulated 75 step
+Simulated 76 step
+Simulated 77 step
+Simulated 78 step
+Executed 5 eps
+Self Play (6/10) Eps Time: 4.580s | Total: 0:00:27 | ETA: 0:00:23
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Simulated 64 step
+Simulated 65 step
+Simulated 66 step
+Simulated 67 step
+Simulated 68 step
+Simulated 69 step
+Simulated 70 step
+Executed 6 eps
+Self Play (7/10) Eps Time: 4.590s | Total: 0:00:32 | ETA: 0:00:19
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Simulated 55 step
+Simulated 56 step
+Simulated 57 step
+Simulated 58 step
+Simulated 59 step
+Simulated 60 step
+Simulated 61 step
+Simulated 62 step
+Simulated 63 step
+Simulated 64 step
+Simulated 65 step
+Simulated 66 step
+Simulated 67 step
+Simulated 68 step
+Simulated 69 step
+Simulated 70 step
+Simulated 71 step
+Executed 7 eps
+Self Play (8/10) Eps Time: 4.600s | Total: 0:00:36 | ETA: 0:00:14
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Simulated 51 step
+Simulated 52 step
+Simulated 53 step
+Simulated 54 step
+Executed 8 eps
+Self Play (9/10) Eps Time: 4.588s | Total: 0:00:41 | ETA: 0:00:10
+Simulated 1 step
+Simulated 2 step
+Simulated 3 step
+Simulated 4 step
+Simulated 5 step
+Simulated 6 step
+Simulated 7 step
+Simulated 8 step
+Simulated 9 step
+Simulated 10 step
+Simulated 11 step
+Simulated 12 step
+Simulated 13 step
+Simulated 14 step
+Simulated 15 step
+Simulated 16 step
+Simulated 17 step
+Simulated 18 step
+Simulated 19 step
+Simulated 20 step
+Simulated 21 step
+Simulated 22 step
+Simulated 23 step
+Simulated 24 step
+Simulated 25 step
+Simulated 26 step
+Simulated 27 step
+Simulated 28 step
+Simulated 29 step
+Simulated 30 step
+Simulated 31 step
+Simulated 32 step
+Simulated 33 step
+Simulated 34 step
+Simulated 35 step
+Simulated 36 step
+Simulated 37 step
+Simulated 38 step
+Simulated 39 step
+Simulated 40 step
+Simulated 41 step
+Simulated 42 step
+Simulated 43 step
+Simulated 44 step
+Simulated 45 step
+Simulated 46 step
+Simulated 47 step
+Simulated 48 step
+Simulated 49 step
+Simulated 50 step
+Executed 9 eps
+Self Play (10/10) Eps Time: 4.467s | Total: 0:00:44 | ETA: 0:00:05
+EPOCH ::: 1
+Training Net (1/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:00 | Loss_pi: 16.0782 | Loss_v: 1.594
+Training Net (2/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3417 | Loss_v: 1.703
+Training Net (3/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.1614 | Loss_v: 1.677
+Training Net (4/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2998 | Loss_v: 1.773
+Training Net (5/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.7437 | Loss_v: 1.788
+Training Net (6/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.4709 | Loss_v: 1.797
+Training Net (7/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5222 | Loss_v: 1.795
+Training Net (8/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5686 | Loss_v: 1.801
+Training Net (9/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2806 | Loss_v: 1.764
+Training Net (10/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.6690 | Loss_v: 1.794
+Training Net (11/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.8952 | Loss_v: 1.793
+Training Net (12/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.8790 | Loss_v: 1.810
+Training Net (13/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0506 | Loss_v: 1.822
+Training Net (14/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.7679 | Loss_v: 1.821
+Training Net (15/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1324 | Loss_v: 1.825
+Training Net (16/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0943 | Loss_v: 1.824
+Training Net (17/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.9232 | Loss_v: 1.820
+Training Net (18/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1402 | Loss_v: 1.821
+Training Net (19/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1533 | Loss_v: 1.839
+Training Net (20/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1789 | Loss_v: 1.845
+Training Net (21/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3059 | Loss_v: 1.847
+Training Net (22/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1697 | Loss_v: 1.857
+Training Net (23/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3946 | Loss_v: 1.878
+Training Net (24/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.4374 | Loss_v: 1.889
+Training Net (25/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.6905 | Loss_v: 1.892
+Training Net (26/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.5404 | Loss_v: 1.894
+Training Net (27/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.6509 | Loss_v: 1.875
+Training Net (28/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.5768 | Loss_v: 1.873
+Training Net (29/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.4647 | Loss_v: 1.880
+Training Net (30/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.4135 | Loss_v: 1.891
+Training Net (31/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3989 | Loss_v: 1.900
+Training Net (32/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3265 | Loss_v: 1.908
+Training Net (33/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1548 | Loss_v: 1.916
+Training Net (34/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1760 | Loss_v: 1.919
+Training Net (35/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1850 | Loss_v: 1.918
+Training Net (36/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1278 | Loss_v: 1.924
+Training Net (37/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0705 | Loss_v: 1.932
+Training Net (38/41) Data: 0.002s | Batch: 0.006s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0246 | Loss_v: 1.936
+Training Net (39/41) Data: 0.002s | Batch: 0.006s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0980 | Loss_v: 1.944
+Training Net (40/41) Data: 0.002s | Batch: 0.006s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1586 | Loss_v: 1.944
+Training Net (41/41) Data: 0.002s | Batch: 0.006s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1173 | Loss_v: 1.950
+EPOCH ::: 2
+Training Net (1/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:00 | Loss_pi: 20.4309 | Loss_v: 1.906
+Training Net (2/41) Data: 0.002s | Batch: 0.007s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.1058 | Loss_v: 1.875
+Training Net (3/41) Data: 0.002s | Batch: 0.006s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.1744 | Loss_v: 1.917
+Training Net (4/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.8566 | Loss_v: 1.945
+Training Net (5/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.4504 | Loss_v: 1.962
+Training Net (6/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.6295 | Loss_v: 2.010
+Training Net (7/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.3696 | Loss_v: 2.022
+Training Net (8/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.8343 | Loss_v: 2.023
+Training Net (9/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.4142 | Loss_v: 2.021
+Training Net (10/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.2367 | Loss_v: 2.006
+Training Net (11/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.8445 | Loss_v: 2.020
+Training Net (12/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.4712 | Loss_v: 2.016
+Training Net (13/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.5979 | Loss_v: 2.038
+Training Net (14/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.7099 | Loss_v: 2.038
+Training Net (15/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.6838 | Loss_v: 2.033
+Training Net (16/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.5260 | Loss_v: 2.055
+Training Net (17/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.2811 | Loss_v: 2.066
+Training Net (18/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.5244 | Loss_v: 2.066
+Training Net (19/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.3964 | Loss_v: 2.074
+Training Net (20/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.6537 | Loss_v: 2.067
+Training Net (21/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.4626 | Loss_v: 2.082
+Training Net (22/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.2085 | Loss_v: 2.092
+Training Net (23/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.3656 | Loss_v: 2.095
+Training Net (24/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.3434 | Loss_v: 2.099
+Training Net (25/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.3794 | Loss_v: 2.098
+Training Net (26/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.5139 | Loss_v: 2.099
+Training Net (27/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.8028 | Loss_v: 2.096
+Training Net (28/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.7066 | Loss_v: 2.098
+Training Net (29/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.6278 | Loss_v: 2.099
+Training Net (30/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.5747 | Loss_v: 2.103
+Training Net (31/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.4861 | Loss_v: 2.100
+Training Net (32/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.3525 | Loss_v: 2.097
+Training Net (33/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.3742 | Loss_v: 2.097
+Training Net (34/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.2492 | Loss_v: 2.093
+Training Net (35/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.1400 | Loss_v: 2.096
+Training Net (36/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.0431 | Loss_v: 2.096
+Training Net (37/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.1676 | Loss_v: 2.102
+Training Net (38/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.2255 | Loss_v: 2.098
+Training Net (39/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.1819 | Loss_v: 2.095
+Training Net (40/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.2064 | Loss_v: 2.092
+Training Net (41/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 20.2638 | Loss_v: 2.092
+PITTING AGAINST PREVIOUS VERSION
+NEW/PREV WINS : 1 / 9 ; DRAWS : 0
+REJECTING NEW MODEL

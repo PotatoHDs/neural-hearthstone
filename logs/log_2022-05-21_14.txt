@@ -1,0 +1,108 @@
+------ITER 14------
+Executed 0 eps
+Self Play (1/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 1 eps
+Self Play (2/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 2 eps
+Self Play (3/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 3 eps
+Self Play (4/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 4 eps
+Self Play (5/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 5 eps
+Self Play (6/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 6 eps
+Self Play (7/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 7 eps
+Self Play (8/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 8 eps
+Self Play (9/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 9 eps
+Self Play (10/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+EPOCH ::: 1
+Training Net (1/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:00 | Loss_pi: 14.5068 | Loss_v: 2.000
+Training Net (2/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 12.0893 | Loss_v: 1.875
+Training Net (3/41) Data: 0.002s | Batch: 0.005s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 14.6995 | Loss_v: 1.875
+Training Net (4/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.5341 | Loss_v: 1.930
+Training Net (5/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.0371 | Loss_v: 1.950
+Training Net (6/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.5621 | Loss_v: 1.938
+Training Net (7/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.7127 | Loss_v: 1.888
+Training Net (8/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.5834 | Loss_v: 1.879
+Training Net (9/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.0373 | Loss_v: 1.896
+Training Net (10/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.8653 | Loss_v: 1.897
+Training Net (11/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5031 | Loss_v: 1.886
+Training Net (12/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.6271 | Loss_v: 1.862
+Training Net (13/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.6159 | Loss_v: 1.861
+Training Net (14/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.4567 | Loss_v: 1.877
+Training Net (15/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5698 | Loss_v: 1.896
+Training Net (16/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.8769 | Loss_v: 1.906
+Training Net (17/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1433 | Loss_v: 1.915
+Training Net (18/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3792 | Loss_v: 1.910
+Training Net (19/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.5871 | Loss_v: 1.921
+Training Net (20/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.1856 | Loss_v: 1.917
+Training Net (21/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.1830 | Loss_v: 1.917
+Training Net (22/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.3516 | Loss_v: 1.920
+Training Net (23/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.6153 | Loss_v: 1.921
+Training Net (24/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.8503 | Loss_v: 1.928
+Training Net (25/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.1344 | Loss_v: 1.924
+Training Net (26/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.0413 | Loss_v: 1.930
+Training Net (27/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.8371 | Loss_v: 1.929
+Training Net (28/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.9221 | Loss_v: 1.942
+Training Net (29/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.9153 | Loss_v: 1.946
+Training Net (30/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.1068 | Loss_v: 1.946
+Training Net (31/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.2578 | Loss_v: 1.952
+Training Net (32/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.2308 | Loss_v: 1.949
+Training Net (33/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.2396 | Loss_v: 1.958
+Training Net (34/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.3056 | Loss_v: 1.963
+Training Net (35/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.3246 | Loss_v: 1.969
+Training Net (36/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.3046 | Loss_v: 1.970
+Training Net (37/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.4556 | Loss_v: 1.978
+Training Net (38/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.4101 | Loss_v: 1.978
+Training Net (39/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.3030 | Loss_v: 1.976
+Training Net (40/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.3126 | Loss_v: 1.973
+Training Net (41/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 19.3370 | Loss_v: 1.970
+EPOCH ::: 2
+Training Net (1/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:00 | Loss_pi: 13.6290 | Loss_v: 1.969
+Training Net (2/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 15.0073 | Loss_v: 2.000
+Training Net (3/41) Data: 0.002s | Batch: 0.003s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2500 | Loss_v: 2.135
+Training Net (4/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.9306 | Loss_v: 2.093
+Training Net (5/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 18.1428 | Loss_v: 2.081
+Training Net (6/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1424 | Loss_v: 2.072
+Training Net (7/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3142 | Loss_v: 2.058
+Training Net (8/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.9811 | Loss_v: 2.035
+Training Net (9/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.3763 | Loss_v: 2.055
+Training Net (10/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1352 | Loss_v: 2.037
+Training Net (11/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1620 | Loss_v: 1.994
+Training Net (12/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.8980 | Loss_v: 1.992
+Training Net (13/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.2870 | Loss_v: 1.993
+Training Net (14/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0254 | Loss_v: 1.966
+Training Net (15/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.8178 | Loss_v: 1.952
+Training Net (16/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5671 | Loss_v: 1.945
+Training Net (17/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.3291 | Loss_v: 1.899
+Training Net (18/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2482 | Loss_v: 1.927
+Training Net (19/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.1646 | Loss_v: 1.934
+Training Net (20/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.0614 | Loss_v: 1.928
+Training Net (21/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.3188 | Loss_v: 1.936
+Training Net (22/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.4212 | Loss_v: 1.932
+Training Net (23/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.3253 | Loss_v: 1.939
+Training Net (24/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2879 | Loss_v: 1.962
+Training Net (25/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2460 | Loss_v: 1.949
+Training Net (26/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.1315 | Loss_v: 1.964
+Training Net (27/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.2699 | Loss_v: 1.978
+Training Net (28/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.1579 | Loss_v: 1.980
+Training Net (29/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.3278 | Loss_v: 1.977
+Training Net (30/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.3129 | Loss_v: 1.990
+Training Net (31/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.4094 | Loss_v: 1.989
+Training Net (32/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5393 | Loss_v: 1.994
+Training Net (33/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.6078 | Loss_v: 1.989
+Training Net (34/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.5412 | Loss_v: 1.994
+Training Net (35/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.6127 | Loss_v: 1.996
+Training Net (36/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.9076 | Loss_v: 2.003
+Training Net (37/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 16.9949 | Loss_v: 2.008
+Training Net (38/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0307 | Loss_v: 2.006
+Training Net (39/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.0727 | Loss_v: 2.002
+Training Net (40/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1707 | Loss_v: 2.002
+Training Net (41/41) Data: 0.002s | Batch: 0.004s | Total: 0:00:00 | ETA: 0:00:01 | Loss_pi: 17.1931 | Loss_v: 2.006
+PITTING AGAINST PREVIOUS VERSION
+NEW/PREV WINS : 0 / 10 ; DRAWS : 0
+REJECTING NEW MODEL
