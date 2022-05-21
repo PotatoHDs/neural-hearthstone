@@ -32,26 +32,28 @@ class Args:
         self.n_in = 34 * 16
         self.n_out = 21 * 18
 
-        self.epochs = 50
+        self.epochs = 200
         self.batch_size = 128
         self.lr = 1e-4
 
-        self.arenaCompare = 40
-        self.numIters = 30
-        self.numEps = 25
-        self.maxlenOfQueue = 100000
-        self.numMCTS = 1000
-        self.numItersForTrainExamplesHistory = 25
+        self.arenaCompare = 10
+        self.numIters = 20
+        self.numEps = 10
+        self.maxlenOfQueue = 1000
+        self.numMCTS = 50
+        self.numItersForTrainExamplesHistory = 20
 
         self.tempThreshold = 15
         self.updateThreshold = 0.6
 
         self.ngpu = 0
-        self.device = torch.device("cuda:0" if (torch.cuda.is_available() and self.ngpu > 0) else "cpu")
+        print("cuda:0" if (torch.cuda.is_available()) else "cpu")
+        self.device = torch.device("cuda:0" if (torch.cuda.is_available()) else "cpu")
 
         self.checkpoint = './temp/'
-        self.load_model = False
-        self.load_folder_file = ('. / temp / ', 'temp.pth.tar')
+        self.load_model = True
+        self.load_folder_file = ('./temp/', 'temp.pth.tar')
+        self.load_examples = ('./temp/', 'checkpoint.pth.tar')
         self.fireplace_log_enabled = True
 
 
@@ -101,7 +103,6 @@ def on_open(ws):
 def main():
     args = Args()
     g = Game()
-
     nnet = nn(args)
 
     if args.load_model:

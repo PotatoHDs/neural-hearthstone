@@ -4,84 +4,73 @@ import torch.nn.functional as F
 import torch.utils.data
 import torch.optim as optim
 from torch.autograd import Variable
-import torchvision.utils as vutils
 import numpy as np
 import matplotlib.pyplot as plt
 import time
 import os
-import numpy as np
 
 from utils import Bar, AverageMeter
 
 
-class ConvBlock(nn.Module):
-    def __init__(self, ni, nf):
-        super(ConvBlock, self).__init__()
-        self.conv = nn.Conv1d(ni, nf, kernel_size=3, stride=1)
-        self.bn = nn.BatchNorm1d(nf)
+# class ConvBlock(nn.Module):
+#     def __init__(self, ni, nf):
+#         super(ConvBlock, self).__init__()
+#         self.conv = nn.Conv1d(ni, nf, kernel_size=3, stride=1)
+#         self.bn = nn.BatchNorm1d(nf)
+#
+#     def forward(self, x):
+#         x = F.relu(self.bn(self.conv(x)))
+#         return x
+#
+#
+# class ResBlock(nn.Module):
+#     def __init__(self, ni, nf):
+#         super(ResBlock, self).__init__()
+#
+#         self.conv1 = nn.Conv1d(nf, nf,
+#                                kernel_size=3, padding=1)
+#         self.conv2 = nn.Conv1d(nf, nf,
+#                                kernel_size=3, padding=1)
+#
+#         self.bn1 = nn.BatchNorm1d(nf)
+#         self.bn2 = nn.BatchNorm1d(nf)
 
-    def forward(self, x):
-        x = F.relu(self.bn(self.conv(x)))
-        return x
+# def forward(self, x):
+#     residual = x
+#     x = F.relu(self.bn1(self.conv1(x)))
+#     x = F.relu(self.bn2(self.conv2(residual + x)))
+#     return x
 
-class ResBlock(nn.Module):
-    def __init__(self, ni, nf):
-        super(ResBlock, self).__init__()
-
-        self.conv1 = nn.Conv1d(nf, nf,
-                kernel_size=3, padding=1)
-        self.conv2 = nn.Conv1d(nf, nf,
-                kernel_size=3, padding=1)
-
-        self.bn1 = nn.BatchNorm1d(nf)
-        self.bn2 = nn.BatchNorm1d(nf)
-
-    def forward(self, x):
-        residual = x
-        x = F.relu(self.bn1(self.conv1(x)))
-        x = F.relu(self.bn2(self.conv2(residual+x)))
-        return x
 
 class SimpleNN(nn.Module):
     def __init__(self, args):
-        self.layers = [16, 32, 64, 128, 256]
         super(SimpleNN, self).__init__()
         self.ngpu = args.ngpu
-        
-        self.conv1 = nn.Conv1d(1, 16, kernel_size=3, stride=1, padding=1)
-        self.bn1 = nn.BatchNorm1d(16)
 
-        self.layers1 = nn.ModuleList([ConvBlock(self.layers[i], self.layers[i+1])
-            for i in range(len(self.layers) - 1)])
-        self.layers2 = nn.ModuleList([ResBlock(self.layers[i+1], self.layers[i+1])
-            for i in range(len(self.layers) - 1)])
-        self.squeeze_conv = nn.Conv1d(256, 2, kernel_size=1)
-        self.dense1 = nn.Linear(1072, 256, bias=False)
-        self.dense_pi = nn.Linear(256, args.n_out, bias=False)
-        self.dense_v = nn.Linear(256, 1, bias=False)
+        self.dense1 = nn.Linear(args.n_in, args.n_in * 2, bias=True)
+        self.dense_pi = nn.Linear(args.n_in * 2, args.n_out, bias=True)
+        self.dense_v = nn.Linear(args.n_in * 2, 1, bias=True)
 
     def forward(self, x, training=False):
-        x = F.relu(self.bn1(self.conv1(x)))
-       
-        for l1,l2 in zip(self.layers1, self.layers2):
-            if training:
-                print(np.shape(x))
-            x = l2(l1(x))
-            
         if training:
             print(np.shape(x))
-        x = self.squeeze_conv(x)
-        x = x.view(np.shape(x)[0],-1)
+        x = x[0]
+
         if training:
             print(np.shape(x))
+
         x = self.dense1(x)
+        if training:
+            print(np.shape(x))
         pi = self.dense_pi(x)
         v = self.dense_v(x)
-        
+        # pi.reshape((1, 378))
+        # v.reshape((1, 1))
+
         if training:
             print(np.shape(pi))
             print(np.shape(v))
-
+        # print(F.log_softmax(pi, dim=1).shape, torch.tanh(v).shape)
         return F.log_softmax(pi, dim=1), torch.tanh(v)
 
 
@@ -91,9 +80,10 @@ class NNetWrapper:
         self.nnet.to(args.device)
         self.args = args
 
-        if (args.device.type == 'cuda') and (args.ngpu > 1):
+        if args.device.type == 'cuda':
             print("NN using gpu")
-            self.nnet = nn.DataParallel(self.nnet, list(range(args.ngpu)))
+            self.nnet = nn.DataParallel(self.nnet)
+            self.nnet.to(args.device)
 
     def train(self, examples, logfile):
         optimizer = optim.Adam(self.nnet.parameters())
@@ -114,8 +104,8 @@ class NNetWrapper:
             while batch_idx < int(len(examples) / self.args.batch_size):
                 sample_ids = np.random.randint(len(examples), size=self.args.batch_size)
                 states, pis, vs = list(zip(*[examples[i] for i in sample_ids]))
-                states = torch.FloatTensor(np.array(states).astype(np.float64)) 
-                states = states.view(-1,34*16).unsqueeze(1)
+                states = torch.FloatTensor(np.array(states).astype(np.float64))
+                states = states.view(-1, 34 * 16).unsqueeze(1)
                 target_pis = torch.FloatTensor(np.array(pis))
                 target_vs = torch.FloatTensor(np.array(vs).astype(np.float64))
 
@@ -130,7 +120,7 @@ class NNetWrapper:
                 l_pi = self.loss_pi(target_pis, out_pi)
                 l_v = self.loss_v(target_vs, out_v)
                 total_loss = l_pi + l_v
-
+                # print(total_loss)
                 # record loss
                 # pi_losses.update(l_pi.data[0], states.size(0))
                 # v_losses.update(l_v.data[0], states.size(0))
@@ -181,11 +171,11 @@ class NNetWrapper:
     def loss_pi(self, targets, outputs):
         outputs = outputs.view(-1, 21, 18)
         targets = targets.view(-1, 21, 18)
-        return -torch.sum(targets * outputs) / targets.size()[0]
+        return -torch.sum(targets.data.cuda() * outputs) / targets.size()[0]
 
     def loss_v(self, targets, outputs):
         # return torch.sum((targets - outputs.view(-1)) ** 2) / targets.size()[0]
-        return torch.sum((targets - outputs) ** 2) / targets.size()[0]
+        return torch.sum((targets.data.cuda() - outputs) ** 2) / targets.size()[0]
 
     def save_checkpoint(self, folder='checkpoint', filename='checkpoint.pth.tar'):
         filepath = os.path.join(folder, filename)

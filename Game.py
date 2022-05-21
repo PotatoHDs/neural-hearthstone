@@ -2,6 +2,8 @@ import numpy as np
 import copy
 import random
 
+from numba import jit
+
 from fireplace import cards
 from fireplace.exceptions import GameOver, InvalidAction
 from fireplace.game import Game
@@ -11,8 +13,8 @@ from hearthstone.enums import CardClass, CardType, State
 
 
 class GameImp:
-    def __init__(self):
-        self.game = None
+    def __init__(self, game=None):
+        self.game = game
 
     def init_game(self, UiObserver=None, HsObserver=None):
         cards.db.initialize()

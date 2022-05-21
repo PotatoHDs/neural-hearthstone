@@ -16,23 +16,23 @@ from datetime import date
 def action_name(act, game):
     a, b = act
     line = " "
-    line+=(f"Game turn: {game.turn}\n")
-    line+=(f"Player 1 health: {game.players[0].hero.health}\n")
-    line+=(f"Player 2 health: {game.players[1].hero.health}\n")
+    line += (f"Game turn: {game.turn}\n")
+    line += (f"Player 1 health: {game.players[0].hero.health}\n")
+    line += (f"Player 2 health: {game.players[1].hero.health}\n")
     if 0 <= a <= 9:
-        line+=(f"Played card {a} on {b}\n")
+        line += (f"Played card {a} on {b}\n")
     elif 10 <= a <= 16:
-        line+=(f"Card {a} attacked card {b}\n")
+        line += (f"Card {a} attacked card {b}\n")
     elif a == 17:
-        line+=(f"Used HeroPower on {b}\n")
+        line += (f"Used HeroPower on {b}\n")
     elif a == 18:
-        line+=(f"Hero attacked {b}\n")
+        line += (f"Hero attacked {b}\n")
     elif a == 19:
-        line+=(f"Turn ended\n")
+        line += (f"Turn ended\n")
     elif a == 20:
-        line+=(f"Chosen card {b}\n")
+        line += (f"Chosen card {b}\n")
     else:
-        line+=("Inappropriate action\n")
+        line += ("Inappropriate action\n")
 
     return line
 
@@ -78,7 +78,7 @@ class Coach:
             temp = int(episode_step < self.args.tempThreshold)
 
             pi = self.mcts.get_action_prob(temp=temp)
-            if episode_step%10 == 0:
+            if episode_step % 10 == 0:
                 print("Simulated {} step".format(episode_step))
             logfile.write("Simulated {} step\n".format(episode_step))
 
@@ -88,8 +88,8 @@ class Coach:
             action = np.random.choice(len(pi), p=pi)
             a, b = np.unravel_index(action, pi_reshape.shape)
             # print(a, b)
-#             logfile.write(action_name((a,b), current_game))
-#             print(action_name((a,b), current_game))
+            #             logfile.write(action_name((a,b), current_game))
+            #             print(action_name((a,b), current_game))
             cur_game, self.cur_player = self.game.get_next_state(self.cur_player, (a, b))
 
             r = self.game.get_game_ended()
