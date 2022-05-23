@@ -6,6 +6,9 @@ import numpy as np
 from types import *
 import time
 from MCTS import MCTS
+from PythonNet import ResNN2D
+
+import numpy.ma as ma
 
 
 # @jitclass()
@@ -15,26 +18,36 @@ class Arena:
     """
 
     def __init__(self, player1, player2, game, args, display=None):
-        self.player1 = MCTS(game, player1, args)
-        self.player2 = MCTS(game, player2, args)
+        # self.player1 = MCTS(game, player1, args)
+        # self.player2 = MCTS(game, player2, args)
+        self.player1 = player1
+        self.player2 = player2
         self.game = game
         self.display = display
 
-    def play_game(self):
+    def play_game(self, UiObserver=None, HsObserver=None):
         players = [self.player2, None, self.player1]
         cur_player = 1
-        current_game = self.game.init_game()
+        current_game = self.game.init_game(UiObserver, HsObserver)
         self.game.mulligan_choice()
         self.game.game.player_to_start = self.game.game.current_player
 
-        # print(current_game.players)
-        # print(self.game.game.players)
         it = 0
         while not current_game.ended or current_game.turn > 180:
             it += 1
-            pi = players[cur_player + 1].get_action_prob(temp=0)
+            # for MCTS
+            # pi = players[cur_player + 1].get_action_prob(temp=0)
+            # pi_reshape = np.reshape(pi, (21, 18))
+            # action = np.where(pi_reshape  == np.max(pi_reshape ))
+
+            # for NN
+            pi = players[cur_player + 1].predict(self.game.get_state().reshape(-1,2,19,5))
+            pi = pi.detach().numpy().reshape(-1)
             pi_reshape = np.reshape(pi, (21, 18))
-            action = np.where(pi_reshape == np.max(pi_reshape))
+            valids = np.invert(self.game.get_valid_moves().astype(bool))
+            masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
+            action = np.where(masked_pi == np.max(masked_pi))
+
             next_state, cur_player = self.game.get_next_state(cur_player, (action[0][0], action[1][0]))
         return self.game.get_game_ended()
 

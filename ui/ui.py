@@ -212,8 +212,6 @@ class MainWindow(QMainWindow):
             with open("ui/cards/{}.png".format(cardID), "wb") as file:
                 file.write(webpage)
 
-        # while cardID in self.id_list:
-        # cardID += "_1"
         self.entities[hand].cards.insert(entity_zone_pos, QCard(self, self.card_width, self.card_height, entity))
         # self.entity[hand].cards.append(QLabel(self))
         self.entities[hand].cards[entity_zone_pos].setObjectName(str(entity.uuid))
@@ -299,6 +297,7 @@ class MainWindow(QMainWindow):
         self.entities[heropower.uuid].raise_()
 
     def change_zone(self, entity, zoneID_from, zoneID_to):  # cardID: CardID, zoneID: ZoneID,
+        zone_to_remove = zoneID_to
         player_name = entity.controller.name
         zoneID_from = self.get_zone(zoneID_from, player_name)
         zoneID_to = self.get_zone(zoneID_to, player_name)
@@ -312,6 +311,8 @@ class MainWindow(QMainWindow):
         self.entities[zoneID_to].cards.insert(position, card)
         cord_x = self.entities[zoneID_to].x + (position * (self.card_width + self.get_void_size(zoneID_to)))
         self.add_animation(MoveCardAnim(card, cord_x, self.entities[zoneID_to].y))
+        if zoneID_to[0:5] == "Field" and type(entity) == Spell:
+            self.remove_entity(entity, zone_to_remove)
         self.reorganise(zoneID_to)
 
         # print("card started moving")

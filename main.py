@@ -6,8 +6,11 @@ from PyQt6.QtGui import QFontDatabase
 # from hearthstone.enums import BlockType, Zone, Step, PlayState
 
 from Coach import Coach
+from Agent import Agent
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
+# from KerasNet import ResNN2D
+from PythonNet import ResNN2D
 # from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice, \
 #     BeginTurn, Death, TargetedAction, Activate
 # from fireplace.card import HeroPower, Hero, Character
@@ -21,6 +24,8 @@ import re
 import os
 import time
 import math
+import numpy as np
+import numpy.ma as ma
 
 import torch
 import torch.utils.data
@@ -32,16 +37,18 @@ class Args:
         self.n_in = 34 * 16
         self.n_out = 21 * 18
 
-        self.epochs = 100
+        self.shape_in = (2,19,5)
+
+        self.epochs = 10
         self.batch_size = 128
         self.lr = 1e-3
 
         self.arenaCompare = 10
-        self.numIters = 20
+        self.numIters = 50
         self.numEps = 10
         self.maxlenOfQueue = 100000
         self.numMCTS = 10
-        self.numItersForTrainExamplesHistory = 50
+        self.numItersForTrainExamplesHistory = 30
 
         self.tempThreshold = 150
         self.updateThreshold = 0.6
@@ -50,10 +57,10 @@ class Args:
         print("cuda:0" if (torch.cuda.is_available()) else "cpu")
         self.device = torch.device("cuda:0" if (torch.cuda.is_available()) else "cpu")
 
-        self.checkpoint = './temp/'
+        self.checkpoint = './seq/'
         self.load_model = True
-        self.load_folder_file = ('./temp/', 'temp.pth.tar')
-        self.load_examples = ('./temp/', 'checkpoint.pth.tar')
+        self.load_folder_file = ('./seq/', 'ResNN2D_best.pth.tar')
+        self.load_examples = ('./seq/', 'checkpoint.pth.tar')
         self.fireplace_log_enabled = True
 
 
@@ -100,19 +107,19 @@ def on_open(ws):
     print("Opened connection")
 
 
-def main():
-    args = Args()
-    g = Game()
-    nnet = nn(args)
-
-    if args.load_model:
-        nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
-
-    c = Coach(g, nnet, args)
-    if args.load_model:
-        print("Load trainExamples from file")
-        c.load_train_examples()
-    c.learn()
+# def main():
+    # args = Args()
+    # g = Game()
+    # nnet = nn(args)
+    #
+    # if args.load_model:
+    #     nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
+    #
+    # c = Coach(g, nnet, args)
+    # if args.load_model:
+    #     print("Load trainExamples from file")
+    #     c.load_train_examples()
+    # c.learn()
     # obj = Args()
     #
     #
@@ -120,23 +127,65 @@ def main():
     # setattr(obj, "property_name", "value")
     # getattr(obj, "property_name")
 
+def play_game(g,nnet,pnet,args):
+    players = [nnet, None, pnet]
+    if g.game.player_to_start == "Player1":
+        cur_player = -1
+    else:
+        cur_player = 1
 
-    # def main():
-    #     g = Game()
-    #     g.init_game()
-    #     player = g.game.players[0]
-    #     for i in range(len(player.hand)):
-    #         print(player.hand[i])
-    #         print(player.hand[i].__class__.__name__)
-    #         print(player.hand[i].card_class)
-    #         print(player.hand[i].type)
-    #         print(player.hand[i].cost)
+    it = 0
+    while not g.game.ended or g.game.turn > 180:
+        it += 1
+        # for MCTS
+        # pi = players[cur_player + 1].get_action_prob(temp=0)
+        # pi_reshape = np.reshape(pi, (21, 18))
+        # action = np.where(pi_reshape  == np.max(pi_reshape ))
 
-    # card_downloader()
-    #
+        # for NN
+        pi = players[cur_player + 1].predict(g.get_state().reshape(-1, 2, 19, 5))
+        pi = pi.detach().numpy().reshape(-1)
+        pi_reshape = np.reshape(pi, (21, 18))
+        valids = np.invert(g.get_valid_moves().astype(bool))
+        masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
+        action = np.where(masked_pi == np.max(masked_pi))
+
+        next_state, cur_player = g.get_next_state(cur_player, (action[0][0], action[1][0]))
+    return g.get_game_ended()
+
+
+def main():
+    g = Game()
+    args = Args()
+    pnet = ResNN2D(args)
+    nnet = ResNN2D(args)
+    if args.load_model:
+        nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
+
+    # agent = Agent(g,nnet,args)
+    # agent.learn()
+
+    app = QApplication(sys.argv)
+    QFontDatabase.addApplicationFont("ui/fonts/belwebdbtaltstylerusbym_bold.otf")
+    window = MainWindow()
+
+    current_game = g.init_game(UiObserver(window), HsObserver())
+    # g.game.manager.register(UiObserver(window))
+    # g.game.manager.register(HsObserver())
+    g.mulligan_choice()
+    g.game.player_to_start = g.game.current_player
+
+    play_game(g,nnet,pnet,args)
+
+    app.processEvents()
+    sys.exit(app.exec())
+
+    # if args.load_model:
+    #     nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
     # app = QApplication(sys.argv)
     #
     # QFontDatabase.addApplicationFont("ui/fonts/belwebdbtaltstylerusbym_bold.otf")
+
     # fontId =
     # if fontId < 0:
     #     print('font not loaded')
@@ -157,34 +206,18 @@ def main():
     # ws.run_forever(dispatcher=rel)  # Set dispatcher to automatic reconnection
     # rel.signal(2, rel.abort)  # Keyboard Interrupt
     # rel.dispatch()
-    #
+
     # window = MainWindow()
-    # g.init_game(UiObserver(window),HsObserver())
+    # current_game = g.init_game(UiObserver(window), HsObserver())
     # g.game.manager.register(UiObserver(window))
     # g.game.manager.register(HsObserver())
-    # g.start_game()
     # g.mulligan_choice()
-    # g.do_action([0, 0])
-    # g.do_action([19, 0])
-    # for i in range(0, 4):
-    #     g.do_action([0, 0])
-    #     g.do_action([19, 0])
-    # for i in range(0, 4):
-    #     g.do_action([17, 0])
-    #     g.do_action([19, 0])
-    # tiny fin (or desk imp) attacks
-    # g.do_action([10, 0])
-    # g.do_action([10, 0])
-    # for i in range(120):
-    #     try:
-    #         g.do_action([10, 0])
-    #     except GameOver:
-    #         print("Game is over")
-    #         break
-    # print(g.game.players[0].hand)
-    # print(g.game.players[1].hand)
-    # app.processEvents()
+    # g.game.player_to_start = g.game.current_player
 
+    # arena = Arena(nnet, nnet, g, args)
+    # st = arena.play_game(UiObserver(window), HsObserver())
+
+    # app.processEvents()
     # sys.exit(app.exec())
 
 
