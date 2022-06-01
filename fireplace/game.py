@@ -99,7 +99,6 @@ class BaseGame(Entity):
 		return self.state == State.COMPLETE
 
 	def action_start(self, type, source, index, target):
-		self.manager.action_start(type, source, index, target)
 		if type != BlockType.PLAY:
 			self._action_stack += 1
 
@@ -107,8 +106,8 @@ class BaseGame(Entity):
 		self.manager.action_end(type, source)
 
 		if self.ended:
-			#raise GameOver("The game has ended.")
-			return
+			raise GameOver("The game has ended.")
+			# return
 		if type != BlockType.PLAY:
 			self._action_stack -= 1
 		if not self._action_stack:

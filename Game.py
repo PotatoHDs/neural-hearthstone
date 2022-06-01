@@ -2,6 +2,8 @@ import numpy as np
 import copy
 import random
 
+from numba import jit
+
 from fireplace import cards
 from fireplace.exceptions import GameOver, InvalidAction
 from fireplace.game import Game
@@ -61,24 +63,25 @@ class NewObserver(BaseObserver):
 
 
 class GameImp:
-    def __init__(self):
-        self.game = None
+    def __init__(self, game=None):
+        self.game = game
 
-    def init_game(self, window=None):
+    def init_game(self, UiObserver=None, HsObserver=None):
         cards.db.initialize()
+        # print('i\'m doing things')
 
         # c1 = CardClass(random.randint(2, 10))
         # c2 = CardClass(random.randint(2, 10))
         # deck1 = random_draft(c1)
         # deck2 = random_draft(c2)
 
-        deck1 = ["CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
-                  "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
-                  "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239",
-                  "CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
-                  "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
-                  "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239"
-                  ]
+        # deck1 = ["CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
+        #           "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
+        #           "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239",
+        #           "CORE_LOEA10_3", "BT_257", "BOT_219", "CORE_GVG_044", "GVG_010",
+        #           "LETL_834H3", "VAN_CS2_119", "CORE_EX1_194", "AT_101", "OG_094",
+        #           "VAN_CS2_120", "DAL_092", "VAN_CS2_004", "LOOT_258", "DRG_239"
+        #           ]
         deck2 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
                  "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
                  "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
@@ -86,18 +89,32 @@ class GameImp:
                  "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
                  "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
                  ]
-        c1 = CardClass(6)
+        deck1 = ["SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101",
+                 "SCH_145", "CORE_LOEA10_3", "ICC_023", "DRG_239", "CFM_334",
+                 "DAL_092", "OG_326", "CS2_172", "TU5_CS2_120", "OG_248",
+                 "OG_325", "VAN_CS2_182", "GVG_071", "CFM_665", "AT_101"
+                 ]
+        # deck1 = ["DAL_092"]*30
+        # deck2 = ["DAL_092"]*30
+        # deck1 = ["LOOT_258"]*30
+        # deck2 = ["LOOT_258"]*30
+        # c1 = CardClass(6)
         c2 = CardClass(3)
+        c1 = CardClass(3)
 
         players = []
         players.append(Player("Player1", deck1, c1.default_hero))
         players.append(Player("Player2", deck2, c2.default_hero))
         self.game = Game(players=players)
-        self.game.start()
-        if window:
-            self.game.manager.observers.append(NewObserver(window))
-            window.init_decks(self.game)
 
+        if UiObserver:
+            self.game.manager.register(UiObserver)
+        if HsObserver:
+            self.game.manager.register(HsObserver)
+
+        self.game.start()
         return self.game
 
     def mulligan_choice(self):
@@ -108,7 +125,7 @@ class GameImp:
     def get_next_state(self, player, action):
         # game_copy = copy.deepcopy(game)
         try:
-            self.get_action(action)
+            self.do_action(action)
         except GameOver:
             raise GameOver
 
@@ -120,7 +137,7 @@ class GameImp:
             return next_state, -player
 
     def get_valid_moves(self):
-        actions = np.zeros((21, 18))
+        actions = np.zeros((21, 18), dtype=int)
         player = self.game.current_player
         if player.choice:
             for index, card in enumerate(player.choice.cards):
@@ -150,13 +167,14 @@ class GameImp:
             actions[19, 0] = 1
         return actions
 
-    def get_action(self, a):
+    def do_action(self, a):
         player = self.game.current_player
+        # self.game.process_deaths()
         if not self.game.ended:
             try:
                 if 0 <= a[0] <= 9:
                     if player.hand[a[0]].requires_target():
-                        player.hand[a[0]].play(player.hand[a[0]].targets[a[1]])
+                        player.hand[a[0]].play(target=player.hand[a[0]].targets[a[1]])
                     else:
                         player.hand[a[0]].play()
                 elif 10 <= a[0] <= 16:
@@ -178,7 +196,7 @@ class GameImp:
                     print("Not an appropriate action")
             except InvalidAction:
                 print("InvalidAction")
-                player.game.end_turn()
+                # player.game.end_turn()
             except IndexError:
                 print("IndexError")
                 try:
@@ -204,101 +222,161 @@ class GameImp:
         return 0
 
     # getting state for network in array
+    # def get_state(self):
+    #     s = np.zeros((34, 16), dtype='float')
+    #
+    #     p1 = self.game.current_player
+    #     p2 = p1.opponent
+    #
+    #     s[0] = p1.hero.health
+    #     s[1] = p2.hero.health
+    #     s[2] = p1.max_mana
+    #     s[3] = p2.max_mana
+    #     s[4] = p1.mana
+    #
+    #     # hero player1
+    #     i = 5
+    #     s[i, 0] = p1.hero.card_class
+    #     s[i, 1] = p1.hero.power.is_usable() * 1
+    #     s[i, 2] = p1.hero.power.cost  # add effect
+    #     if p1.weapon is None:
+    #         s[i, 2:5] = 0
+    #     else:
+    #         s[i, 3] = 1
+    #         s[i, 4] = p1.weapon.damage
+    #         s[i, 5] = p1.weapon.durability  # add effect, attack, deathrattle
+    #
+    #     # hero player2
+    #     i = 6
+    #     s[i, 0] = p2.hero.card_class
+    #     s[i, 1] = p2.hero.power.is_usable() * 1
+    #     s[i, 2] = p2.hero.power.cost  # add effect
+    #     if p2.weapon is None:
+    #         s[i, 2:5] = 0
+    #     else:
+    #         s[i, 3] = 1
+    #         s[i, 4] = p2.weapon.damage
+    #         s[i, 5] = p2.weapon.durability  # add effect, attack, deathrattle
+    #
+    #     i = 7
+    #     hand = len(p1.hand)
+    #     s[i] = hand
+    #     s[i + 1] = len(p2.hand)
+    #
+    #     # hand
+    #     i = 9
+    #     for j in range(0, 10):
+    #         if j < hand:
+    #             s[i + j, 0] = 1
+    #             s[i + j, 1] = p1.hand[j].cost
+    #             s[i + j, 2] = p1.hand[j].card_class
+    #             s[i + j, 3] = p1.hand[j].type
+    #             if p1.hand[j].type == 4:
+    #                 s[i + j, 4] = p1.hand[j].race
+    #                 s[i + j, 5] = p1.hand[j].atk
+    #                 s[i + j, 6] = p1.hand[j].max_health
+    #                 s[i + j, 7] = p1.hand[j].divine_shield * 1
+    #                 s[i + j, 8] = p1.hand[j].has_deathrattle * 1
+    #                 s[i + j, 9] = p1.hand[j].has_battlecry * 1
+    #                 s[i + j, 10] = p1.hand[j].taunt * 1
+    #
+    #                 # field
+    #     i = 19
+    #     f1 = len(p1.field)
+    #     for j in range(0, 7):
+    #         if j < f1:
+    #             s[i + j, 0] = 1
+    #             s[i + j, 1] = p1.field[j].health
+    #             s[i + j, 2] = p1.field[j].card_class
+    #             s[i + j, 3] = p1.field[j].can_attack() * 1
+    #
+    #             s[i + j, 4] = p1.field[j].race
+    #             s[i + j, 5] = p1.field[j].atk
+    #             s[i + j, 6] = p1.field[j].max_health
+    #             s[i + j, 7] = p1.field[j].divine_shield * 1
+    #             s[i + j, 8] = p1.field[j].has_deathrattle * 1
+    #             s[i + j, 9] = p1.field[j].has_battlecry * 1
+    #             s[i + j, 10] = p1.field[j].taunt * 1
+    #             s[i + j, 11] = p1.field[j].stealthed * 1
+    #             s[i + j, 12] = p1.field[j].silenced * 1
+    #
+    #     i = 26
+    #     f2 = len(p2.field)
+    #     for j in range(0, 7):
+    #         if j < f2:
+    #             s[i + j, 0] = 1
+    #             s[i + j, 1] = p2.field[j].health
+    #             s[i + j, 2] = p2.field[j].card_class
+    #             s[i + j, 3] = p2.field[j].can_attack() * 1
+    #
+    #             s[i + j, 4] = p2.field[j].race
+    #             s[i + j, 5] = p2.field[j].atk
+    #             s[i + j, 6] = p2.field[j].max_health
+    #             s[i + j, 7] = p2.field[j].divine_shield * 1
+    #             s[i + j, 8] = p2.field[j].has_deathrattle * 1
+    #             s[i + j, 9] = p2.field[j].has_battlecry * 1
+    #             s[i + j, 10] = p2.field[j].taunt * 1
+    #             s[i + j, 11] = p2.field[j].stealthed * 1
+    #             s[i + j, 12] = p2.field[j].silenced * 1
+    #
+    #     return s
+
     def get_state(self):
-        s = np.zeros((34, 16), dtype='float')
+        s = np.zeros((2, 19, 5), dtype='float')
 
         p1 = self.game.current_player
         p2 = p1.opponent
 
-        s[0] = p1.hero.health
-        s[1] = p2.hero.health
-        s[2] = p1.max_mana
-        s[3] = p2.max_mana
-        s[4] = p1.mana
-
         # hero player1
-        i = 5
-        s[i, 0] = p1.hero.card_class
-        s[i, 1] = p1.hero.power.is_usable() * 1
-        s[i, 2] = p1.hero.power.cost  # add effect
-        if p1.weapon is None:
-            s[i, 2:5] = 0
-        else:
-            s[i, 3] = 1
-            s[i, 4] = p1.weapon.damage
-            s[i, 5] = p1.weapon.durability  # add effect, attack, deathrattle
+        s[0, 0, 0] = p1.hero.power.cost /10
+        s[0, 0, 1] = p1.hero.card_class /10
+        s[0, 0, 2] = p1.hero.power.is_usable() * 1
+        s[0, 0, 3] = p1.hero.health / p1.hero.max_health
+        s[0, 0, 4] = p1.mana /10
 
         # hero player2
-        i = 6
-        s[i, 0] = p2.hero.card_class
-        s[i, 1] = p2.hero.power.is_usable() * 1
-        s[i, 2] = p2.hero.power.cost  # add effect
-        if p2.weapon is None:
-            s[i, 2:5] = 0
-        else:
-            s[i, 3] = 1
-            s[i, 4] = p2.weapon.damage
-            s[i, 5] = p2.weapon.durability  # add effect, attack, deathrattle
+        s[1, 0, 0] = p2.hero.power.cost /10
+        s[1, 0, 1] = p2.hero.card_class /10
+        s[1, 0, 2] = p2.hero.power.is_usable() * 1
+        s[1, 0, 3] = p2.hero.health / p2.hero.max_health
+        s[1, 0, 4] = p2.mana /10
 
-        i = 7
-        hand = len(p1.hand)
-        s[i] = hand
-        s[i + 1] = len(p2.hand)
-
-        # hand
-        i = 9
+        h1 = len(p1.hand)
         for j in range(0, 10):
-            if j < hand:
-                s[i + j, 0] = 1
-                s[i + j, 1] = p1.hand[j].cost
-                s[i + j, 2] = p1.hand[j].card_class
-                s[i + j, 3] = p1.hand[j].type
+            if j < h1:
+                s[0, j + 1, 0] = p1.hand[j].cost /10
+                s[0, j + 1, 1] = p1.hand[j].card_class /10
+                s[0, j + 1, 2] = p1.hand[j].type /10
                 if p1.hand[j].type == 4:
-                    s[i + j, 4] = p1.hand[j].race
-                    s[i + j, 5] = p1.hand[j].atk
-                    s[i + j, 6] = p1.hand[j].max_health
-                    s[i + j, 7] = p1.hand[j].divine_shield * 1
-                    s[i + j, 8] = p1.hand[j].has_deathrattle * 1
-                    s[i + j, 9] = p1.hand[j].has_battlecry * 1
-                    s[i + j, 10] = p1.hand[j].taunt * 1
+                    s[0, j + 1, 3] = p1.hand[j].max_health /10
+                    s[0, j + 1, 4] = p1.hand[j].atk /10
 
-                    # field
-        i = 19
         f1 = len(p1.field)
         for j in range(0, 7):
             if j < f1:
-                s[i + j, 0] = 1
-                s[i + j, 1] = p1.field[j].health
-                s[i + j, 2] = p1.field[j].card_class
-                s[i + j, 3] = p1.field[j].can_attack() * 1
+                s[0, j + 11, 0] = p1.field[j].health /p1.field[j].max_health
+                s[0, j + 11, 1] = p1.field[j].card_class /10
+                s[0, j + 11, 2] = p1.field[j].can_attack() * 1
+                s[0, j + 11, 3] = p1.field[j].max_health /10
+                s[0, j + 11, 4] = p1.field[j].atk /10
 
-                s[i + j, 4] = p1.field[j].race
-                s[i + j, 5] = p1.field[j].atk
-                s[i + j, 6] = p1.field[j].max_health
-                s[i + j, 7] = p1.field[j].divine_shield * 1
-                s[i + j, 8] = p1.field[j].has_deathrattle * 1
-                s[i + j, 9] = p1.field[j].has_battlecry * 1
-                s[i + j, 10] = p1.field[j].taunt * 1
-                s[i + j, 11] = p1.field[j].stealthed * 1
-                s[i + j, 12] = p1.field[j].silenced * 1
-
-        i = 26
         f2 = len(p2.field)
         for j in range(0, 7):
             if j < f2:
-                s[i + j, 0] = 1
-                s[i + j, 1] = p2.field[j].health
-                s[i + j, 2] = p2.field[j].card_class
-                s[i + j, 3] = p2.field[j].can_attack() * 1
+                s[1, j + 11, 0] = p2.field[j].health /p2.field[j].max_health
+                s[1, j + 11, 1] = p2.field[j].card_class /10
+                s[1, j + 11, 2] = p2.field[j].can_attack() * 1
+                s[1, j + 11, 3] = p2.field[j].max_health /10
+                s[1, j + 11, 4] = p2.field[j].atk /10
 
-                s[i + j, 4] = p2.field[j].race
-                s[i + j, 5] = p2.field[j].atk
-                s[i + j, 6] = p2.field[j].max_health
-                s[i + j, 7] = p2.field[j].divine_shield * 1
-                s[i + j, 8] = p2.field[j].has_deathrattle * 1
-                s[i + j, 9] = p2.field[j].has_battlecry * 1
-                s[i + j, 10] = p2.field[j].taunt * 1
-                s[i + j, 11] = p2.field[j].stealthed * 1
-                s[i + j, 12] = p2.field[j].silenced * 1
+        h2 = len(p2.hand)
+        for j in range(0, 10):
+            if j < h2:
+                s[1, j + 1, 0] = p2.hand[j].cost /10
+                s[1, j + 1, 1] = p2.hand[j].card_class /10
+                s[1, j + 1, 2] = p2.hand[j].type /10
+                if p2.hand[j].type == 4:
+                    s[1, j + 1, 3] = p2.hand[j].max_health /10
+                    s[1, j + 1, 4] = p2.hand[j].atk /10
 
         return s

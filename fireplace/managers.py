@@ -56,6 +56,10 @@ class GameManager(Manager):
 		self.counter = 1
 		obj.entity_id = self.counter
 
+	def change_zone(self, card, zone, prev_zone):
+		for observer in self.observers:
+			observer.change_zone(card, zone, prev_zone)
+
 	def action_start(self, type, source, index, target):
 		for observer in self.observers:
 			observer.action_start(type, source, index, target)
@@ -85,6 +89,18 @@ class GameManager(Manager):
 		for observer in self.observers:
 			observer.turn(player)
 
+	def trigger_action(self, action, source, at, *args):
+		for observer in self.observers:
+			observer.trigger_action(action, source, at, *args)
+
+	def change_card(self, card, field_name, prev_value, curr_value):
+		for observer in self.observers:
+			observer.change_card(card, field_name, prev_value, curr_value)
+
+	def change_deck(self, player):
+		for observer in self.observers:
+			observer.change_deck(player)
+
 
 class BaseObserver:
 	def action_start(self, type, source, index, target):
@@ -103,6 +119,18 @@ class BaseObserver:
 		pass
 
 	def turn(self, player):
+		pass
+
+	def change_zone(self, card, zone, prev_zone):
+		pass
+
+	def trigger_action(self, action, source, at, *args):
+		pass
+
+	def change_card(self, card, field_name, prev_value, curr_value):
+		pass
+
+	def change_deck(self, player):
 		pass
 
 

@@ -1,37 +1,57 @@
+from numba import jit, njit, prange
+from numba.experimental import jitclass
+
 from utils import Bar, AverageMeter
 import numpy as np
 from types import *
 import time
+from MCTS import MCTS
+from PythonNet import ResNN2D
+
+import numpy.ma as ma
 
 
+# @jitclass()
 class Arena:
     """
     An Arena class where any 2 agents can be pit against each other.
     """
 
-    def __init__(self, player1, player2, game, display=None):
+    def __init__(self, player1, player2, game, args, display=None):
+        # self.player1 = MCTS(game, player1, args)
+        # self.player2 = MCTS(game, player2, args)
         self.player1 = player1
         self.player2 = player2
         self.game = game
         self.display = display
 
-    def play_game(self):
+    def play_game(self, UiObserver=None, HsObserver=None):
         players = [self.player2, None, self.player1]
         cur_player = 1
-        current_game = self.game.getInitGame()
+        current_game = self.game.init_game(UiObserver, HsObserver)
+        self.game.mulligan_choice()
+        self.game.game.player_to_start = self.game.game.current_player
+
         it = 0
         while not current_game.ended or current_game.turn > 180:
             it += 1
-            if type(players[cur_player + 1]) is MethodType:
-                action = players[cur_player + 1]()
-                next_state, cur_player = self.game.get_next_state(cur_player, (action))
-            else:
-                pi = players[cur_player + 1]()
-                pi_reshape = np.reshape(pi, (21, 18))
-                action = np.where(pi_reshape == np.max(pi_reshape))
-                next_state, cur_player = self.game.get_next_state(cur_player, (action[0][0], action[1][0]))
+            # for MCTS
+            # pi = players[cur_player + 1].get_action_prob(temp=0)
+            # pi_reshape = np.reshape(pi, (21, 18))
+            # action = np.where(pi_reshape  == np.max(pi_reshape ))
+
+            # for NN
+            pi = players[cur_player + 1].predict(self.game.get_state().reshape(-1,2,19,5))
+            pi = pi.detach().numpy().reshape(-1)
+            pi_reshape = np.reshape(pi, (21, 18))
+            valids = np.invert(self.game.get_valid_moves().astype(bool))
+            masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
+            action = np.where(masked_pi == np.max(masked_pi))
+
+            next_state, cur_player = self.game.get_next_state(cur_player, (action[0][0], action[1][0]))
         return self.game.get_game_ended()
 
+    @jit(nopython=False, parallel=True)
     def play_games(self, num):
         """
         Plays num games in which player1 starts num/2 games and player2 starts
@@ -42,7 +62,7 @@ class Arena:
             draws:  games won by nobody
         """
         eps_time = AverageMeter()
-        bar = Bar('Arena.playGames', max=num)
+        bar = Bar('Arena', max=num)
         end = time.time()
         eps = 0
         maxeps = int(num)
@@ -51,7 +71,7 @@ class Arena:
         one_won = 0
         two_won = 0
         draws = 0
-        for _ in range(num):
+        for _ in prange(num):
             game_result = self.play_game()
             if game_result == 1:
                 one_won += 1
@@ -62,7 +82,7 @@ class Arena:
             eps += 1
             eps_time.update(time.time() - end)
             end = time.time()
-            bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}'.format(eps=eps + 1,
+            bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}'.format(eps=eps,
                                                                                                        maxeps=maxeps,
                                                                                                        et=eps_time.avg,
                                                                                                        total=bar.elapsed_td,
@@ -71,7 +91,7 @@ class Arena:
 
         self.player1, self.player2 = self.player2, self.player1
 
-        for _ in range(num):
+        for _ in prange(num):
             game_result = self.play_game()
             if game_result == -1:
                 one_won += 1
@@ -82,8 +102,8 @@ class Arena:
             eps += 1
             eps_time.update(time.time() - end)
             end = time.time()
-            bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}'.format(eps=eps + 1,
-                                                                                                       maxeps=num,
+            bar.suffix = '({eps}/{maxeps}) Eps Time: {et:.3f}s | Total: {total:} | ETA: {eta:}'.format(eps=eps,
+                                                                                                       maxeps=maxeps,
                                                                                                        et=eps_time.avg,
                                                                                                        total=bar.elapsed_td,
                                                                                                        eta=bar.eta_td)

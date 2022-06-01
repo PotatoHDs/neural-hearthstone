@@ -1,4 +1,6 @@
 import random
+from array import array
+from copy import copy
 from itertools import chain
 
 from hearthstone.enums import CardType, PlayState, Race, Zone
@@ -7,7 +9,7 @@ from .actions import Concede, Draw, Fatigue, Give, Hit, Steal, Summon
 from .aura import TargetableByAuras
 from .card import Card
 from .deck import Deck
-from .entity import Entity, slot_property
+from .entity import Entity, slot_property, int_property
 from .managers import PlayerManager
 from .utils import CardList
 from .config import Config #by AharaLab
@@ -39,15 +41,20 @@ class Player(Entity, TargetableByAuras):
 	spells_cost_health = slot_property("spells_cost_health")
 	murlocs_cost_health = slot_property("murlocs_cost_health")
 	type = CardType.PLAYER
+	used_mana = int_property("used_mana")
+	temp_mana = int_property("temp_mana")
+	# _max_mana = int_property("max_mana")
+	overload_locked = int_property("overload_locked")
 
 	def __init__(self, name, deck, hero):
+		self.ignore_scripts = True
 		self.starting_deck = deck
 		self.starting_hero = hero
 		self.data = None
 		self.name = name
 		self.hero = None
 		super().__init__()
-		self.deck = Deck()
+		self.deck = Deck(None, self)
 		self.hand = CardList()
 		self.discarded = CardList()
 		self.field = CardList()
@@ -64,14 +71,14 @@ class Player(Entity, TargetableByAuras):
 		self.last_card_played = None
 		self.cards_drawn_this_turn = 0
 		self.overloaded = 0
-		self.overload_locked = 0
+		# self.overload_locked = 0
 		self._max_mana = 0
 		self._start_hand_size = 3
 		self.playstate = PlayState.INVALID
-		self.temp_mana = 0
+		# self.temp_mana = 0
 		self.timeout = 75
 		self.times_hero_power_used_this_game = 0
-		self.used_mana = 0
+		# self.used_mana = 0
 		self.minions_killed_this_turn = 0
 		self.weapon = None
 		self.zone = Zone.INVALID
@@ -124,7 +131,9 @@ class Player(Entity, TargetableByAuras):
 
 	@max_mana.setter
 	def max_mana(self, amount):
+		prev_value = self._max_mana
 		self._max_mana = min(self.max_resources, max(0, amount))
+		self.game.manager.change_card(self, "max_mana", prev_value, self._max_mana)
 		self.log("%s is now at %i mana crystals", self, self._max_mana)
 
 	@property
@@ -248,7 +257,10 @@ class Player(Entity, TargetableByAuras):
 		questline_card = self.contains_questline(self.deck)
 		# questline card must be included in the initial hand.
 		if questline_card != None:
-			starting_hand = [questline_card]+random.sample(self.deck, hand_size-1)
+			# TODO: fix double quest
+			temp_deck = copy(self.deck)
+			temp_deck.remove(questline_card)
+			starting_hand = [questline_card]+random.sample(temp_deck, hand_size-1)
 		else:
 			starting_hand = random.sample(self.deck, hand_size)
 

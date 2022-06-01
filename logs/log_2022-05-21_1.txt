@@ -1,0 +1,124 @@
+------ITER 1------
+Executed 0 eps
+Self Play (1/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 1 eps
+Self Play (2/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 2 eps
+Self Play (3/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 3 eps
+Self Play (4/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 4 eps
+Self Play (5/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 5 eps
+Self Play (6/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 6 eps
+Self Play (7/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 7 eps
+Self Play (8/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 8 eps
+Self Play (9/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+Executed 9 eps
+Self Play (10/10) Eps Time: 0.000s | Total: 0:00:00 | ETA: 0:00:00
+EPOCH ::: 1
+EPOCH ::: 2
+EPOCH ::: 3
+EPOCH ::: 4
+EPOCH ::: 5
+EPOCH ::: 6
+EPOCH ::: 7
+EPOCH ::: 8
+EPOCH ::: 9
+EPOCH ::: 10
+EPOCH ::: 11
+EPOCH ::: 12
+EPOCH ::: 13
+EPOCH ::: 14
+EPOCH ::: 15
+EPOCH ::: 16
+EPOCH ::: 17
+EPOCH ::: 18
+EPOCH ::: 19
+EPOCH ::: 20
+EPOCH ::: 21
+EPOCH ::: 22
+EPOCH ::: 23
+EPOCH ::: 24
+EPOCH ::: 25
+EPOCH ::: 26
+EPOCH ::: 27
+EPOCH ::: 28
+EPOCH ::: 29
+EPOCH ::: 30
+EPOCH ::: 31
+EPOCH ::: 32
+EPOCH ::: 33
+EPOCH ::: 34
+EPOCH ::: 35
+EPOCH ::: 36
+EPOCH ::: 37
+EPOCH ::: 38
+EPOCH ::: 39
+EPOCH ::: 40
+EPOCH ::: 41
+EPOCH ::: 42
+EPOCH ::: 43
+EPOCH ::: 44
+EPOCH ::: 45
+EPOCH ::: 46
+EPOCH ::: 47
+EPOCH ::: 48
+EPOCH ::: 49
+EPOCH ::: 50
+EPOCH ::: 51
+EPOCH ::: 52
+EPOCH ::: 53
+EPOCH ::: 54
+EPOCH ::: 55
+EPOCH ::: 56
+EPOCH ::: 57
+EPOCH ::: 58
+EPOCH ::: 59
+EPOCH ::: 60
+EPOCH ::: 61
+EPOCH ::: 62
+EPOCH ::: 63
+EPOCH ::: 64
+EPOCH ::: 65
+EPOCH ::: 66
+EPOCH ::: 67
+EPOCH ::: 68
+EPOCH ::: 69
+EPOCH ::: 70
+EPOCH ::: 71
+EPOCH ::: 72
+EPOCH ::: 73
+EPOCH ::: 74
+EPOCH ::: 75
+EPOCH ::: 76
+EPOCH ::: 77
+EPOCH ::: 78
+EPOCH ::: 79
+EPOCH ::: 80
+EPOCH ::: 81
+EPOCH ::: 82
+EPOCH ::: 83
+EPOCH ::: 84
+EPOCH ::: 85
+EPOCH ::: 86
+EPOCH ::: 87
+EPOCH ::: 88
+EPOCH ::: 89
+EPOCH ::: 90
+EPOCH ::: 91
+EPOCH ::: 92
+EPOCH ::: 93
+EPOCH ::: 94
+EPOCH ::: 95
+EPOCH ::: 96
+EPOCH ::: 97
+EPOCH ::: 98
+EPOCH ::: 99
+EPOCH ::: 100
+PITTING AGAINST PREVIOUS VERSION
+NEW/PREV WINS : 8 / 2 ; DRAWS : 0
+ACCEPTING NEW MODEL

@@ -1,4 +1,6 @@
 from enum import IntEnum
+
+from Game import GameImp
 from fireplace import cards
 from hearthstone.enums import Zone,State,CardType,Step
 from .card import Hero,HeroPower,Minion,Spell,Weapon,Enchantment,Sidequest,Secret
@@ -28,10 +30,11 @@ def debug_card(oldCard, newCard):
 	print("--------debug--%s-----------"%(oldCard.controller))
 	pass
 
-def deepcopy_game(game, player, option):
+def deepcopy_game(game, option = None):
 	""" deepcopy a game state. 
 	"""
 	log.info("================deepcopy starts================")
+	game = game.game
 	oldGame = game
 	oldPlayer1 = game.player1
 	oldPlayer2 = game.player2
@@ -68,7 +71,7 @@ def deepcopy_game(game, player, option):
 		random.shuffle(itshim.deck)
 		random.shuffle(itshim.hand)
 	log.info("================deepcopy ends================")
-	return newGame
+	return GameImp(newGame)
 
 def deep_copy_player(player, option):
 	"""
@@ -339,7 +342,7 @@ def copy_gameattr(oldGame,newGame):
 	""" copy game's attr.
 	"""
 	gameAttrs =['next_step','turn','tick','zone','state','step',
-			 'active_aura_buffs','proposed_attacker','proposed_defender',
+			 'active_aura_buffs','proposed_attacker','proposed_defender', 'player_to_start'
 		]
 	for attr in gameAttrs:
 		if hasattr(oldGame,attr):
