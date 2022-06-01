@@ -140,19 +140,12 @@ def play_game(g,nnet,mcts,args):
     it = 0
     while not g.game.ended or g.game.turn > 180:
         it += 1
-        if cur_player == 1:
-            # for MCTS
-            pi = players[cur_player + 1].get_action_prob(temp=0)
-            pi_reshape = np.reshape(pi, (21, 18))
-            action = np.where(pi_reshape == np.max(pi_reshape))
-        elif cur_player == -1:
-            # for NN
-            pi = players[cur_player + 1].predict(g.get_state().reshape(-1, 2, 19, 5))
-            pi = pi.detach().numpy().reshape(-1)
-            pi_reshape = np.reshape(pi, (21, 18))
-            valids = np.invert(g.get_valid_moves().astype(bool))
-            masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
-            action = np.where(masked_pi == np.max(masked_pi))
+        pi = players[cur_player + 1].predict(g.get_state().reshape(-1, 2, 19, 5))
+        pi = pi.detach().numpy().reshape(-1)
+        pi_reshape = np.reshape(pi, (21, 18))
+        valids = np.invert(g.get_valid_moves().astype(bool))
+        masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
+        action = np.where(masked_pi == np.max(masked_pi))
 
         next_state, cur_player = g.get_next_state(cur_player, (action[0][0], action[1][0]))
     return g.get_game_ended()
@@ -178,7 +171,7 @@ def main():
     g.mulligan_choice()
     g.game.player_to_start = g.game.current_player
 
-    play_game(g,nnet,mcts,args)
+    play_game(g,nnet,nnet,args)
 
     app.processEvents()
     sys.exit(app.exec())
@@ -209,19 +202,6 @@ def main():
     # ws.run_forever(dispatcher=rel)  # Set dispatcher to automatic reconnection
     # rel.signal(2, rel.abort)  # Keyboard Interrupt
     # rel.dispatch()
-
-    # window = MainWindow()
-    # current_game = g.init_game(UiObserver(window), HsObserver())
-    # g.game.manager.register(UiObserver(window))
-    # g.game.manager.register(HsObserver())
-    # g.mulligan_choice()
-    # g.game.player_to_start = g.game.current_player
-
-    # arena = Arena(nnet, nnet, g, args)
-    # st = arena.play_game(UiObserver(window), HsObserver())
-
-    # app.processEvents()
-    # sys.exit(app.exec())
 
 
 if __name__ == "__main__":
