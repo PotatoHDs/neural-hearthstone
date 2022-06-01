@@ -130,6 +130,8 @@ class GameImp:
             raise GameOver
 
         next_state = self.get_state()
+        if self.get_game_ended()!=0:
+            next_state = None
 
         if action[0] != 19:
             return next_state, player

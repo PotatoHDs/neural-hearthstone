@@ -124,8 +124,8 @@ class ResNN(nn.Module):
 
 class NNetWrapper:
     def __init__(self, args):
-        self.nnet = ResNN(args)
-        # self.nnet = SimpleNN(args)
+        # self.nnet = ResNN(args)
+        self.nnet = SimpleNN(args)
         # args
         self.nnet.to(args.device)
         self.args = args
