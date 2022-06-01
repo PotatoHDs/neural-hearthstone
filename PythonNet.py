@@ -42,11 +42,17 @@ class NN(nn.Module):
         self.bn3 = nn.BatchNorm2d(2)
         self.flatten = nn.Flatten()
         self.dense_pi = nn.Linear(190, args.n_out, bias=True)
-        self.softmax = nn.Softmax(dim=1)
+        # self.softmax = nn.Softmax(dim=1)
+
+        self.apply(self._init_weights)
+
+    def _init_weights(self, module):
+        if isinstance(module, nn.Linear):
+            module.weight.data.normal_(mean=0.0, std=1.0)
+            if module.bias is not None:
+                module.bias.data.zero_()
 
     def forward(self, x, training=False):
-        if training:
-            print(np.shape(x))
         x = F.leaky_relu(self.bn1(self.conv1(x)))
 
         for i in range(5):
@@ -54,14 +60,12 @@ class NN(nn.Module):
 
         pi = F.leaky_relu(self.bn3(self.conv3(x)))
         pi = self.flatten(pi)
-        if training:
-            print(np.shape(pi))
         pi = self.dense_pi(pi)
 
         if training:
             print(np.shape(pi))
 
-        pi = self.softmax(pi)
+        # pi = self.softmax(pi)
 
         return pi
 
@@ -70,79 +74,16 @@ class ResNN2D():
     def __init__(self, args):
         self.args = args
         self.nn = NN(args)
-
-    def train(self, examples, logfile):
-        optimizer = optim.Adam(self.nn.parameters())
-        criterion = nn.MSELoss()
-
-        for epoch in range(self.args.epochs):
-            print('EPOCH ::: ' + str(epoch + 1))
-            logfile.write('EPOCH ::: ' + str(epoch + 1) + '\n')
-            self.nn.train()
-            data_time = AverageMeter()
-            batch_time = AverageMeter()
-            pi_losses = AverageMeter()
-            end = time.time()
-
-            bar = Bar('Training Net', max=int(len(examples) / self.args.batch_size))
-            batch_idx = 0
-
-            while batch_idx < int(len(examples) / self.args.batch_size):
-                sample_ids = np.random.randint(len(examples), size=self.args.batch_size)
-                states, pi = list(zip(*[examples[i] for i in sample_ids]))
-                states = torch.FloatTensor(np.array(states).astype(np.float64))
-                states = states.reshape(-1,2,19,5)
-                target_pi = torch.FloatTensor(pi)
-
-                states, target_pi = Variable(states), Variable(target_pi)
-
-                # measure data loading time
-                data_time.update(time.time() - end)
-
-                optimizer.zero_grad()
-
-                out_pi = self.nn(states)
-                # l_pi = criterion(out_pi, target_pi)
-                l_pi = self.loss_pi(target_pi, out_pi)
-                pi_losses.update(l_pi.item(), states.size(0))
-
-                l_pi.backward()
-                optimizer.step()
-
-                # measure elapsed time
-                batch_time.update(time.time() - end)
-                end = time.time()
-                batch_idx += 1
-
-                # plot progress
-                bar.suffix = '({batch}/{size}) Data: {data:.3f}s | Batch: {bt:.3f}s | Total: {total:} | ETA: {eta:} | Loss_pi: {lpi:.4f} \n'.format(
-                    batch=batch_idx,
-                    size=int(len(examples) / self.args.batch_size),
-                    data=data_time.avg,
-                    bt=batch_time.avg,
-                    total=bar.elapsed_td,
-                    eta=bar.eta_td,
-                    lpi=pi_losses.avg,
-                )
-                logfile.write("Training Net ")
-                bar.next()
-                logfile.write(bar.suffix)
-            bar.finish()
+        self.target_nn = NN(args)
 
     def predict(self, inputToModel):
-        inputToModel = torch.FloatTensor(inputToModel.astype(np.float64))
+        inputToModel = torch.FloatTensor(inputToModel.astype(np.float64), device=self.args.device)
         with torch.no_grad():
             inputToModel = Variable(inputToModel)
 
         self.nn.eval()
         preds = self.nn(inputToModel)
         return preds
-
-    def loss_pi(self, targets, outputs):
-        # outputs = outputs.view(-1, 21, 18)
-        # targets = targets.view(-1, 21, 18)
-        # return -torch.sum(targets.data.cuda() * outputs) / targets.size()[0]
-        return -torch.sum((targets.data - outputs) ** 2) / targets.size()[0]
 
     def save_checkpoint(self, folder='checkpoint', filename='checkpoint.pth.tar'):
         filepath = os.path.join(folder, filename)
@@ -153,7 +94,7 @@ class ResNN2D():
             print("Checkpoint Directory exists! ")
         torch.save({
             'state_dict': self.nn.state_dict(),
-        }, filepath)
+                    }, filepath)
 
     def load_checkpoint(self, folder='checkpoint', filename='checkpoint.pth.tar'):
         # https://github.com/pytorch/examples/blob/master/imagenet/main.py#L98

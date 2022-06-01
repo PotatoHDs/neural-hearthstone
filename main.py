@@ -9,6 +9,7 @@ from Coach import Coach
 from Agent import Agent
 from Game import GameImp as Game
 from NN import NNetWrapper as nn
+from MCTS import MCTS
 # from KerasNet import ResNN2D
 from PythonNet import ResNN2D
 # from fireplace.actions import Attack, Summon, Hit, EndTurn, Discover, Choice, MulliganChoice, Play, GenericChoice, \
@@ -39,15 +40,17 @@ class Args:
 
         self.shape_in = (2,19,5)
 
-        self.epochs = 10
+        self.epochs = 30
+        self.itersInEps = 30
         self.batch_size = 128
-        self.lr = 1e-3
+        self.lr = 1e-7
+        self.gamma = 0.99
 
         self.arenaCompare = 10
         self.numIters = 50
         self.numEps = 10
         self.maxlenOfQueue = 100000
-        self.numMCTS = 10
+        self.numMCTS = 500
         self.numItersForTrainExamplesHistory = 30
 
         self.tempThreshold = 150
@@ -59,7 +62,7 @@ class Args:
 
         self.checkpoint = './seq/'
         self.load_model = True
-        self.load_folder_file = ('./seq/', 'ResNN2D_best.pth.tar')
+        self.load_folder_file = ('./seq/', 'best.pth.tar')
         self.load_examples = ('./seq/', 'checkpoint.pth.tar')
         self.fireplace_log_enabled = True
 
@@ -127,8 +130,8 @@ def on_open(ws):
     # setattr(obj, "property_name", "value")
     # getattr(obj, "property_name")
 
-def play_game(g,nnet,pnet,args):
-    players = [nnet, None, pnet]
+def play_game(g,nnet,mcts,args):
+    players = [nnet, None, mcts]
     if g.game.player_to_start == "Player1":
         cur_player = -1
     else:
@@ -137,18 +140,19 @@ def play_game(g,nnet,pnet,args):
     it = 0
     while not g.game.ended or g.game.turn > 180:
         it += 1
-        # for MCTS
-        # pi = players[cur_player + 1].get_action_prob(temp=0)
-        # pi_reshape = np.reshape(pi, (21, 18))
-        # action = np.where(pi_reshape  == np.max(pi_reshape ))
-
-        # for NN
-        pi = players[cur_player + 1].predict(g.get_state().reshape(-1, 2, 19, 5))
-        pi = pi.detach().numpy().reshape(-1)
-        pi_reshape = np.reshape(pi, (21, 18))
-        valids = np.invert(g.get_valid_moves().astype(bool))
-        masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
-        action = np.where(masked_pi == np.max(masked_pi))
+        if cur_player == 1:
+            # for MCTS
+            pi = players[cur_player + 1].get_action_prob(temp=0)
+            pi_reshape = np.reshape(pi, (21, 18))
+            action = np.where(pi_reshape == np.max(pi_reshape))
+        elif cur_player == -1:
+            # for NN
+            pi = players[cur_player + 1].predict(g.get_state().reshape(-1, 2, 19, 5))
+            pi = pi.detach().numpy().reshape(-1)
+            pi_reshape = np.reshape(pi, (21, 18))
+            valids = np.invert(g.get_valid_moves().astype(bool))
+            masked_pi = ma.filled(ma.masked_array(pi_reshape, mask=valids, fill_value=0))
+            action = np.where(masked_pi == np.max(masked_pi))
 
         next_state, cur_player = g.get_next_state(cur_player, (action[0][0], action[1][0]))
     return g.get_game_ended()
@@ -157,7 +161,6 @@ def play_game(g,nnet,pnet,args):
 def main():
     g = Game()
     args = Args()
-    pnet = ResNN2D(args)
     nnet = ResNN2D(args)
     if args.load_model:
         nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
@@ -170,12 +173,12 @@ def main():
     window = MainWindow()
 
     current_game = g.init_game(UiObserver(window), HsObserver())
-    # g.game.manager.register(UiObserver(window))
-    # g.game.manager.register(HsObserver())
+    g.game.manager.register(UiObserver(window))
+    g.game.manager.register(HsObserver())
     g.mulligan_choice()
     g.game.player_to_start = g.game.current_player
 
-    play_game(g,nnet,pnet,args)
+    play_game(g,nnet,mcts,args)
 
     app.processEvents()
     sys.exit(app.exec())
